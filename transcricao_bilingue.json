@@ -1,0 +1,4238 @@
+[
+  {
+    "timestamp": "00:00",
+    "start_seconds": 0,
+    "text_en": "This video will teach you Claude code.",
+    "text_pt": "Este vídeo vai te ensinar o"
+  },
+  {
+    "timestamp": "00:02",
+    "start_seconds": 2,
+    "text_en": "I'll go over everything and assume no prior knowledge.",
+    "text_pt": "código Claude. Vou repassar tudo e não assumirei nenhum"
+  },
+  {
+    "timestamp": "00:05",
+    "start_seconds": 5,
+    "text_en": "I'll walk you through the setup and installation.",
+    "text_pt": "conhecimento prévio. Vou orientá-lo na configuração e instalação."
+  },
+  {
+    "timestamp": "00:07",
+    "start_seconds": 7,
+    "text_en": "Step by step.",
+    "text_pt": "Passo a"
+  },
+  {
+    "timestamp": "00:08",
+    "start_seconds": 8,
+    "text_en": "I'll show you how to utilize the tool, the best practices, multiple features,",
+    "text_pt": "passo. Mostrarei como utilizar a ferramenta, as práticas recomendadas, vários recursos e,"
+  },
+  {
+    "timestamp": "00:12",
+    "start_seconds": 12,
+    "text_en": "and by the end of the video, you'll be comfortable using this tool to generate",
+    "text_pt": "no final do vídeo, você se sentirá confortável ao usar essa ferramenta para"
+  },
+  {
+    "timestamp": "00:16",
+    "start_seconds": 16,
+    "text_en": "some pretty insane outputs and awesome coding projects.",
+    "text_pt": "gerar resultados bastante insanos e projetos de codificação incríveis."
+  },
+  {
+    "timestamp": "00:19",
+    "start_seconds": 19,
+    "text_en": "So with that said, let's get into it.",
+    "text_pt": "Dito isso, vamos entrar no assunto."
+  },
+  {
+    "timestamp": "00:21",
+    "start_seconds": 21,
+    "text_en": "So without getting into too many details, cloud Code is effectively a command line",
+    "text_pt": "Portanto, sem entrar em muitos detalhes, o Cloud Code é efetivamente uma"
+  },
+  {
+    "timestamp": "00:26",
+    "start_seconds": 26,
+    "text_en": "or terminal application that allows you to generate code,",
+    "text_pt": "linha de comando ou aplicativo de terminal que permite"
+  },
+  {
+    "timestamp": "00:30",
+    "start_seconds": 30,
+    "text_en": "debug projects, make websites, create applications, whatever it is that you want.",
+    "text_pt": "gerar código, depurar projetos, criar sites, criar aplicativos, o que você quiser."
+  },
+  {
+    "timestamp": "00:35",
+    "start_seconds": 35,
+    "text_en": "It is effectively anthropic version of, you know, cursor or something, right?",
+    "text_pt": "É efetivamente uma versão antrópica de, você sabe, cursor ou algo assim, certo? Onde"
+  },
+  {
+    "timestamp": "00:39",
+    "start_seconds": 39,
+    "text_en": "Where you can generate a bunch of code using the terminal.",
+    "text_pt": "você pode gerar um monte de código usando o terminal. Agora,"
+  },
+  {
+    "timestamp": "00:42",
+    "start_seconds": 42,
+    "text_en": "Now this is prompt based coding, which means you don't need to actually write",
+    "text_pt": "esta é uma codificação baseada em prompt, o que significa que você não precisa"
+  },
+  {
+    "timestamp": "00:45",
+    "start_seconds": 45,
+    "text_en": "any of the code yourself.",
+    "text_pt": "realmente escrever nenhum código sozinho."
+  },
+  {
+    "timestamp": "00:47",
+    "start_seconds": 47,
+    "text_en": "You simply type to an AI agent, you tell it what your desired output is",
+    "text_pt": "Você simplesmente digita para um agente de IA, informa qual é o resultado"
+  },
+  {
+    "timestamp": "00:51",
+    "start_seconds": 51,
+    "text_en": "and then goes ahead and starts coding.",
+    "text_pt": "desejado e então segue em frente e"
+  },
+  {
+    "timestamp": "00:53",
+    "start_seconds": 53,
+    "text_en": "Now, oftentimes cloud code will be used in combination",
+    "text_pt": "começa a codificar. Agora, muitas vezes o código em nuvem"
+  },
+  {
+    "timestamp": "00:56",
+    "start_seconds": 56,
+    "text_en": "with other developer tools, and I'll show you a few of them in this video.",
+    "text_pt": "será usado em combinação com outras ferramentas de desenvolvedor, e mostrarei algumas delas neste vídeo."
+  },
+  {
+    "timestamp": "00:59",
+    "start_seconds": 59,
+    "text_en": "But generally speaking, you do not need to be an expert to use this.",
+    "text_pt": "Mas de modo geral, você não precisa ser um especialista para"
+  },
+  {
+    "timestamp": "01:02",
+    "start_seconds": 62,
+    "text_en": "And even as a complete beginner, you can create some really cool projects.",
+    "text_pt": "usar isso. E mesmo sendo um iniciante, você pode criar alguns projetos"
+  },
+  {
+    "timestamp": "01:06",
+    "start_seconds": 66,
+    "text_en": "So with that said, let's look at how we set it up.",
+    "text_pt": "muito legais. Dito isso, vamos ver como configuramos"
+  },
+  {
+    "timestamp": "01:09",
+    "start_seconds": 69,
+    "text_en": "Now, in order to get cloud code working, you are going to need a cloud subscription",
+    "text_pt": "isso. Agora, para que o código da nuvem funcione, você precisará de uma assinatura"
+  },
+  {
+    "timestamp": "01:12",
+    "start_seconds": 72,
+    "text_en": "which is paid.",
+    "text_pt": "da nuvem paga."
+  },
+  {
+    "timestamp": "01:13",
+    "start_seconds": 73,
+    "text_en": "So you're going to need a Pro Max teams or enterprise subscription or an API key",
+    "text_pt": "Portanto, você precisará de uma assinatura Pro Max Teams ou Enterprise ou de uma chave"
+  },
+  {
+    "timestamp": "01:18",
+    "start_seconds": 78,
+    "text_en": "with some tokens or credits from the cloud console.",
+    "text_pt": "de API com alguns tokens ou créditos do console da"
+  },
+  {
+    "timestamp": "01:21",
+    "start_seconds": 81,
+    "text_en": "Now, I would suggest that",
+    "text_pt": "nuvem. Agora, eu sugeriria que"
+  },
+  {
+    "timestamp": "01:22",
+    "start_seconds": 82,
+    "text_en": "if you're just looking to mess around with this, get the cheapest plan from cloud.",
+    "text_pt": "se você está apenas querendo mexer com isso, obtenha o plano mais barato da nuvem."
+  },
+  {
+    "timestamp": "01:25",
+    "start_seconds": 85,
+    "text_en": "You will run out of credits pretty quickly if you are using this for very heavy work.",
+    "text_pt": "Você ficará sem créditos rapidamente se estiver usando isso para trabalhos muito pesados."
+  },
+  {
+    "timestamp": "01:29",
+    "start_seconds": 89,
+    "text_en": "But of course, test it first before you start going and buying a bunch of different credits.",
+    "text_pt": "Mas é claro, teste-o primeiro antes de começar a comprar vários créditos diferentes. Também"
+  },
+  {
+    "timestamp": "01:33",
+    "start_seconds": 93,
+    "text_en": "It also matters what model you're using, which we'll talk about later,",
+    "text_pt": "importa qual modelo você está usando, sobre o qual falaremos mais"
+  },
+  {
+    "timestamp": "01:36",
+    "start_seconds": 96,
+    "text_en": "which will determine what the overall price for all of the prompts that you send is going to be.",
+    "text_pt": "tarde, que determinará qual será o preço geral de todos os prompts que você enviar."
+  },
+  {
+    "timestamp": "01:40",
+    "start_seconds": 100,
+    "text_en": "Now, generally, you're not going to be overbuild.",
+    "text_pt": "Agora, geralmente, você não vai se sobrecarregar."
+  },
+  {
+    "timestamp": "01:42",
+    "start_seconds": 102,
+    "text_en": "You'll just run out of credits, then you would have to buy more.",
+    "text_pt": "Você simplesmente ficará sem créditos e terá que comprar mais."
+  },
+  {
+    "timestamp": "01:44",
+    "start_seconds": 104,
+    "text_en": "So don't worry about that.",
+    "text_pt": "Então não se preocupe"
+  },
+  {
+    "timestamp": "01:45",
+    "start_seconds": 105,
+    "text_en": "Okay.",
+    "text_pt": "com"
+  },
+  {
+    "timestamp": "01:46",
+    "start_seconds": 106,
+    "text_en": "Now to install this is going to require that we work directly inside of the terminal.",
+    "text_pt": "isso. OK. Agora, para instalar isso, será necessário trabalhar diretamente dentro do terminal."
+  },
+  {
+    "timestamp": "01:50",
+    "start_seconds": 110,
+    "text_en": "So what we're going to do is we're going to open up a terminal or a command prompt or a PowerShell",
+    "text_pt": "Então, o que vamos fazer é abrir um terminal ou um prompt de comando ou uma instância"
+  },
+  {
+    "timestamp": "01:54",
+    "start_seconds": 114,
+    "text_en": "instance, depending on the operating system that you're working on.",
+    "text_pt": "do PowerShell, dependendo do sistema operacional em que você está trabalhando. Agora,"
+  },
+  {
+    "timestamp": "01:58",
+    "start_seconds": 118,
+    "text_en": "Now, if you are on windows, then I'm going to suggest that you open up PowerShell",
+    "text_pt": "se você estiver no Windows, sugiro que você abra o PowerShell para poder ir"
+  },
+  {
+    "timestamp": "02:02",
+    "start_seconds": 122,
+    "text_en": "so you can go to the windows search bar, search for PowerShell, and then open up a terminal like this.",
+    "text_pt": "até a barra de pesquisa do Windows, procurar pelo PowerShell e, em seguida, abrir um terminal como este."
+  },
+  {
+    "timestamp": "02:07",
+    "start_seconds": 127,
+    "text_en": "And I'll just put it on the right hand side of my screen.",
+    "text_pt": "E vou colocá-lo no lado direito da tela. Agora, se"
+  },
+  {
+    "timestamp": "02:09",
+    "start_seconds": 129,
+    "text_en": "Now if you're on Mac or Linux then open up a normal terminal.",
+    "text_pt": "você estiver no Mac ou Linux, abra um terminal normal. Então"
+  },
+  {
+    "timestamp": "02:13",
+    "start_seconds": 133,
+    "text_en": "So just type terminal in the spotlight search.",
+    "text_pt": "basta digitar terminal na pesquisa em destaque. E"
+  },
+  {
+    "timestamp": "02:15",
+    "start_seconds": 135,
+    "text_en": "And then you'll be in an environment where you can start using cloud code.",
+    "text_pt": "então você estará em um ambiente onde poderá começar a usar código em nuvem."
+  },
+  {
+    "timestamp": "02:18",
+    "start_seconds": 138,
+    "text_en": "Now in order to install this I'm going to leave this documentation in the description",
+    "text_pt": "Agora para instalar vou deixar esta documentação na descrição que dá os comandos"
+  },
+  {
+    "timestamp": "02:22",
+    "start_seconds": 142,
+    "text_en": "which gives you the commands that you can simply copy depending on your operating system.",
+    "text_pt": "que você pode simplesmente copiar dependendo do seu sistema operacional. Então, se você"
+  },
+  {
+    "timestamp": "02:26",
+    "start_seconds": 146,
+    "text_en": "So if you were on Mac or Linux then you can copy this curl command right here.",
+    "text_pt": "estava no Mac ou Linux, você pode copiar este comando curl aqui."
+  },
+  {
+    "timestamp": "02:30",
+    "start_seconds": 150,
+    "text_en": "Just paste it into your terminal and run it.",
+    "text_pt": "Basta colá-lo em seu terminal e executá-lo. Se"
+  },
+  {
+    "timestamp": "02:32",
+    "start_seconds": 152,
+    "text_en": "If you are on windows and you're using PowerShell as I suggested, then you can copy this IRM command.",
+    "text_pt": "você estiver no Windows e estiver usando o PowerShell como sugeri, poderá copiar este comando IRM. Você pode"
+  },
+  {
+    "timestamp": "02:38",
+    "start_seconds": 158,
+    "text_en": "You can paste it, hit enter, and it should install cloud code for you.",
+    "text_pt": "colá-lo, pressionar Enter e ele deverá instalar o código da nuvem para você."
+  },
+  {
+    "timestamp": "02:42",
+    "start_seconds": 162,
+    "text_en": "If you're using the command prompt, maybe you're on an older version of windows.",
+    "text_pt": "Se você estiver usando o prompt de comando, talvez esteja usando uma versão mais antiga do"
+  },
+  {
+    "timestamp": "02:45",
+    "start_seconds": 165,
+    "text_en": "Then you can copy this version right here.",
+    "text_pt": "Windows. Então você pode copiar esta versão aqui."
+  },
+  {
+    "timestamp": "02:47",
+    "start_seconds": 167,
+    "text_en": "Paste it in the command prompt.",
+    "text_pt": "Cole-o no prompt de comando. Novamente,"
+  },
+  {
+    "timestamp": "02:49",
+    "start_seconds": 169,
+    "text_en": "Again, it will install the tool.",
+    "text_pt": "ele instalará a ferramenta. O código"
+  },
+  {
+    "timestamp": "02:51",
+    "start_seconds": 171,
+    "text_en": "Cloud code is not a desktop application.",
+    "text_pt": "em nuvem não é um aplicativo de desktop."
+  },
+  {
+    "timestamp": "02:53",
+    "start_seconds": 173,
+    "text_en": "It actually runs directly inside of your shell or your terminal.",
+    "text_pt": "Na verdade, ele é executado diretamente dentro do seu shell"
+  },
+  {
+    "timestamp": "02:57",
+    "start_seconds": 177,
+    "text_en": "So in order to use this in the future, you will need to open up PowerShell again or terminal again,",
+    "text_pt": "ou terminal. Portanto, para usar isso no futuro, você precisará abrir o PowerShell ou o terminal"
+  },
+  {
+    "timestamp": "03:02",
+    "start_seconds": 182,
+    "text_en": "or use this from some kind of tool in order to actually interact with cloud and generate code.",
+    "text_pt": "novamente, ou usar algum tipo de ferramenta para realmente interagir com a nuvem e gerar código."
+  },
+  {
+    "timestamp": "03:07",
+    "start_seconds": 187,
+    "text_en": "Now, once",
+    "text_pt": "Agora, uma"
+  },
+  {
+    "timestamp": "03:07",
+    "start_seconds": 187,
+    "text_en": "it says it's installed, the way that you can test this is by simply typing Claude in your terminal.",
+    "text_pt": "vez que está instalado, a maneira de testar isso é simplesmente digitando Claude em seu terminal. Portanto, se você"
+  },
+  {
+    "timestamp": "03:12",
+    "start_seconds": 192,
+    "text_en": "So if you type Claude, you should get some kind of output here.",
+    "text_pt": "digitar Claude, deverá obter algum tipo de resultado aqui. Agora, quando você"
+  },
+  {
+    "timestamp": "03:15",
+    "start_seconds": 195,
+    "text_en": "Now when you first run this, it will ask you to authenticate with your anthropic or cloud account.",
+    "text_pt": "executar isso pela primeira vez, será solicitado que você se autentique com sua conta antrópica ou na nuvem."
+  },
+  {
+    "timestamp": "03:19",
+    "start_seconds": 199,
+    "text_en": "So just do that.",
+    "text_pt": "Então faça isso."
+  },
+  {
+    "timestamp": "03:20",
+    "start_seconds": 200,
+    "text_en": "Go into your browser, sign into your account and then you'll be good to go.",
+    "text_pt": "Acesse seu navegador, faça login em sua conta e pronto. Agora também,"
+  },
+  {
+    "timestamp": "03:24",
+    "start_seconds": 204,
+    "text_en": "Now also whenever you run this for the first time and you type that command,",
+    "text_pt": "sempre que você executar isso pela primeira vez e digitar esse comando,"
+  },
+  {
+    "timestamp": "03:27",
+    "start_seconds": 207,
+    "text_en": "it's going to ask you to trust the current folder that you're inside of.",
+    "text_pt": "será solicitado que você confie na pasta atual em que está."
+  },
+  {
+    "timestamp": "03:30",
+    "start_seconds": 210,
+    "text_en": "So we're going to go ahead and press on. Yes I trust the folder.",
+    "text_pt": "Então, vamos em frente e prosseguir. Sim, confio na pasta."
+  },
+  {
+    "timestamp": "03:33",
+    "start_seconds": 213,
+    "text_en": "And then it's going to bring up the Claude Code UI.",
+    "text_pt": "E então abrirá a IU do Claude Code."
+  },
+  {
+    "timestamp": "03:35",
+    "start_seconds": 215,
+    "text_en": "Now at this point you should have got cloud code installed and just remember,",
+    "text_pt": "Agora, neste ponto, você deve ter o código da nuvem instalado e"
+  },
+  {
+    "timestamp": "03:38",
+    "start_seconds": 218,
+    "text_en": "if you were to close the terminal or the PowerShell you would have to reopen this.",
+    "text_pt": "lembre-se, se você fechasse o terminal ou o PowerShell, teria que reabri-lo."
+  },
+  {
+    "timestamp": "03:42",
+    "start_seconds": 222,
+    "text_en": "Right?",
+    "text_pt": "Certo?"
+  },
+  {
+    "timestamp": "03:42",
+    "start_seconds": 222,
+    "text_en": "I'm just going to zoom in and then again type Claude and then you can press enter.",
+    "text_pt": "Vou apenas aumentar o zoom e digitar novamente Claude e então você pode pressionar enter."
+  },
+  {
+    "timestamp": "03:46",
+    "start_seconds": 226,
+    "text_en": "And again you get back into that user interface.",
+    "text_pt": "E novamente você volta para a interface do"
+  },
+  {
+    "timestamp": "03:48",
+    "start_seconds": 228,
+    "text_en": "So don't worry if you lose it.",
+    "text_pt": "usuário. Então não se preocupe"
+  },
+  {
+    "timestamp": "03:51",
+    "start_seconds": 231,
+    "text_en": "Now for some of you that are complete beginners and already this is a little bit intimidating.",
+    "text_pt": "se você perdê-lo. Agora, para alguns de vocês que são iniciantes, isso já é um pouco intimidante."
+  },
+  {
+    "timestamp": "03:55",
+    "start_seconds": 235,
+    "text_en": "Anthropic actually did create an easier way to write code using Claude.",
+    "text_pt": "Na verdade, a Anthropic criou uma maneira mais fácil de escrever código usando Claude."
+  },
+  {
+    "timestamp": "03:59",
+    "start_seconds": 239,
+    "text_en": "It is not the same thing as Claude code, but it is very similar",
+    "text_pt": "Não é a mesma coisa que o código de Claude, mas é"
+  },
+  {
+    "timestamp": "04:02",
+    "start_seconds": 242,
+    "text_en": "and you can access that by downloading the desktop app for Claude.",
+    "text_pt": "muito semelhante e você pode acessá-lo baixando o aplicativo de desktop para Claude."
+  },
+  {
+    "timestamp": "04:06",
+    "start_seconds": 246,
+    "text_en": "So if you have an account with them, you can just download the desktop app.",
+    "text_pt": "Portanto, se você tiver uma conta com eles, basta baixar o aplicativo para desktop. Se"
+  },
+  {
+    "timestamp": "04:09",
+    "start_seconds": 249,
+    "text_en": "If you do that, the app will look something like this.",
+    "text_pt": "você fizer isso, o aplicativo ficará parecido com isto. A partir"
+  },
+  {
+    "timestamp": "04:12",
+    "start_seconds": 252,
+    "text_en": "From here, what you'll be able to do is switch between this chat and this code mode.",
+    "text_pt": "daqui, o que você poderá fazer é alternar entre este chat e este modo de código."
+  },
+  {
+    "timestamp": "04:17",
+    "start_seconds": 257,
+    "text_en": "And if you go into the coding mode here, you'll be able to select a project.",
+    "text_pt": "E se você entrar no modo de codificação aqui, poderá selecionar um projeto."
+  },
+  {
+    "timestamp": "04:21",
+    "start_seconds": 261,
+    "text_en": "You can write a prompt directly inside of here you can change the mode like coding,",
+    "text_pt": "Você pode escrever um prompt diretamente aqui e pode alterar o modo como codificação,"
+  },
+  {
+    "timestamp": "04:25",
+    "start_seconds": 265,
+    "text_en": "asking, planning, right. You can add different files.",
+    "text_pt": "pergunta, planejamento, certo. Você pode adicionar arquivos diferentes."
+  },
+  {
+    "timestamp": "04:28",
+    "start_seconds": 268,
+    "text_en": "You can connect it to GitHub, you can choose your model and it's a lot simpler and easier to use.",
+    "text_pt": "Você pode conectá-lo ao GitHub, escolher seu modelo e é muito mais simples e fácil de usar. Então,"
+  },
+  {
+    "timestamp": "04:33",
+    "start_seconds": 273,
+    "text_en": "So again, if you're a beginner you can just use this.",
+    "text_pt": "novamente, se você é iniciante, pode simplesmente usar isso. Mas"
+  },
+  {
+    "timestamp": "04:35",
+    "start_seconds": 275,
+    "text_en": "But if you want to get any serious work done, the CLI or the command",
+    "text_pt": "se você quiser realizar algum trabalho sério, a CLI ou a ferramenta de"
+  },
+  {
+    "timestamp": "04:39",
+    "start_seconds": 279,
+    "text_en": "line tool which I'm showing you is what you're going to want to set up and have on your machine.",
+    "text_pt": "linha de comando que estou mostrando é o que você vai querer configurar e ter em sua máquina."
+  },
+  {
+    "timestamp": "04:42",
+    "start_seconds": 282,
+    "text_en": "Now, if you've been programing for a while, you probably know the job market is tough recently",
+    "text_pt": "Agora, se você já programa há algum tempo, provavelmente sabe que o mercado de trabalho está difícil"
+  },
+  {
+    "timestamp": "04:47",
+    "start_seconds": 287,
+    "text_en": "and you may feel like traditional resumes just don't show who",
+    "text_pt": "recentemente e pode sentir que os currículos tradicionais simplesmente não mostram"
+  },
+  {
+    "timestamp": "04:50",
+    "start_seconds": 290,
+    "text_en": "you really are as a creator or a technologist.",
+    "text_pt": "quem você realmente é como criador ou tecnólogo."
+  },
+  {
+    "timestamp": "04:53",
+    "start_seconds": 293,
+    "text_en": "Now that's where dinked me comes in.",
+    "text_pt": "Agora é aí que entra o"
+  },
+  {
+    "timestamp": "04:56",
+    "start_seconds": 296,
+    "text_en": "It's a brand new AI native career network built",
+    "text_pt": "dinked me. É uma nova rede de carreira"
+  },
+  {
+    "timestamp": "04:59",
+    "start_seconds": 299,
+    "text_en": "for the real era of real work, real projects, real impact.",
+    "text_pt": "nativa de IA construída para a era real de trabalho"
+  },
+  {
+    "timestamp": "05:03",
+    "start_seconds": 303,
+    "text_en": "Not just job titles.",
+    "text_pt": "real, projetos reais, impacto"
+  },
+  {
+    "timestamp": "05:05",
+    "start_seconds": 305,
+    "text_en": "Now, instead of a static resume, Dink gives you a living identity card",
+    "text_pt": "real. Não apenas cargos. Agora, em vez de um currículo estático, Dink"
+  },
+  {
+    "timestamp": "05:08",
+    "start_seconds": 308,
+    "text_en": "your Dink card that automatically showcases your code, papers,",
+    "text_pt": "oferece uma carteira de identidade viva, seu cartão Dink, que mostra"
+  },
+  {
+    "timestamp": "05:12",
+    "start_seconds": 312,
+    "text_en": "citations, and measurable impact across platforms like GitHub and Google Scholar.",
+    "text_pt": "automaticamente seu código, artigos, citações e impacto mensurável em plataformas como GitHub e Google Scholar."
+  },
+  {
+    "timestamp": "05:17",
+    "start_seconds": 317,
+    "text_en": "Recruiters, professors, and startups can discover what you've actually done,",
+    "text_pt": "Recrutadores, professores e startups podem descobrir o que você realmente fez, não apenas o"
+  },
+  {
+    "timestamp": "05:21",
+    "start_seconds": 321,
+    "text_en": "not just what you wrote on paper.",
+    "text_pt": "que escreveu no papel. Agora é"
+  },
+  {
+    "timestamp": "05:23",
+    "start_seconds": 323,
+    "text_en": "Now that's what dink does for you, but for companies.",
+    "text_pt": "isso que o dink faz por você, mas pelas empresas."
+  },
+  {
+    "timestamp": "05:26",
+    "start_seconds": 326,
+    "text_en": "Dink is an AI powered talent engine that analyzes and compares researchers and engineers in seconds.",
+    "text_pt": "Dink é um mecanismo de talentos alimentado por IA que analisa e compara pesquisadores e engenheiros em segundos."
+  },
+  {
+    "timestamp": "05:32",
+    "start_seconds": 332,
+    "text_en": "It helps teams spot the best fits faster than traditional recruiting tools.",
+    "text_pt": "Ele ajuda as equipes a identificar as melhores opções com mais rapidez do que as ferramentas"
+  },
+  {
+    "timestamp": "05:36",
+    "start_seconds": 336,
+    "text_en": "Now, the best part of all of this is that you can claim your Dink card for free.",
+    "text_pt": "de recrutamento tradicionais. Agora, a melhor parte de tudo isso é que você pode resgatar seu cartão"
+  },
+  {
+    "timestamp": "05:39",
+    "start_seconds": 339,
+    "text_en": "Start building your personal identity in minutes and let your work speak for itself.",
+    "text_pt": "Dink gratuitamente. Comece a construir sua identidade pessoal em minutos e deixe seu trabalho falar por si."
+  },
+  {
+    "timestamp": "05:44",
+    "start_seconds": 344,
+    "text_en": "In a world where resumes get screened for six seconds before a decision.",
+    "text_pt": "Em um mundo onde os currículos são analisados seis segundos antes de uma"
+  },
+  {
+    "timestamp": "05:48",
+    "start_seconds": 348,
+    "text_en": "Now here you can even see my dink card.",
+    "text_pt": "decisão. Agora aqui você pode até ver"
+  },
+  {
+    "timestamp": "05:50",
+    "start_seconds": 350,
+    "text_en": "Right here has all of my details, information that you wouldn't see on a resume,",
+    "text_pt": "meu cartão dink. Aqui tem todos os meus dados, informações que você não veria em"
+  },
+  {
+    "timestamp": "05:54",
+    "start_seconds": 354,
+    "text_en": "my whole career trajectory, my GitHub, the number of stars, my YouTube channel, Instagram,",
+    "text_pt": "um currículo, toda a minha trajetória profissional, meu GitHub, a quantidade de estrelas, meu canal no YouTube,"
+  },
+  {
+    "timestamp": "05:59",
+    "start_seconds": 359,
+    "text_en": "all of that stuff is here.",
+    "text_pt": "Instagram, tudo isso está aqui."
+  },
+  {
+    "timestamp": "06:00",
+    "start_seconds": 360,
+    "text_en": "As well as networks career trajectory, Twitter, and anything else that you want to include.",
+    "text_pt": "Bem como trajetória de carreira em redes, Twitter e tudo mais que você deseja incluir. Agora"
+  },
+  {
+    "timestamp": "06:05",
+    "start_seconds": 365,
+    "text_en": "Now you can get started with Dink today for free by clicking the link in the description,",
+    "text_pt": "você pode começar a usar o Dink hoje gratuitamente clicando no link na descrição, e um"
+  },
+  {
+    "timestamp": "06:09",
+    "start_seconds": 369,
+    "text_en": "and a massive thanks to them for sponsoring today's video.",
+    "text_pt": "enorme agradecimento a eles por patrocinarem o vídeo de hoje."
+  },
+  {
+    "timestamp": "06:12",
+    "start_seconds": 372,
+    "text_en": "Let's get back into it.",
+    "text_pt": "Vamos voltar ao assunto."
+  },
+  {
+    "timestamp": "06:13",
+    "start_seconds": 373,
+    "text_en": "Now, with that in mind, before you just go crazy here with Claude,",
+    "text_pt": "Agora, com isso em mente, antes de você enlouquecer aqui com o"
+  },
+  {
+    "timestamp": "06:16",
+    "start_seconds": 376,
+    "text_en": "what I'm going to suggest that you do is installed git on your computer.",
+    "text_pt": "Claude, o que vou sugerir que você faça é instalar o git no"
+  },
+  {
+    "timestamp": "06:20",
+    "start_seconds": 380,
+    "text_en": "Now, git is a tool that's going to allow you to essentially kind of checkpoint",
+    "text_pt": "seu computador. Agora, git é uma ferramenta que permitirá que você essencialmente verifique o"
+  },
+  {
+    "timestamp": "06:24",
+    "start_seconds": 384,
+    "text_en": "what Claude is doing and revert back to a previous version of your code base",
+    "text_pt": "que Claude está fazendo e reverta para uma versão anterior de sua base de"
+  },
+  {
+    "timestamp": "06:28",
+    "start_seconds": 388,
+    "text_en": "in case it makes any mistakes.",
+    "text_pt": "código, caso cometa algum erro."
+  },
+  {
+    "timestamp": "06:30",
+    "start_seconds": 390,
+    "text_en": "You won't have it by default on your machines.",
+    "text_pt": "Você não o terá por padrão em suas máquinas."
+  },
+  {
+    "timestamp": "06:32",
+    "start_seconds": 392,
+    "text_en": "You do need to install.",
+    "text_pt": "Você precisa instalar. Agora."
+  },
+  {
+    "timestamp": "06:33",
+    "start_seconds": 393,
+    "text_en": "Now. You can do that by going to the link that I'll put in the description",
+    "text_pt": "Você pode fazer isso acessando o link que colocarei na descrição, onde você pode"
+  },
+  {
+    "timestamp": "06:36",
+    "start_seconds": 396,
+    "text_en": "where you can download this for windows, Mac or Linux.",
+    "text_pt": "fazer o download para Windows, Mac ou Linux. No entanto,"
+  },
+  {
+    "timestamp": "06:40",
+    "start_seconds": 400,
+    "text_en": "However, because we have Claude code, we actually can just ask Claude code,",
+    "text_pt": "como temos o código do Claude, podemos simplesmente perguntar ao código do Claude, você"
+  },
+  {
+    "timestamp": "06:44",
+    "start_seconds": 404,
+    "text_en": "can you install git for me?",
+    "text_pt": "pode instalar o git para mim?"
+  },
+  {
+    "timestamp": "06:47",
+    "start_seconds": 407,
+    "text_en": "Now if you do that, it should actually think about the commands",
+    "text_pt": "Agora, se você fizer isso, ele deverá pensar nos comandos"
+  },
+  {
+    "timestamp": "06:49",
+    "start_seconds": 409,
+    "text_en": "that it's going to need to run to install this for you.",
+    "text_pt": "que precisará executar para instalar isso para você. Provavelmente"
+  },
+  {
+    "timestamp": "06:52",
+    "start_seconds": 412,
+    "text_en": "It should likely ask you for permission.",
+    "text_pt": "deveria pedir sua permissão. Então você"
+  },
+  {
+    "timestamp": "06:54",
+    "start_seconds": 414,
+    "text_en": "So you can see here it's asking for permission to run a command.",
+    "text_pt": "pode ver aqui que está pedindo permissão para executar um comando."
+  },
+  {
+    "timestamp": "06:57",
+    "start_seconds": 417,
+    "text_en": "I'm going to go. Yes.",
+    "text_pt": "Eu vou. Sim."
+  },
+  {
+    "timestamp": "06:57",
+    "start_seconds": 417,
+    "text_en": "And don't ask for this command again.",
+    "text_pt": "E não peça este comando novamente."
+  },
+  {
+    "timestamp": "06:59",
+    "start_seconds": 419,
+    "text_en": "And then it's going to actually run the command to install that tool for you.",
+    "text_pt": "E então ele executará o comando para instalar essa ferramenta para você."
+  },
+  {
+    "timestamp": "07:03",
+    "start_seconds": 423,
+    "text_en": "Now for some reason that doesn't work.",
+    "text_pt": "Agora, por algum motivo, isso não"
+  },
+  {
+    "timestamp": "07:04",
+    "start_seconds": 424,
+    "text_en": "Then what you can do is just install it directly from the website right here.",
+    "text_pt": "funciona. Então o que você pode fazer é instalá-lo diretamente do site aqui."
+  },
+  {
+    "timestamp": "07:08",
+    "start_seconds": 428,
+    "text_en": "Okay.",
+    "text_pt": "Ok."
+  },
+  {
+    "timestamp": "07:08",
+    "start_seconds": 428,
+    "text_en": "So in my case, it actually gave me an error that said that I need to be running",
+    "text_pt": "Portanto, no meu caso, ocorreu um erro que dizia que preciso executar o"
+  },
+  {
+    "timestamp": "07:11",
+    "start_seconds": 431,
+    "text_en": "PowerShell as an administrator in order to actually run this command.",
+    "text_pt": "PowerShell como administrador para realmente executar este comando. Portanto, se você receber"
+  },
+  {
+    "timestamp": "07:15",
+    "start_seconds": 435,
+    "text_en": "So if you get an error like that, no worries.",
+    "text_pt": "um erro como esse, não se preocupe."
+  },
+  {
+    "timestamp": "07:16",
+    "start_seconds": 436,
+    "text_en": "What you can do is you can just open PowerShell by pressing right click and then run as administrator.",
+    "text_pt": "O que você pode fazer é simplesmente abrir o PowerShell pressionando o botão direito e executar como administrador. Agora,"
+  },
+  {
+    "timestamp": "07:22",
+    "start_seconds": 442,
+    "text_en": "Now if you're running this in Mac, it should be good to go by default.",
+    "text_pt": "se você estiver executando isso no Mac, deve ser bom usar o padrão."
+  },
+  {
+    "timestamp": "07:26",
+    "start_seconds": 446,
+    "text_en": "But here what I'm going to do is just type Claude.",
+    "text_pt": "Mas aqui o que vou fazer é digitar Claude."
+  },
+  {
+    "timestamp": "07:28",
+    "start_seconds": 448,
+    "text_en": "Okay I'm going to go yes I trust this folder.",
+    "text_pt": "Ok, vou sim, confio nesta pasta. E então"
+  },
+  {
+    "timestamp": "07:31",
+    "start_seconds": 451,
+    "text_en": "And then same thing install git for me and let's see if it's able to do it.",
+    "text_pt": "a mesma coisa, instale o git para mim e vamos ver se ele"
+  },
+  {
+    "timestamp": "07:35",
+    "start_seconds": 455,
+    "text_en": "Now that I gave it the permissions.",
+    "text_pt": "consegue fazer isso. Agora que dei"
+  },
+  {
+    "timestamp": "07:36",
+    "start_seconds": 456,
+    "text_en": "All right. So I just got installed. I'm not going to go through the whole process.",
+    "text_pt": "as permissões. Tudo bem. Então acabei de instalar. Não vou passar por todo o processo."
+  },
+  {
+    "timestamp": "07:39",
+    "start_seconds": 459,
+    "text_en": "And the next thing that I do recommend that you do is create a GitHub account.",
+    "text_pt": "E a próxima coisa que recomendo que você faça é criar uma conta no"
+  },
+  {
+    "timestamp": "07:43",
+    "start_seconds": 463,
+    "text_en": "The reason why will want to make a GitHub account is we're going to connect Claude to GitHub,",
+    "text_pt": "GitHub. A razão pela qual vamos querer criar uma conta no GitHub é que vamos conectar o"
+  },
+  {
+    "timestamp": "07:48",
+    "start_seconds": 468,
+    "text_en": "so that it's able to actually create new repositories for us and save all of the code",
+    "text_pt": "Claude ao GitHub, para que ele seja capaz de criar novos repositórios para nós e"
+  },
+  {
+    "timestamp": "07:53",
+    "start_seconds": 473,
+    "text_en": "that we're writing from the very beginning, so that we don't lose anything.",
+    "text_pt": "salvar todo o código que estamos escrevendo desde o início, para não perdermos nada."
+  },
+  {
+    "timestamp": "07:56",
+    "start_seconds": 476,
+    "text_en": "Now, GitHub is essentially a website or kind of a remote location where we can store different code.",
+    "text_pt": "Agora, o GitHub é essencialmente um site ou uma espécie de local remoto onde podemos armazenar"
+  },
+  {
+    "timestamp": "08:02",
+    "start_seconds": 482,
+    "text_en": "So rather than just having it on our own computer, we can store it with GitHub",
+    "text_pt": "códigos diferentes. Então, em vez de apenas tê-lo em nosso próprio computador, podemos"
+  },
+  {
+    "timestamp": "08:06",
+    "start_seconds": 486,
+    "text_en": "where we can access it from another machine, we can share it with another developer.",
+    "text_pt": "armazená-lo no GitHub, onde podemos acessá-lo de outra máquina, podemos compartilhá-lo com outro desenvolvedor."
+  },
+  {
+    "timestamp": "08:10",
+    "start_seconds": 490,
+    "text_en": "And more importantly, if we lose access to maybe our own computer,",
+    "text_pt": "E o mais importante, se perdermos o acesso ao nosso próprio"
+  },
+  {
+    "timestamp": "08:13",
+    "start_seconds": 493,
+    "text_en": "or maybe we delete the folder or Claude messes up or something,",
+    "text_pt": "computador, ou talvez excluirmos a pasta ou Claude bagunçar ou algo"
+  },
+  {
+    "timestamp": "08:16",
+    "start_seconds": 496,
+    "text_en": "we can always get the repository or the code again by going to this website.",
+    "text_pt": "assim, podemos sempre obter o repositório ou o código novamente acessando este site."
+  },
+  {
+    "timestamp": "08:21",
+    "start_seconds": 501,
+    "text_en": "So go to GitHub, make an account.",
+    "text_pt": "Então vá ao GitHub, crie"
+  },
+  {
+    "timestamp": "08:22",
+    "start_seconds": 502,
+    "text_en": "It is completely free and I'm going to just quickly show you how to connect",
+    "text_pt": "uma conta. É totalmente gratuito e vou mostrar rapidamente como conectar"
+  },
+  {
+    "timestamp": "08:25",
+    "start_seconds": 505,
+    "text_en": "your GitHub account to your terminal here locally.",
+    "text_pt": "sua conta GitHub ao seu terminal aqui localmente."
+  },
+  {
+    "timestamp": "08:29",
+    "start_seconds": 509,
+    "text_en": "So you're able to use it kind of with Claude.",
+    "text_pt": "Então você pode usar isso com Claude."
+  },
+  {
+    "timestamp": "08:31",
+    "start_seconds": 511,
+    "text_en": "All right.",
+    "text_pt": "Tudo bem."
+  },
+  {
+    "timestamp": "08:31",
+    "start_seconds": 511,
+    "text_en": "So in order to connect git, which is running on our local computer to GitHub,",
+    "text_pt": "Então, para conectar o git, que está rodando em nosso computador local,"
+  },
+  {
+    "timestamp": "08:35",
+    "start_seconds": 515,
+    "text_en": "which is running in the web, what we need to do is run the following command which is g off log in.",
+    "text_pt": "ao GitHub, que está rodando na web, o que precisamos fazer é executar o seguinte"
+  },
+  {
+    "timestamp": "08:41",
+    "start_seconds": 521,
+    "text_en": "Now notice that I didn't know how to do this.",
+    "text_pt": "comando que é g off log in."
+  },
+  {
+    "timestamp": "08:43",
+    "start_seconds": 523,
+    "text_en": "So I just asked cloud code and it told me exactly what to run.",
+    "text_pt": "Então, perguntei ao código da nuvem e ele me disse exatamente o que"
+  },
+  {
+    "timestamp": "08:46",
+    "start_seconds": 526,
+    "text_en": "So what I'm going to do is type g auth log in like so.",
+    "text_pt": "executar. Então o que vou fazer é digitar g auth log"
+  },
+  {
+    "timestamp": "08:50",
+    "start_seconds": 530,
+    "text_en": "And then it should run this command for me.",
+    "text_pt": "in assim. E então ele deve executar este comando"
+  },
+  {
+    "timestamp": "08:52",
+    "start_seconds": 532,
+    "text_en": "And allow me to connect to GitHub. Okay.",
+    "text_pt": "para mim. E permita-me conectar ao GitHub. OK."
+  },
+  {
+    "timestamp": "08:54",
+    "start_seconds": 534,
+    "text_en": "So you can see that it's going to ask to run the command.",
+    "text_pt": "Então você pode ver que ele pedirá para executar o comando."
+  },
+  {
+    "timestamp": "08:56",
+    "start_seconds": 536,
+    "text_en": "So let's go ahead and type on. Yes.",
+    "text_pt": "Então vamos em frente e digitar. Sim."
+  },
+  {
+    "timestamp": "08:59",
+    "start_seconds": 539,
+    "text_en": "And in this case G was not found.",
+    "text_pt": "E neste caso G não foi"
+  },
+  {
+    "timestamp": "09:00",
+    "start_seconds": 540,
+    "text_en": "So it should go ahead and install that for me.",
+    "text_pt": "encontrado. Portanto, devo prosseguir e instalar isso para mim."
+  },
+  {
+    "timestamp": "09:03",
+    "start_seconds": 543,
+    "text_en": "So I'm just going to type option C so we can install that tool for me.",
+    "text_pt": "Então, vou digitar a opção C para que possamos instalar essa ferramenta para mim."
+  },
+  {
+    "timestamp": "09:06",
+    "start_seconds": 546,
+    "text_en": "Okay. So it looks like it was able to install that.",
+    "text_pt": "OK. Parece que foi possível instalar isso. E então"
+  },
+  {
+    "timestamp": "09:08",
+    "start_seconds": 548,
+    "text_en": "And then I'm going to go yes so that it can run that command.",
+    "text_pt": "irei sim para que ele possa executar esse comando. Tudo bem."
+  },
+  {
+    "timestamp": "09:10",
+    "start_seconds": 550,
+    "text_en": "All right.",
+    "text_pt": "Então observe"
+  },
+  {
+    "timestamp": "09:10",
+    "start_seconds": 550,
+    "text_en": "So notice it's giving me some output here where it says",
+    "text_pt": "que estou me dando uma saída aqui onde diz que"
+  },
+  {
+    "timestamp": "09:12",
+    "start_seconds": 552,
+    "text_en": "it wants me to go to this URL and then type in our one time code.",
+    "text_pt": "quer que eu vá para esta URL e digite nosso código único."
+  },
+  {
+    "timestamp": "09:16",
+    "start_seconds": 556,
+    "text_en": "So what we're going to do here is go we're going to select the account.",
+    "text_pt": "Então, o que vamos fazer aqui é selecionar a conta. Então,"
+  },
+  {
+    "timestamp": "09:19",
+    "start_seconds": 559,
+    "text_en": "So I'm going to go with tech with Tim.",
+    "text_pt": "vou usar tecnologia com Tim. E"
+  },
+  {
+    "timestamp": "09:21",
+    "start_seconds": 561,
+    "text_en": "And then I'm going to copy this code that it's giving me here.",
+    "text_pt": "então vou copiar esse código que está me dando aqui."
+  },
+  {
+    "timestamp": "09:24",
+    "start_seconds": 564,
+    "text_en": "So just copy that and paste it and press continue.",
+    "text_pt": "Então basta copiar e colar e pressionar continuar."
+  },
+  {
+    "timestamp": "09:27",
+    "start_seconds": 567,
+    "text_en": "And that should then authorize GitHub here in our terminal.",
+    "text_pt": "E isso deve autorizar o GitHub aqui em nosso terminal. Agora,"
+  },
+  {
+    "timestamp": "09:31",
+    "start_seconds": 571,
+    "text_en": "Now in order to do that I need just auth with mobile. So let me do that.",
+    "text_pt": "para fazer isso, preciso apenas de autenticação com celular. Então deixe-me fazer isso."
+  },
+  {
+    "timestamp": "09:34",
+    "start_seconds": 574,
+    "text_en": "All right. So it looks like we are all authenticated.",
+    "text_pt": "Tudo bem. Portanto, parece que estamos todos autenticados. Agora você"
+  },
+  {
+    "timestamp": "09:36",
+    "start_seconds": 576,
+    "text_en": "Now you can see that I was logged in as tech with Tim.",
+    "text_pt": "pode ver que eu estava logado como técnico com Tim."
+  },
+  {
+    "timestamp": "09:38",
+    "start_seconds": 578,
+    "text_en": "And now we have GitHub set up.",
+    "text_pt": "E agora temos o GitHub"
+  },
+  {
+    "timestamp": "09:40",
+    "start_seconds": 580,
+    "text_en": "I know it is a little bit of a pain to do this at the beginning, but trust me",
+    "text_pt": "configurado. Eu sei que é um pouco chato fazer isso no começo, mas acredite,"
+  },
+  {
+    "timestamp": "09:43",
+    "start_seconds": 583,
+    "text_en": "it is absolutely worth it because now anytime we use cloud, it can automatically save the code for us.",
+    "text_pt": "vale a pena porque agora, sempre que usarmos a nuvem, ela poderá salvar automaticamente o código para nós."
+  },
+  {
+    "timestamp": "09:48",
+    "start_seconds": 588,
+    "text_en": "A lot of other tutorials don't cover this.",
+    "text_pt": "Muitos outros tutoriais não cobrem isso. É por"
+  },
+  {
+    "timestamp": "09:50",
+    "start_seconds": 590,
+    "text_en": "That's why you're watching mine,",
+    "text_pt": "isso que você está assistindo o"
+  },
+  {
+    "timestamp": "09:51",
+    "start_seconds": 591,
+    "text_en": "because I want to go through it step by step, and I want you to get set up in one single video.",
+    "text_pt": "meu, porque quero passar por isso passo a passo e quero que você prepare tudo em um único"
+  },
+  {
+    "timestamp": "09:56",
+    "start_seconds": 596,
+    "text_en": "Now, I promise we can move on to some more features.",
+    "text_pt": "vídeo. Agora, prometo que podemos passar para mais alguns recursos."
+  },
+  {
+    "timestamp": "09:59",
+    "start_seconds": 599,
+    "text_en": "Okay, so let me close my browser.",
+    "text_pt": "Ok, então deixe-me fechar meu navegador."
+  },
+  {
+    "timestamp": "10:01",
+    "start_seconds": 601,
+    "text_en": "Let's open up cloud code a little bit larger.",
+    "text_pt": "Vamos abrir um pouco mais o código da"
+  },
+  {
+    "timestamp": "10:03",
+    "start_seconds": 603,
+    "text_en": "And I want to show you how most developers actually work with cloud code",
+    "text_pt": "nuvem. E quero mostrar como a maioria dos desenvolvedores realmente trabalha com código"
+  },
+  {
+    "timestamp": "10:07",
+    "start_seconds": 607,
+    "text_en": "now, rather than just using the terminal here.",
+    "text_pt": "em nuvem agora, em vez de apenas usar"
+  },
+  {
+    "timestamp": "10:09",
+    "start_seconds": 609,
+    "text_en": "A lot of times you're going to use this with a development environment.",
+    "text_pt": "o terminal aqui. Muitas vezes você usará isso com um ambiente de desenvolvimento."
+  },
+  {
+    "timestamp": "10:12",
+    "start_seconds": 612,
+    "text_en": "What I mean by that is you're likely going to use an editor like VSCode",
+    "text_pt": "O que quero dizer com isso é que você provavelmente usará um editor como VSCode"
+  },
+  {
+    "timestamp": "10:16",
+    "start_seconds": 616,
+    "text_en": "or a cursor or JetBrains IDE, or something along those lines.",
+    "text_pt": "ou um cursor ou JetBrains IDE, ou algo nesse sentido. Assim, você pode"
+  },
+  {
+    "timestamp": "10:20",
+    "start_seconds": 620,
+    "text_en": "So you can actually see what cloud code is doing and not just have this terminal view.",
+    "text_pt": "realmente ver o que o código da nuvem está fazendo e não apenas ter essa visualização do terminal."
+  },
+  {
+    "timestamp": "10:25",
+    "start_seconds": 625,
+    "text_en": "So for example, a very popular editor is Visual Studio Code.",
+    "text_pt": "Por exemplo, um editor muito popular é o Visual Studio"
+  },
+  {
+    "timestamp": "10:29",
+    "start_seconds": 629,
+    "text_en": "A recent version of that which is kind of AI enabled is cursor.",
+    "text_pt": "Code. Uma versão recente daquilo que é habilitado para IA é"
+  },
+  {
+    "timestamp": "10:32",
+    "start_seconds": 632,
+    "text_en": "So for example, you could open up cursor.",
+    "text_pt": "o cursor. Por exemplo, você pode abrir"
+  },
+  {
+    "timestamp": "10:34",
+    "start_seconds": 634,
+    "text_en": "I'm just going to open up an editor right here.",
+    "text_pt": "o cursor. Vou abrir um editor aqui mesmo."
+  },
+  {
+    "timestamp": "10:36",
+    "start_seconds": 636,
+    "text_en": "And if you want a recommendation",
+    "text_pt": "E se você quiser uma recomendação,"
+  },
+  {
+    "timestamp": "10:38",
+    "start_seconds": 638,
+    "text_en": "I would suggest just download cursor because this is the best one to use for right now.",
+    "text_pt": "sugiro apenas baixar o cursor porque este é o melhor para usar no momento. Isso"
+  },
+  {
+    "timestamp": "10:42",
+    "start_seconds": 642,
+    "text_en": "That also has its own AI features, but we can augment that by just using cloud code.",
+    "text_pt": "também tem seus próprios recursos de IA, mas podemos aumentá-los apenas usando código em nuvem."
+  },
+  {
+    "timestamp": "10:47",
+    "start_seconds": 647,
+    "text_en": "So you can see that I have, what is it?",
+    "text_pt": "Então você pode ver que eu tenho, o"
+  },
+  {
+    "timestamp": "10:49",
+    "start_seconds": 649,
+    "text_en": "Kind of like a repository set up now when you open up one of these applications.",
+    "text_pt": "que é? É como um repositório configurado agora quando você abre um desses aplicativos. Então, digamos"
+  },
+  {
+    "timestamp": "10:53",
+    "start_seconds": 653,
+    "text_en": "So let's say you download Curser or you download VS code or you get any code editor",
+    "text_pt": "que você baixe o Curser ou baixe o código VS ou obtenha qualquer editor de código"
+  },
+  {
+    "timestamp": "10:58",
+    "start_seconds": 658,
+    "text_en": "on your computer, what you can do is you can go to file, you can go to open folder,",
+    "text_pt": "em seu computador, o que você pode fazer é ir para o arquivo, pode ir para"
+  },
+  {
+    "timestamp": "11:04",
+    "start_seconds": 664,
+    "text_en": "you can go to your desktop or any location that you're going to be able to find in the future.",
+    "text_pt": "a pasta aberta, pode ir para sua área de trabalho ou qualquer local que você poderá encontrar no futuro."
+  },
+  {
+    "timestamp": "11:08",
+    "start_seconds": 668,
+    "text_en": "And we could do something like clawed code test.",
+    "text_pt": "E poderíamos fazer algo como um teste de código com"
+  },
+  {
+    "timestamp": "11:11",
+    "start_seconds": 671,
+    "text_en": "And I'm just going to make a new folder.",
+    "text_pt": "garras. E vou apenas criar uma nova pasta."
+  },
+  {
+    "timestamp": "11:13",
+    "start_seconds": 673,
+    "text_en": "How do I already have a folder called Code test?",
+    "text_pt": "Como já tenho uma pasta chamada Code test? OK. Bom,"
+  },
+  {
+    "timestamp": "11:16",
+    "start_seconds": 676,
+    "text_en": "Okay. Well, that was not what I wanted.",
+    "text_pt": "não era isso que eu queria. Então vamos"
+  },
+  {
+    "timestamp": "11:19",
+    "start_seconds": 679,
+    "text_en": "So let's go.",
+    "text_pt": "lá. Teste"
+  },
+  {
+    "timestamp": "11:20",
+    "start_seconds": 680,
+    "text_en": "Cloud code test two.",
+    "text_pt": "de código de nuvem dois."
+  },
+  {
+    "timestamp": "11:22",
+    "start_seconds": 682,
+    "text_en": "All right. So I'm going to make a new folder.",
+    "text_pt": "Tudo bem. Então vou criar uma nova pasta."
+  },
+  {
+    "timestamp": "11:24",
+    "start_seconds": 684,
+    "text_en": "The reason I'm making a new folder is this is where I want my coding project to live.",
+    "text_pt": "A razão pela qual estou criando uma nova pasta é onde quero que meu projeto"
+  },
+  {
+    "timestamp": "11:28",
+    "start_seconds": 688,
+    "text_en": "I'm going to select that and then I'm going to open it.",
+    "text_pt": "de codificação fique. Vou selecioná-lo e depois abri-lo. Então, novamente,"
+  },
+  {
+    "timestamp": "11:30",
+    "start_seconds": 690,
+    "text_en": "So again I've just open my code editor.",
+    "text_pt": "acabei de abrir meu editor de código."
+  },
+  {
+    "timestamp": "11:32",
+    "start_seconds": 692,
+    "text_en": "Doesn't matter which one you're using.",
+    "text_pt": "Não importa qual você está usando."
+  },
+  {
+    "timestamp": "11:34",
+    "start_seconds": 694,
+    "text_en": "You can ignore all of the crazy features from cursor here.",
+    "text_pt": "Você pode ignorar todos os recursos malucos do cursor aqui."
+  },
+  {
+    "timestamp": "11:37",
+    "start_seconds": 697,
+    "text_en": "And we can close some of these windows.",
+    "text_pt": "E podemos fechar algumas dessas janelas."
+  },
+  {
+    "timestamp": "11:39",
+    "start_seconds": 699,
+    "text_en": "And kind of just hide them.",
+    "text_pt": "E meio que apenas"
+  },
+  {
+    "timestamp": "11:40",
+    "start_seconds": 700,
+    "text_en": "And what we can do is we can open up the terminal directly inside of here.",
+    "text_pt": "escondê-los. E o que podemos fazer é abrir o terminal diretamente aqui dentro."
+  },
+  {
+    "timestamp": "11:44",
+    "start_seconds": 704,
+    "text_en": "So if you're working inside of cursor or VSCode or windsurf, so something that is like",
+    "text_pt": "Então, se você estiver trabalhando dentro do cursor ou VSCode ou windsurf, algo que seja como uma"
+  },
+  {
+    "timestamp": "11:50",
+    "start_seconds": 710,
+    "text_en": "a vs code fork, because a lot of these editors are based on Visual Studio Code.",
+    "text_pt": "bifurcação de código vs, porque muitos desses editores são baseados no Visual Studio Code. O que"
+  },
+  {
+    "timestamp": "11:55",
+    "start_seconds": 715,
+    "text_en": "What you can do to open the terminal is you can try to find kind of like a drag bar",
+    "text_pt": "você pode fazer para abrir o terminal é tentar encontrar uma espécie de barra de arrastar"
+  },
+  {
+    "timestamp": "11:58",
+    "start_seconds": 718,
+    "text_en": "at the bottom of the screen, but you can see I'm having trouble finding it here.",
+    "text_pt": "na parte inferior da tela, mas você pode ver que estou tendo problemas para encontrá-la aqui."
+  },
+  {
+    "timestamp": "12:02",
+    "start_seconds": 722,
+    "text_en": "Instead, you can hit control and then backtick on your keyboard",
+    "text_pt": "Em vez disso, você pode pressionar o controle e, em seguida, pressionar"
+  },
+  {
+    "timestamp": "12:06",
+    "start_seconds": 726,
+    "text_en": "or command, and then backtick on your keyboard, and it should open up",
+    "text_pt": "crase no teclado ou comando e, em seguida, pressionar crase no teclado, e"
+  },
+  {
+    "timestamp": "12:09",
+    "start_seconds": 729,
+    "text_en": "a terminal directly inside of this folder that you opened for you.",
+    "text_pt": "isso deve abrir um terminal diretamente dentro desta pasta que você abriu"
+  },
+  {
+    "timestamp": "12:13",
+    "start_seconds": 733,
+    "text_en": "Now, if that's difficult for you, you can hit Ctrl, shift P,",
+    "text_pt": "para você. Agora, se isso for difícil para você, você pode"
+  },
+  {
+    "timestamp": "12:18",
+    "start_seconds": 738,
+    "text_en": "or Command Shift P if you're on Mac and you can type terminal",
+    "text_pt": "pressionar Ctrl, shift P ou Command Shift P se estiver no Mac"
+  },
+  {
+    "timestamp": "12:22",
+    "start_seconds": 742,
+    "text_en": "and then create new terminal, and then just choose one of the instances.",
+    "text_pt": "e digitar terminal e criar um novo terminal, e então escolher uma das instâncias."
+  },
+  {
+    "timestamp": "12:25",
+    "start_seconds": 745,
+    "text_en": "So command prompt or PowerShell.",
+    "text_pt": "Portanto, prompt de comando ou PowerShell."
+  },
+  {
+    "timestamp": "12:27",
+    "start_seconds": 747,
+    "text_en": "If you're on Mac or Linux again you just choose probably the first one that pops up.",
+    "text_pt": "Se você estiver no Mac ou Linux novamente, escolha provavelmente o primeiro que aparecer. Então, digamos que"
+  },
+  {
+    "timestamp": "12:32",
+    "start_seconds": 752,
+    "text_en": "So let's say I do that and you can see it makes a new terminal for me.",
+    "text_pt": "eu faça isso e você pode ver que isso cria um novo terminal para"
+  },
+  {
+    "timestamp": "12:34",
+    "start_seconds": 754,
+    "text_en": "And I'll be able to see it on my screen.",
+    "text_pt": "mim. E poderei ver isso na minha tela."
+  },
+  {
+    "timestamp": "12:37",
+    "start_seconds": 757,
+    "text_en": "Now if you want to see the left hand side bar, which is the file viewer,",
+    "text_pt": "Agora, se você quiser ver a barra lateral esquerda, que é o visualizador de"
+  },
+  {
+    "timestamp": "12:40",
+    "start_seconds": 760,
+    "text_en": "you can press this button right here.",
+    "text_pt": "arquivos, você pode pressionar este botão aqui."
+  },
+  {
+    "timestamp": "12:42",
+    "start_seconds": 762,
+    "text_en": "Again this is in cursor, but you can do this in another editor as well.",
+    "text_pt": "Novamente, isso está no cursor, mas você também pode fazer isso em outro editor."
+  },
+  {
+    "timestamp": "12:45",
+    "start_seconds": 765,
+    "text_en": "And you're building.",
+    "text_pt": "E você está construindo."
+  },
+  {
+    "timestamp": "12:46",
+    "start_seconds": 766,
+    "text_en": "Now see all the files that cloud code will generate for us in one minute.",
+    "text_pt": "Agora veja todos os arquivos que o código da nuvem irá gerar para nós em"
+  },
+  {
+    "timestamp": "12:50",
+    "start_seconds": 770,
+    "text_en": "Now again if you can't find this button you can hit",
+    "text_pt": "um minuto. Agora, novamente, se você não conseguir encontrar este botão,"
+  },
+  {
+    "timestamp": "12:53",
+    "start_seconds": 773,
+    "text_en": "Ctrl B or command B on your keyboard",
+    "text_pt": "você pode pressionar Ctrl B ou comando B"
+  },
+  {
+    "timestamp": "12:56",
+    "start_seconds": 776,
+    "text_en": "and that will toggle the file view on the left hand side.",
+    "text_pt": "no teclado e isso alternará a visualização do arquivo no lado esquerdo."
+  },
+  {
+    "timestamp": "12:59",
+    "start_seconds": 779,
+    "text_en": "Now I know it seems complicated, but most of the time you're going to want to work like this",
+    "text_pt": "Agora eu sei que parece complicado, mas na maioria das vezes você vai querer trabalhar assim porque"
+  },
+  {
+    "timestamp": "13:03",
+    "start_seconds": 783,
+    "text_en": "because you want to see the files",
+    "text_pt": "quer ver os arquivos e realmente"
+  },
+  {
+    "timestamp": "13:05",
+    "start_seconds": 785,
+    "text_en": "and actually know what cloud code is doing, especially if you're unfamiliar with the terminal.",
+    "text_pt": "saber o que o código da nuvem está fazendo, especialmente se você não estiver familiarizado com o terminal."
+  },
+  {
+    "timestamp": "13:09",
+    "start_seconds": 789,
+    "text_en": "I would highly suggest opening this in some kind of user interface",
+    "text_pt": "Eu sugiro abrir isso em algum tipo de interface de usuário como"
+  },
+  {
+    "timestamp": "13:12",
+    "start_seconds": 792,
+    "text_en": "like we've done here, so you actually know what's going on.",
+    "text_pt": "fizemos aqui, para que você realmente saiba o que está acontecendo."
+  },
+  {
+    "timestamp": "13:16",
+    "start_seconds": 796,
+    "text_en": "Okay, so now we're inside of a terminal.",
+    "text_pt": "Ok, agora estamos dentro de um terminal."
+  },
+  {
+    "timestamp": "13:18",
+    "start_seconds": 798,
+    "text_en": "This is the exact same environment I was just showing you before, except it's now in this code editor.",
+    "text_pt": "Este é exatamente o mesmo ambiente que eu estava mostrando antes, exceto que agora está neste editor de código."
+  },
+  {
+    "timestamp": "13:24",
+    "start_seconds": 804,
+    "text_en": "Right. And again, this code editor is called cursor.",
+    "text_pt": "Certo. E novamente, esse editor de código é chamado de"
+  },
+  {
+    "timestamp": "13:26",
+    "start_seconds": 806,
+    "text_en": "In case anyone is confused, if you just go you can type cursor",
+    "text_pt": "cursor. Caso alguém esteja confuso, basta ir você pode digitar download do"
+  },
+  {
+    "timestamp": "13:31",
+    "start_seconds": 811,
+    "text_en": "download on the internet and you can download it super easily.",
+    "text_pt": "cursor na internet e fazer o download com muita facilidade. Basta abri-lo"
+  },
+  {
+    "timestamp": "13:34",
+    "start_seconds": 814,
+    "text_en": "Just open it up and literally all you have to do is just go file, open",
+    "text_pt": "e literalmente tudo o que você precisa fazer é acessar o arquivo, abrir a"
+  },
+  {
+    "timestamp": "13:37",
+    "start_seconds": 817,
+    "text_en": "folder, open a new location and you can start writing code.",
+    "text_pt": "pasta, abrir um novo local e começar a escrever o código."
+  },
+  {
+    "timestamp": "13:41",
+    "start_seconds": 821,
+    "text_en": "So from this terminal we're going to type plot.",
+    "text_pt": "Então, neste terminal vamos digitar plot. E quando"
+  },
+  {
+    "timestamp": "13:43",
+    "start_seconds": 823,
+    "text_en": "And when we type clod it's going to open up cloud code just like it did before.",
+    "text_pt": "digitamos clod ele abre o código da nuvem como antes. Mas agora neste"
+  },
+  {
+    "timestamp": "13:47",
+    "start_seconds": 827,
+    "text_en": "But now in this location.",
+    "text_pt": "local. Então, a mesma"
+  },
+  {
+    "timestamp": "13:48",
+    "start_seconds": 828,
+    "text_en": "So same thing I'm going to press the folder.",
+    "text_pt": "coisa, vou pressionar a pasta. E agora"
+  },
+  {
+    "timestamp": "13:50",
+    "start_seconds": 830,
+    "text_en": "And now I have cloud code in my terminal and I can start getting it",
+    "text_pt": "eu tenho o código da nuvem em meu terminal e posso"
+  },
+  {
+    "timestamp": "13:53",
+    "start_seconds": 833,
+    "text_en": "to actually generate some stuff.",
+    "text_pt": "começar a gerar algumas coisas."
+  },
+  {
+    "timestamp": "13:55",
+    "start_seconds": 835,
+    "text_en": "So now we're going to actually start using it.",
+    "text_pt": "Então agora vamos realmente começar a usá-lo."
+  },
+  {
+    "timestamp": "13:56",
+    "start_seconds": 836,
+    "text_en": "We're going to start building a project.",
+    "text_pt": "Vamos começar a construir um projeto."
+  },
+  {
+    "timestamp": "13:58",
+    "start_seconds": 838,
+    "text_en": "And I'm going to start walking through a lot of the features that it has.",
+    "text_pt": "E vou começar a examinar vários dos recursos que ele possui."
+  },
+  {
+    "timestamp": "14:00",
+    "start_seconds": 840,
+    "text_en": "Now you'll actually notice that because I'm using it in this editor now it's detecting that.",
+    "text_pt": "Agora você realmente notará que, como estou usando este editor, ele está detectando isso."
+  },
+  {
+    "timestamp": "14:05",
+    "start_seconds": 845,
+    "text_en": "And it's telling me that I can actually have some special features",
+    "text_pt": "E está me dizendo que posso ter alguns recursos especiais aqui no"
+  },
+  {
+    "timestamp": "14:08",
+    "start_seconds": 848,
+    "text_en": "here in Cloud code because I'm working in cursor.",
+    "text_pt": "código da nuvem porque estou trabalhando no cursor. Então"
+  },
+  {
+    "timestamp": "14:11",
+    "start_seconds": 851,
+    "text_en": "So what I'm going to do is just go ahead and press enter.",
+    "text_pt": "o que vou fazer é ir em frente e pressionar enter."
+  },
+  {
+    "timestamp": "14:14",
+    "start_seconds": 854,
+    "text_en": "And now we can just start working.",
+    "text_pt": "E agora podemos simplesmente começar a trabalhar."
+  },
+  {
+    "timestamp": "14:15",
+    "start_seconds": 855,
+    "text_en": "But again it's going to be able to reference the files that we actually looking at in cursor.",
+    "text_pt": "Mas, novamente, será possível fazer referência aos arquivos que estamos visualizando no cursor. Isso"
+  },
+  {
+    "timestamp": "14:20",
+    "start_seconds": 860,
+    "text_en": "It's going to show us the changes that it's making.",
+    "text_pt": "vai nos mostrar as mudanças que está fazendo."
+  },
+  {
+    "timestamp": "14:23",
+    "start_seconds": 863,
+    "text_en": "It's very powerful.",
+    "text_pt": "É muito poderoso."
+  },
+  {
+    "timestamp": "14:24",
+    "start_seconds": 864,
+    "text_en": "All right.",
+    "text_pt": "Tudo bem."
+  },
+  {
+    "timestamp": "14:24",
+    "start_seconds": 864,
+    "text_en": "So without further ado, let's get this to do something.",
+    "text_pt": "Então, sem mais delongas, vamos fazer alguma coisa."
+  },
+  {
+    "timestamp": "14:27",
+    "start_seconds": 867,
+    "text_en": "And let's say that we just want to create a simple web based game.",
+    "text_pt": "E digamos que queremos apenas criar um jogo simples baseado na web. Vamos"
+  },
+  {
+    "timestamp": "14:31",
+    "start_seconds": 871,
+    "text_en": "Let's go with something really, really simple for right now.",
+    "text_pt": "com algo muito, muito simples por enquanto. Como talvez o jogo"
+  },
+  {
+    "timestamp": "14:33",
+    "start_seconds": 873,
+    "text_en": "Like maybe tic tac toe and just ask it to make that game.",
+    "text_pt": "da velha e apenas pedir para fazer aquele jogo. Então vou"
+  },
+  {
+    "timestamp": "14:37",
+    "start_seconds": 877,
+    "text_en": "So I'm going to say make tic tac toe",
+    "text_pt": "dizer para fazer o jogo da velha"
+  },
+  {
+    "timestamp": "14:40",
+    "start_seconds": 880,
+    "text_en": "that I can play on the web.",
+    "text_pt": "que posso jogar na web."
+  },
+  {
+    "timestamp": "14:43",
+    "start_seconds": 883,
+    "text_en": "Okay.",
+    "text_pt": "OK."
+  },
+  {
+    "timestamp": "14:43",
+    "start_seconds": 883,
+    "text_en": "Now I'm going to start going through all of the other configurations and settings.",
+    "text_pt": "Agora vou começar a examinar todas as outras configurações e ajustes. Mas, por enquanto,"
+  },
+  {
+    "timestamp": "14:46",
+    "start_seconds": 886,
+    "text_en": "But for now, let's just run this",
+    "text_pt": "vamos executar isso para que"
+  },
+  {
+    "timestamp": "14:47",
+    "start_seconds": 887,
+    "text_en": "so we can see some kind of output and know that we're actually getting some result.",
+    "text_pt": "possamos ver algum tipo de resultado e saber que estamos realmente obtendo algum resultado."
+  },
+  {
+    "timestamp": "14:51",
+    "start_seconds": 891,
+    "text_en": "Okay.",
+    "text_pt": "Ok."
+  },
+  {
+    "timestamp": "14:52",
+    "start_seconds": 892,
+    "text_en": "So you can see that it's going to start doing this and generating some output.",
+    "text_pt": "Então você pode ver que vai começar a fazer isso e gerar alguma saída."
+  },
+  {
+    "timestamp": "14:55",
+    "start_seconds": 895,
+    "text_en": "Now, something worth noting here is that if you wanted to,",
+    "text_pt": "Agora, algo que vale a pena notar aqui é que, se"
+  },
+  {
+    "timestamp": "14:58",
+    "start_seconds": 898,
+    "text_en": "you actually could run cloud code multiple times in parallel.",
+    "text_pt": "você quisesse, poderia executar código em nuvem várias vezes em paralelo."
+  },
+  {
+    "timestamp": "15:02",
+    "start_seconds": 902,
+    "text_en": "So while I was creating tic tac toe, for example, I could create another game.",
+    "text_pt": "Então, enquanto eu estava criando o jogo da velha, por exemplo, eu poderia criar outro jogo."
+  },
+  {
+    "timestamp": "15:06",
+    "start_seconds": 906,
+    "text_en": "I could audit the code base.",
+    "text_pt": "Eu poderia auditar a base de"
+  },
+  {
+    "timestamp": "15:08",
+    "start_seconds": 908,
+    "text_en": "I could, you know, change something, whatever.",
+    "text_pt": "código. Eu poderia, você sabe, mudar alguma coisa, tanto"
+  },
+  {
+    "timestamp": "15:10",
+    "start_seconds": 910,
+    "text_en": "And that's one of the things that makes this quite powerful.",
+    "text_pt": "faz. E essa é uma das coisas que torna isso bastante poderoso."
+  },
+  {
+    "timestamp": "15:13",
+    "start_seconds": 913,
+    "text_en": "I'm not going to do that right now because again, we're still at Kenner level.",
+    "text_pt": "Não vou fazer isso agora porque, novamente, ainda estamos no nível de Kenner. Mas"
+  },
+  {
+    "timestamp": "15:16",
+    "start_seconds": 916,
+    "text_en": "But you get the idea.",
+    "text_pt": "você entendeu. OK. Então"
+  },
+  {
+    "timestamp": "15:18",
+    "start_seconds": 918,
+    "text_en": "Okay. So you can see that it's generated some code for me here.",
+    "text_pt": "você pode ver que algum código foi gerado para mim aqui."
+  },
+  {
+    "timestamp": "15:21",
+    "start_seconds": 921,
+    "text_en": "It's kind of giving it right in the terminal, and it's asking me to allow it to create tic tac toe.",
+    "text_pt": "É meio que dar certo no terminal e me pedir para permitir a criação do jogo da velha."
+  },
+  {
+    "timestamp": "15:27",
+    "start_seconds": 927,
+    "text_en": "Now, what I'm going to do is just go here and I'm going to go, yes, allow all edits during the session.",
+    "text_pt": "Agora, o que vou fazer é ir aqui e vou, sim, permitir todas as edições durante a sessão. E"
+  },
+  {
+    "timestamp": "15:32",
+    "start_seconds": 932,
+    "text_en": "And notice I'm using my arrow keys here to navigate.",
+    "text_pt": "observe que estou usando minhas teclas de seta aqui"
+  },
+  {
+    "timestamp": "15:34",
+    "start_seconds": 934,
+    "text_en": "So I'm going to press enter.",
+    "text_pt": "para navegar. Então vou pressionar"
+  },
+  {
+    "timestamp": "15:35",
+    "start_seconds": 935,
+    "text_en": "So I can just go ahead and start writing this without asking me for permission okay.",
+    "text_pt": "enter. Então, posso simplesmente prosseguir e começar a escrever isso sem me pedir permissão, ok."
+  },
+  {
+    "timestamp": "15:39",
+    "start_seconds": 939,
+    "text_en": "So you can see that it says it has created this for me.",
+    "text_pt": "Então você pode ver que ele diz que criou isso para"
+  },
+  {
+    "timestamp": "15:42",
+    "start_seconds": 942,
+    "text_en": "And it's telling me that the way that I can run this is to start",
+    "text_pt": "mim. E está me dizendo que a maneira de executar isso é iniciar"
+  },
+  {
+    "timestamp": "15:45",
+    "start_seconds": 945,
+    "text_en": "the Tic TAC token, HTML or double click the file in the file Explorer.",
+    "text_pt": "o token Tic TAC, HTML ou clicar duas vezes no arquivo no File Explorer. Então,"
+  },
+  {
+    "timestamp": "15:49",
+    "start_seconds": 949,
+    "text_en": "So I'm just going to say start tic tac toe dot HTML.",
+    "text_pt": "vou apenas dizer para iniciar o HTML do jogo da velha."
+  },
+  {
+    "timestamp": "15:55",
+    "start_seconds": 955,
+    "text_en": "I'm not sure if that's actually the correct command,",
+    "text_pt": "Não tenho certeza se esse é realmente o comando correto,"
+  },
+  {
+    "timestamp": "15:57",
+    "start_seconds": 957,
+    "text_en": "but let's just run that and see if that's going to do anything for me.",
+    "text_pt": "mas vamos executá-lo e ver se isso fará alguma coisa por mim. Diz"
+  },
+  {
+    "timestamp": "16:01",
+    "start_seconds": 961,
+    "text_en": "It says open it in the default browser. Yes.",
+    "text_pt": "para abri-lo no navegador padrão. Sim. E não"
+  },
+  {
+    "timestamp": "16:03",
+    "start_seconds": 963,
+    "text_en": "And don't ask again for this.",
+    "text_pt": "peça isso novamente. E vamos"
+  },
+  {
+    "timestamp": "16:05",
+    "start_seconds": 965,
+    "text_en": "And let's see if it can open this up for me.",
+    "text_pt": "ver se isso pode abrir isso para mim."
+  },
+  {
+    "timestamp": "16:07",
+    "start_seconds": 967,
+    "text_en": "And I can run it okay.",
+    "text_pt": "E posso executá-lo bem."
+  },
+  {
+    "timestamp": "16:09",
+    "start_seconds": 969,
+    "text_en": "And you can see this is my browser.",
+    "text_pt": "E você pode ver que este"
+  },
+  {
+    "timestamp": "16:10",
+    "start_seconds": 970,
+    "text_en": "And we have the tac toe which has now been created, which looks pretty good.",
+    "text_pt": "é o meu navegador. E temos o tac toe que agora foi criado,"
+  },
+  {
+    "timestamp": "16:14",
+    "start_seconds": 974,
+    "text_en": "We can generate a new game. You get the idea.",
+    "text_pt": "que parece muito bom. Podemos gerar um novo"
+  },
+  {
+    "timestamp": "16:17",
+    "start_seconds": 977,
+    "text_en": "Now, the one thing that I want to bring your attention to here is that as soon as we started",
+    "text_pt": "jogo. Você entendeu. Agora, a única coisa que quero chamar a atenção aqui é que assim"
+  },
+  {
+    "timestamp": "16:20",
+    "start_seconds": 980,
+    "text_en": "running this, a Doc Claude folder was automatically created for us",
+    "text_pt": "que começamos a rodar isso, uma pasta Doc Claude foi criada automaticamente"
+  },
+  {
+    "timestamp": "16:24",
+    "start_seconds": 984,
+    "text_en": "in the directory where we're working, as well as the code that was generated.",
+    "text_pt": "para nós no diretório onde estamos trabalhando, assim como o código que foi gerado."
+  },
+  {
+    "timestamp": "16:29",
+    "start_seconds": 989,
+    "text_en": "Right. So you can see tic tac toe now has been written.",
+    "text_pt": "Certo. Então você pode ver que o jogo da velha agora foi"
+  },
+  {
+    "timestamp": "16:32",
+    "start_seconds": 992,
+    "text_en": "So this is pretty cool.",
+    "text_pt": "escrito. Então isso é muito"
+  },
+  {
+    "timestamp": "16:33",
+    "start_seconds": 993,
+    "text_en": "And this is the reason why you would do this inside of a code editor.",
+    "text_pt": "legal. E esta é a razão pela qual você faria isso dentro de um"
+  },
+  {
+    "timestamp": "16:37",
+    "start_seconds": 997,
+    "text_en": "So you're able to actually see the changes in the code that's being generated in real time.",
+    "text_pt": "editor de código. Assim, você pode realmente ver as alterações no código que está sendo gerado em tempo real."
+  },
+  {
+    "timestamp": "16:42",
+    "start_seconds": 1002,
+    "text_en": "Again, you don't need to do that.",
+    "text_pt": "Novamente, você não precisa fazer"
+  },
+  {
+    "timestamp": "16:43",
+    "start_seconds": 1003,
+    "text_en": "But that's what many people like to do when they're using a tool like this.",
+    "text_pt": "isso. Mas é isso que muitas pessoas gostam de fazer quando usam"
+  },
+  {
+    "timestamp": "16:47",
+    "start_seconds": 1007,
+    "text_en": "Okay. So we've got something created",
+    "text_pt": "uma ferramenta como esta. OK. Então,"
+  },
+  {
+    "timestamp": "16:48",
+    "start_seconds": 1008,
+    "text_en": "now we need to start going through a lot of the different configuration and setups.",
+    "text_pt": "criamos algo e agora precisamos começar a passar por muitas configurações e ajustes diferentes."
+  },
+  {
+    "timestamp": "16:52",
+    "start_seconds": 1012,
+    "text_en": "Now keep in mind if you don't know how to do something, just ask Claude to help you.",
+    "text_pt": "Agora lembre-se que se você não sabe fazer alguma coisa, basta pedir ajuda ao Claude."
+  },
+  {
+    "timestamp": "16:56",
+    "start_seconds": 1016,
+    "text_en": "It can help you.",
+    "text_pt": "Isso pode ajudá-lo."
+  },
+  {
+    "timestamp": "16:57",
+    "start_seconds": 1017,
+    "text_en": "It can change configurations. It can set stuff up for you.",
+    "text_pt": "Ele pode alterar configurações. Ele pode configurar coisas para você. Mas"
+  },
+  {
+    "timestamp": "17:00",
+    "start_seconds": 1020,
+    "text_en": "But of course it's useful to know the basics.",
+    "text_pt": "é claro que é útil conhecer o básico."
+  },
+  {
+    "timestamp": "17:02",
+    "start_seconds": 1022,
+    "text_en": "So inside of here, as you already saw, you can just type human language and you will get some output.",
+    "text_pt": "Então, aqui dentro, como você já viu, você pode simplesmente digitar a linguagem humana e obterá algum resultado. No"
+  },
+  {
+    "timestamp": "17:07",
+    "start_seconds": 1027,
+    "text_en": "However you can also type slash help.",
+    "text_pt": "entanto, você também pode digitar barra de"
+  },
+  {
+    "timestamp": "17:10",
+    "start_seconds": 1030,
+    "text_en": "Let's start with that.",
+    "text_pt": "ajuda. Vamos começar com"
+  },
+  {
+    "timestamp": "17:11",
+    "start_seconds": 1031,
+    "text_en": "And this is going to give you a general kind of shortcut or list of commands.",
+    "text_pt": "isso. E isso lhe dará um tipo geral de atalho ou lista de comandos."
+  },
+  {
+    "timestamp": "17:14",
+    "start_seconds": 1034,
+    "text_en": "And things you can do in Claude.",
+    "text_pt": "E coisas que você pode fazer"
+  },
+  {
+    "timestamp": "17:16",
+    "start_seconds": 1036,
+    "text_en": "So you can see that I can toggle between a few different things here.",
+    "text_pt": "em Claude. Então você pode ver que posso alternar entre algumas coisas diferentes"
+  },
+  {
+    "timestamp": "17:19",
+    "start_seconds": 1039,
+    "text_en": "And you'll notice that if I put an exclamation point, this is going to put me in bash mode.",
+    "text_pt": "aqui. E você notará que se eu colocar um ponto de exclamação, isso me colocará no modo"
+  },
+  {
+    "timestamp": "17:23",
+    "start_seconds": 1043,
+    "text_en": "If I do a slash, this is going to allow me to type different commands.",
+    "text_pt": "bash. Se eu fizer uma barra, isso me permitirá digitar comandos diferentes."
+  },
+  {
+    "timestamp": "17:26",
+    "start_seconds": 1046,
+    "text_en": "If I do an ad, this is going to allow me to reference various files or paths.",
+    "text_pt": "Se eu fizer um anúncio, isso me permitirá fazer referência a vários arquivos ou caminhos. Se eu"
+  },
+  {
+    "timestamp": "17:30",
+    "start_seconds": 1050,
+    "text_en": "If I do an ampersand, this is going to be for background",
+    "text_pt": "fizer um e comercial, isso será para tarefas em segundo plano ou atalhos"
+  },
+  {
+    "timestamp": "17:33",
+    "start_seconds": 1053,
+    "text_en": "tasks or keybinds or whatever that says I think.",
+    "text_pt": "de teclado ou o que quer que diga, eu acho. Então,"
+  },
+  {
+    "timestamp": "17:36",
+    "start_seconds": 1056,
+    "text_en": "So for background new line.",
+    "text_pt": "para a nova linha de fundo."
+  },
+  {
+    "timestamp": "17:37",
+    "start_seconds": 1057,
+    "text_en": "Not exactly sure what that means.",
+    "text_pt": "Não tenho certeza do que isso"
+  },
+  {
+    "timestamp": "17:38",
+    "start_seconds": 1058,
+    "text_en": "Actually, I've never used the ampersand.",
+    "text_pt": "significa. Na verdade, nunca usei o e"
+  },
+  {
+    "timestamp": "17:40",
+    "start_seconds": 1060,
+    "text_en": "Continuing we go to commands and if I scroll down",
+    "text_pt": "comercial. Continuando, vamos para os comandos e se"
+  },
+  {
+    "timestamp": "17:43",
+    "start_seconds": 1063,
+    "text_en": "here, you can see there is a ton of different commands that I can run.",
+    "text_pt": "eu rolar até aqui, você verá que há vários comandos diferentes que"
+  },
+  {
+    "timestamp": "17:46",
+    "start_seconds": 1066,
+    "text_en": "We cannot possibly go over all of them in this video, but I will show you a bunch of them",
+    "text_pt": "posso executar. Não podemos abordar todos eles neste vídeo, mas vou mostrar alguns deles que"
+  },
+  {
+    "timestamp": "17:51",
+    "start_seconds": 1071,
+    "text_en": "that are useful. So if you're ever like, how do I do something?",
+    "text_pt": "são úteis. Então, se você quiser, como faço alguma coisa?"
+  },
+  {
+    "timestamp": "17:53",
+    "start_seconds": 1073,
+    "text_en": "Or I wonder what's possible type slash commands and you can see a bunch of stuff pops up",
+    "text_pt": "Ou eu me pergunto o que são possíveis comandos de barra e você pode ver"
+  },
+  {
+    "timestamp": "17:58",
+    "start_seconds": 1078,
+    "text_en": "and you're probably going to learn something just by looking through this menu and then custom commands.",
+    "text_pt": "um monte de coisas aparecendo e provavelmente aprenderá algo apenas olhando através deste menu e depois comandos personalizados."
+  },
+  {
+    "timestamp": "18:03",
+    "start_seconds": 1083,
+    "text_en": "Of course, you can make your own commands.",
+    "text_pt": "Claro, você pode criar seus próprios comandos."
+  },
+  {
+    "timestamp": "18:04",
+    "start_seconds": 1084,
+    "text_en": "We're not going to go over that right now.",
+    "text_pt": "Não vamos abordar isso agora. OK. Portanto,"
+  },
+  {
+    "timestamp": "18:06",
+    "start_seconds": 1086,
+    "text_en": "Okay. So first thing that you want to be aware of",
+    "text_pt": "a primeira coisa que você deve saber são os"
+  },
+  {
+    "timestamp": "18:08",
+    "start_seconds": 1088,
+    "text_en": "is the different modes that you can use inside of cloud code.",
+    "text_pt": "diferentes modos que você pode usar dentro do código da nuvem."
+  },
+  {
+    "timestamp": "18:12",
+    "start_seconds": 1092,
+    "text_en": "You can have a planning mode, you can have an asking mode and you can have a coding mode.",
+    "text_pt": "Você pode ter um modo de planejamento, um modo de pergunta e um modo de codificação."
+  },
+  {
+    "timestamp": "18:16",
+    "start_seconds": 1096,
+    "text_en": "Now the ask mode is the default mode where it's going to ask you",
+    "text_pt": "Agora, o modo perguntar é o modo padrão, onde ele perguntará antes"
+  },
+  {
+    "timestamp": "18:19",
+    "start_seconds": 1099,
+    "text_en": "before it does something so you can see it asked before it generated a command.",
+    "text_pt": "de fazer algo, para que você possa ver a pergunta antes de gerar um comando."
+  },
+  {
+    "timestamp": "18:23",
+    "start_seconds": 1103,
+    "text_en": "It asked before it wrote code.",
+    "text_pt": "Ele perguntou antes de escrever o"
+  },
+  {
+    "timestamp": "18:24",
+    "start_seconds": 1104,
+    "text_en": "Write the code mode. It's just going to code by default.",
+    "text_pt": "código. Escreva o modo de código. Ele apenas codificará por padrão."
+  },
+  {
+    "timestamp": "18:27",
+    "start_seconds": 1107,
+    "text_en": "It's not going to ask you for permission, and the planning mode is going to create a detailed plan",
+    "text_pt": "Não vai pedir permissão, e o modo de planejamento vai criar um plano detalhado que"
+  },
+  {
+    "timestamp": "18:31",
+    "start_seconds": 1111,
+    "text_en": "that Claude will follow.",
+    "text_pt": "Claude seguirá. Para que"
+  },
+  {
+    "timestamp": "18:32",
+    "start_seconds": 1112,
+    "text_en": "So that it has a little bit more structure.",
+    "text_pt": "tenha um pouco mais de estrutura. Para"
+  },
+  {
+    "timestamp": "18:34",
+    "start_seconds": 1114,
+    "text_en": "In order to change the mode, you can hit shift and then tab on your keyboard.",
+    "text_pt": "alterar o modo, você pode pressionar shift e tab no teclado."
+  },
+  {
+    "timestamp": "18:38",
+    "start_seconds": 1118,
+    "text_en": "So shift and Tab, you can see it showing shift tab to cycle we have plan mode.",
+    "text_pt": "Então shift e Tab, você pode vê-lo mostrando shift tab para circular, temos o modo de"
+  },
+  {
+    "timestamp": "18:42",
+    "start_seconds": 1122,
+    "text_en": "We have the normal mode right which is this.",
+    "text_pt": "plano. Temos o modo normal certo, que é este."
+  },
+  {
+    "timestamp": "18:44",
+    "start_seconds": 1124,
+    "text_en": "And then we have the coding mode which is kind of except at its on.",
+    "text_pt": "E então temos o modo de codificação que está quase ativado. Então aqui está"
+  },
+  {
+    "timestamp": "18:48",
+    "start_seconds": 1128,
+    "text_en": "So here planning mode right.",
+    "text_pt": "o modo de planejamento certo."
+  },
+  {
+    "timestamp": "18:49",
+    "start_seconds": 1129,
+    "text_en": "Accept edits.",
+    "text_pt": "Aceite edições."
+  },
+  {
+    "timestamp": "18:50",
+    "start_seconds": 1130,
+    "text_en": "It's just going to do the thing",
+    "text_pt": "Ele simplesmente fará a coisa"
+  },
+  {
+    "timestamp": "18:51",
+    "start_seconds": 1131,
+    "text_en": "and then the ask mode is the default mode where it's not showing you anything there.",
+    "text_pt": "e então o modo perguntar é o modo padrão, onde não mostra nada. Novamente,"
+  },
+  {
+    "timestamp": "18:55",
+    "start_seconds": 1135,
+    "text_en": "Again to do that is shift and then tap.",
+    "text_pt": "para fazer isso, basta mudar e tocar."
+  },
+  {
+    "timestamp": "18:57",
+    "start_seconds": 1137,
+    "text_en": "Now if you want to see the shortcuts, you can type again the question mark",
+    "text_pt": "Agora, se quiser ver os atalhos, você pode digitar novamente o ponto"
+  },
+  {
+    "timestamp": "19:01",
+    "start_seconds": 1141,
+    "text_en": "and you can see the different shortcuts that you can use.",
+    "text_pt": "de interrogação e ver os diferentes atalhos que pode usar."
+  },
+  {
+    "timestamp": "19:03",
+    "start_seconds": 1143,
+    "text_en": "And it will start showing you all of the different ones that you can put directly inside of here.",
+    "text_pt": "E vai começar a mostrar todos os diferentes que você pode colocar diretamente aqui. OK. Então é assim"
+  },
+  {
+    "timestamp": "19:07",
+    "start_seconds": 1147,
+    "text_en": "Okay. So that is how you change the mode.",
+    "text_pt": "que você muda o modo. Portanto, o"
+  },
+  {
+    "timestamp": "19:10",
+    "start_seconds": 1150,
+    "text_en": "So the first mode that I want to change into is the planning mode.",
+    "text_pt": "primeiro modo para o qual quero mudar é o modo de planejamento."
+  },
+  {
+    "timestamp": "19:13",
+    "start_seconds": 1153,
+    "text_en": "And I want to show you a few other shortcuts.",
+    "text_pt": "E quero mostrar alguns outros atalhos. Digamos"
+  },
+  {
+    "timestamp": "19:15",
+    "start_seconds": 1155,
+    "text_en": "Let's say you write something super long here and you don't want to have to just like erase all of it.",
+    "text_pt": "que você escreva algo muito longo aqui e não queira simplesmente apagar tudo. Bem, o que"
+  },
+  {
+    "timestamp": "19:20",
+    "start_seconds": 1160,
+    "text_en": "Well, what you can do is hit escape twice on your keyboard",
+    "text_pt": "você pode fazer é pressionar escape duas vezes no"
+  },
+  {
+    "timestamp": "19:23",
+    "start_seconds": 1163,
+    "text_en": "to escape escape, and that's going to clear whatever is currently inside of this window.",
+    "text_pt": "teclado para escapar do escape, e isso limpará tudo o que estiver dentro desta janela."
+  },
+  {
+    "timestamp": "19:27",
+    "start_seconds": 1167,
+    "text_en": "So escape. Escape.",
+    "text_pt": "Então fuja. Escapar."
+  },
+  {
+    "timestamp": "19:28",
+    "start_seconds": 1168,
+    "text_en": "Now, if you want to go back to the previous thing that you typed, you can use the up arrow key",
+    "text_pt": "Agora, se quiser voltar ao que você digitou anteriormente, você pode usar a tecla de seta para"
+  },
+  {
+    "timestamp": "19:32",
+    "start_seconds": 1172,
+    "text_en": "so you can actually toggle through the previous commands",
+    "text_pt": "cima para poder alternar entre os comandos anteriores executados usando"
+  },
+  {
+    "timestamp": "19:34",
+    "start_seconds": 1174,
+    "text_en": "you ran by using the up and down arrow keys in your terminal.",
+    "text_pt": "as teclas de seta para cima e para baixo em seu terminal."
+  },
+  {
+    "timestamp": "19:37",
+    "start_seconds": 1177,
+    "text_en": "There's actually more shortcuts that exists there, but if you just want to cycle",
+    "text_pt": "Na verdade, existem mais atalhos lá, mas se você quiser apenas percorrer os"
+  },
+  {
+    "timestamp": "19:41",
+    "start_seconds": 1181,
+    "text_en": "through the previous commands in case you're repeating something, you don't need to type it again.",
+    "text_pt": "comandos anteriores caso esteja repetindo algo, não será necessário digitá-lo novamente. Você pode simplesmente alternar com"
+  },
+  {
+    "timestamp": "19:45",
+    "start_seconds": 1185,
+    "text_en": "You can just cycle with the up and the down arrow key.",
+    "text_pt": "as teclas de seta para cima e para baixo."
+  },
+  {
+    "timestamp": "19:48",
+    "start_seconds": 1188,
+    "text_en": "Now, another thing worth noting is that sometimes you want to actually create a line break in the prompt.",
+    "text_pt": "Agora, outra coisa que vale a pena notar é que às vezes você deseja criar uma quebra de linha"
+  },
+  {
+    "timestamp": "19:53",
+    "start_seconds": 1193,
+    "text_en": "So for example I have like hello.",
+    "text_pt": "no prompt. Então, por exemplo, eu"
+  },
+  {
+    "timestamp": "19:55",
+    "start_seconds": 1195,
+    "text_en": "And then I want to go down to the next line. Right.",
+    "text_pt": "tenho um olá. E então eu quero ir para"
+  },
+  {
+    "timestamp": "19:58",
+    "start_seconds": 1198,
+    "text_en": "I don't want to press enter because if I press enter it's going to submit the command.",
+    "text_pt": "a próxima linha. Certo. Não quero pressionar enter porque se eu pressionar enter o comando será enviado."
+  },
+  {
+    "timestamp": "20:01",
+    "start_seconds": 1201,
+    "text_en": "But I want to move actually down and have like kind of multiple lines.",
+    "text_pt": "Mas eu quero realmente descer e ter várias linhas. Então, para fazer isso,"
+  },
+  {
+    "timestamp": "20:05",
+    "start_seconds": 1205,
+    "text_en": "So in order to do that you hit the alt or the option key and then you just press enter",
+    "text_pt": "você pressiona a tecla alt ou a tecla de opção e depois pressiona enter para ver"
+  },
+  {
+    "timestamp": "20:09",
+    "start_seconds": 1209,
+    "text_en": "so you can see that what I did on my keyboard here is I just press alt.",
+    "text_pt": "que o que fiz no meu teclado aqui foi apenas pressionar alt."
+  },
+  {
+    "timestamp": "20:12",
+    "start_seconds": 1212,
+    "text_en": "So I'm holding Alt on Windows.",
+    "text_pt": "Então estou segurando Alt no Windows."
+  },
+  {
+    "timestamp": "20:13",
+    "start_seconds": 1213,
+    "text_en": "If you're on Mac it might be option.",
+    "text_pt": "Se você estiver no Mac, pode ser"
+  },
+  {
+    "timestamp": "20:15",
+    "start_seconds": 1215,
+    "text_en": "And then I press enter",
+    "text_pt": "uma opção. E então"
+  },
+  {
+    "timestamp": "20:16",
+    "start_seconds": 1216,
+    "text_en": "and I can actually go down to the next line so that I can have things on multiple lines.",
+    "text_pt": "eu pressiono enter e posso ir para a próxima linha para poder ter coisas em várias"
+  },
+  {
+    "timestamp": "20:20",
+    "start_seconds": 1220,
+    "text_en": "And then again I can clear that by hitting escape twice.",
+    "text_pt": "linhas. E, novamente, posso esclarecer isso pressionando Escape duas vezes."
+  },
+  {
+    "timestamp": "20:23",
+    "start_seconds": 1223,
+    "text_en": "So again that's alt or option.",
+    "text_pt": "Então, novamente, isso é alt"
+  },
+  {
+    "timestamp": "20:24",
+    "start_seconds": 1224,
+    "text_en": "You hold that down and then press enter okay.",
+    "text_pt": "ou opção. Você mantém pressionado e pressiona enter,"
+  },
+  {
+    "timestamp": "20:27",
+    "start_seconds": 1227,
+    "text_en": "So we're in the planning mode. Now we've learned the commands.",
+    "text_pt": "ok. Então estamos no modo de planejamento. Agora aprendemos os comandos."
+  },
+  {
+    "timestamp": "20:29",
+    "start_seconds": 1229,
+    "text_en": "We have a general kind of lay of the land when it comes to using this.",
+    "text_pt": "Temos uma visão geral do terreno quando se trata de usar isso."
+  },
+  {
+    "timestamp": "20:32",
+    "start_seconds": 1232,
+    "text_en": "We have to first decide what it is that we actually want to create.",
+    "text_pt": "Temos que primeiro decidir o que realmente queremos criar. Portanto, a parte"
+  },
+  {
+    "timestamp": "20:35",
+    "start_seconds": 1235,
+    "text_en": "So the most important part of AI coding is actually knowing what you want.",
+    "text_pt": "mais importante da codificação de IA é saber o que você deseja. Se"
+  },
+  {
+    "timestamp": "20:39",
+    "start_seconds": 1239,
+    "text_en": "If you don't know what you want and you look the agent steer you,",
+    "text_pt": "você não sabe o que quer e olha para o agente que"
+  },
+  {
+    "timestamp": "20:43",
+    "start_seconds": 1243,
+    "text_en": "you're going to get horrible, crazy results that take you forever to debug.",
+    "text_pt": "o orienta, você obterá resultados horríveis e malucos que levarão uma eternidade para depurar."
+  },
+  {
+    "timestamp": "20:46",
+    "start_seconds": 1246,
+    "text_en": "And change.",
+    "text_pt": "E mude."
+  },
+  {
+    "timestamp": "20:47",
+    "start_seconds": 1247,
+    "text_en": "But if you're very clear and specific on what you want and you have it do one",
+    "text_pt": "Mas se você for muito claro e específico sobre o que deseja e"
+  },
+  {
+    "timestamp": "20:51",
+    "start_seconds": 1251,
+    "text_en": "small task at a time, you can get fantastic results and create amazing stuff.",
+    "text_pt": "fizer uma pequena tarefa de cada vez, poderá obter resultados fantásticos e criar"
+  },
+  {
+    "timestamp": "20:55",
+    "start_seconds": 1255,
+    "text_en": "So this is just a tutorial.",
+    "text_pt": "coisas incríveis. Então este é"
+  },
+  {
+    "timestamp": "20:56",
+    "start_seconds": 1256,
+    "text_en": "I don't have anything crazy that I want to build, but I definitely still want to come up with a plan",
+    "text_pt": "apenas um tutorial. Não tenho nada maluco que queira construir, mas definitivamente ainda quero bolar um plano"
+  },
+  {
+    "timestamp": "21:01",
+    "start_seconds": 1261,
+    "text_en": "for what it is that I want to do.",
+    "text_pt": "para o que quero fazer."
+  },
+  {
+    "timestamp": "21:02",
+    "start_seconds": 1262,
+    "text_en": "So I always start in the plan mode, and what I'm going to do is actually stream",
+    "text_pt": "Então eu sempre começo no modo de planejamento, e o que vou fazer é"
+  },
+  {
+    "timestamp": "21:06",
+    "start_seconds": 1266,
+    "text_en": "my thoughts into Claude and ask it to come up with a plan to create this project.",
+    "text_pt": "transmitir meus pensamentos para Claude e pedir que ele elabore um plano para criar este"
+  },
+  {
+    "timestamp": "21:11",
+    "start_seconds": 1271,
+    "text_en": "I don't need to know the code base, I don't need to know the languages.",
+    "text_pt": "projeto. Não preciso conhecer a base de código, não preciso conhecer os idiomas."
+  },
+  {
+    "timestamp": "21:14",
+    "start_seconds": 1274,
+    "text_en": "I don't need to have done research.",
+    "text_pt": "Não preciso ter feito pesquisas. Obviamente,"
+  },
+  {
+    "timestamp": "21:15",
+    "start_seconds": 1275,
+    "text_en": "It's obviously helpful if you do those things, but if you just want to start completely from scratch,",
+    "text_pt": "é útil se você fizer essas coisas, mas se quiser apenas começar do zero, nós podemos"
+  },
+  {
+    "timestamp": "21:20",
+    "start_seconds": 1280,
+    "text_en": "we can do that.",
+    "text_pt": "fazer isso."
+  },
+  {
+    "timestamp": "21:21",
+    "start_seconds": 1281,
+    "text_en": "So let's just stream our thoughts.",
+    "text_pt": "Então, vamos apenas transmitir nossos"
+  },
+  {
+    "timestamp": "21:23",
+    "start_seconds": 1283,
+    "text_en": "In order to do that, I'm actually going to use a dictation tool on my computer called Whisper Flow.",
+    "text_pt": "pensamentos. Para fazer isso, vou usar uma ferramenta de ditado no meu computador chamada Whisper Flow."
+  },
+  {
+    "timestamp": "21:28",
+    "start_seconds": 1288,
+    "text_en": "So rather than typing, I'm going to speak into my mic.",
+    "text_pt": "Então, em vez de digitar, vou falar no meu microfone. Quero"
+  },
+  {
+    "timestamp": "21:31",
+    "start_seconds": 1291,
+    "text_en": "I want to create a simple top down shooter game that is runnable in the browser.",
+    "text_pt": "criar um jogo de tiro simples de cima para baixo que possa ser executado no navegador."
+  },
+  {
+    "timestamp": "21:35",
+    "start_seconds": 1295,
+    "text_en": "I want to have some sprites, or at least cool.",
+    "text_pt": "Quero ter alguns sprites, ou pelo menos legais. Mais"
+  },
+  {
+    "timestamp": "21:37",
+    "start_seconds": 1297,
+    "text_en": "Kind of like character animations.",
+    "text_pt": "ou menos como animações de personagens."
+  },
+  {
+    "timestamp": "21:39",
+    "start_seconds": 1299,
+    "text_en": "I want my character to have a gun.",
+    "text_pt": "Eu quero que meu personagem tenha"
+  },
+  {
+    "timestamp": "21:41",
+    "start_seconds": 1301,
+    "text_en": "I want enemies to kind of be coming at him from different angles.",
+    "text_pt": "uma arma. Eu quero que os inimigos venham até ele de ângulos"
+  },
+  {
+    "timestamp": "21:44",
+    "start_seconds": 1304,
+    "text_en": "I want to be able to move the arrow keys",
+    "text_pt": "diferentes. Quero ser capaz de mover as"
+  },
+  {
+    "timestamp": "21:45",
+    "start_seconds": 1305,
+    "text_en": "and then use my mouse to kind of point and click at the different enemies and shoot them.",
+    "text_pt": "teclas de seta e usar o mouse para apontar e clicar nos diferentes inimigos e atirar neles."
+  },
+  {
+    "timestamp": "21:49",
+    "start_seconds": 1309,
+    "text_en": "We should have levels, we should progress.",
+    "text_pt": "Deveríamos ter níveis, deveríamos progredir. Claramente, deveríamos"
+  },
+  {
+    "timestamp": "21:51",
+    "start_seconds": 1311,
+    "text_en": "Clearly, we should have a menu screen.",
+    "text_pt": "ter uma tela de menu. Devemos"
+  },
+  {
+    "timestamp": "21:53",
+    "start_seconds": 1313,
+    "text_en": "We should keep it relatively simple and kind of like 2D retro style.",
+    "text_pt": "mantê-lo relativamente simples e com estilo retro 2D. Ok, então esse"
+  },
+  {
+    "timestamp": "21:57",
+    "start_seconds": 1317,
+    "text_en": "Okay, so that is my thought process.",
+    "text_pt": "é o meu processo de pensamento."
+  },
+  {
+    "timestamp": "22:00",
+    "start_seconds": 1320,
+    "text_en": "So I've just streamed that into Claude and then same thing I'm going to hold alt and go down.",
+    "text_pt": "Acabei de transmitir isso para Claude e a mesma coisa, vou segurar alt e descer."
+  },
+  {
+    "timestamp": "22:04",
+    "start_seconds": 1324,
+    "text_en": "I'm just going to put kind of a little separator and I'm going to say",
+    "text_pt": "Vou apenas colocar um pequeno separador e direi para criar um"
+  },
+  {
+    "timestamp": "22:08",
+    "start_seconds": 1328,
+    "text_en": "create a plan for this game, and then we'll start executing and coding it.",
+    "text_pt": "plano para este jogo, e então começaremos a executá-lo e codificá-lo. Então,"
+  },
+  {
+    "timestamp": "22:13",
+    "start_seconds": 1333,
+    "text_en": "So I'm just instructing it even though it's in the plan mode.",
+    "text_pt": "estou apenas instruindo, mesmo que esteja no modo de planejamento."
+  },
+  {
+    "timestamp": "22:14",
+    "start_seconds": 1334,
+    "text_en": "You know, I want to plan this out before I proceed.",
+    "text_pt": "Você sabe, quero planejar isso antes de prosseguir. E"
+  },
+  {
+    "timestamp": "22:17",
+    "start_seconds": 1337,
+    "text_en": "And you can use this to plan features not just entire apps like I'm doing right here.",
+    "text_pt": "você pode usar isso para planejar recursos, não apenas aplicativos inteiros, como estou fazendo aqui."
+  },
+  {
+    "timestamp": "22:21",
+    "start_seconds": 1341,
+    "text_en": "Okay. So I'm going to go ahead and press on enter here.",
+    "text_pt": "OK. Então vou prosseguir e pressionar Enter aqui. E"
+  },
+  {
+    "timestamp": "22:24",
+    "start_seconds": 1344,
+    "text_en": "And it should start generating the plan for me.",
+    "text_pt": "deveria começar a gerar o plano para mim."
+  },
+  {
+    "timestamp": "22:26",
+    "start_seconds": 1346,
+    "text_en": "Let's give that a second to make it okay.",
+    "text_pt": "Vamos esperar um segundo para ficar tudo"
+  },
+  {
+    "timestamp": "22:28",
+    "start_seconds": 1348,
+    "text_en": "Now just while this is running I want to point your attention to a few things here.",
+    "text_pt": "bem. Agora, enquanto isso está acontecendo, quero chamar sua atenção para algumas coisas aqui."
+  },
+  {
+    "timestamp": "22:31",
+    "start_seconds": 1351,
+    "text_en": "So first you can actually see how long it's taking to run, as well",
+    "text_pt": "Então, primeiro você pode ver quanto tempo leva para ser executado,"
+  },
+  {
+    "timestamp": "22:34",
+    "start_seconds": 1354,
+    "text_en": "as the number of tokens that are being used when it's doing this generation.",
+    "text_pt": "bem como o número de tokens que estão sendo usados ​​durante esta geração."
+  },
+  {
+    "timestamp": "22:38",
+    "start_seconds": 1358,
+    "text_en": "So if you really care about the cost, obviously something to pay attention to.",
+    "text_pt": "Então, se você realmente se preocupa com o custo, obviamente há algo para"
+  },
+  {
+    "timestamp": "22:41",
+    "start_seconds": 1361,
+    "text_en": "Now you also notice that this is able to use tools.",
+    "text_pt": "prestar atenção. Agora você também percebe que isso é"
+  },
+  {
+    "timestamp": "22:44",
+    "start_seconds": 1364,
+    "text_en": "There's some tools that are built into Claude. There's other tools",
+    "text_pt": "capaz de usar ferramentas. Existem algumas ferramentas incorporadas ao Claude. Existem"
+  },
+  {
+    "timestamp": "22:46",
+    "start_seconds": 1366,
+    "text_en": "that you can actually install yourself if you want to make this more capable.",
+    "text_pt": "outras ferramentas que você mesmo pode instalar se quiser tornar isso mais capaz."
+  },
+  {
+    "timestamp": "22:49",
+    "start_seconds": 1369,
+    "text_en": "So for example, if I hit control O, which it's showing me right here, it's",
+    "text_pt": "Então, por exemplo, se eu apertar o controle O, que está me mostrando"
+  },
+  {
+    "timestamp": "22:53",
+    "start_seconds": 1373,
+    "text_en": "going to expand this so that it's actually showing me, you know, exactly what's happening.",
+    "text_pt": "aqui, ele vai expandir isso para que ele realmente me mostre, você sabe, exatamente o que"
+  },
+  {
+    "timestamp": "22:58",
+    "start_seconds": 1378,
+    "text_en": "And I can see what it is that's kind of going on here.",
+    "text_pt": "está acontecendo. E posso ver o que está acontecendo aqui."
+  },
+  {
+    "timestamp": "23:01",
+    "start_seconds": 1381,
+    "text_en": "Right.",
+    "text_pt": "Certo."
+  },
+  {
+    "timestamp": "23:01",
+    "start_seconds": 1381,
+    "text_en": "So it says okay, I'm thinking the user wants to create a game.",
+    "text_pt": "Então está tudo bem, acho que o usuário deseja criar um jogo."
+  },
+  {
+    "timestamp": "23:04",
+    "start_seconds": 1384,
+    "text_en": "All right.",
+    "text_pt": "Tudo bem."
+  },
+  {
+    "timestamp": "23:04",
+    "start_seconds": 1384,
+    "text_en": "This is a fun project okay.",
+    "text_pt": "Este é um projeto divertido,"
+  },
+  {
+    "timestamp": "23:06",
+    "start_seconds": 1386,
+    "text_en": "Here's what I want to do. Blah blah blah blah blah whatever. Right.",
+    "text_pt": "ok. Aqui está o que eu quero fazer. Blá, blá, blá, blá, tanto"
+  },
+  {
+    "timestamp": "23:09",
+    "start_seconds": 1389,
+    "text_en": "And then if I want to go back, I can do control.",
+    "text_pt": "faz. Certo. E então, se eu quiser voltar, posso controlar."
+  },
+  {
+    "timestamp": "23:11",
+    "start_seconds": 1391,
+    "text_en": "Oh, and it brings me back here to where I can kind of see,",
+    "text_pt": "Ah, e isso me traz de volta aqui, onde posso ver,"
+  },
+  {
+    "timestamp": "23:14",
+    "start_seconds": 1394,
+    "text_en": "you know, what it's doing in the plan that it's generating.",
+    "text_pt": "você sabe, o que está fazendo no plano que está gerando."
+  },
+  {
+    "timestamp": "23:16",
+    "start_seconds": 1396,
+    "text_en": "So if you want to open it in like verbose mode where you see the logs, it's control up.",
+    "text_pt": "Então, se você quiser abri-lo no modo detalhado, onde você vê os logs, é o controle."
+  },
+  {
+    "timestamp": "23:21",
+    "start_seconds": 1401,
+    "text_en": "Now you also can have this trigger to run in the background.",
+    "text_pt": "Agora você também pode fazer com que esse gatilho seja executado em"
+  },
+  {
+    "timestamp": "23:24",
+    "start_seconds": 1404,
+    "text_en": "I'm not going to do that right now.",
+    "text_pt": "segundo plano. Eu não vou fazer isso"
+  },
+  {
+    "timestamp": "23:25",
+    "start_seconds": 1405,
+    "text_en": "But if you hit control B or command B, depending on your operating system, you can trigger this to run",
+    "text_pt": "agora. Mas se você pressionar o controle B ou o comando B, dependendo do seu sistema operacional, você pode acionar isso"
+  },
+  {
+    "timestamp": "23:30",
+    "start_seconds": 1410,
+    "text_en": "as a background session and then that way you can actually just use cloud code",
+    "text_pt": "para ser executado como uma sessão em segundo plano e, dessa forma, você pode usar o"
+  },
+  {
+    "timestamp": "23:34",
+    "start_seconds": 1414,
+    "text_en": "for something else in the same terminal view while this is going on in the background.",
+    "text_pt": "código da nuvem para outra coisa na mesma visualização do terminal enquanto isso está acontecendo em segundo plano."
+  },
+  {
+    "timestamp": "23:38",
+    "start_seconds": 1418,
+    "text_en": "And again, you can have as many background tasks as you want running at the same time.",
+    "text_pt": "E, novamente, você pode ter quantas tarefas em segundo plano desejar em execução ao mesmo tempo."
+  },
+  {
+    "timestamp": "23:41",
+    "start_seconds": 1421,
+    "text_en": "Okay, so the plan was created.",
+    "text_pt": "Ok, então o plano foi"
+  },
+  {
+    "timestamp": "23:43",
+    "start_seconds": 1423,
+    "text_en": "However, it's asking me a few questions here that I need to answer.",
+    "text_pt": "criado. No entanto, ele está me fazendo algumas perguntas aqui que preciso"
+  },
+  {
+    "timestamp": "23:46",
+    "start_seconds": 1426,
+    "text_en": "So I'm going to go with no sounds for now.",
+    "text_pt": "responder. Então, vou ficar sem sons por enquanto."
+  },
+  {
+    "timestamp": "23:48",
+    "start_seconds": 1428,
+    "text_en": "So let's answer that.",
+    "text_pt": "Então vamos responder a"
+  },
+  {
+    "timestamp": "23:49",
+    "start_seconds": 1429,
+    "text_en": "And then it's also asking me about the game size and I'm just going to go full screen actually",
+    "text_pt": "isso. E então também está me perguntando sobre o tamanho do jogo e vou entrar em tela cheia,"
+  },
+  {
+    "timestamp": "23:53",
+    "start_seconds": 1433,
+    "text_en": "you know what. Let's go 800 by 600 just to make it easier.",
+    "text_pt": "na verdade, quer saber. Vamos de 800 por 600 só para"
+  },
+  {
+    "timestamp": "23:56",
+    "start_seconds": 1436,
+    "text_en": "And I'm going to submit my answers to Claude.",
+    "text_pt": "facilitar. E vou submeter minhas respostas ao Claude."
+  },
+  {
+    "timestamp": "23:58",
+    "start_seconds": 1438,
+    "text_en": "So another cool thing that it does is it clarifies with you before",
+    "text_pt": "Então, outra coisa legal que ele faz é esclarecer com você antes"
+  },
+  {
+    "timestamp": "24:01",
+    "start_seconds": 1441,
+    "text_en": "it actually starts going and generating all of the tasks.",
+    "text_pt": "de realmente começar a gerar todas as tarefas. Agora, enquanto"
+  },
+  {
+    "timestamp": "24:04",
+    "start_seconds": 1444,
+    "text_en": "Now while this is running, I will show you that you can change the model that's being used here.",
+    "text_pt": "isso está sendo executado, vou mostrar que você pode alterar o modelo que está sendo usado aqui."
+  },
+  {
+    "timestamp": "24:09",
+    "start_seconds": 1449,
+    "text_en": "So by default, I believe this is going to use the most powerful model.",
+    "text_pt": "Então, por padrão, acredito que usará o modelo mais poderoso. Ou,"
+  },
+  {
+    "timestamp": "24:12",
+    "start_seconds": 1452,
+    "text_en": "Or actually, let me just answer this first and then we'll go into the model.",
+    "text_pt": "na verdade, deixe-me responder primeiro e depois entraremos no modelo. Então Claude"
+  },
+  {
+    "timestamp": "24:15",
+    "start_seconds": 1455,
+    "text_en": "So Claude has written a plan and it's ready to execute.",
+    "text_pt": "escreveu um plano e está pronto para ser executado."
+  },
+  {
+    "timestamp": "24:17",
+    "start_seconds": 1457,
+    "text_en": "Would you like to proceed?",
+    "text_pt": "Você gostaria de prosseguir? Sim."
+  },
+  {
+    "timestamp": "24:19",
+    "start_seconds": 1459,
+    "text_en": "Yes. Auto accept.",
+    "text_pt": "Aceitar automaticamente. Sim."
+  },
+  {
+    "timestamp": "24:19",
+    "start_seconds": 1459,
+    "text_en": "Yes. Manually approve edits.",
+    "text_pt": "Aprovar edições manualmente. Digite aqui"
+  },
+  {
+    "timestamp": "24:21",
+    "start_seconds": 1461,
+    "text_en": "Type here to tell Claude what to change.",
+    "text_pt": "para dizer a Claude o que mudar."
+  },
+  {
+    "timestamp": "24:23",
+    "start_seconds": 1463,
+    "text_en": "Yes, I'm going to go. Yes.",
+    "text_pt": "Sim, eu vou. Sim. Limpe"
+  },
+  {
+    "timestamp": "24:24",
+    "start_seconds": 1464,
+    "text_en": "Clear the context and auto accept edits.",
+    "text_pt": "o contexto e aceite automaticamente as edições."
+  },
+  {
+    "timestamp": "24:26",
+    "start_seconds": 1466,
+    "text_en": "Now, when you clear the context, what that's going to do",
+    "text_pt": "Agora, quando você limpa o contexto, o que isso fará"
+  },
+  {
+    "timestamp": "24:29",
+    "start_seconds": 1469,
+    "text_en": "is essentially remove all of the previous stuff that you've message Claude with.",
+    "text_pt": "é essencialmente remover todas as coisas anteriores com as quais você enviou a mensagem para Claude."
+  },
+  {
+    "timestamp": "24:33",
+    "start_seconds": 1473,
+    "text_en": "So it's no longer being included",
+    "text_pt": "Portanto, não será mais incluído"
+  },
+  {
+    "timestamp": "24:34",
+    "start_seconds": 1474,
+    "text_en": "in the API request to Claude, and it's just going to go based off the plan.",
+    "text_pt": "na solicitação de API para Claude e será baseado no plano. Isso"
+  },
+  {
+    "timestamp": "24:39",
+    "start_seconds": 1479,
+    "text_en": "This is good to save tokens, but if you wanted to keep the context,",
+    "text_pt": "é bom para salvar tokens, mas se você quiser manter o"
+  },
+  {
+    "timestamp": "24:42",
+    "start_seconds": 1482,
+    "text_en": "then you could do that right by auto accepting the edits, etc..",
+    "text_pt": "contexto, poderá fazer isso corretamente, aceitando automaticamente as edições, etc."
+  },
+  {
+    "timestamp": "24:46",
+    "start_seconds": 1486,
+    "text_en": "So I'm going to go yes, clear the context and auto accept this and you can see that",
+    "text_pt": "Então eu vou sim, limpar o contexto e aceitar isso automaticamente e você pode"
+  },
+  {
+    "timestamp": "24:50",
+    "start_seconds": 1490,
+    "text_en": "it is going to start actually generating this and going through the plan.",
+    "text_pt": "ver que isso vai começar a gerar isso e seguir o plano."
+  },
+  {
+    "timestamp": "24:54",
+    "start_seconds": 1494,
+    "text_en": "So this is the plan to implement.",
+    "text_pt": "Então este é o plano a"
+  },
+  {
+    "timestamp": "24:55",
+    "start_seconds": 1495,
+    "text_en": "And there you go. It's going to start building.",
+    "text_pt": "implementar. E aí está. Vai começar a construir."
+  },
+  {
+    "timestamp": "24:57",
+    "start_seconds": 1497,
+    "text_en": "Now while it does that I did want to talk about the models.",
+    "text_pt": "Agora, enquanto isso acontece, eu queria falar sobre os modelos."
+  },
+  {
+    "timestamp": "24:59",
+    "start_seconds": 1499,
+    "text_en": "So it can be quite expensive to run this.",
+    "text_pt": "Portanto, pode ser muito caro administrar isso."
+  },
+  {
+    "timestamp": "25:02",
+    "start_seconds": 1502,
+    "text_en": "And you can very quickly run through your usage.",
+    "text_pt": "E você pode executar seu uso muito rapidamente. Então,"
+  },
+  {
+    "timestamp": "25:04",
+    "start_seconds": 1504,
+    "text_en": "So if you want to make this more affordable for yourself, you can change the model",
+    "text_pt": "se você quiser tornar isso mais acessível para você, você pode alterar o modelo que"
+  },
+  {
+    "timestamp": "25:08",
+    "start_seconds": 1508,
+    "text_en": "that's being used here.",
+    "text_pt": "está sendo usado aqui."
+  },
+  {
+    "timestamp": "25:09",
+    "start_seconds": 1509,
+    "text_en": "So if you type slash model here and Claude is not currently doing something,",
+    "text_pt": "Portanto, se você digitar barra modelo aqui e Claude não estiver fazendo nada"
+  },
+  {
+    "timestamp": "25:13",
+    "start_seconds": 1513,
+    "text_en": "it will bring you into an interactive window that will allow you to change the model.",
+    "text_pt": "no momento, você será levado a uma janela interativa que permitirá alterar o modelo. Então,"
+  },
+  {
+    "timestamp": "25:16",
+    "start_seconds": 1516,
+    "text_en": "So let's actually just do this from another Claude code here.",
+    "text_pt": "vamos fazer isso a partir de outro código do Claude aqui."
+  },
+  {
+    "timestamp": "25:19",
+    "start_seconds": 1519,
+    "text_en": "So I'm going to go slash model.",
+    "text_pt": "Então eu vou usar o"
+  },
+  {
+    "timestamp": "25:21",
+    "start_seconds": 1521,
+    "text_en": "And when I do that it's going to give us three options okay.",
+    "text_pt": "modelo slash. E quando eu fizer isso, teremos três opções,"
+  },
+  {
+    "timestamp": "25:23",
+    "start_seconds": 1523,
+    "text_en": "So opus sonnet and haiku or however you pronounce that now you can see the three different models here.",
+    "text_pt": "ok. Então, opus soneto e haiku ou como você pronuncia, agora você pode ver os três modelos"
+  },
+  {
+    "timestamp": "25:29",
+    "start_seconds": 1529,
+    "text_en": "So opus is going to be your most powerful model.",
+    "text_pt": "diferentes aqui. Portanto, opus será seu modelo mais poderoso."
+  },
+  {
+    "timestamp": "25:32",
+    "start_seconds": 1532,
+    "text_en": "And as it says it's for more complex work.",
+    "text_pt": "E como diz é para trabalhos mais"
+  },
+  {
+    "timestamp": "25:34",
+    "start_seconds": 1534,
+    "text_en": "This will be the most expensive but also just the best.",
+    "text_pt": "complexos. Este será o mais caro, mas também o"
+  },
+  {
+    "timestamp": "25:36",
+    "start_seconds": 1536,
+    "text_en": "Generally speaking, sonnet is kind of a middle ground model.",
+    "text_pt": "melhor. De modo geral, o soneto é uma espécie de"
+  },
+  {
+    "timestamp": "25:40",
+    "start_seconds": 1540,
+    "text_en": "So if you're doing some tasks that don't have extreme complexity,",
+    "text_pt": "modelo intermediário. Portanto, se você estiver realizando algumas tarefas que não"
+  },
+  {
+    "timestamp": "25:43",
+    "start_seconds": 1543,
+    "text_en": "don't require a bunch of tool calling, you can select this one by just pressing enter.",
+    "text_pt": "possuem extrema complexidade, não exigem muitas chamadas de ferramentas, você pode selecionar esta apenas pressionando enter."
+  },
+  {
+    "timestamp": "25:47",
+    "start_seconds": 1547,
+    "text_en": "And if you want a faster model that's going to give you quick answers",
+    "text_pt": "E se você quiser um modelo mais rápido que lhe dê respostas rápidas"
+  },
+  {
+    "timestamp": "25:50",
+    "start_seconds": 1550,
+    "text_en": "and be significantly less expensive, then you can switch over to haiku.",
+    "text_pt": "e seja significativamente mais barato, você pode mudar para o haiku. Legal. Agora"
+  },
+  {
+    "timestamp": "25:54",
+    "start_seconds": 1554,
+    "text_en": "Cool.",
+    "text_pt": "voltamos"
+  },
+  {
+    "timestamp": "25:54",
+    "start_seconds": 1554,
+    "text_en": "So now we've gone back to our first kind of cloud code instance here, and you can see that",
+    "text_pt": "ao nosso primeiro tipo de instância de código em nuvem aqui, e você pode ver que"
+  },
+  {
+    "timestamp": "25:58",
+    "start_seconds": 1558,
+    "text_en": "it says it's implemented these features in the shooter's HTML file.",
+    "text_pt": "ele diz que esses recursos foram implementados no arquivo HTML do atirador."
+  },
+  {
+    "timestamp": "26:03",
+    "start_seconds": 1563,
+    "text_en": "So what I'm going to do now is just say run the shooter file, okay.",
+    "text_pt": "Então o que vou fazer agora é apenas executar o arquivo do"
+  },
+  {
+    "timestamp": "26:08",
+    "start_seconds": 1568,
+    "text_en": "And I'm just going to have it run this and open it in the browser for me",
+    "text_pt": "atirador, ok. E vou fazer com que ele execute isso e abra-o no"
+  },
+  {
+    "timestamp": "26:10",
+    "start_seconds": 1570,
+    "text_en": "so I can actually see what it looks like.",
+    "text_pt": "navegador para que eu possa realmente ver como"
+  },
+  {
+    "timestamp": "26:11",
+    "start_seconds": 1571,
+    "text_en": "And then of course if we have revisions let's go.",
+    "text_pt": "é. E então, claro, se tivermos revisões, vamos lá."
+  },
+  {
+    "timestamp": "26:13",
+    "start_seconds": 1573,
+    "text_en": "Yes. And don't ask for star commands.",
+    "text_pt": "Sim. E não peça comandos estelares. Oh."
+  },
+  {
+    "timestamp": "26:15",
+    "start_seconds": 1575,
+    "text_en": "Oh. It says it cannot find that for some reason.",
+    "text_pt": "Ele diz que não consegue encontrar isso por algum"
+  },
+  {
+    "timestamp": "26:18",
+    "start_seconds": 1578,
+    "text_en": "Okay. Let's see if we can run it again.",
+    "text_pt": "motivo. OK. Vamos ver se podemos executá-lo"
+  },
+  {
+    "timestamp": "26:21",
+    "start_seconds": 1581,
+    "text_en": "Okay. And sorry, I've got this running now.",
+    "text_pt": "novamente. OK. E desculpe, estou resolvendo isso agora."
+  },
+  {
+    "timestamp": "26:22",
+    "start_seconds": 1582,
+    "text_en": "For some reason, I made a mistake and you can see we have this kind of retro shooter,",
+    "text_pt": "Por algum motivo, cometi um erro e vocês podem ver que temos esse tipo de jogo"
+  },
+  {
+    "timestamp": "26:26",
+    "start_seconds": 1586,
+    "text_en": "which I think looks pretty cool in my opinion.",
+    "text_pt": "de tiro retrô, que acho muito legal na minha opinião."
+  },
+  {
+    "timestamp": "26:28",
+    "start_seconds": 1588,
+    "text_en": "And I can kind of move around, I can shoot.",
+    "text_pt": "E eu posso me movimentar, posso atirar. Temos,"
+  },
+  {
+    "timestamp": "26:31",
+    "start_seconds": 1591,
+    "text_en": "We have, like, this wave of enemies that's coming.",
+    "text_pt": "tipo, essa onda de inimigos que está chegando. Ok,"
+  },
+  {
+    "timestamp": "26:35",
+    "start_seconds": 1595,
+    "text_en": "Okay, cool.",
+    "text_pt": "legal. E"
+  },
+  {
+    "timestamp": "26:36",
+    "start_seconds": 1596,
+    "text_en": "And that's I mean, like literally exactly what I asked it",
+    "text_pt": "isso é literalmente exatamente o que eu pedi para construir,"
+  },
+  {
+    "timestamp": "26:39",
+    "start_seconds": 1599,
+    "text_en": "to build, which is pretty good.",
+    "text_pt": "o que é muito bom."
+  },
+  {
+    "timestamp": "26:42",
+    "start_seconds": 1602,
+    "text_en": "I would say for a first iteration.",
+    "text_pt": "Eu diria para uma primeira iteração."
+  },
+  {
+    "timestamp": "26:45",
+    "start_seconds": 1605,
+    "text_en": "So we also have health, right?",
+    "text_pt": "Então a gente também tem saúde,"
+  },
+  {
+    "timestamp": "26:46",
+    "start_seconds": 1606,
+    "text_en": "We have like the menu bar, a bunch of that stuff.",
+    "text_pt": "né? Temos a barra de menu, um monte dessas"
+  },
+  {
+    "timestamp": "26:48",
+    "start_seconds": 1608,
+    "text_en": "We could obviously add add sound effects.",
+    "text_pt": "coisas. Obviamente, poderíamos adicionar efeitos sonoros. Legal. OK."
+  },
+  {
+    "timestamp": "26:52",
+    "start_seconds": 1612,
+    "text_en": "Cool. Okay.",
+    "text_pt": "Então vamos"
+  },
+  {
+    "timestamp": "26:53",
+    "start_seconds": 1613,
+    "text_en": "So let's close that.",
+    "text_pt": "encerrar isso. E se"
+  },
+  {
+    "timestamp": "26:54",
+    "start_seconds": 1614,
+    "text_en": "And if we wanted to make revisions and same thing, we could just do something like, you know,",
+    "text_pt": "quiséssemos fazer revisões e a mesma coisa, poderíamos simplesmente fazer algo como, você sabe, adicionar power-ups a"
+  },
+  {
+    "timestamp": "26:59",
+    "start_seconds": 1619,
+    "text_en": "add power ups",
+    "text_pt": "este aplicativo"
+  },
+  {
+    "timestamp": "27:01",
+    "start_seconds": 1621,
+    "text_en": "to this app and then it would go ahead and be able to do that.",
+    "text_pt": "e então ele iria em frente e seria capaz de fazer isso."
+  },
+  {
+    "timestamp": "27:05",
+    "start_seconds": 1625,
+    "text_en": "Now before we do that though, I want to talk about git and GitHub.",
+    "text_pt": "Agora, antes de fazermos isso, quero falar sobre git e GitHub. Portanto,"
+  },
+  {
+    "timestamp": "27:10",
+    "start_seconds": 1630,
+    "text_en": "So if you're going to be working on a large project, I highly recommend that you instruct cloud code",
+    "text_pt": "se você estiver trabalhando em um projeto grande, recomendo fortemente que você instrua o código da nuvem a"
+  },
+  {
+    "timestamp": "27:15",
+    "start_seconds": 1635,
+    "text_en": "to create a new GitHub repository and to make commits and save all of the changes that it's making.",
+    "text_pt": "criar um novo repositório GitHub e a fazer commits e salvar todas as alterações que estiver fazendo."
+  },
+  {
+    "timestamp": "27:21",
+    "start_seconds": 1641,
+    "text_en": "So the way to do that would be something like this.",
+    "text_pt": "Então a maneira de fazer isso seria algo assim."
+  },
+  {
+    "timestamp": "27:24",
+    "start_seconds": 1644,
+    "text_en": "From now",
+    "text_pt": "De"
+  },
+  {
+    "timestamp": "27:24",
+    "start_seconds": 1644,
+    "text_en": "on, I would like you to make a new git repository for this project.",
+    "text_pt": "agora em diante, gostaria que você criasse um novo repositório git para"
+  },
+  {
+    "timestamp": "27:28",
+    "start_seconds": 1648,
+    "text_en": "I would like you then to make clean commit messages, save them locally",
+    "text_pt": "este projeto. Gostaria que você fizesse mensagens de commit limpas, salvasse-as localmente"
+  },
+  {
+    "timestamp": "27:32",
+    "start_seconds": 1652,
+    "text_en": "and then push them to GitHub so that we always have a saved version of the project.",
+    "text_pt": "e depois enviasse-as para o GitHub para que sempre tenhamos uma versão salva do projeto."
+  },
+  {
+    "timestamp": "27:37",
+    "start_seconds": 1657,
+    "text_en": "And it's easy for us to revert back in case we make any changes.",
+    "text_pt": "E é fácil voltar atrás caso façamos alguma alteração."
+  },
+  {
+    "timestamp": "27:40",
+    "start_seconds": 1660,
+    "text_en": "So set up a GitHub repository,",
+    "text_pt": "Portanto, configure um repositório"
+  },
+  {
+    "timestamp": "27:42",
+    "start_seconds": 1662,
+    "text_en": "configure everything, and just use getting GitHub for the rest of the project.",
+    "text_pt": "GitHub, configure tudo e use o GitHub para o resto do projeto."
+  },
+  {
+    "timestamp": "27:46",
+    "start_seconds": 1666,
+    "text_en": "So we're going to tell it that let's go ahead and press on enter.",
+    "text_pt": "Então vamos dizer que vamos em frente e pressionar enter."
+  },
+  {
+    "timestamp": "27:49",
+    "start_seconds": 1669,
+    "text_en": "And it will just start running all of the commands that's needed to set that up.",
+    "text_pt": "E ele simplesmente começará a executar todos os comandos necessários para configurar isso. Então você"
+  },
+  {
+    "timestamp": "27:51",
+    "start_seconds": 1671,
+    "text_en": "So you don't really need to do anything here.",
+    "text_pt": "realmente não precisa fazer nada aqui. Deve apenas"
+  },
+  {
+    "timestamp": "27:53",
+    "start_seconds": 1673,
+    "text_en": "It should just know what to do. So same thing.",
+    "text_pt": "saber o que fazer. Então a mesma coisa."
+  },
+  {
+    "timestamp": "27:55",
+    "start_seconds": 1675,
+    "text_en": "We're just going to say yes and allow this to go and it will start setting it up okay.",
+    "text_pt": "Vamos apenas dizer sim e permitir que isso aconteça e tudo começará a ser configurado corretamente."
+  },
+  {
+    "timestamp": "27:59",
+    "start_seconds": 1679,
+    "text_en": "So it took a second here but it did work.",
+    "text_pt": "Então demorou um segundo aqui, mas funcionou."
+  },
+  {
+    "timestamp": "28:01",
+    "start_seconds": 1681,
+    "text_en": "And actually if I open up this URL now",
+    "text_pt": "E, na verdade, se eu abrir este"
+  },
+  {
+    "timestamp": "28:04",
+    "start_seconds": 1684,
+    "text_en": "in my browser, we should be able to see the git repository that it created.",
+    "text_pt": "URL agora em meu navegador, poderemos ver o repositório git que ele criou. De"
+  },
+  {
+    "timestamp": "28:08",
+    "start_seconds": 1688,
+    "text_en": "Again. Notice it automatically created it for us.",
+    "text_pt": "novo. Observe que ele o criou automaticamente para nós."
+  },
+  {
+    "timestamp": "28:11",
+    "start_seconds": 1691,
+    "text_en": "And you can see now we have us as well as Claude.",
+    "text_pt": "E você pode ver agora que temos a nós,"
+  },
+  {
+    "timestamp": "28:13",
+    "start_seconds": 1693,
+    "text_en": "They're adding commits to this repository.",
+    "text_pt": "assim como Claude. Eles estão adicionando commits a"
+  },
+  {
+    "timestamp": "28:15",
+    "start_seconds": 1695,
+    "text_en": "So now it is saved and all of the work is going to be done",
+    "text_pt": "este repositório. Então agora ele está salvo e todo o trabalho"
+  },
+  {
+    "timestamp": "28:18",
+    "start_seconds": 1698,
+    "text_en": "automatically with, what do you call it, git and GitHub.",
+    "text_pt": "será feito automaticamente com, como você chama, git e GitHub."
+  },
+  {
+    "timestamp": "28:22",
+    "start_seconds": 1702,
+    "text_en": "Okay.",
+    "text_pt": "Ok."
+  },
+  {
+    "timestamp": "28:22",
+    "start_seconds": 1702,
+    "text_en": "Now let's go through a few other things that are worth noting.",
+    "text_pt": "Agora vamos examinar algumas outras coisas que valem a pena observar."
+  },
+  {
+    "timestamp": "28:25",
+    "start_seconds": 1705,
+    "text_en": "So I just told it right.",
+    "text_pt": "Então eu apenas contei"
+  },
+  {
+    "timestamp": "28:26",
+    "start_seconds": 1706,
+    "text_en": "Like always use git and GitHub for this project and automatically make the commits.",
+    "text_pt": "certo. Como sempre use git e GitHub para este projeto e faça os commits"
+  },
+  {
+    "timestamp": "28:30",
+    "start_seconds": 1710,
+    "text_en": "Now sometimes it will do that just automatically.",
+    "text_pt": "automaticamente. Agora, às vezes, isso será feito automaticamente."
+  },
+  {
+    "timestamp": "28:34",
+    "start_seconds": 1714,
+    "text_en": "But the thing with Claude is that as soon as I exit this so I go like slash exit, right?",
+    "text_pt": "Mas o problema com Claude é que assim que eu saio disso, eu vou como uma"
+  },
+  {
+    "timestamp": "28:38",
+    "start_seconds": 1718,
+    "text_en": "And if I just go Claude again and I start with a new session,",
+    "text_pt": "barra de saída, certo? E se eu for Claude novamente e"
+  },
+  {
+    "timestamp": "28:41",
+    "start_seconds": 1721,
+    "text_en": "I've just lost all of the context and the history of what was happening inside of here.",
+    "text_pt": "começar uma nova sessão, perco todo o contexto e a história do que estava acontecendo aqui dentro."
+  },
+  {
+    "timestamp": "28:47",
+    "start_seconds": 1727,
+    "text_en": "So if I ask it like, what did you do last or something like that,",
+    "text_pt": "Então, se eu perguntar o que você fez por último ou algo assim,"
+  },
+  {
+    "timestamp": "28:52",
+    "start_seconds": 1732,
+    "text_en": "it can look at the git history, but it's not going to really know what happened.",
+    "text_pt": "ele pode olhar o histórico do git, mas não vai saber realmente o que aconteceu."
+  },
+  {
+    "timestamp": "28:56",
+    "start_seconds": 1736,
+    "text_en": "You can see this is the start of our conversation.",
+    "text_pt": "Você pode ver que este é o início da nossa"
+  },
+  {
+    "timestamp": "28:58",
+    "start_seconds": 1738,
+    "text_en": "So I haven't done anything yet. Right.",
+    "text_pt": "conversa. Então ainda não fiz nada. Certo."
+  },
+  {
+    "timestamp": "28:59",
+    "start_seconds": 1739,
+    "text_en": "Because we started a new session.",
+    "text_pt": "Porque iniciamos uma nova sessão."
+  },
+  {
+    "timestamp": "29:01",
+    "start_seconds": 1741,
+    "text_en": "So that's an important thing to understand about Claude Sessions is that you",
+    "text_pt": "Então, uma coisa importante a entender sobre Claude Sessions é que você"
+  },
+  {
+    "timestamp": "29:04",
+    "start_seconds": 1744,
+    "text_en": "don't have this kind of like unlimited memory like you might have in some other tools.",
+    "text_pt": "não tem esse tipo de memória ilimitada como pode ter em algumas outras ferramentas."
+  },
+  {
+    "timestamp": "29:08",
+    "start_seconds": 1748,
+    "text_en": "And that's where we are going to get into talking about the Claude and D file.",
+    "text_pt": "E é aí que vamos falar sobre o arquivo Claude e D."
+  },
+  {
+    "timestamp": "29:13",
+    "start_seconds": 1753,
+    "text_en": "Now, the Claude MDF file is something that will allow you to have persistent memory.",
+    "text_pt": "Agora, o arquivo Claude MDF é algo que vai permitir que você tenha memória persistente. Então"
+  },
+  {
+    "timestamp": "29:18",
+    "start_seconds": 1758,
+    "text_en": "So Claude kind of knows the rules of your code base.",
+    "text_pt": "Claude conhece as regras da sua base de código. Ele"
+  },
+  {
+    "timestamp": "29:21",
+    "start_seconds": 1761,
+    "text_en": "It knows what it's done before, what it should and what it shouldn't do.",
+    "text_pt": "sabe o que fez antes, o que deveria e o que não deveria fazer."
+  },
+  {
+    "timestamp": "29:24",
+    "start_seconds": 1764,
+    "text_en": "And you can set it up to be really complex in advance so that you don't need to keep instructing it",
+    "text_pt": "E você pode configurá-lo para ser realmente complexo com antecedência, para que não precise ficar instruindo-o"
+  },
+  {
+    "timestamp": "29:28",
+    "start_seconds": 1768,
+    "text_en": "to do the same thing.",
+    "text_pt": "a fazer a mesma"
+  },
+  {
+    "timestamp": "29:29",
+    "start_seconds": 1769,
+    "text_en": "Because again, if I start working right now, it's not going to automatically",
+    "text_pt": "coisa. Porque, novamente, se eu começar a trabalhar agora, não vou confirmar isso"
+  },
+  {
+    "timestamp": "29:33",
+    "start_seconds": 1773,
+    "text_en": "commit this to get in GitHub like I want it to do.",
+    "text_pt": "automaticamente para entrar no GitHub como eu quero."
+  },
+  {
+    "timestamp": "29:36",
+    "start_seconds": 1776,
+    "text_en": "So in order to create a Claude MD file, what you can do is type this slash init command.",
+    "text_pt": "Portanto, para criar um arquivo Claude MD, o que você pode fazer é digitar este comando"
+  },
+  {
+    "timestamp": "29:41",
+    "start_seconds": 1781,
+    "text_en": "When you type slash in it, what it's going to do is automatically create",
+    "text_pt": "init de barra. Quando você digita barra nele, o que ele fará é"
+  },
+  {
+    "timestamp": "29:44",
+    "start_seconds": 1784,
+    "text_en": "Claude Dot, MD for you and in the claw MD,",
+    "text_pt": "criar automaticamente Claude Dot, MD para você e"
+  },
+  {
+    "timestamp": "29:48",
+    "start_seconds": 1788,
+    "text_en": "it will actually put in different information based on the analysis that it has of your code base.",
+    "text_pt": "na garra MD, ele colocará informações diferentes com base na análise que possui de sua base de código."
+  },
+  {
+    "timestamp": "29:53",
+    "start_seconds": 1793,
+    "text_en": "Then you of course can modify this Claude, the MD file, and I'll show you how to do that in one second.",
+    "text_pt": "Então, é claro, você pode modificar este Claude, o arquivo MD, e eu mostrarei como fazer isso em um"
+  },
+  {
+    "timestamp": "29:58",
+    "start_seconds": 1798,
+    "text_en": "But this is effectively, again, the persistent memory for Claude when it's working in your code base.",
+    "text_pt": "segundo. Mas esta é efetivamente, novamente, a memória persistente para Claude quando está trabalhando em sua base de código."
+  },
+  {
+    "timestamp": "30:04",
+    "start_seconds": 1804,
+    "text_en": "And we'll give it a second here to generate that MD file.",
+    "text_pt": "E vamos esperar um segundo aqui para gerar esse arquivo MD."
+  },
+  {
+    "timestamp": "30:06",
+    "start_seconds": 1806,
+    "text_en": "So let's go.",
+    "text_pt": "Então vamos"
+  },
+  {
+    "timestamp": "30:07",
+    "start_seconds": 1807,
+    "text_en": "Yes. Go ahead and create that for us okay. Yes.",
+    "text_pt": "lá. Sim. Vá em frente e crie isso para"
+  },
+  {
+    "timestamp": "30:10",
+    "start_seconds": 1810,
+    "text_en": "Go ahead and make that.",
+    "text_pt": "nós, ok. Sim. Vá em"
+  },
+  {
+    "timestamp": "30:12",
+    "start_seconds": 1812,
+    "text_en": "So that will have that file there.",
+    "text_pt": "frente e faça isso. Então isso terá"
+  },
+  {
+    "timestamp": "30:13",
+    "start_seconds": 1813,
+    "text_en": "And it will always reference it when we create a new session. Okay.",
+    "text_pt": "esse arquivo lá. E sempre fará referência quando criarmos uma nova sessão. OK."
+  },
+  {
+    "timestamp": "30:16",
+    "start_seconds": 1816,
+    "text_en": "So you can see that it is showing me what the Claude MD file will look like that it's",
+    "text_pt": "Então você pode ver que ele está me mostrando como será a aparência do arquivo Claude MD"
+  },
+  {
+    "timestamp": "30:20",
+    "start_seconds": 1820,
+    "text_en": "going to create here where it goes over like project overview running",
+    "text_pt": "que será criado aqui, onde será como uma visão geral do projeto executando a"
+  },
+  {
+    "timestamp": "30:23",
+    "start_seconds": 1823,
+    "text_en": "the game development set up, you know, whatever, all of this kind of stuff.",
+    "text_pt": "configuração de desenvolvimento do jogo, você sabe, tanto faz, todo esse tipo de coisa."
+  },
+  {
+    "timestamp": "30:26",
+    "start_seconds": 1826,
+    "text_en": "So I'm going to go yes.",
+    "text_pt": "Então eu vou sim. E"
+  },
+  {
+    "timestamp": "30:27",
+    "start_seconds": 1827,
+    "text_en": "And allow edits during this session.",
+    "text_pt": "permita edições durante esta sessão. E então ele"
+  },
+  {
+    "timestamp": "30:29",
+    "start_seconds": 1829,
+    "text_en": "And then it's going to create this Claude dot markdown file for me.",
+    "text_pt": "criará este arquivo de marcação de ponto Claude para mim. Agora se passarmos por"
+  },
+  {
+    "timestamp": "30:32",
+    "start_seconds": 1832,
+    "text_en": "Now if we go through here okay let's see if it has anything else.",
+    "text_pt": "aqui ok vamos ver se tem mais alguma coisa. O esquema de cores do"
+  },
+  {
+    "timestamp": "30:36",
+    "start_seconds": 1836,
+    "text_en": "Design pattern color scheme get workflow okay.",
+    "text_pt": "padrão de design deixa o fluxo de trabalho correto."
+  },
+  {
+    "timestamp": "30:39",
+    "start_seconds": 1839,
+    "text_en": "Cool.",
+    "text_pt": "Legal."
+  },
+  {
+    "timestamp": "30:40",
+    "start_seconds": 1840,
+    "text_en": "Awesome.",
+    "text_pt": "Incrível."
+  },
+  {
+    "timestamp": "30:40",
+    "start_seconds": 1840,
+    "text_en": "And then it explains kind of all of this stuff.",
+    "text_pt": "E então explica tudo isso. Então agora, se há"
+  },
+  {
+    "timestamp": "30:42",
+    "start_seconds": 1842,
+    "text_en": "So now if there's some specific things that I always want Claude to do in the project,",
+    "text_pt": "algumas coisas específicas que eu sempre quero que Claude faça no projeto, posso simplesmente dizer isso."
+  },
+  {
+    "timestamp": "30:46",
+    "start_seconds": 1846,
+    "text_en": "I can just tell it that.",
+    "text_pt": "Então, vou dizer para"
+  },
+  {
+    "timestamp": "30:47",
+    "start_seconds": 1847,
+    "text_en": "So I'm going to say update the Claude MD file to indicate that as you do work,",
+    "text_pt": "atualizar o arquivo Claude MD para indicar que, à medida que você trabalha, você"
+  },
+  {
+    "timestamp": "30:51",
+    "start_seconds": 1851,
+    "text_en": "you need to commit things to git and push them to GitHub regularly with clean commit messages.",
+    "text_pt": "precisa enviar coisas para o git e enviá-las para o GitHub regularmente com mensagens de commit limpas."
+  },
+  {
+    "timestamp": "30:56",
+    "start_seconds": 1856,
+    "text_en": "So we never lose the status or work that we've done.",
+    "text_pt": "Assim, nunca perdemos o status ou o trabalho que realizamos."
+  },
+  {
+    "timestamp": "30:59",
+    "start_seconds": 1859,
+    "text_en": "Okay. So let's go ahead and press on.",
+    "text_pt": "OK. Então vamos em frente e prosseguir."
+  },
+  {
+    "timestamp": "31:01",
+    "start_seconds": 1861,
+    "text_en": "Enter here and you can see I said, you know, Claude MD",
+    "text_pt": "Entre aqui e você verá que eu disse, você sabe,"
+  },
+  {
+    "timestamp": "31:04",
+    "start_seconds": 1864,
+    "text_en": "whisper actually picked up that this was a file and it automatically tagged it for me.",
+    "text_pt": "Claude MD sussurro realmente percebeu que se tratava de um arquivo e o marcou automaticamente para mim."
+  },
+  {
+    "timestamp": "31:08",
+    "start_seconds": 1868,
+    "text_en": "And now you can see it's making changes, right.",
+    "text_pt": "E agora você pode ver que está fazendo mudanças,"
+  },
+  {
+    "timestamp": "31:10",
+    "start_seconds": 1870,
+    "text_en": "And then updating that in Claude DMD.",
+    "text_pt": "certo. E então atualizando isso em Claude"
+  },
+  {
+    "timestamp": "31:13",
+    "start_seconds": 1873,
+    "text_en": "And if we scroll down here it explains what it needs to do.",
+    "text_pt": "DMD. E se rolarmos até aqui, ele explica o que precisa"
+  },
+  {
+    "timestamp": "31:16",
+    "start_seconds": 1876,
+    "text_en": "So now if we were to restart this.",
+    "text_pt": "ser feito. Então agora, se reiniciássemos isso."
+  },
+  {
+    "timestamp": "31:19",
+    "start_seconds": 1879,
+    "text_en": "So let's go slash exit to get out of that okay.",
+    "text_pt": "Então vamos cortar a saída para sair dessa, ok."
+  },
+  {
+    "timestamp": "31:23",
+    "start_seconds": 1883,
+    "text_en": "And go Claude I'm just going to say what do you know",
+    "text_pt": "And go Claude I'm just going to say what do you"
+  },
+  {
+    "timestamp": "31:27",
+    "start_seconds": 1887,
+    "text_en": "about this project.",
+    "text_pt": "know about this project."
+  },
+  {
+    "timestamp": "31:30",
+    "start_seconds": 1890,
+    "text_en": "Okay.",
+    "text_pt": "Okay."
+  },
+  {
+    "timestamp": "31:31",
+    "start_seconds": 1891,
+    "text_en": "And it should be able to look in this claude.md file and give me some information okay.",
+    "text_pt": "And it should be able to look in this claude.md file and give me some information okay. And"
+  },
+  {
+    "timestamp": "31:35",
+    "start_seconds": 1895,
+    "text_en": "And you can see it reads the cloud.md file because it knows to go there.",
+    "text_pt": "you can see it reads the cloud.md file because it knows to go there."
+  },
+  {
+    "timestamp": "31:38",
+    "start_seconds": 1898,
+    "text_en": "And it gets us all of that persistent info.",
+    "text_pt": "And it gets us all of that persistent info."
+  },
+  {
+    "timestamp": "31:40",
+    "start_seconds": 1900,
+    "text_en": "All right.",
+    "text_pt": "All right."
+  },
+  {
+    "timestamp": "31:40",
+    "start_seconds": 1900,
+    "text_en": "So now that we've gone over that I want to talk about tasks.",
+    "text_pt": "So now that we've gone over that I want to talk about"
+  },
+  {
+    "timestamp": "31:43",
+    "start_seconds": 1903,
+    "text_en": "Now if you run these tasks command, this will show you any background tasks that are running.",
+    "text_pt": "tasks. Now if you run these tasks command, this will show you any background tasks that are running."
+  },
+  {
+    "timestamp": "31:48",
+    "start_seconds": 1908,
+    "text_en": "Now. Background tasks are typically going to be things like web servers that are running",
+    "text_pt": "Now. Background tasks are typically going to be things like web servers that are running continuously, and"
+  },
+  {
+    "timestamp": "31:53",
+    "start_seconds": 1913,
+    "text_en": "continuously, and that you don't want to block the execution of your cloud code instance.",
+    "text_pt": "that you don't want to block the execution of your cloud code instance. So right now, if"
+  },
+  {
+    "timestamp": "31:58",
+    "start_seconds": 1918,
+    "text_en": "So right now, if I want to get out of this, I'm just going to press, escape to get out of that there.",
+    "text_pt": "I want to get out of this, I'm just going to press, escape to get out of that there."
+  },
+  {
+    "timestamp": "32:02",
+    "start_seconds": 1922,
+    "text_en": "And you could see that I've kind of got out of the dialog.",
+    "text_pt": "And you could see that I've kind of got out of"
+  },
+  {
+    "timestamp": "32:04",
+    "start_seconds": 1924,
+    "text_en": "Now, tasks might be something like a web server,",
+    "text_pt": "the dialog. Now, tasks might be something like a"
+  },
+  {
+    "timestamp": "32:07",
+    "start_seconds": 1927,
+    "text_en": "a front end, I don't know, like react website that's running whatever.",
+    "text_pt": "web server, a front end, I don't know, like react website that's running"
+  },
+  {
+    "timestamp": "32:11",
+    "start_seconds": 1931,
+    "text_en": "There can be all kinds of background tasks.",
+    "text_pt": "whatever. There can be all kinds of background tasks."
+  },
+  {
+    "timestamp": "32:13",
+    "start_seconds": 1933,
+    "text_en": "And by default",
+    "text_pt": "And by default"
+  },
+  {
+    "timestamp": "32:14",
+    "start_seconds": 1934,
+    "text_en": "Claude will put some of them into the background, but you can also put them in the background yourself.",
+    "text_pt": "Claude will put some of them into the background, but you can also put them in the background yourself. So what I"
+  },
+  {
+    "timestamp": "32:18",
+    "start_seconds": 1938,
+    "text_en": "So what I want to show you is if I do something like, you know, run a web server",
+    "text_pt": "want to show you is if I do something like, you know, run a web server to"
+  },
+  {
+    "timestamp": "32:23",
+    "start_seconds": 1943,
+    "text_en": "to host my two sites or host my two games, what's going to happen",
+    "text_pt": "host my two sites or host my two games, what's going to happen here"
+  },
+  {
+    "timestamp": "32:28",
+    "start_seconds": 1948,
+    "text_en": "here is Claude is going to detect that this is a task that would be blocking.",
+    "text_pt": "is Claude is going to detect that this is a task that would be blocking."
+  },
+  {
+    "timestamp": "32:32",
+    "start_seconds": 1952,
+    "text_en": "Blocking means that if we just ran it",
+    "text_pt": "Blocking means that if we just ran"
+  },
+  {
+    "timestamp": "32:34",
+    "start_seconds": 1954,
+    "text_en": "in this terminal, that it's going to block us being able to do anything else.",
+    "text_pt": "it in this terminal, that it's going to block us being able to do anything"
+  },
+  {
+    "timestamp": "32:38",
+    "start_seconds": 1958,
+    "text_en": "So you can see that we now see one bash, which means that there's a task",
+    "text_pt": "else. So you can see that we now see one bash, which means that"
+  },
+  {
+    "timestamp": "32:42",
+    "start_seconds": 1962,
+    "text_en": "that's happening and it says it's running this in the background.",
+    "text_pt": "there's a task that's happening and it says it's running this in the background."
+  },
+  {
+    "timestamp": "32:45",
+    "start_seconds": 1965,
+    "text_en": "So if we want to see that we can hit control T, which will show the different",
+    "text_pt": "So if we want to see that we can hit control T, which will show the different"
+  },
+  {
+    "timestamp": "32:49",
+    "start_seconds": 1969,
+    "text_en": "tasks, we can go to the bash and hit enter to view it.",
+    "text_pt": "tasks, we can go to the bash and hit enter to view"
+  },
+  {
+    "timestamp": "32:52",
+    "start_seconds": 1972,
+    "text_en": "If we go back, we also can type slash tasks.",
+    "text_pt": "it. If we go back, we also can type slash"
+  },
+  {
+    "timestamp": "32:55",
+    "start_seconds": 1975,
+    "text_en": "And then it's going to show the task that's running and how long it's been running for.",
+    "text_pt": "tasks. And then it's going to show the task that's running and how long it's been running for."
+  },
+  {
+    "timestamp": "32:59",
+    "start_seconds": 1979,
+    "text_en": "Now, from here, if we want to kill this task.",
+    "text_pt": "Now, from here, if we want to kill this task."
+  },
+  {
+    "timestamp": "33:02",
+    "start_seconds": 1982,
+    "text_en": "So I no longer want the web browser to be running, for example, I can press okay",
+    "text_pt": "So I no longer want the web browser to be running, for example, I can press okay"
+  },
+  {
+    "timestamp": "33:06",
+    "start_seconds": 1986,
+    "text_en": "and that's going to kill it for me.",
+    "text_pt": "and that's going to kill it for me."
+  },
+  {
+    "timestamp": "33:07",
+    "start_seconds": 1987,
+    "text_en": "And then I can go back just by hitting enter. Okay.",
+    "text_pt": "And then I can go back just by hitting enter. Okay."
+  },
+  {
+    "timestamp": "33:11",
+    "start_seconds": 1991,
+    "text_en": "And you can see background command was killed right now for some reason",
+    "text_pt": "And you can see background command was killed right now for some reason it's"
+  },
+  {
+    "timestamp": "33:14",
+    "start_seconds": 1994,
+    "text_en": "it's going to go and generate this again I think.",
+    "text_pt": "going to go and generate this again I think. But"
+  },
+  {
+    "timestamp": "33:16",
+    "start_seconds": 1996,
+    "text_en": "But if I wanted to stop this then what I could do is press escape.",
+    "text_pt": "if I wanted to stop this then what I could do is press"
+  },
+  {
+    "timestamp": "33:20",
+    "start_seconds": 2000,
+    "text_en": "So for example,",
+    "text_pt": "escape. So for"
+  },
+  {
+    "timestamp": "33:21",
+    "start_seconds": 2001,
+    "text_en": "if I do something like hello and then I press escape super fast, you'll see it's interrupts that command.",
+    "text_pt": "example, if I do something like hello and then I press escape super fast, you'll see it's interrupts that command."
+  },
+  {
+    "timestamp": "33:25",
+    "start_seconds": 2005,
+    "text_en": "So if you want to stop the execution of something in lifetime press escape.",
+    "text_pt": "Então, se você quiser interromper a execução de algo durante toda a vida,"
+  },
+  {
+    "timestamp": "33:29",
+    "start_seconds": 2009,
+    "text_en": "I probably should have mentioned that earlier, but I honestly just forgot.",
+    "text_pt": "pressione Escape. Eu provavelmente deveria ter mencionado isso antes, mas honestamente esqueci. Mas"
+  },
+  {
+    "timestamp": "33:32",
+    "start_seconds": 2012,
+    "text_en": "But that's something to know.",
+    "text_pt": "isso é algo para saber."
+  },
+  {
+    "timestamp": "33:34",
+    "start_seconds": 2014,
+    "text_en": "Okay, so those are tasks.",
+    "text_pt": "Ok, então essas são tarefas."
+  },
+  {
+    "timestamp": "33:35",
+    "start_seconds": 2015,
+    "text_en": "Again, these are things that are kind of like",
+    "text_pt": "Novamente, essas são coisas que funcionam em"
+  },
+  {
+    "timestamp": "33:37",
+    "start_seconds": 2017,
+    "text_en": "running in the background that are typically these long running operations.",
+    "text_pt": "segundo plano, normalmente operações de longa duração. Agora, no entanto, se"
+  },
+  {
+    "timestamp": "33:41",
+    "start_seconds": 2021,
+    "text_en": "Now however, if you do want to create kind of parallel",
+    "text_pt": "você deseja criar bots com garras paralelas que"
+  },
+  {
+    "timestamp": "33:44",
+    "start_seconds": 2024,
+    "text_en": "clawed bots that are like writing code or doing different operations for you,",
+    "text_pt": "são como escrever código ou fazer operações diferentes para você, sejam eles"
+  },
+  {
+    "timestamp": "33:48",
+    "start_seconds": 2028,
+    "text_en": "whether they're touching files or modifying things and that's where we get into agents.",
+    "text_pt": "tocando em arquivos ou modificando coisas, e é aí que entramos nos agentes."
+  },
+  {
+    "timestamp": "33:53",
+    "start_seconds": 2033,
+    "text_en": "So if you go to slash agents, you can create agents,",
+    "text_pt": "Portanto, se você usar barras de agentes, poderá criar"
+  },
+  {
+    "timestamp": "33:56",
+    "start_seconds": 2036,
+    "text_en": "and these agents can perform special tasks and you can delegate tasks to them.",
+    "text_pt": "agentes, e esses agentes poderão executar tarefas especiais e você poderá delegar tarefas a"
+  },
+  {
+    "timestamp": "34:01",
+    "start_seconds": 2041,
+    "text_en": "So for example, you could have an agent that is handling or doing a styling right.",
+    "text_pt": "eles. Por exemplo, você pode ter um agente que está cuidando ou estilizando corretamente."
+  },
+  {
+    "timestamp": "34:05",
+    "start_seconds": 2045,
+    "text_en": "Or like changing the user interface, an agent responsible for the back end.",
+    "text_pt": "Ou como mudar a interface do usuário, um agente responsável pelo back-end."
+  },
+  {
+    "timestamp": "34:09",
+    "start_seconds": 2049,
+    "text_en": "Okay, I'm not going to get into all the details",
+    "text_pt": "Ok, não vou entrar em todos os detalhes"
+  },
+  {
+    "timestamp": "34:11",
+    "start_seconds": 2051,
+    "text_en": "of how to set this up, because it does get a little bit complex and kind of beyond",
+    "text_pt": "de como configurar isso, porque fica um pouco complexo e vai além do"
+  },
+  {
+    "timestamp": "34:14",
+    "start_seconds": 2054,
+    "text_en": "the scope of this tutorial, but I want to show you things like that do exist.",
+    "text_pt": "escopo deste tutorial, mas quero mostrar a você que coisas assim existem."
+  },
+  {
+    "timestamp": "34:18",
+    "start_seconds": 2058,
+    "text_en": "And we also have things like MCP if you want to connect to, for example, Notion",
+    "text_pt": "E também temos coisas como o MCP, se você quiser se conectar, por exemplo, ao"
+  },
+  {
+    "timestamp": "34:23",
+    "start_seconds": 2063,
+    "text_en": "or Gmail or Google Drive, or you want to connect to a bunch of other services, you can do that",
+    "text_pt": "Notion, ao Gmail ou ao Google Drive, ou quiser se conectar a vários outros serviços, você pode fazer"
+  },
+  {
+    "timestamp": "34:28",
+    "start_seconds": 2068,
+    "text_en": "right from an MC server inside of Claude, which really expands its capabilities.",
+    "text_pt": "isso diretamente de um servidor MC dentro do Claude, o que realmente expande seus recursos."
+  },
+  {
+    "timestamp": "34:33",
+    "start_seconds": 2073,
+    "text_en": "Again, let's get out of that. Let's go through slash.",
+    "text_pt": "Mais uma vez, vamos sair dessa. Vamos passar pela barra."
+  },
+  {
+    "timestamp": "34:36",
+    "start_seconds": 2076,
+    "text_en": "You can see there's a bunch of other stuff that you can do here.",
+    "text_pt": "Você pode ver que há um monte de outras coisas que você"
+  },
+  {
+    "timestamp": "34:38",
+    "start_seconds": 2078,
+    "text_en": "You can set up hooks, for example, that will automatically run code for you or different tasks.",
+    "text_pt": "pode fazer aqui. Você pode configurar ganchos, por exemplo, que executarão código automaticamente para você ou para diferentes tarefas."
+  },
+  {
+    "timestamp": "34:43",
+    "start_seconds": 2083,
+    "text_en": "You can set up Keybinds memory, you know, all of this kind of stuff.",
+    "text_pt": "Você pode configurar a memória Keybinds, você sabe, todo esse tipo de"
+  },
+  {
+    "timestamp": "34:47",
+    "start_seconds": 2087,
+    "text_en": "So just go through it, have a look.",
+    "text_pt": "coisa. Então basta passar por isso,"
+  },
+  {
+    "timestamp": "34:49",
+    "start_seconds": 2089,
+    "text_en": "And another thing that's useful is skills.",
+    "text_pt": "dar uma olhada. E outra coisa útil"
+  },
+  {
+    "timestamp": "34:52",
+    "start_seconds": 2092,
+    "text_en": "So you can actually create skills that are essentially repeatable tasks",
+    "text_pt": "são as habilidades. Assim, você pode criar habilidades que são essencialmente tarefas repetíveis"
+  },
+  {
+    "timestamp": "34:55",
+    "start_seconds": 2095,
+    "text_en": "that Claude does all of the time.",
+    "text_pt": "que Claude faz o tempo todo."
+  },
+  {
+    "timestamp": "34:57",
+    "start_seconds": 2097,
+    "text_en": "So rather than creating an agent, you can create a skill and then you can run",
+    "text_pt": "Então, em vez de criar um agente, você pode criar uma habilidade"
+  },
+  {
+    "timestamp": "35:01",
+    "start_seconds": 2101,
+    "text_en": "a particular skill by just saying, hey, you know, run this skill that I've taught you how to do.",
+    "text_pt": "e então executar uma habilidade específica apenas dizendo: ei, você sabe, execute essa habilidade que"
+  },
+  {
+    "timestamp": "35:06",
+    "start_seconds": 2106,
+    "text_en": "It will go look up the skill and then be able to run it continually.",
+    "text_pt": "ensinei como fazer. Ele procurará a habilidade e poderá executá-la continuamente."
+  },
+  {
+    "timestamp": "35:08",
+    "start_seconds": 2108,
+    "text_en": "So you can see how powerful this can get if you really go through the full configuration.",
+    "text_pt": "Então você pode ver o quão poderoso isso pode se tornar se você realmente realizar a configuração"
+  },
+  {
+    "timestamp": "35:13",
+    "start_seconds": 2113,
+    "text_en": "But at this point, if you follow along, you know how to use cloud code better than 99% of people.",
+    "text_pt": "completa. Mas neste ponto, se você acompanhar, você sabe como usar o código em nuvem melhor do que"
+  },
+  {
+    "timestamp": "35:19",
+    "start_seconds": 2119,
+    "text_en": "I showed you all of the core functionality and features, and you can go out and start",
+    "text_pt": "99% das pessoas. Mostrei a você todas as principais funcionalidades e recursos, e você pode sair"
+  },
+  {
+    "timestamp": "35:22",
+    "start_seconds": 2122,
+    "text_en": "coding effectively whatever you want, because now you know how to navigate this tool.",
+    "text_pt": "e começar a codificar efetivamente o que quiser, porque agora você sabe como navegar nesta ferramenta."
+  },
+  {
+    "timestamp": "35:27",
+    "start_seconds": 2127,
+    "text_en": "I know this was long.",
+    "text_pt": "Eu sei que isso"
+  },
+  {
+    "timestamp": "35:28",
+    "start_seconds": 2128,
+    "text_en": "I know it's a bit complex, but I want you to get the proper setup.",
+    "text_pt": "foi longo. Eu sei que é um pouco complexo, mas quero que você"
+  },
+  {
+    "timestamp": "35:31",
+    "start_seconds": 2131,
+    "text_en": "So you didn't need to watch a bunch of other videos.",
+    "text_pt": "faça a configuração adequada. Então você não precisou assistir a"
+  },
+  {
+    "timestamp": "35:33",
+    "start_seconds": 2133,
+    "text_en": "If you guys have other questions or you want more tutorials on cloud code,",
+    "text_pt": "um monte de outros vídeos. Se vocês tiverem outras dúvidas ou quiserem mais tutoriais"
+  },
+  {
+    "timestamp": "35:36",
+    "start_seconds": 2136,
+    "text_en": "then definitely let me know and I will see you in another video.",
+    "text_pt": "sobre código em nuvem, me avisem e nos vemos em outro vídeo."
+  }
+]

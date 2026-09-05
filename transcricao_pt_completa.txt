@@ -1,0 +1,333 @@
+Este vídeo vai te ensinar o código Claude. Vou repassar tudo e não assumirei nenhum conhecimento prévio. Vou orientá-lo na configuração e instalação. Passo a passo. Mostrarei como utilizar a ferramenta, as práticas recomendadas, vários recursos e, no final do vídeo, você se sentirá confortável ao usar essa ferramenta para gerar resultados bastante insanos e projetos de codificação incríveis.
+
+Dito isso, vamos entrar no assunto. Portanto, sem entrar em muitos detalhes, o Cloud Code é efetivamente uma linha de comando ou aplicativo de terminal que permite gerar código, depurar projetos, criar sites, criar aplicativos, o que você quiser.
+
+É efetivamente uma versão antrópica de, você sabe, cursor ou algo assim, certo? Onde você pode gerar um monte de código usando o terminal. Agora, esta é uma codificação baseada em prompt, o que significa que você não precisa realmente escrever nenhum código sozinho.
+
+Você simplesmente digita para um agente de IA, informa qual é o resultado desejado e então segue em frente e começa a codificar. Agora, muitas vezes o código em nuvem será usado em combinação com outras ferramentas de desenvolvedor, e mostrarei algumas delas neste vídeo.
+
+Mas de modo geral, você não precisa ser um especialista para usar isso. E mesmo sendo um iniciante, você pode criar alguns projetos muito legais. Dito isso, vamos ver como configuramos isso. Agora, para que o código da nuvem funcione, você precisará de uma assinatura da nuvem paga.
+
+Portanto, você precisará de uma assinatura Pro Max Teams ou Enterprise ou de uma chave de API com alguns tokens ou créditos do console da nuvem. Agora, eu sugeriria que se você está apenas querendo mexer com isso, obtenha o plano mais barato da nuvem.
+
+Você ficará sem créditos rapidamente se estiver usando isso para trabalhos muito pesados. Mas é claro, teste-o primeiro antes de começar a comprar vários créditos diferentes. Também importa qual modelo você está usando, sobre o qual falaremos mais tarde, que determinará qual será o preço geral de todos os prompts que você enviar.
+
+Agora, geralmente, você não vai se sobrecarregar. Você simplesmente ficará sem créditos e terá que comprar mais. Então não se preocupe com isso. OK. Agora, para instalar isso, será necessário trabalhar diretamente dentro do terminal.
+
+Então, o que vamos fazer é abrir um terminal ou um prompt de comando ou uma instância do PowerShell, dependendo do sistema operacional em que você está trabalhando. Agora, se você estiver no Windows, sugiro que você abra o PowerShell para poder ir até a barra de pesquisa do Windows, procurar pelo PowerShell e, em seguida, abrir um terminal como este.
+
+E vou colocá-lo no lado direito da tela. Agora, se você estiver no Mac ou Linux, abra um terminal normal. Então basta digitar terminal na pesquisa em destaque. E então você estará em um ambiente onde poderá começar a usar código em nuvem.
+
+Agora para instalar vou deixar esta documentação na descrição que dá os comandos que você pode simplesmente copiar dependendo do seu sistema operacional. Então, se você estava no Mac ou Linux, você pode copiar este comando curl aqui.
+
+Basta colá-lo em seu terminal e executá-lo. Se você estiver no Windows e estiver usando o PowerShell como sugeri, poderá copiar este comando IRM. Você pode colá-lo, pressionar Enter e ele deverá instalar o código da nuvem para você.
+
+Se você estiver usando o prompt de comando, talvez esteja usando uma versão mais antiga do Windows. Então você pode copiar esta versão aqui. Cole-o no prompt de comando. Novamente, ele instalará a ferramenta. O código em nuvem não é um aplicativo de desktop.
+
+Na verdade, ele é executado diretamente dentro do seu shell ou terminal. Portanto, para usar isso no futuro, você precisará abrir o PowerShell ou o terminal novamente, ou usar algum tipo de ferramenta para realmente interagir com a nuvem e gerar código.
+
+Agora, uma vez que está instalado, a maneira de testar isso é simplesmente digitando Claude em seu terminal. Portanto, se você digitar Claude, deverá obter algum tipo de resultado aqui. Agora, quando você executar isso pela primeira vez, será solicitado que você se autentique com sua conta antrópica ou na nuvem.
+
+Então faça isso. Acesse seu navegador, faça login em sua conta e pronto. Agora também, sempre que você executar isso pela primeira vez e digitar esse comando, será solicitado que você confie na pasta atual em que está.
+
+Então, vamos em frente e prosseguir. Sim, confio na pasta. E então abrirá a IU do Claude Code. Agora, neste ponto, você deve ter o código da nuvem instalado e lembre-se, se você fechasse o terminal ou o PowerShell, teria que reabri-lo.
+
+Certo? Vou apenas aumentar o zoom e digitar novamente Claude e então você pode pressionar enter. E novamente você volta para a interface do usuário. Então não se preocupe se você perdê-lo. Agora, para alguns de vocês que são iniciantes, isso já é um pouco intimidante.
+
+Na verdade, a Anthropic criou uma maneira mais fácil de escrever código usando Claude. Não é a mesma coisa que o código de Claude, mas é muito semelhante e você pode acessá-lo baixando o aplicativo de desktop para Claude.
+
+Portanto, se você tiver uma conta com eles, basta baixar o aplicativo para desktop. Se você fizer isso, o aplicativo ficará parecido com isto. A partir daqui, o que você poderá fazer é alternar entre este chat e este modo de código.
+
+E se você entrar no modo de codificação aqui, poderá selecionar um projeto. Você pode escrever um prompt diretamente aqui e pode alterar o modo como codificação, pergunta, planejamento, certo. Você pode adicionar arquivos diferentes.
+
+Você pode conectá-lo ao GitHub, escolher seu modelo e é muito mais simples e fácil de usar. Então, novamente, se você é iniciante, pode simplesmente usar isso. Mas se você quiser realizar algum trabalho sério, a CLI ou a ferramenta de linha de comando que estou mostrando é o que você vai querer configurar e ter em sua máquina.
+
+Agora, se você já programa há algum tempo, provavelmente sabe que o mercado de trabalho está difícil recentemente e pode sentir que os currículos tradicionais simplesmente não mostram quem você realmente é como criador ou tecnólogo.
+
+Agora é aí que entra o dinked me. É uma nova rede de carreira nativa de IA construída para a era real de trabalho real, projetos reais, impacto real. Não apenas cargos. Agora, em vez de um currículo estático, Dink oferece uma carteira de identidade viva, seu cartão Dink, que mostra automaticamente seu código, artigos, citações e impacto mensurável em plataformas como GitHub e Google Scholar.
+
+Recrutadores, professores e startups podem descobrir o que você realmente fez, não apenas o que escreveu no papel. Agora é isso que o dink faz por você, mas pelas empresas. Dink é um mecanismo de talentos alimentado por IA que analisa e compara pesquisadores e engenheiros em segundos.
+
+Ele ajuda as equipes a identificar as melhores opções com mais rapidez do que as ferramentas de recrutamento tradicionais. Agora, a melhor parte de tudo isso é que você pode resgatar seu cartão Dink gratuitamente. Comece a construir sua identidade pessoal em minutos e deixe seu trabalho falar por si.
+
+Em um mundo onde os currículos são analisados seis segundos antes de uma decisão. Agora aqui você pode até ver meu cartão dink. Aqui tem todos os meus dados, informações que você não veria em um currículo, toda a minha trajetória profissional, meu GitHub, a quantidade de estrelas, meu canal no YouTube, Instagram, tudo isso está aqui.
+
+Bem como trajetória de carreira em redes, Twitter e tudo mais que você deseja incluir. Agora você pode começar a usar o Dink hoje gratuitamente clicando no link na descrição, e um enorme agradecimento a eles por patrocinarem o vídeo de hoje.
+
+Vamos voltar ao assunto. Agora, com isso em mente, antes de você enlouquecer aqui com o Claude, o que vou sugerir que você faça é instalar o git no seu computador. Agora, git é uma ferramenta que permitirá que você essencialmente verifique o que Claude está fazendo e reverta para uma versão anterior de sua base de código, caso cometa algum erro.
+
+Você não o terá por padrão em suas máquinas. Você precisa instalar. Agora. Você pode fazer isso acessando o link que colocarei na descrição, onde você pode fazer o download para Windows, Mac ou Linux. No entanto, como temos o código do Claude, podemos simplesmente perguntar ao código do Claude, você pode instalar o git para mim?
+
+Agora, se você fizer isso, ele deverá pensar nos comandos que precisará executar para instalar isso para você. Provavelmente deveria pedir sua permissão. Então você pode ver aqui que está pedindo permissão para executar um comando.
+
+Eu vou. Sim. E não peça este comando novamente. E então ele executará o comando para instalar essa ferramenta para você. Agora, por algum motivo, isso não funciona. Então o que você pode fazer é instalá-lo diretamente do site aqui.
+
+Ok. Portanto, no meu caso, ocorreu um erro que dizia que preciso executar o PowerShell como administrador para realmente executar este comando. Portanto, se você receber um erro como esse, não se preocupe.
+
+O que você pode fazer é simplesmente abrir o PowerShell pressionando o botão direito e executar como administrador. Agora, se você estiver executando isso no Mac, deve ser bom usar o padrão. Mas aqui o que vou fazer é digitar Claude.
+
+Ok, vou sim, confio nesta pasta. E então a mesma coisa, instale o git para mim e vamos ver se ele consegue fazer isso. Agora que dei as permissões. Tudo bem. Então acabei de instalar. Não vou passar por todo o processo.
+
+E a próxima coisa que recomendo que você faça é criar uma conta no GitHub. A razão pela qual vamos querer criar uma conta no GitHub é que vamos conectar o Claude ao GitHub, para que ele seja capaz de criar novos repositórios para nós e salvar todo o código que estamos escrevendo desde o início, para não perdermos nada.
+
+Agora, o GitHub é essencialmente um site ou uma espécie de local remoto onde podemos armazenar códigos diferentes. Então, em vez de apenas tê-lo em nosso próprio computador, podemos armazená-lo no GitHub, onde podemos acessá-lo de outra máquina, podemos compartilhá-lo com outro desenvolvedor.
+
+E o mais importante, se perdermos o acesso ao nosso próprio computador, ou talvez excluirmos a pasta ou Claude bagunçar ou algo assim, podemos sempre obter o repositório ou o código novamente acessando este site.
+
+Então vá ao GitHub, crie uma conta. É totalmente gratuito e vou mostrar rapidamente como conectar sua conta GitHub ao seu terminal aqui localmente. Então você pode usar isso com Claude.
+
+Tudo bem. Então, para conectar o git, que está rodando em nosso computador local, ao GitHub, que está rodando na web, o que precisamos fazer é executar o seguinte comando que é g off log in.
+
+Então, perguntei ao código da nuvem e ele me disse exatamente o que executar. Então o que vou fazer é digitar g auth log in assim. E então ele deve executar este comando para mim. E permita-me conectar ao GitHub. OK.
+
+Então você pode ver que ele pedirá para executar o comando. Então vamos em frente e digitar. Sim. E neste caso G não foi encontrado. Portanto, devo prosseguir e instalar isso para mim. Então, vou digitar a opção C para que possamos instalar essa ferramenta para mim.
+
+OK. Parece que foi possível instalar isso. E então irei sim para que ele possa executar esse comando. Tudo bem. Então observe que estou me dando uma saída aqui onde diz que quer que eu vá para esta URL e digite nosso código único.
+
+Então, o que vamos fazer aqui é selecionar a conta. Então, vou usar tecnologia com Tim. E então vou copiar esse código que está me dando aqui. Então basta copiar e colar e pressionar continuar.
+
+E isso deve autorizar o GitHub aqui em nosso terminal. Agora, para fazer isso, preciso apenas de autenticação com celular. Então deixe-me fazer isso. Tudo bem. Portanto, parece que estamos todos autenticados. Agora você pode ver que eu estava logado como técnico com Tim.
+
+E agora temos o GitHub configurado. Eu sei que é um pouco chato fazer isso no começo, mas acredite, vale a pena porque agora, sempre que usarmos a nuvem, ela poderá salvar automaticamente o código para nós.
+
+Muitos outros tutoriais não cobrem isso. É por isso que você está assistindo o meu, porque quero passar por isso passo a passo e quero que você prepare tudo em um único vídeo. Agora, prometo que podemos passar para mais alguns recursos.
+
+Ok, então deixe-me fechar meu navegador. Vamos abrir um pouco mais o código da nuvem. E quero mostrar como a maioria dos desenvolvedores realmente trabalha com código em nuvem agora, em vez de apenas usar o terminal aqui. Muitas vezes você usará isso com um ambiente de desenvolvimento.
+
+O que quero dizer com isso é que você provavelmente usará um editor como VSCode ou um cursor ou JetBrains IDE, ou algo nesse sentido. Assim, você pode realmente ver o que o código da nuvem está fazendo e não apenas ter essa visualização do terminal.
+
+Por exemplo, um editor muito popular é o Visual Studio Code. Uma versão recente daquilo que é habilitado para IA é o cursor. Por exemplo, você pode abrir o cursor. Vou abrir um editor aqui mesmo.
+
+E se você quiser uma recomendação, sugiro apenas baixar o cursor porque este é o melhor para usar no momento. Isso também tem seus próprios recursos de IA, mas podemos aumentá-los apenas usando código em nuvem.
+
+Então você pode ver que eu tenho, o que é? É como um repositório configurado agora quando você abre um desses aplicativos. Então, digamos que você baixe o Curser ou baixe o código VS ou obtenha qualquer editor de código em seu computador, o que você pode fazer é ir para o arquivo, pode ir para a pasta aberta, pode ir para sua área de trabalho ou qualquer local que você poderá encontrar no futuro.
+
+E poderíamos fazer algo como um teste de código com garras. E vou apenas criar uma nova pasta. Como já tenho uma pasta chamada Code test? OK. Bom, não era isso que eu queria. Então vamos lá. Teste de código de nuvem dois.
+
+Tudo bem. Então vou criar uma nova pasta. A razão pela qual estou criando uma nova pasta é onde quero que meu projeto de codificação fique. Vou selecioná-lo e depois abri-lo. Então, novamente, acabei de abrir meu editor de código.
+
+Não importa qual você está usando. Você pode ignorar todos os recursos malucos do cursor aqui. E podemos fechar algumas dessas janelas. E meio que apenas escondê-los. E o que podemos fazer é abrir o terminal diretamente aqui dentro.
+
+Então, se você estiver trabalhando dentro do cursor ou VSCode ou windsurf, algo que seja como uma bifurcação de código vs, porque muitos desses editores são baseados no Visual Studio Code. O que você pode fazer para abrir o terminal é tentar encontrar uma espécie de barra de arrastar na parte inferior da tela, mas você pode ver que estou tendo problemas para encontrá-la aqui.
+
+Em vez disso, você pode pressionar o controle e, em seguida, pressionar crase no teclado ou comando e, em seguida, pressionar crase no teclado, e isso deve abrir um terminal diretamente dentro desta pasta que você abriu para você. Agora, se isso for difícil para você, você pode pressionar Ctrl, shift P ou Command Shift P se estiver no Mac e digitar terminal e criar um novo terminal, e então escolher uma das instâncias.
+
+Portanto, prompt de comando ou PowerShell. Se você estiver no Mac ou Linux novamente, escolha provavelmente o primeiro que aparecer. Então, digamos que eu faça isso e você pode ver que isso cria um novo terminal para mim. E poderei ver isso na minha tela.
+
+Agora, se você quiser ver a barra lateral esquerda, que é o visualizador de arquivos, você pode pressionar este botão aqui. Novamente, isso está no cursor, mas você também pode fazer isso em outro editor. E você está construindo.
+
+Agora veja todos os arquivos que o código da nuvem irá gerar para nós em um minuto. Agora, novamente, se você não conseguir encontrar este botão, você pode pressionar Ctrl B ou comando B no teclado e isso alternará a visualização do arquivo no lado esquerdo.
+
+Agora eu sei que parece complicado, mas na maioria das vezes você vai querer trabalhar assim porque quer ver os arquivos e realmente saber o que o código da nuvem está fazendo, especialmente se você não estiver familiarizado com o terminal.
+
+Eu sugiro abrir isso em algum tipo de interface de usuário como fizemos aqui, para que você realmente saiba o que está acontecendo. Ok, agora estamos dentro de um terminal. Este é exatamente o mesmo ambiente que eu estava mostrando antes, exceto que agora está neste editor de código.
+
+Certo. E novamente, esse editor de código é chamado de cursor. Caso alguém esteja confuso, basta ir você pode digitar download do cursor na internet e fazer o download com muita facilidade. Basta abri-lo e literalmente tudo o que você precisa fazer é acessar o arquivo, abrir a pasta, abrir um novo local e começar a escrever o código.
+
+Então, neste terminal vamos digitar plot. E quando digitamos clod ele abre o código da nuvem como antes. Mas agora neste local. Então, a mesma coisa, vou pressionar a pasta. E agora eu tenho o código da nuvem em meu terminal e posso começar a gerar algumas coisas.
+
+Então agora vamos realmente começar a usá-lo. Vamos começar a construir um projeto. E vou começar a examinar vários dos recursos que ele possui. Agora você realmente notará que, como estou usando este editor, ele está detectando isso.
+
+E está me dizendo que posso ter alguns recursos especiais aqui no código da nuvem porque estou trabalhando no cursor. Então o que vou fazer é ir em frente e pressionar enter. E agora podemos simplesmente começar a trabalhar.
+
+Mas, novamente, será possível fazer referência aos arquivos que estamos visualizando no cursor. Isso vai nos mostrar as mudanças que está fazendo. É muito poderoso. Tudo bem. Então, sem mais delongas, vamos fazer alguma coisa.
+
+E digamos que queremos apenas criar um jogo simples baseado na web. Vamos com algo muito, muito simples por enquanto. Como talvez o jogo da velha e apenas pedir para fazer aquele jogo. Então vou dizer para fazer o jogo da velha que posso jogar na web.
+
+OK. Agora vou começar a examinar todas as outras configurações e ajustes. Mas, por enquanto, vamos executar isso para que possamos ver algum tipo de resultado e saber que estamos realmente obtendo algum resultado.
+
+Ok. Então você pode ver que vai começar a fazer isso e gerar alguma saída. Agora, algo que vale a pena notar aqui é que, se você quisesse, poderia executar código em nuvem várias vezes em paralelo.
+
+Então, enquanto eu estava criando o jogo da velha, por exemplo, eu poderia criar outro jogo. Eu poderia auditar a base de código. Eu poderia, você sabe, mudar alguma coisa, tanto faz. E essa é uma das coisas que torna isso bastante poderoso.
+
+Não vou fazer isso agora porque, novamente, ainda estamos no nível de Kenner. Mas você entendeu. OK. Então você pode ver que algum código foi gerado para mim aqui. É meio que dar certo no terminal e me pedir para permitir a criação do jogo da velha.
+
+Agora, o que vou fazer é ir aqui e vou, sim, permitir todas as edições durante a sessão. E observe que estou usando minhas teclas de seta aqui para navegar. Então vou pressionar enter. Então, posso simplesmente prosseguir e começar a escrever isso sem me pedir permissão, ok.
+
+Então você pode ver que ele diz que criou isso para mim. E está me dizendo que a maneira de executar isso é iniciar o token Tic TAC, HTML ou clicar duas vezes no arquivo no File Explorer. Então, vou apenas dizer para iniciar o HTML do jogo da velha.
+
+Não tenho certeza se esse é realmente o comando correto, mas vamos executá-lo e ver se isso fará alguma coisa por mim. Diz para abri-lo no navegador padrão. Sim. E não peça isso novamente. E vamos ver se isso pode abrir isso para mim.
+
+E posso executá-lo bem. E você pode ver que este é o meu navegador. E temos o tac toe que agora foi criado, que parece muito bom. Podemos gerar um novo jogo. Você entendeu. Agora, a única coisa que quero chamar a atenção aqui é que assim que começamos a rodar isso, uma pasta Doc Claude foi criada automaticamente para nós no diretório onde estamos trabalhando, assim como o código que foi gerado.
+
+Certo. Então você pode ver que o jogo da velha agora foi escrito. Então isso é muito legal. E esta é a razão pela qual você faria isso dentro de um editor de código. Assim, você pode realmente ver as alterações no código que está sendo gerado em tempo real.
+
+Novamente, você não precisa fazer isso. Mas é isso que muitas pessoas gostam de fazer quando usam uma ferramenta como esta. OK. Então, criamos algo e agora precisamos começar a passar por muitas configurações e ajustes diferentes.
+
+Agora lembre-se que se você não sabe fazer alguma coisa, basta pedir ajuda ao Claude. Isso pode ajudá-lo. Ele pode alterar configurações. Ele pode configurar coisas para você. Mas é claro que é útil conhecer o básico.
+
+Então, aqui dentro, como você já viu, você pode simplesmente digitar a linguagem humana e obterá algum resultado. No entanto, você também pode digitar barra de ajuda. Vamos começar com isso. E isso lhe dará um tipo geral de atalho ou lista de comandos.
+
+E coisas que você pode fazer em Claude. Então você pode ver que posso alternar entre algumas coisas diferentes aqui. E você notará que se eu colocar um ponto de exclamação, isso me colocará no modo bash. Se eu fizer uma barra, isso me permitirá digitar comandos diferentes.
+
+Se eu fizer um anúncio, isso me permitirá fazer referência a vários arquivos ou caminhos. Se eu fizer um e comercial, isso será para tarefas em segundo plano ou atalhos de teclado ou o que quer que diga, eu acho. Então, para a nova linha de fundo.
+
+Não tenho certeza do que isso significa. Na verdade, nunca usei o e comercial. Continuando, vamos para os comandos e se eu rolar até aqui, você verá que há vários comandos diferentes que posso executar. Não podemos abordar todos eles neste vídeo, mas vou mostrar alguns deles que são úteis. Então, se você quiser, como faço alguma coisa?
+
+Ou eu me pergunto o que são possíveis comandos de barra e você pode ver um monte de coisas aparecendo e provavelmente aprenderá algo apenas olhando através deste menu e depois comandos personalizados. Claro, você pode criar seus próprios comandos.
+
+Não vamos abordar isso agora. OK. Portanto, a primeira coisa que você deve saber são os diferentes modos que você pode usar dentro do código da nuvem. Você pode ter um modo de planejamento, um modo de pergunta e um modo de codificação.
+
+Agora, o modo perguntar é o modo padrão, onde ele perguntará antes de fazer algo, para que você possa ver a pergunta antes de gerar um comando. Ele perguntou antes de escrever o código. Escreva o modo de código. Ele apenas codificará por padrão.
+
+Não vai pedir permissão, e o modo de planejamento vai criar um plano detalhado que Claude seguirá. Para que tenha um pouco mais de estrutura. Para alterar o modo, você pode pressionar shift e tab no teclado.
+
+Então shift e Tab, você pode vê-lo mostrando shift tab para circular, temos o modo de plano. Temos o modo normal certo, que é este. E então temos o modo de codificação que está quase ativado. Então aqui está o modo de planejamento certo.
+
+Aceite edições. Ele simplesmente fará a coisa e então o modo perguntar é o modo padrão, onde não mostra nada. Novamente, para fazer isso, basta mudar e tocar. Agora, se quiser ver os atalhos, você pode digitar novamente o ponto de interrogação e ver os diferentes atalhos que pode usar.
+
+E vai começar a mostrar todos os diferentes que você pode colocar diretamente aqui. OK. Então é assim que você muda o modo. Portanto, o primeiro modo para o qual quero mudar é o modo de planejamento.
+
+E quero mostrar alguns outros atalhos. Digamos que você escreva algo muito longo aqui e não queira simplesmente apagar tudo. Bem, o que você pode fazer é pressionar escape duas vezes no teclado para escapar do escape, e isso limpará tudo o que estiver dentro desta janela.
+
+Então fuja. Escapar. Agora, se quiser voltar ao que você digitou anteriormente, você pode usar a tecla de seta para cima para poder alternar entre os comandos anteriores executados usando as teclas de seta para cima e para baixo em seu terminal.
+
+Na verdade, existem mais atalhos lá, mas se você quiser apenas percorrer os comandos anteriores caso esteja repetindo algo, não será necessário digitá-lo novamente. Você pode simplesmente alternar com as teclas de seta para cima e para baixo.
+
+Agora, outra coisa que vale a pena notar é que às vezes você deseja criar uma quebra de linha no prompt. Então, por exemplo, eu tenho um olá. E então eu quero ir para a próxima linha. Certo. Não quero pressionar enter porque se eu pressionar enter o comando será enviado.
+
+Mas eu quero realmente descer e ter várias linhas. Então, para fazer isso, você pressiona a tecla alt ou a tecla de opção e depois pressiona enter para ver que o que fiz no meu teclado aqui foi apenas pressionar alt.
+
+Então estou segurando Alt no Windows. Se você estiver no Mac, pode ser uma opção. E então eu pressiono enter e posso ir para a próxima linha para poder ter coisas em várias linhas. E, novamente, posso esclarecer isso pressionando Escape duas vezes.
+
+Então, novamente, isso é alt ou opção. Você mantém pressionado e pressiona enter, ok. Então estamos no modo de planejamento. Agora aprendemos os comandos. Temos uma visão geral do terreno quando se trata de usar isso.
+
+Temos que primeiro decidir o que realmente queremos criar. Portanto, a parte mais importante da codificação de IA é saber o que você deseja. Se você não sabe o que quer e olha para o agente que o orienta, você obterá resultados horríveis e malucos que levarão uma eternidade para depurar.
+
+E mude. Mas se você for muito claro e específico sobre o que deseja e fizer uma pequena tarefa de cada vez, poderá obter resultados fantásticos e criar coisas incríveis. Então este é apenas um tutorial. Não tenho nada maluco que queira construir, mas definitivamente ainda quero bolar um plano para o que quero fazer.
+
+Então eu sempre começo no modo de planejamento, e o que vou fazer é transmitir meus pensamentos para Claude e pedir que ele elabore um plano para criar este projeto. Não preciso conhecer a base de código, não preciso conhecer os idiomas.
+
+Não preciso ter feito pesquisas. Obviamente, é útil se você fizer essas coisas, mas se quiser apenas começar do zero, nós podemos fazer isso. Então, vamos apenas transmitir nossos pensamentos. Para fazer isso, vou usar uma ferramenta de ditado no meu computador chamada Whisper Flow.
+
+Então, em vez de digitar, vou falar no meu microfone. Quero criar um jogo de tiro simples de cima para baixo que possa ser executado no navegador. Quero ter alguns sprites, ou pelo menos legais. Mais ou menos como animações de personagens.
+
+Eu quero que meu personagem tenha uma arma. Eu quero que os inimigos venham até ele de ângulos diferentes. Quero ser capaz de mover as teclas de seta e usar o mouse para apontar e clicar nos diferentes inimigos e atirar neles.
+
+Deveríamos ter níveis, deveríamos progredir. Claramente, deveríamos ter uma tela de menu. Devemos mantê-lo relativamente simples e com estilo retro 2D. Ok, então esse é o meu processo de pensamento. Acabei de transmitir isso para Claude e a mesma coisa, vou segurar alt e descer.
+
+Vou apenas colocar um pequeno separador e direi para criar um plano para este jogo, e então começaremos a executá-lo e codificá-lo. Então, estou apenas instruindo, mesmo que esteja no modo de planejamento.
+
+Você sabe, quero planejar isso antes de prosseguir. E você pode usar isso para planejar recursos, não apenas aplicativos inteiros, como estou fazendo aqui. OK. Então vou prosseguir e pressionar Enter aqui. E deveria começar a gerar o plano para mim.
+
+Vamos esperar um segundo para ficar tudo bem. Agora, enquanto isso está acontecendo, quero chamar sua atenção para algumas coisas aqui. Então, primeiro você pode ver quanto tempo leva para ser executado, bem como o número de tokens que estão sendo usados ​​durante esta geração.
+
+Então, se você realmente se preocupa com o custo, obviamente há algo para prestar atenção. Agora você também percebe que isso é capaz de usar ferramentas. Existem algumas ferramentas incorporadas ao Claude. Existem outras ferramentas que você mesmo pode instalar se quiser tornar isso mais capaz.
+
+Então, por exemplo, se eu apertar o controle O, que está me mostrando aqui, ele vai expandir isso para que ele realmente me mostre, você sabe, exatamente o que está acontecendo. E posso ver o que está acontecendo aqui.
+
+Certo. Então está tudo bem, acho que o usuário deseja criar um jogo. Tudo bem. Este é um projeto divertido, ok. Aqui está o que eu quero fazer. Blá, blá, blá, blá, tanto faz. Certo. E então, se eu quiser voltar, posso controlar.
+
+Ah, e isso me traz de volta aqui, onde posso ver, você sabe, o que está fazendo no plano que está gerando. Então, se você quiser abri-lo no modo detalhado, onde você vê os logs, é o controle.
+
+Agora você também pode fazer com que esse gatilho seja executado em segundo plano. Eu não vou fazer isso agora. Mas se você pressionar o controle B ou o comando B, dependendo do seu sistema operacional, você pode acionar isso para ser executado como uma sessão em segundo plano e, dessa forma, você pode usar o código da nuvem para outra coisa na mesma visualização do terminal enquanto isso está acontecendo em segundo plano.
+
+E, novamente, você pode ter quantas tarefas em segundo plano desejar em execução ao mesmo tempo. Ok, então o plano foi criado. No entanto, ele está me fazendo algumas perguntas aqui que preciso responder. Então, vou ficar sem sons por enquanto.
+
+Então vamos responder a isso. E então também está me perguntando sobre o tamanho do jogo e vou entrar em tela cheia, na verdade, quer saber. Vamos de 800 por 600 só para facilitar. E vou submeter minhas respostas ao Claude.
+
+Então, outra coisa legal que ele faz é esclarecer com você antes de realmente começar a gerar todas as tarefas. Agora, enquanto isso está sendo executado, vou mostrar que você pode alterar o modelo que está sendo usado aqui.
+
+Então, por padrão, acredito que usará o modelo mais poderoso. Ou, na verdade, deixe-me responder primeiro e depois entraremos no modelo. Então Claude escreveu um plano e está pronto para ser executado.
+
+Você gostaria de prosseguir? Sim. Aceitar automaticamente. Sim. Aprovar edições manualmente. Digite aqui para dizer a Claude o que mudar. Sim, eu vou. Sim. Limpe o contexto e aceite automaticamente as edições. Agora, quando você limpa o contexto, o que isso fará é essencialmente remover todas as coisas anteriores com as quais você enviou a mensagem para Claude.
+
+Portanto, não será mais incluído na solicitação de API para Claude e será baseado no plano. Isso é bom para salvar tokens, mas se você quiser manter o contexto, poderá fazer isso corretamente, aceitando automaticamente as edições, etc.
+
+Então eu vou sim, limpar o contexto e aceitar isso automaticamente e você pode ver que isso vai começar a gerar isso e seguir o plano. Então este é o plano a implementar. E aí está. Vai começar a construir.
+
+Agora, enquanto isso acontece, eu queria falar sobre os modelos. Portanto, pode ser muito caro administrar isso. E você pode executar seu uso muito rapidamente. Então, se você quiser tornar isso mais acessível para você, você pode alterar o modelo que está sendo usado aqui.
+
+Portanto, se você digitar barra modelo aqui e Claude não estiver fazendo nada no momento, você será levado a uma janela interativa que permitirá alterar o modelo. Então, vamos fazer isso a partir de outro código do Claude aqui.
+
+Então eu vou usar o modelo slash. E quando eu fizer isso, teremos três opções, ok. Então, opus soneto e haiku ou como você pronuncia, agora você pode ver os três modelos diferentes aqui. Portanto, opus será seu modelo mais poderoso.
+
+E como diz é para trabalhos mais complexos. Este será o mais caro, mas também o melhor. De modo geral, o soneto é uma espécie de modelo intermediário. Portanto, se você estiver realizando algumas tarefas que não possuem extrema complexidade, não exigem muitas chamadas de ferramentas, você pode selecionar esta apenas pressionando enter.
+
+E se você quiser um modelo mais rápido que lhe dê respostas rápidas e seja significativamente mais barato, você pode mudar para o haiku. Legal. Agora voltamos ao nosso primeiro tipo de instância de código em nuvem aqui, e você pode ver que ele diz que esses recursos foram implementados no arquivo HTML do atirador.
+
+Então o que vou fazer agora é apenas executar o arquivo do atirador, ok. E vou fazer com que ele execute isso e abra-o no navegador para que eu possa realmente ver como é. E então, claro, se tivermos revisões, vamos lá.
+
+Sim. E não peça comandos estelares. Oh. Ele diz que não consegue encontrar isso por algum motivo. OK. Vamos ver se podemos executá-lo novamente. OK. E desculpe, estou resolvendo isso agora. Por algum motivo, cometi um erro e vocês podem ver que temos esse tipo de jogo de tiro retrô, que acho muito legal na minha opinião.
+
+E eu posso me movimentar, posso atirar. Temos, tipo, essa onda de inimigos que está chegando. Ok, legal. E isso é literalmente exatamente o que eu pedi para construir, o que é muito bom. Eu diria para uma primeira iteração.
+
+Então a gente também tem saúde, né? Temos a barra de menu, um monte dessas coisas. Obviamente, poderíamos adicionar efeitos sonoros. Legal. OK. Então vamos encerrar isso. E se quiséssemos fazer revisões e a mesma coisa, poderíamos simplesmente fazer algo como, você sabe, adicionar power-ups a este aplicativo e então ele iria em frente e seria capaz de fazer isso.
+
+Agora, antes de fazermos isso, quero falar sobre git e GitHub. Portanto, se você estiver trabalhando em um projeto grande, recomendo fortemente que você instrua o código da nuvem a criar um novo repositório GitHub e a fazer commits e salvar todas as alterações que estiver fazendo.
+
+Então a maneira de fazer isso seria algo assim. De agora em diante, gostaria que você criasse um novo repositório git para este projeto. Gostaria que você fizesse mensagens de commit limpas, salvasse-as localmente e depois enviasse-as para o GitHub para que sempre tenhamos uma versão salva do projeto.
+
+E é fácil voltar atrás caso façamos alguma alteração. Portanto, configure um repositório GitHub, configure tudo e use o GitHub para o resto do projeto. Então vamos dizer que vamos em frente e pressionar enter.
+
+E ele simplesmente começará a executar todos os comandos necessários para configurar isso. Então você realmente não precisa fazer nada aqui. Deve apenas saber o que fazer. Então a mesma coisa. Vamos apenas dizer sim e permitir que isso aconteça e tudo começará a ser configurado corretamente.
+
+Então demorou um segundo aqui, mas funcionou. E, na verdade, se eu abrir este URL agora em meu navegador, poderemos ver o repositório git que ele criou. De novo. Observe que ele o criou automaticamente para nós.
+
+E você pode ver agora que temos a nós, assim como Claude. Eles estão adicionando commits a este repositório. Então agora ele está salvo e todo o trabalho será feito automaticamente com, como você chama, git e GitHub.
+
+Ok. Agora vamos examinar algumas outras coisas que valem a pena observar. Então eu apenas contei certo. Como sempre use git e GitHub para este projeto e faça os commits automaticamente. Agora, às vezes, isso será feito automaticamente.
+
+Mas o problema com Claude é que assim que eu saio disso, eu vou como uma barra de saída, certo? E se eu for Claude novamente e começar uma nova sessão, perco todo o contexto e a história do que estava acontecendo aqui dentro.
+
+Então, se eu perguntar o que você fez por último ou algo assim, ele pode olhar o histórico do git, mas não vai saber realmente o que aconteceu. Você pode ver que este é o início da nossa conversa. Então ainda não fiz nada. Certo.
+
+Porque iniciamos uma nova sessão. Então, uma coisa importante a entender sobre Claude Sessions é que você não tem esse tipo de memória ilimitada como pode ter em algumas outras ferramentas. E é aí que vamos falar sobre o arquivo Claude e D.
+
+Agora, o arquivo Claude MDF é algo que vai permitir que você tenha memória persistente. Então Claude conhece as regras da sua base de código. Ele sabe o que fez antes, o que deveria e o que não deveria fazer.
+
+E você pode configurá-lo para ser realmente complexo com antecedência, para que não precise ficar instruindo-o a fazer a mesma coisa. Porque, novamente, se eu começar a trabalhar agora, não vou confirmar isso automaticamente para entrar no GitHub como eu quero.
+
+Portanto, para criar um arquivo Claude MD, o que você pode fazer é digitar este comando init de barra. Quando você digita barra nele, o que ele fará é criar automaticamente Claude Dot, MD para você e na garra MD, ele colocará informações diferentes com base na análise que possui de sua base de código.
+
+Então, é claro, você pode modificar este Claude, o arquivo MD, e eu mostrarei como fazer isso em um segundo. Mas esta é efetivamente, novamente, a memória persistente para Claude quando está trabalhando em sua base de código.
+
+E vamos esperar um segundo aqui para gerar esse arquivo MD. Então vamos lá. Sim. Vá em frente e crie isso para nós, ok. Sim. Vá em frente e faça isso. Então isso terá esse arquivo lá. E sempre fará referência quando criarmos uma nova sessão. OK.
+
+Então você pode ver que ele está me mostrando como será a aparência do arquivo Claude MD que será criado aqui, onde será como uma visão geral do projeto executando a configuração de desenvolvimento do jogo, você sabe, tanto faz, todo esse tipo de coisa.
+
+Então eu vou sim. E permita edições durante esta sessão. E então ele criará este arquivo de marcação de ponto Claude para mim. Agora se passarmos por aqui ok vamos ver se tem mais alguma coisa. O esquema de cores do padrão de design deixa o fluxo de trabalho correto.
+
+Legal. Incrível. E então explica tudo isso. Então agora, se há algumas coisas específicas que eu sempre quero que Claude faça no projeto, posso simplesmente dizer isso. Então, vou dizer para atualizar o arquivo Claude MD para indicar que, à medida que você trabalha, você precisa enviar coisas para o git e enviá-las para o GitHub regularmente com mensagens de commit limpas.
+
+Assim, nunca perdemos o status ou o trabalho que realizamos. OK. Então vamos em frente e prosseguir. Entre aqui e você verá que eu disse, você sabe, Claude MD sussurro realmente percebeu que se tratava de um arquivo e o marcou automaticamente para mim.
+
+E agora você pode ver que está fazendo mudanças, certo. E então atualizando isso em Claude DMD. E se rolarmos até aqui, ele explica o que precisa ser feito. Então agora, se reiniciássemos isso. Então vamos cortar a saída para sair dessa, ok.
+
+And go Claude I'm just going to say what do you know about this project. Okay. And it should be able to look in this claude.md file and give me some information okay. And you can see it reads the cloud.md file because it knows to go there.
+
+And it gets us all of that persistent info. All right. So now that we've gone over that I want to talk about tasks. Now if you run these tasks command, this will show you any background tasks that are running.
+
+Now. Background tasks are typically going to be things like web servers that are running continuously, and that you don't want to block the execution of your cloud code instance. So right now, if I want to get out of this, I'm just going to press, escape to get out of that there.
+
+And you could see that I've kind of got out of the dialog. Now, tasks might be something like a web server, a front end, I don't know, like react website that's running whatever. There can be all kinds of background tasks.
+
+And by default Claude will put some of them into the background, but you can also put them in the background yourself. So what I want to show you is if I do something like, you know, run a web server to host my two sites or host my two games, what's going to happen here is Claude is going to detect that this is a task that would be blocking.
+
+Blocking means that if we just ran it in this terminal, that it's going to block us being able to do anything else. So you can see that we now see one bash, which means that there's a task that's happening and it says it's running this in the background.
+
+So if we want to see that we can hit control T, which will show the different tasks, we can go to the bash and hit enter to view it. If we go back, we also can type slash tasks. And then it's going to show the task that's running and how long it's been running for.
+
+Now, from here, if we want to kill this task. So I no longer want the web browser to be running, for example, I can press okay and that's going to kill it for me. And then I can go back just by hitting enter. Okay.
+
+And you can see background command was killed right now for some reason it's going to go and generate this again I think. But if I wanted to stop this then what I could do is press escape. So for example, if I do something like hello and then I press escape super fast, you'll see it's interrupts that command.
+
+Então, se você quiser interromper a execução de algo durante toda a vida, pressione Escape. Eu provavelmente deveria ter mencionado isso antes, mas honestamente esqueci. Mas isso é algo para saber. Ok, então essas são tarefas.
+
+Novamente, essas são coisas que funcionam em segundo plano, normalmente operações de longa duração. Agora, no entanto, se você deseja criar bots com garras paralelas que são como escrever código ou fazer operações diferentes para você, sejam eles tocando em arquivos ou modificando coisas, e é aí que entramos nos agentes.
+
+Portanto, se você usar barras de agentes, poderá criar agentes, e esses agentes poderão executar tarefas especiais e você poderá delegar tarefas a eles. Por exemplo, você pode ter um agente que está cuidando ou estilizando corretamente.
+
+Ou como mudar a interface do usuário, um agente responsável pelo back-end. Ok, não vou entrar em todos os detalhes de como configurar isso, porque fica um pouco complexo e vai além do escopo deste tutorial, mas quero mostrar a você que coisas assim existem.
+
+E também temos coisas como o MCP, se você quiser se conectar, por exemplo, ao Notion, ao Gmail ou ao Google Drive, ou quiser se conectar a vários outros serviços, você pode fazer isso diretamente de um servidor MC dentro do Claude, o que realmente expande seus recursos.
+
+Mais uma vez, vamos sair dessa. Vamos passar pela barra. Você pode ver que há um monte de outras coisas que você pode fazer aqui. Você pode configurar ganchos, por exemplo, que executarão código automaticamente para você ou para diferentes tarefas.
+
+Você pode configurar a memória Keybinds, você sabe, todo esse tipo de coisa. Então basta passar por isso, dar uma olhada. E outra coisa útil são as habilidades. Assim, você pode criar habilidades que são essencialmente tarefas repetíveis que Claude faz o tempo todo.
+
+Então, em vez de criar um agente, você pode criar uma habilidade e então executar uma habilidade específica apenas dizendo: ei, você sabe, execute essa habilidade que ensinei como fazer. Ele procurará a habilidade e poderá executá-la continuamente.
+
+Então você pode ver o quão poderoso isso pode se tornar se você realmente realizar a configuração completa. Mas neste ponto, se você acompanhar, você sabe como usar o código em nuvem melhor do que 99% das pessoas. Mostrei a você todas as principais funcionalidades e recursos, e você pode sair e começar a codificar efetivamente o que quiser, porque agora você sabe como navegar nesta ferramenta.
+
+Eu sei que isso foi longo. Eu sei que é um pouco complexo, mas quero que você faça a configuração adequada. Então você não precisou assistir a um monte de outros vídeos. Se vocês tiverem outras dúvidas ou quiserem mais tutoriais sobre código em nuvem, me avisem e nos vemos em outro vídeo.

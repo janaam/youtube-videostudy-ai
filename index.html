@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VideoStudy AI — Livros Técnicos & Tradução Simultânea do YouTube</title>
+  <meta name="description" content="Cole qualquer URL do YouTube para gerar um Livro de Estudos técnico, fluxogramas explicativos e tradução simultânea do áudio em Português.">
+  
+  <!-- Fontes: Proxima Nova com fallbacks modernos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top App Navigation -->
+  <header class="app-header">
+    <div class="header-brand">
+      <div class="brand-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+      </div>
+      <div>
+        <h1 class="brand-title">VideoStudy <span class="brand-ai">AI</span></h1>
+        <span class="brand-tag">Gerador de Livros Técnicos & Áudio Dublado</span>
+      </div>
+    </div>
+
+    <!-- Barra de Entrada de URL do YouTube -->
+    <div class="url-input-container">
+      <div class="url-input-box">
+        <svg class="youtube-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        <input type="text" id="videoUrlInput" placeholder="Cole qualquer URL do YouTube (ex: https://youtu.be/ntDIxaeo3Wg)..." value="https://youtu.be/ntDIxaeo3Wg">
+        <button id="processVideoBtn" class="btn-process">
+          <span class="btn-sparkle">✨</span>
+          <span>Gerar Livro & Guia</span>
+        </button>
+      </div>
+      <div class="quick-examples">
+        <span>Exemplos rápidos:</span>
+        <button class="pill-btn" onclick="loadExample('https://youtu.be/ntDIxaeo3Wg')">Claude Code (Tutorial Completo)</button>
+      </div>
+    </div>
+
+    <!-- Ações Globais -->
+    <div class="header-right-actions">
+      <div class="dropdown">
+        <button id="exportMenuBtn" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Exportar</span>
+        </button>
+        <div class="dropdown-menu" id="exportDropdown">
+          <a href="#" onclick="downloadStandaloneGuide()" class="dropdown-item">📄 Baixar Livro Técnico (HTML Offline)</a>
+          <a href="#" onclick="downloadTranscriptTxt(true)" class="dropdown-item">⏱️ Transcrição com Timestamps (.txt)</a>
+          <a href="#" onclick="downloadTranscriptTxt(false)" class="dropdown-item">📝 Transcrição Texto Corrido (.txt)</a>
+          <a href="#" onclick="downloadSrt()" class="dropdown-item">🎬 Legenda Completa (.srt)</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra de Notificação e Progresso de Processamento -->
+  <div id="progressBanner" class="progress-banner hidden">
+    <div class="progress-content">
+      <div class="progress-spinner"></div>
+      <div class="progress-text">
+        <strong id="progressStepTitle">Iniciando processamento do vídeo...</strong>
+        <span id="progressStepSubtitle">Conectando aos servidores do YouTube e extraindo falas...</span>
+      </div>
+      <div class="progress-bar-track">
+        <div id="progressBarFill" class="progress-bar-fill" style="width: 15%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Barra de Ferramentas / Abas de Conteúdo -->
+  <div class="workspace-tabs-bar">
+    <div class="tabs-group">
+      <button class="tab-btn active" data-tab="tab-book">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <span>📖 Livro de Estudos & Guia Técnico</span>
+      </button>
+
+      <button class="tab-btn" data-tab="tab-player">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/><line x1="19" y1="5" x2="19" y2="19"/><circle cx="12" cy="12" r="10"/></svg>
+        <span>🎥 Player & Transcrição Sincronizada</span>
+      </button>
+
+      <button class="tab-btn" data-tab="tab-flowcharts">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><line x1="10" y1="6.5" x2="14" y2="6.5"/><line x1="6.5" y1="10" x2="6.5" y2="14"/><line x1="10" y1="17.5" x2="14" y2="17.5"/></svg>
+        <span>📊 Fluxogramas de Processo</span>
+      </button>
+    </div>
+
+    <!-- CONTROLE CENTRAL: BOTÃO DE TRADUÇÃO SIMULTÂNEA DE ÁUDIO -->
+    <div class="audio-translation-widget">
+      <button id="audioTranslateToggleBtn" class="audio-dub-btn" title="Ativa a voz em português que fala simultaneamente enquanto o vídeo reproduz">
+        <div class="mic-wave">
+          <span></span><span></span><span></span>
+        </div>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+        <span id="audioTranslateBtnText">Tradução Simultânea em Áudio (PT-BR)</span>
+      </button>
+      
+      <div class="voice-speed-pill" title="Velocidade da voz da dublagem">
+        <span id="speedDisplay">1.1x</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL (ÁREA DE TRABALHO) -->
+  <main class="main-content-area">
+
+    <!-- ========================================== -->
+    <!-- ABA 1: LIVRO DE ESTUDOS & GUIA TÉCNICO     -->
+    <!-- ========================================== -->
+    <section id="tab-book" class="tab-pane active">
+      <div class="book-container">
+        <!-- Barra Lateral de Capítulos do Livro -->
+        <aside class="book-sidebar">
+          <div class="sidebar-header">
+            <h3>Sumário do Livro</h3>
+            <span id="bookModuleCountBadge" class="badge">4 Capítulos</span>
+          </div>
+          <nav id="bookNav" class="book-index-nav">
+            <!-- Gerado dinamicamente -->
+          </nav>
+        </aside>
+
+        <!-- Conteúdo Didático do Livro -->
+        <article class="book-body" id="bookContent">
+          <!-- Gerado dinamicamente pelo renderStudyBook() -->
+        </article>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ABA 2: PLAYER & TRANSCRIÇÃO SINCRONIZADA   -->
+    <!-- ========================================== -->
+    <section id="tab-player" class="tab-pane">
+      <div class="player-layout">
+        <!-- Coluna Esquerda: Vídeo e Capítulos Rápidos -->
+        <div class="player-left-col">
+          <div class="video-card">
+            <div class="video-embed-box">
+              <iframe id="youtubeIframe" 
+                src="https://www.youtube-nocookie.com/embed/ntDIxaeo3Wg?enablejsapi=1&origin=https://www.youtube.com" 
+                title="YouTube Video Player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-status-bar">
+              <div class="time-readout">
+                <span class="live-dot"></span>
+                <span id="playerCurrentTime">00:00</span>
+                <span class="sep">/</span>
+                <span id="playerTotalTime">--:--</span>
+              </div>
+              <div id="audioStatusBadge" class="audio-status-badge inactive">
+                🎙️ Áudio Original em Inglês
+              </div>
+            </div>
+          </div>
+
+          <!-- Capítulos Rápidos do Vídeo -->
+          <div class="quick-chapters-card">
+            <div class="card-header">
+              <h3>Saltar para Trechos Chave</h3>
+              <span class="hint">Clique para reproduzir</span>
+            </div>
+            <div id="quickChaptersList" class="quick-chapters-grid">
+              <!-- Gerado dinamicamente -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna Direita: Transcrição Sincronizada -->
+        <div class="player-right-col">
+          <div class="transcript-ctrl-bar">
+            <div class="lang-toggle-group">
+              <button class="lang-btn active" data-lang="pt">Português (BR)</button>
+              <button class="lang-btn" data-lang="bilingual">Bilíngue</button>
+              <button class="lang-btn" data-lang="en">English (Original)</button>
+            </div>
+            <label class="auto-scroll-label">
+              <input type="checkbox" id="syncAutoScroll" checked>
+              <span class="switch-ball"></span>
+              <span>Auto-rolar</span>
+            </label>
+          </div>
+
+          <div class="search-input-wrap">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="transcriptSearchInput" placeholder="Pesquisar termo falado no vídeo...">
+            <span id="transcriptSearchBadge" class="search-badge hidden">0 achados</span>
+          </div>
+
+          <!-- Lista de Falas Sincronizadas -->
+          <div id="cuesScrollArea" class="cues-scroll-container">
+            <!-- Gerado dinamicamente -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ABA 3: FLUXOGRAMAS DE PROCESSO             -->
+    <!-- ========================================== -->
+    <section id="tab-flowcharts" class="tab-pane">
+      <div class="flowcharts-gallery" id="flowchartsGallery">
+        <!-- Renderizado dinamicamente -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <span>VideoStudy AI • Criado para transformar qualquer vídeo em um livro de estudos técnico com tradução simultânea.</span>
+      <div class="footer-badges">
+        <span class="badge-deploy">Pronto para Vercel & GitHub</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dados Padrão (Claude Code) para Carregamento Imediato -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

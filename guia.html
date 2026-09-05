@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Ilustrado: O Que é e Como Usar o Claude Code</title>
+  <meta name="description" content="Um guia visual, simples e completo com fluxogramas sobre o Claude Code, explicado de forma clara e intuitiva para iniciantes.">
+  
+  <!-- Fontes: Proxima Nova com fallbacks modernos de alta fidelidade -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="guia.css">
+</head>
+<body>
+
+  <!-- Barra de Navegação Superior -->
+  <nav class="top-nav">
+    <div class="nav-brand">
+      <div class="brand-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+      </div>
+      <div class="brand-text">
+        <span class="brand-title">Claude Code Express</span>
+        <span class="brand-sub">Guia Visual Ilustrado</span>
+      </div>
+    </div>
+    
+    <div class="nav-links">
+      <a href="#fluxogramas" class="nav-link">Fluxogramas</a>
+      <a href="#passo-a-passo" class="nav-link">Como Instalar</a>
+      <a href="#comandos" class="nav-link">Comandos</a>
+      <a href="#resumo-final" class="nav-link">Resumo Geral</a>
+      <a href="index.html" class="nav-btn-action">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <span>Vídeo & Transcrição Ao Vivo</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      <span>Aprenda em minutos • Explicado para qualquer idade</span>
+    </div>
+    <h1 class="hero-title">
+      Desvendando o <span class="gradient-text">Claude Code</span>
+    </h1>
+    <p class="hero-description">
+      Imagine ter um robô super inteligente que mora dentro do seu computador. Você diz o que quer criar usando palavras simples, e ele constrói sites, programas e jogos para você em poucos segundos.
+    </p>
+    
+    <div class="hero-actions">
+      <a href="#o-que-e" class="btn-hero primary">Começar a Explorar</a>
+      <a href="#fluxogramas" class="btn-hero secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><line x1="10" y1="6.5" x2="14" y2="6.5"/><line x1="6.5" y1="10" x2="6.5" y2="14"/><line x1="10" y1="17.5" x2="14" y2="17.5"/></svg>
+        Ver Fluxogramas
+      </a>
+    </div>
+
+    <!-- Indicadores Rápidos -->
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-icon">🤖</div>
+        <div class="stat-info">
+          <h3>Agente Autônomo</h3>
+          <p>Escreve, testa e corrige código sozinho</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">💻</div>
+        <div class="stat-info">
+          <h3>Mora no Terminal</h3>
+          <p>Funciona direto na linha de comando</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🛡️</div>
+        <div class="stat-info">
+          <h3>100% Seguro</h3>
+          <p>Pede sua aprovação antes de executar ações</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+
+    <!-- SEÇÃO 1: O QUE É O CLAUDE CODE? -->
+    <section id="o-que-e" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 01</span>
+        <h2>O que é o Claude Code? (A analogia do gênio construtor)</h2>
+      </div>
+
+      <div class="concept-grid">
+        <div class="concept-card highlight">
+          <div class="card-icon-header">
+            <div class="icon-circle">🧩</div>
+            <h3>Como programar parecia antes</h3>
+          </div>
+          <p>
+            Antigamente, você precisava aprender milhares de regras estranhas, pontos e vírgulas, e digitar cada linha manualmente. Se esquecesse uma letrinha, nada funcionava.
+          </p>
+        </div>
+
+        <div class="concept-card highlight accent">
+          <div class="card-icon-header">
+            <div class="icon-circle">⚡</div>
+            <h3>Como é com o Claude Code</h3>
+          </div>
+          <p>
+            É a <strong>programação baseada em prompts</strong>. Você conversa com a Inteligência Artificial como se fosse um colega humano: <em>"Crie uma página de internet com tema escuro e um botão azul"</em>. O Claude Code planeja, digita o código e cria os arquivos no seu computador!
+          </p>
+        </div>
+      </div>
+
+      <div class="info-callout">
+        <div class="callout-icon">💡</div>
+        <div class="callout-body">
+          <h4>O que é o "Terminal"?</h4>
+          <p>
+            O terminal (ou prompt de comando) é como uma <strong>linha telefônica direta com o cérebro do computador</strong>. Em vez de você clicar em ícones bonitos com o mouse, você escreve comandos em texto e o computador obedece imediatamente. O Claude Code vive dentro dessa linha direta!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: FLUXOGRAMA PRINCIPAL -->
+    <section id="fluxogramas" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Fluxograma Obrigatório #1</span>
+        <h2>Como o Claude Code Pensa e Trabalha</h2>
+        <p class="section-subtitle">Acompanhe passo a passo o ciclo de raciocínio da ferramenta desde a sua ordem até o resultado final.</p>
+      </div>
+
+      <div class="flowchart-container">
+        <div class="flowchart-wrapper">
+          
+          <!-- Passo 1 -->
+          <div class="flow-node">
+            <div class="node-number">1</div>
+            <div class="node-content">
+              <div class="node-icon">🗣️</div>
+              <div class="node-title">Você dá uma Missão</div>
+              <div class="node-desc">Você escreve um comando em português ou inglês explicando o que precisa.</div>
+              <div class="node-example">Ex: "Crie um jogo da velha em HTML"</div>
+            </div>
+          </div>
+
+          <div class="flow-arrow">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+          </div>
+
+          <!-- Passo 2 -->
+          <div class="flow-node">
+            <div class="node-number">2</div>
+            <div class="node-content">
+              <div class="node-icon">🔍</div>
+              <div class="node-title">Claude Lê e Analisa</div>
+              <div class="node-desc">Ele inspeciona todos os arquivos da sua pasta para entender como o projeto está montado.</div>
+              <div class="node-badge">Varredura de Contexto</div>
+            </div>
+          </div>
+
+          <div class="flow-arrow">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+          </div>
+
+          <!-- Passo 3 -->
+          <div class="flow-node">
+            <div class="node-number">3</div>
+            <div class="node-content">
+              <div class="node-icon">🧠</div>
+              <div class="node-title">Plano de Construção</div>
+              <div class="node-desc">Ele decide quais arquivos criar, quais linhas modificar e se precisa de algum pacote novo.</div>
+              <div class="node-badge">Estratégia de Execução</div>
+            </div>
+          </div>
+
+          <div class="flow-arrow">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+          </div>
+
+          <!-- Passo 4 (Decisão / Segurança) -->
+          <div class="flow-node decision">
+            <div class="node-number">4</div>
+            <div class="node-content">
+              <div class="node-icon">🛑</div>
+              <div class="node-title">Pede sua Autorização</div>
+              <div class="node-desc">Antes de alterar arquivos ou rodar comandos importantes, ele pergunta: <em>"Posso fazer isso?"</em></div>
+              <div class="node-decision-options">
+                <span class="decision-pill yes">Sim (Enter)</span>
+                <span class="decision-pill no">Não (Cancelar)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-arrow">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+          </div>
+
+          <!-- Passo 5 -->
+          <div class="flow-node success">
+            <div class="node-number">5</div>
+            <div class="node-content">
+              <div class="node-icon">🚀</div>
+              <div class="node-title">Código Pronto e Testado!</div>
+              <div class="node-desc">Ele escreve o código, testa para ver se há erros e entrega o resultado pronto para você usar.</div>
+              <div class="node-badge success-badge">Missão Cumprida</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3: CRÉDITOS E CUSTOS (COMO FUNCIONA O DINHEIRO) -->
+    <section class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 02</span>
+        <h2>As Fichas do Fliperama: Como Funcionam os Créditos?</h2>
+      </div>
+
+      <div class="story-box">
+        <div class="story-illustration">🪙</div>
+        <div class="story-text">
+          <p>
+            Pense no Claude Code como uma <strong>máquina de fliperama</strong>. Para jogar, você precisa de fichas (chamadas de <strong>tokens de API</strong> ou uma <strong>assinatura Pro/Team da Anthropic</strong>).
+          </p>
+          <p>
+            Toda vez que você pede para o robô ler arquivos enormes ou criar códigos gigantescos, a máquina consome algumas fichas. Você não é cobrado de surpresa além do que colocar lá: quando as fichas acabam, o robô apenas para e espera você colocar mais.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-three">
+        <div class="feature-box">
+          <div class="box-tag">Dica de Ouro #1</div>
+          <h4>Comece com o plano mais simples</h4>
+          <p>Não saia comprando créditos caros de início. Comece aos poucos para entender a ferramenta.</p>
+        </div>
+        <div class="feature-box">
+          <div class="box-tag">Dica de Ouro #2</div>
+          <h4>O Modelo importa</h4>
+          <p>Modelos mais potentes (como Claude Opus) gastam mais fichas. Modelos equilibrados (Sonnet) são perfeitos para o dia a dia.</p>
+        </div>
+        <div class="feature-box">
+          <div class="box-tag">Dica de Ouro #3</div>
+          <h4>Use o comando /cost</h4>
+          <p>Basta digitar <code>/cost</code> a qualquer momento para ver na tela exatamente quantas fichas você já gastou.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4: FLUXOGRAMA DE INSTALAÇÃO -->
+    <section id="passo-a-passo" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Fluxograma Obrigatório #2</span>
+        <h2>Passo a Passo de Instalação no Computador</h2>
+        <p class="section-subtitle">Escolha o seu sistema operacional e siga a trilha para ter o Claude funcionando.</p>
+      </div>
+
+      <div class="os-cards-container">
+        <!-- Ramo Windows -->
+        <div class="os-card">
+          <div class="os-header">
+            <div class="os-icon">🪟</div>
+            <div>
+              <h3>Windows (PowerShell)</h3>
+              <span class="os-sub">Recomendado pelo instrutor</span>
+            </div>
+          </div>
+          <ol class="os-steps">
+            <li>Abra a barra Iniciar do Windows e digite <strong>PowerShell</strong>.</li>
+            <li>Cole o comando oficial de instalação:</li>
+          </ol>
+          <div class="code-snippet">
+            <code>irm https://storage.googleapis.com/claude-code-dist/install.ps1 | iex</code>
+            <button class="copy-code-btn" onclick="copySnippet(this)">Copiar</button>
+          </div>
+          <p class="os-note">Se o comando acima falhar, abra o terminal e use: <code>npm install -g @anthropic-ai/claude-code</code></p>
+        </div>
+
+        <!-- Ramo Mac / Linux -->
+        <div class="os-card">
+          <div class="os-header">
+            <div class="os-icon">🍎 🐧</div>
+            <div>
+              <h3>Mac e Linux (Terminal)</h3>
+              <span class="os-sub">Para computadores Apple e Linux</span>
+            </div>
+          </div>
+          <ol class="os-steps">
+            <li>Abra a pesquisa Spotlight (Command + Barra de espaço) e abra o <strong>Terminal</strong>.</li>
+            <li>Cole o comando de instalação:</li>
+          </ol>
+          <div class="code-snippet">
+            <code>curl -fsSL https://storage.googleapis.com/claude-code-dist/install.sh | bash</code>
+            <button class="copy-code-btn" onclick="copySnippet(this)">Copiar</button>
+          </div>
+          <p class="os-note">Certifique-se de que você já tem o <strong>Node.js</strong> instalado no seu sistema.</p>
+        </div>
+      </div>
+
+      <!-- Fluxo de Primeiro Login -->
+      <div class="first-flight-flow">
+        <h3>E depois que instalar? O Ritual dos 3 Passos:</h3>
+        
+        <div class="ritual-grid">
+          <div class="ritual-step">
+            <div class="step-badge">Passo 1</div>
+            <div class="step-title">Digite <code>claude</code></div>
+            <p>No terminal, escreva <code>claude</code> e aperte Enter. A interface se abrirá.</p>
+          </div>
+          <div class="ritual-arrow">➜</div>
+          <div class="ritual-step">
+            <div class="step-badge">Passo 2</div>
+            <div class="step-title">Conecte sua Conta</div>
+            <p>O navegador vai se abrir sozinho para você fazer login na sua conta Anthropic.</p>
+          </div>
+          <div class="ritual-arrow">➜</div>
+          <div class="ritual-step">
+            <div class="step-badge">Passo 3</div>
+            <div class="step-title">Diga "Eu Confio"</div>
+            <p>Ele pergunta se você confia na pasta atual (<em>Trust folder</em>). Diga <strong>Yes</strong>!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 5: O ESCUDO MÁGICO (GIT) -->
+    <section class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Fluxograma Obrigatório #3</span>
+        <h2>O Escudo Mágico: Git como "Ponto de Salvamento" (Checkpoint)</h2>
+        <p class="section-subtitle">Robôs inteligentes às vezes cometem erros. Veja como se proteger para nunca perder seu código.</p>
+      </div>
+
+      <div class="game-analogy-card">
+        <div class="game-badge">🎮 Como em um Video Game</div>
+        <h3>O Git é o seu botão de "Salvar o Jogo"!</h3>
+        <p>
+          Quando você joga um jogo difícil, você salva o progresso antes de enfrentar um chefão perigoso. Se o seu personagem perder, você recarrega o ponto salvo. No mundo da programação, o <strong>Git</strong> faz exatamente isso!
+        </p>
+
+        <!-- Fluxograma Visual de Checkpoint -->
+        <div class="git-flowchart">
+          <div class="git-node active">
+            <span class="git-point"></span>
+            <strong>Ponto Salvo A</strong>
+            <small>Tudo funcionando perfeitamente</small>
+          </div>
+          <div class="git-line"></div>
+          <div class="git-node warning">
+            <span class="git-point"></span>
+            <strong>Claude altera código</strong>
+            <small>Tentou criar algo novo...</small>
+          </div>
+          <div class="git-branch">
+            <div class="branch-path success-path">
+              <span class="path-label">Deu certo? 🎉</span>
+              <div class="git-node finished">
+                <strong>Novo Ponto B</strong>
+                <small>Salva o novo progresso</small>
+              </div>
+            </div>
+            <div class="branch-path fail-path">
+              <span class="path-label">Algo quebrou? ⚠️</span>
+              <div class="git-node revert">
+                <strong>Voltar ao Ponto A</strong>
+                <small>Zero prejuízo, tudo intacto!</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 6: COMANDOS SECRETOS DE CONTROLE -->
+    <section id="comandos" class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Capítulo 03</span>
+        <h2>Os Comandos Especiais (Começam com barra "/")</h2>
+        <p class="section-subtitle">Quando você estiver conversando com o Claude no terminal, use estes comandos como atalhos de poder.</p>
+      </div>
+
+      <div class="commands-table">
+        <div class="cmd-row">
+          <div class="cmd-pill"><code>/clear</code></div>
+          <div class="cmd-name">Limpar o Quadro Negro</div>
+          <div class="cmd-desc">Apaga a conversa antiga para começar um assunto novo do zero, sem confundir o robô.</div>
+        </div>
+
+        <div class="cmd-row">
+          <div class="cmd-pill"><code>/compact</code></div>
+          <div class="cmd-name">Resumo Esperto</div>
+          <div class="cmd-desc">Se a conversa ficou muito longa, ele resume tudo o que aprenderam até agora. Economiza fichas e memória!</div>
+        </div>
+
+        <div class="cmd-row">
+          <div class="cmd-pill"><code>/cost</code></div>
+          <div class="cmd-name">Ver a Conta</div>
+          <div class="cmd-desc">Mostra exatamente quantos tokens e dinheiro a sessão atual já consumiu.</div>
+        </div>
+
+        <div class="cmd-row">
+          <div class="cmd-pill"><code>/agents</code></div>
+          <div class="cmd-name">Contratar Ajudantes</div>
+          <div class="cmd-desc">Cria robôs auxiliares para dividirem o trabalho (um cuida da carcaça do site, outro do motor).</div>
+        </div>
+
+        <div class="cmd-row">
+          <div class="cmd-pill"><code>/help</code></div>
+          <div class="cmd-name">Manual de Instruções</div>
+          <div class="cmd-desc">Lista na tela todas as opções e truques que o Claude Code sabe fazer.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 7: RECURSOS AVANÇADOS (MCP, AGENTES E SKILLS) -->
+    <section class="content-section">
+      <div class="section-header">
+        <span class="section-tag">Fluxograma Obrigatório #4</span>
+        <h2>A Nave Mãe: Tarefas em Segundo Plano, MCP e Habilidades</h2>
+        <p class="section-subtitle">Como o Claude se conecta a outros programas para virar um assistente completo.</p>
+      </div>
+
+      <div class="advanced-diagram">
+        <div class="core-box">
+          <div class="core-icon">⚡</div>
+          <h3>Claude Code</h3>
+          <p>O Cérebro Central</p>
+        </div>
+
+        <div class="connectors-grid">
+          <div class="adv-card">
+            <div class="adv-badge">Background Tasks</div>
+            <h4>Tarefas em Segundo Plano</h4>
+            <p>O Claude pode colocar tarefas demoradas (como instalar dezenas de programas) para rodar sozinhos enquanto você continua conversando com ele.</p>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-badge">Subagentes (/agents)</div>
+            <h4>Trabalho em Equipe</h4>
+            <p>Em vez de um robô fazer tudo, ele cria especialistas: um cuida do design visual, outro cuida do banco de dados.</p>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-badge">Servidores MCP</div>
+            <h4>Cabos Conectores</h4>
+            <p>O protocolo MCP é como um cabo USB que liga o Claude ao seu <strong>Google Drive, Notion, Gmail</strong> ou qualquer serviço externo!</p>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-badge">Skills (Habilidades)</div>
+            <h4>Receitas Reutilizáveis</h4>
+            <p>Você pode ensinar um procedimento uma vez e salvar como uma "Skill". Na próxima vez, basta dizer: <em>"Execute a Skill X"</em>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 8: RESUMO GERAL DA TRANSCRIÇÃO COMPLETA -->
+    <section id="resumo-final" class="content-section summary-section">
+      <div class="section-header">
+        <span class="section-tag">Visão Completa</span>
+        <h2>📋 Resumo Geral de Toda a Transcrição do Vídeo</h2>
+        <p class="section-subtitle">Tudo o que foi falado no vídeo de 35 minutos sintetizado em tópicos claros e objetivos.</p>
+      </div>
+
+      <div class="full-summary-box">
+        <div class="summary-item">
+          <div class="summary-num">01</div>
+          <div class="summary-body">
+            <h3>Conceito e Filosofia do Claude Code</h3>
+            <p>O Claude Code é a resposta oficial da Anthropic para a nova era de ferramentas de desenvolvimento por inteligência artificial, operando diretamente na linha de comando (terminal). Ele foi projetado para permitir que qualquer pessoa crie, teste e modifique projetos de software apenas conversando através de instruções textuais (prompts), sem precisar escrever linhas manuais de código.</p>
+          </div>
+        </div>
+
+        <div class="summary-item">
+          <div class="summary-num">02</div>
+          <div class="summary-body">
+            <h3>Requisitos e Custos de Utilização</h3>
+            <p>A ferramenta exige uma conta paga na Anthropic (planos Pro, Max, Teams ou Enterprise) ou uma chave de API com créditos comprados no Console da Anthropic. O autor do vídeo recomenda enfaticamente iniciar pelo plano mais básico e acompanhar o consumo com o comando <code>/cost</code> para evitar gastos desnecessários antes de dominar a ferramenta.</p>
+          </div>
+        </div>
+
+        <div class="summary-item">
+          <div class="summary-num">03</div>
+          <div class="summary-body">
+            <h3>Instalação e Configuração nos Sistemas Operacionais</h3>
+            <p>No Windows, a instalação é recomendada pelo PowerShell com comando de uma linha; no Mac e Linux, utiliza-se o curl com bash. Caso o usuário prefira uma interface visual mais amigável, o autor mostra a alternativa do aplicativo <strong>Claude Desktop</strong> (com alternador entre modo Chat e modo Code).</p>
+          </div>
+        </div>
+
+        <div class="summary-item">
+          <div class="summary-num">04</div>
+          <div class="summary-body">
+            <h3>Segurança e Boas Práticas (Git e Trust Folder)</h3>
+            <p>Por segurança, na primeira execução o Claude exige confirmação explícita de confiança no diretório onde está rodando (<em>Trust Folder</em>). Além disso, o vídeo destaca a importância fundamental do <strong>Git</strong> para criar pontos de restauração (checkpoints) do projeto, garantindo que qualquer alteração inadequada feita pela IA possa ser desfeita instantaneamente.</p>
+          </div>
+        </div>
+
+        <div class="summary-item">
+          <div class="summary-num">05</div>
+          <div class="summary-body">
+            <h3>Ciclo de Desenvolvimento e Engenharia de Prompt</h3>
+            <p>O desenvolvedor demonstra na prática como pedir a criação de um projeto, solicitar a inclusão de novas páginas e regras visuais, e como o Claude Code pede permissão antes de modificar arquivos ou rodar comandos no terminal. A melhor estratégia é ser específico no que deseja e fornecer pequenos passos incrementais.</p>
+          </div>
+        </div>
+
+        <div class="summary-item">
+          <div class="summary-num">06</div>
+          <div class="summary-body">
+            <h3>Otimização de Memória e Custos</h3>
+            <p>Conforme a conversa avança, o consumo de tokens aumenta. O comando <code>/compact</code> resume o histórico mantendo as decisões importantes e limpando ruídos, enquanto o <code>/clear</code> inicia uma nova tarefa limpa sem carregar o contexto antigo.</p>
+          </div>
+        </div>
+
+        <div class="summary-item">
+          <div class="summary-num">07</div>
+          <div class="summary-body">
+            <h3>Recursos Avançados e Ecossistema Extensível</h3>
+            <p>O vídeo conclui apresentando os recursos mais poderosos da ferramenta: tarefas executadas em segundo plano (<em>Background Tasks</em>), divisão de tarefas entre múltiplos subagentes (<code>/agents</code>), integração com serviços externos através de servidores MCP (conectando a dados do Notion, Google Drive e bancos de dados) e a criação de <strong>Skills</strong> personalizadas para automatizar rotinas repetitivas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Guia didático criado com base na transcrição do tutorial de <strong>Claude Code</strong> (Tech With Tim).</p>
+      <div class="footer-links">
+        <a href="index.html">Player Sincronizado do Vídeo</a>
+        <a href="transcricao_pt_completa.txt" download>Baixar Transcrição Completa (PT-BR)</a>
+        <a href="transcricao_com_timestamps.txt" download>Baixar Timestamps Originais</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function copySnippet(button) {
+      const code = button.parentElement.querySelector('code').innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        const original = button.innerText;
+        button.innerText = "Copiado!";
+        button.style.background = "#10b981";
+        button.style.borderColor = "#10b981";
+        setTimeout(() => {
+          button.innerText = original;
+          button.style.background = "";
+          button.style.borderColor = "";
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

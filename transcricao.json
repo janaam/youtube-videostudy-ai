@@ -1,0 +1,4944 @@
+[
+  {
+    "start_raw": "00:00:00.083",
+    "end_raw": "00:00:02.300",
+    "start_seconds": 0,
+    "timestamp": "00:00",
+    "text": "This video will teach you Claude code."
+  },
+  {
+    "start_raw": "00:00:02.300",
+    "end_raw": "00:00:05.150",
+    "start_seconds": 2,
+    "timestamp": "00:02",
+    "text": "I'll go over everything and assume no prior knowledge."
+  },
+  {
+    "start_raw": "00:00:05.150",
+    "end_raw": "00:00:07.283",
+    "start_seconds": 5,
+    "timestamp": "00:05",
+    "text": "I'll walk you through the setup and installation."
+  },
+  {
+    "start_raw": "00:00:07.283",
+    "end_raw": "00:00:08.450",
+    "start_seconds": 7,
+    "timestamp": "00:07",
+    "text": "Step by step."
+  },
+  {
+    "start_raw": "00:00:08.450",
+    "end_raw": "00:00:12.866",
+    "start_seconds": 8,
+    "timestamp": "00:08",
+    "text": "I'll show you how to utilize the tool, the best practices, multiple features,"
+  },
+  {
+    "start_raw": "00:00:12.866",
+    "end_raw": "00:00:16.250",
+    "start_seconds": 12,
+    "timestamp": "00:12",
+    "text": "and by the end of the video, you'll be comfortable using this tool to generate"
+  },
+  {
+    "start_raw": "00:00:16.250",
+    "end_raw": "00:00:19.666",
+    "start_seconds": 16,
+    "timestamp": "00:16",
+    "text": "some pretty insane outputs and awesome coding projects."
+  },
+  {
+    "start_raw": "00:00:19.850",
+    "end_raw": "00:00:21.716",
+    "start_seconds": 19,
+    "timestamp": "00:19",
+    "text": "So with that said, let's get into it."
+  },
+  {
+    "start_raw": "00:00:21.716",
+    "end_raw": "00:00:26.333",
+    "start_seconds": 21,
+    "timestamp": "00:21",
+    "text": "So without getting into too many details, cloud Code is effectively a command line"
+  },
+  {
+    "start_raw": "00:00:26.333",
+    "end_raw": "00:00:30.233",
+    "start_seconds": 26,
+    "timestamp": "00:26",
+    "text": "or terminal application that allows you to generate code,"
+  },
+  {
+    "start_raw": "00:00:30.350",
+    "end_raw": "00:00:34.966",
+    "start_seconds": 30,
+    "timestamp": "00:30",
+    "text": "debug projects, make websites, create applications, whatever it is that you want."
+  },
+  {
+    "start_raw": "00:00:35.150",
+    "end_raw": "00:00:39.050",
+    "start_seconds": 35,
+    "timestamp": "00:35",
+    "text": "It is effectively anthropic version of, you know, cursor or something, right?"
+  },
+  {
+    "start_raw": "00:00:39.150",
+    "end_raw": "00:00:42.350",
+    "start_seconds": 39,
+    "timestamp": "00:39",
+    "text": "Where you can generate a bunch of code using the terminal."
+  },
+  {
+    "start_raw": "00:00:42.566",
+    "end_raw": "00:00:45.950",
+    "start_seconds": 42,
+    "timestamp": "00:42",
+    "text": "Now this is prompt based coding, which means you don't need to actually write"
+  },
+  {
+    "start_raw": "00:00:45.950",
+    "end_raw": "00:00:47.250",
+    "start_seconds": 45,
+    "timestamp": "00:45",
+    "text": "any of the code yourself."
+  },
+  {
+    "start_raw": "00:00:47.250",
+    "end_raw": "00:00:51.200",
+    "start_seconds": 47,
+    "timestamp": "00:47",
+    "text": "You simply type to an AI agent, you tell it what your desired output is"
+  },
+  {
+    "start_raw": "00:00:51.200",
+    "end_raw": "00:00:53.566",
+    "start_seconds": 51,
+    "timestamp": "00:51",
+    "text": "and then goes ahead and starts coding."
+  },
+  {
+    "start_raw": "00:00:53.566",
+    "end_raw": "00:00:56.266",
+    "start_seconds": 53,
+    "timestamp": "00:53",
+    "text": "Now, oftentimes cloud code will be used in combination"
+  },
+  {
+    "start_raw": "00:00:56.266",
+    "end_raw": "00:00:59.716",
+    "start_seconds": 56,
+    "timestamp": "00:56",
+    "text": "with other developer tools, and I'll show you a few of them in this video."
+  },
+  {
+    "start_raw": "00:00:59.783",
+    "end_raw": "00:01:02.833",
+    "start_seconds": 59,
+    "timestamp": "00:59",
+    "text": "But generally speaking, you do not need to be an expert to use this."
+  },
+  {
+    "start_raw": "00:01:02.850",
+    "end_raw": "00:01:06.116",
+    "start_seconds": 62,
+    "timestamp": "01:02",
+    "text": "And even as a complete beginner, you can create some really cool projects."
+  },
+  {
+    "start_raw": "00:01:06.350",
+    "end_raw": "00:01:09.200",
+    "start_seconds": 66,
+    "timestamp": "01:06",
+    "text": "So with that said, let's look at how we set it up."
+  },
+  {
+    "start_raw": "00:01:09.200",
+    "end_raw": "00:01:12.766",
+    "start_seconds": 69,
+    "timestamp": "01:09",
+    "text": "Now, in order to get cloud code working, you are going to need a cloud subscription"
+  },
+  {
+    "start_raw": "00:01:12.766",
+    "end_raw": "00:01:13.733",
+    "start_seconds": 72,
+    "timestamp": "01:12",
+    "text": "which is paid."
+  },
+  {
+    "start_raw": "00:01:13.733",
+    "end_raw": "00:01:18.450",
+    "start_seconds": 73,
+    "timestamp": "01:13",
+    "text": "So you're going to need a Pro Max teams or enterprise subscription or an API key"
+  },
+  {
+    "start_raw": "00:01:18.466",
+    "end_raw": "00:01:21.466",
+    "start_seconds": 78,
+    "timestamp": "01:18",
+    "text": "with some tokens or credits from the cloud console."
+  },
+  {
+    "start_raw": "00:01:21.650",
+    "end_raw": "00:01:22.650",
+    "start_seconds": 81,
+    "timestamp": "01:21",
+    "text": "Now, I would suggest that"
+  },
+  {
+    "start_raw": "00:01:22.650",
+    "end_raw": "00:01:25.733",
+    "start_seconds": 82,
+    "timestamp": "01:22",
+    "text": "if you're just looking to mess around with this, get the cheapest plan from cloud."
+  },
+  {
+    "start_raw": "00:01:25.916",
+    "end_raw": "00:01:29.833",
+    "start_seconds": 85,
+    "timestamp": "01:25",
+    "text": "You will run out of credits pretty quickly if you are using this for very heavy work."
+  },
+  {
+    "start_raw": "00:01:29.900",
+    "end_raw": "00:01:33.416",
+    "start_seconds": 89,
+    "timestamp": "01:29",
+    "text": "But of course, test it first before you start going and buying a bunch of different credits."
+  },
+  {
+    "start_raw": "00:01:33.700",
+    "end_raw": "00:01:36.650",
+    "start_seconds": 93,
+    "timestamp": "01:33",
+    "text": "It also matters what model you're using, which we'll talk about later,"
+  },
+  {
+    "start_raw": "00:01:36.650",
+    "end_raw": "00:01:40.466",
+    "start_seconds": 96,
+    "timestamp": "01:36",
+    "text": "which will determine what the overall price for all of the prompts that you send is going to be."
+  },
+  {
+    "start_raw": "00:01:40.800",
+    "end_raw": "00:01:42.650",
+    "start_seconds": 100,
+    "timestamp": "01:40",
+    "text": "Now, generally, you're not going to be overbuild."
+  },
+  {
+    "start_raw": "00:01:42.650",
+    "end_raw": "00:01:44.966",
+    "start_seconds": 102,
+    "timestamp": "01:42",
+    "text": "You'll just run out of credits, then you would have to buy more."
+  },
+  {
+    "start_raw": "00:01:44.966",
+    "end_raw": "00:01:45.950",
+    "start_seconds": 104,
+    "timestamp": "01:44",
+    "text": "So don't worry about that."
+  },
+  {
+    "start_raw": "00:01:45.950",
+    "end_raw": "00:01:46.250",
+    "start_seconds": 105,
+    "timestamp": "01:45",
+    "text": "Okay."
+  },
+  {
+    "start_raw": "00:01:46.250",
+    "end_raw": "00:01:50.416",
+    "start_seconds": 106,
+    "timestamp": "01:46",
+    "text": "Now to install this is going to require that we work directly inside of the terminal."
+  },
+  {
+    "start_raw": "00:01:50.566",
+    "end_raw": "00:01:54.983",
+    "start_seconds": 110,
+    "timestamp": "01:50",
+    "text": "So what we're going to do is we're going to open up a terminal or a command prompt or a PowerShell"
+  },
+  {
+    "start_raw": "00:01:54.983",
+    "end_raw": "00:01:58.016",
+    "start_seconds": 114,
+    "timestamp": "01:54",
+    "text": "instance, depending on the operating system that you're working on."
+  },
+  {
+    "start_raw": "00:01:58.316",
+    "end_raw": "00:02:02.066",
+    "start_seconds": 118,
+    "timestamp": "01:58",
+    "text": "Now, if you are on windows, then I'm going to suggest that you open up PowerShell"
+  },
+  {
+    "start_raw": "00:02:02.216",
+    "end_raw": "00:02:07.016",
+    "start_seconds": 122,
+    "timestamp": "02:02",
+    "text": "so you can go to the windows search bar, search for PowerShell, and then open up a terminal like this."
+  },
+  {
+    "start_raw": "00:02:07.166",
+    "end_raw": "00:02:09.900",
+    "start_seconds": 127,
+    "timestamp": "02:07",
+    "text": "And I'll just put it on the right hand side of my screen."
+  },
+  {
+    "start_raw": "00:02:09.900",
+    "end_raw": "00:02:13.033",
+    "start_seconds": 129,
+    "timestamp": "02:09",
+    "text": "Now if you're on Mac or Linux then open up a normal terminal."
+  },
+  {
+    "start_raw": "00:02:13.050",
+    "end_raw": "00:02:15.166",
+    "start_seconds": 133,
+    "timestamp": "02:13",
+    "text": "So just type terminal in the spotlight search."
+  },
+  {
+    "start_raw": "00:02:15.166",
+    "end_raw": "00:02:18.233",
+    "start_seconds": 135,
+    "timestamp": "02:15",
+    "text": "And then you'll be in an environment where you can start using cloud code."
+  },
+  {
+    "start_raw": "00:02:18.716",
+    "end_raw": "00:02:22.316",
+    "start_seconds": 138,
+    "timestamp": "02:18",
+    "text": "Now in order to install this I'm going to leave this documentation in the description"
+  },
+  {
+    "start_raw": "00:02:22.316",
+    "end_raw": "00:02:26.183",
+    "start_seconds": 142,
+    "timestamp": "02:22",
+    "text": "which gives you the commands that you can simply copy depending on your operating system."
+  },
+  {
+    "start_raw": "00:02:26.416",
+    "end_raw": "00:02:30.016",
+    "start_seconds": 146,
+    "timestamp": "02:26",
+    "text": "So if you were on Mac or Linux then you can copy this curl command right here."
+  },
+  {
+    "start_raw": "00:02:30.200",
+    "end_raw": "00:02:32.666",
+    "start_seconds": 150,
+    "timestamp": "02:30",
+    "text": "Just paste it into your terminal and run it."
+  },
+  {
+    "start_raw": "00:02:32.666",
+    "end_raw": "00:02:38.000",
+    "start_seconds": 152,
+    "timestamp": "02:32",
+    "text": "If you are on windows and you're using PowerShell as I suggested, then you can copy this IRM command."
+  },
+  {
+    "start_raw": "00:02:38.400",
+    "end_raw": "00:02:42.350",
+    "start_seconds": 158,
+    "timestamp": "02:38",
+    "text": "You can paste it, hit enter, and it should install cloud code for you."
+  },
+  {
+    "start_raw": "00:02:42.683",
+    "end_raw": "00:02:45.766",
+    "start_seconds": 162,
+    "timestamp": "02:42",
+    "text": "If you're using the command prompt, maybe you're on an older version of windows."
+  },
+  {
+    "start_raw": "00:02:45.766",
+    "end_raw": "00:02:47.866",
+    "start_seconds": 165,
+    "timestamp": "02:45",
+    "text": "Then you can copy this version right here."
+  },
+  {
+    "start_raw": "00:02:47.866",
+    "end_raw": "00:02:49.583",
+    "start_seconds": 167,
+    "timestamp": "02:47",
+    "text": "Paste it in the command prompt."
+  },
+  {
+    "start_raw": "00:02:49.583",
+    "end_raw": "00:02:51.166",
+    "start_seconds": 169,
+    "timestamp": "02:49",
+    "text": "Again, it will install the tool."
+  },
+  {
+    "start_raw": "00:02:51.166",
+    "end_raw": "00:02:53.600",
+    "start_seconds": 171,
+    "timestamp": "02:51",
+    "text": "Cloud code is not a desktop application."
+  },
+  {
+    "start_raw": "00:02:53.600",
+    "end_raw": "00:02:57.083",
+    "start_seconds": 173,
+    "timestamp": "02:53",
+    "text": "It actually runs directly inside of your shell or your terminal."
+  },
+  {
+    "start_raw": "00:02:57.300",
+    "end_raw": "00:03:02.183",
+    "start_seconds": 177,
+    "timestamp": "02:57",
+    "text": "So in order to use this in the future, you will need to open up PowerShell again or terminal again,"
+  },
+  {
+    "start_raw": "00:03:02.183",
+    "end_raw": "00:03:07.250",
+    "start_seconds": 182,
+    "timestamp": "03:02",
+    "text": "or use this from some kind of tool in order to actually interact with cloud and generate code."
+  },
+  {
+    "start_raw": "00:03:07.316",
+    "end_raw": "00:03:07.733",
+    "start_seconds": 187,
+    "timestamp": "03:07",
+    "text": "Now, once"
+  },
+  {
+    "start_raw": "00:03:07.733",
+    "end_raw": "00:03:12.000",
+    "start_seconds": 187,
+    "timestamp": "03:07",
+    "text": "it says it's installed, the way that you can test this is by simply typing Claude in your terminal."
+  },
+  {
+    "start_raw": "00:03:12.016",
+    "end_raw": "00:03:15.116",
+    "start_seconds": 192,
+    "timestamp": "03:12",
+    "text": "So if you type Claude, you should get some kind of output here."
+  },
+  {
+    "start_raw": "00:03:15.450",
+    "end_raw": "00:03:19.833",
+    "start_seconds": 195,
+    "timestamp": "03:15",
+    "text": "Now when you first run this, it will ask you to authenticate with your anthropic or cloud account."
+  },
+  {
+    "start_raw": "00:03:19.950",
+    "end_raw": "00:03:20.933",
+    "start_seconds": 199,
+    "timestamp": "03:19",
+    "text": "So just do that."
+  },
+  {
+    "start_raw": "00:03:20.933",
+    "end_raw": "00:03:24.050",
+    "start_seconds": 200,
+    "timestamp": "03:20",
+    "text": "Go into your browser, sign into your account and then you'll be good to go."
+  },
+  {
+    "start_raw": "00:03:24.450",
+    "end_raw": "00:03:27.383",
+    "start_seconds": 204,
+    "timestamp": "03:24",
+    "text": "Now also whenever you run this for the first time and you type that command,"
+  },
+  {
+    "start_raw": "00:03:27.383",
+    "end_raw": "00:03:30.383",
+    "start_seconds": 207,
+    "timestamp": "03:27",
+    "text": "it's going to ask you to trust the current folder that you're inside of."
+  },
+  {
+    "start_raw": "00:03:30.450",
+    "end_raw": "00:03:33.116",
+    "start_seconds": 210,
+    "timestamp": "03:30",
+    "text": "So we're going to go ahead and press on. Yes I trust the folder."
+  },
+  {
+    "start_raw": "00:03:33.116",
+    "end_raw": "00:03:35.450",
+    "start_seconds": 213,
+    "timestamp": "03:33",
+    "text": "And then it's going to bring up the Claude Code UI."
+  },
+  {
+    "start_raw": "00:03:35.450",
+    "end_raw": "00:03:38.400",
+    "start_seconds": 215,
+    "timestamp": "03:35",
+    "text": "Now at this point you should have got cloud code installed and just remember,"
+  },
+  {
+    "start_raw": "00:03:38.400",
+    "end_raw": "00:03:42.350",
+    "start_seconds": 218,
+    "timestamp": "03:38",
+    "text": "if you were to close the terminal or the PowerShell you would have to reopen this."
+  },
+  {
+    "start_raw": "00:03:42.350",
+    "end_raw": "00:03:42.683",
+    "start_seconds": 222,
+    "timestamp": "03:42",
+    "text": "Right?"
+  },
+  {
+    "start_raw": "00:03:42.683",
+    "end_raw": "00:03:46.800",
+    "start_seconds": 222,
+    "timestamp": "03:42",
+    "text": "I'm just going to zoom in and then again type Claude and then you can press enter."
+  },
+  {
+    "start_raw": "00:03:46.800",
+    "end_raw": "00:03:48.950",
+    "start_seconds": 226,
+    "timestamp": "03:46",
+    "text": "And again you get back into that user interface."
+  },
+  {
+    "start_raw": "00:03:48.950",
+    "end_raw": "00:03:51.200",
+    "start_seconds": 228,
+    "timestamp": "03:48",
+    "text": "So don't worry if you lose it."
+  },
+  {
+    "start_raw": "00:03:51.200",
+    "end_raw": "00:03:55.100",
+    "start_seconds": 231,
+    "timestamp": "03:51",
+    "text": "Now for some of you that are complete beginners and already this is a little bit intimidating."
+  },
+  {
+    "start_raw": "00:03:55.100",
+    "end_raw": "00:03:59.033",
+    "start_seconds": 235,
+    "timestamp": "03:55",
+    "text": "Anthropic actually did create an easier way to write code using Claude."
+  },
+  {
+    "start_raw": "00:03:59.300",
+    "end_raw": "00:04:02.300",
+    "start_seconds": 239,
+    "timestamp": "03:59",
+    "text": "It is not the same thing as Claude code, but it is very similar"
+  },
+  {
+    "start_raw": "00:04:02.333",
+    "end_raw": "00:04:06.200",
+    "start_seconds": 242,
+    "timestamp": "04:02",
+    "text": "and you can access that by downloading the desktop app for Claude."
+  },
+  {
+    "start_raw": "00:04:06.450",
+    "end_raw": "00:04:09.450",
+    "start_seconds": 246,
+    "timestamp": "04:06",
+    "text": "So if you have an account with them, you can just download the desktop app."
+  },
+  {
+    "start_raw": "00:04:09.566",
+    "end_raw": "00:04:12.566",
+    "start_seconds": 249,
+    "timestamp": "04:09",
+    "text": "If you do that, the app will look something like this."
+  },
+  {
+    "start_raw": "00:04:12.616",
+    "end_raw": "00:04:17.416",
+    "start_seconds": 252,
+    "timestamp": "04:12",
+    "text": "From here, what you'll be able to do is switch between this chat and this code mode."
+  },
+  {
+    "start_raw": "00:04:17.666",
+    "end_raw": "00:04:21.566",
+    "start_seconds": 257,
+    "timestamp": "04:17",
+    "text": "And if you go into the coding mode here, you'll be able to select a project."
+  },
+  {
+    "start_raw": "00:04:21.750",
+    "end_raw": "00:04:25.666",
+    "start_seconds": 261,
+    "timestamp": "04:21",
+    "text": "You can write a prompt directly inside of here you can change the mode like coding,"
+  },
+  {
+    "start_raw": "00:04:25.666",
+    "end_raw": "00:04:28.583",
+    "start_seconds": 265,
+    "timestamp": "04:25",
+    "text": "asking, planning, right. You can add different files."
+  },
+  {
+    "start_raw": "00:04:28.583",
+    "end_raw": "00:04:33.316",
+    "start_seconds": 268,
+    "timestamp": "04:28",
+    "text": "You can connect it to GitHub, you can choose your model and it's a lot simpler and easier to use."
+  },
+  {
+    "start_raw": "00:04:33.316",
+    "end_raw": "00:04:35.750",
+    "start_seconds": 273,
+    "timestamp": "04:33",
+    "text": "So again, if you're a beginner you can just use this."
+  },
+  {
+    "start_raw": "00:04:35.750",
+    "end_raw": "00:04:39.166",
+    "start_seconds": 275,
+    "timestamp": "04:35",
+    "text": "But if you want to get any serious work done, the CLI or the command"
+  },
+  {
+    "start_raw": "00:04:39.166",
+    "end_raw": "00:04:42.866",
+    "start_seconds": 279,
+    "timestamp": "04:39",
+    "text": "line tool which I'm showing you is what you're going to want to set up and have on your machine."
+  },
+  {
+    "start_raw": "00:04:42.916",
+    "end_raw": "00:04:47.483",
+    "start_seconds": 282,
+    "timestamp": "04:42",
+    "text": "Now, if you've been programing for a while, you probably know the job market is tough recently"
+  },
+  {
+    "start_raw": "00:04:47.483",
+    "end_raw": "00:04:50.483",
+    "start_seconds": 287,
+    "timestamp": "04:47",
+    "text": "and you may feel like traditional resumes just don't show who"
+  },
+  {
+    "start_raw": "00:04:50.483",
+    "end_raw": "00:04:53.483",
+    "start_seconds": 290,
+    "timestamp": "04:50",
+    "text": "you really are as a creator or a technologist."
+  },
+  {
+    "start_raw": "00:04:53.566",
+    "end_raw": "00:04:56.216",
+    "start_seconds": 293,
+    "timestamp": "04:53",
+    "text": "Now that's where dinked me comes in."
+  },
+  {
+    "start_raw": "00:04:56.216",
+    "end_raw": "00:04:59.116",
+    "start_seconds": 296,
+    "timestamp": "04:56",
+    "text": "It's a brand new AI native career network built"
+  },
+  {
+    "start_raw": "00:04:59.116",
+    "end_raw": "00:05:03.266",
+    "start_seconds": 299,
+    "timestamp": "04:59",
+    "text": "for the real era of real work, real projects, real impact."
+  },
+  {
+    "start_raw": "00:05:03.266",
+    "end_raw": "00:05:05.000",
+    "start_seconds": 303,
+    "timestamp": "05:03",
+    "text": "Not just job titles."
+  },
+  {
+    "start_raw": "00:05:05.000",
+    "end_raw": "00:05:08.783",
+    "start_seconds": 305,
+    "timestamp": "05:05",
+    "text": "Now, instead of a static resume, Dink gives you a living identity card"
+  },
+  {
+    "start_raw": "00:05:08.816",
+    "end_raw": "00:05:12.800",
+    "start_seconds": 308,
+    "timestamp": "05:08",
+    "text": "your Dink card that automatically showcases your code, papers,"
+  },
+  {
+    "start_raw": "00:05:12.800",
+    "end_raw": "00:05:17.550",
+    "start_seconds": 312,
+    "timestamp": "05:12",
+    "text": "citations, and measurable impact across platforms like GitHub and Google Scholar."
+  },
+  {
+    "start_raw": "00:05:17.933",
+    "end_raw": "00:05:21.850",
+    "start_seconds": 317,
+    "timestamp": "05:17",
+    "text": "Recruiters, professors, and startups can discover what you've actually done,"
+  },
+  {
+    "start_raw": "00:05:21.866",
+    "end_raw": "00:05:23.783",
+    "start_seconds": 321,
+    "timestamp": "05:21",
+    "text": "not just what you wrote on paper."
+  },
+  {
+    "start_raw": "00:05:23.783",
+    "end_raw": "00:05:26.366",
+    "start_seconds": 323,
+    "timestamp": "05:23",
+    "text": "Now that's what dink does for you, but for companies."
+  },
+  {
+    "start_raw": "00:05:26.366",
+    "end_raw": "00:05:31.916",
+    "start_seconds": 326,
+    "timestamp": "05:26",
+    "text": "Dink is an AI powered talent engine that analyzes and compares researchers and engineers in seconds."
+  },
+  {
+    "start_raw": "00:05:32.150",
+    "end_raw": "00:05:36.116",
+    "start_seconds": 332,
+    "timestamp": "05:32",
+    "text": "It helps teams spot the best fits faster than traditional recruiting tools."
+  },
+  {
+    "start_raw": "00:05:36.200",
+    "end_raw": "00:05:39.933",
+    "start_seconds": 336,
+    "timestamp": "05:36",
+    "text": "Now, the best part of all of this is that you can claim your Dink card for free."
+  },
+  {
+    "start_raw": "00:05:39.950",
+    "end_raw": "00:05:44.300",
+    "start_seconds": 339,
+    "timestamp": "05:39",
+    "text": "Start building your personal identity in minutes and let your work speak for itself."
+  },
+  {
+    "start_raw": "00:05:44.300",
+    "end_raw": "00:05:48.166",
+    "start_seconds": 344,
+    "timestamp": "05:44",
+    "text": "In a world where resumes get screened for six seconds before a decision."
+  },
+  {
+    "start_raw": "00:05:48.450",
+    "end_raw": "00:05:50.100",
+    "start_seconds": 348,
+    "timestamp": "05:48",
+    "text": "Now here you can even see my dink card."
+  },
+  {
+    "start_raw": "00:05:50.100",
+    "end_raw": "00:05:54.050",
+    "start_seconds": 350,
+    "timestamp": "05:50",
+    "text": "Right here has all of my details, information that you wouldn't see on a resume,"
+  },
+  {
+    "start_raw": "00:05:54.166",
+    "end_raw": "00:05:59.150",
+    "start_seconds": 354,
+    "timestamp": "05:54",
+    "text": "my whole career trajectory, my GitHub, the number of stars, my YouTube channel, Instagram,"
+  },
+  {
+    "start_raw": "00:05:59.300",
+    "end_raw": "00:06:00.500",
+    "start_seconds": 359,
+    "timestamp": "05:59",
+    "text": "all of that stuff is here."
+  },
+  {
+    "start_raw": "00:06:00.500",
+    "end_raw": "00:06:05.333",
+    "start_seconds": 360,
+    "timestamp": "06:00",
+    "text": "As well as networks career trajectory, Twitter, and anything else that you want to include."
+  },
+  {
+    "start_raw": "00:06:05.366",
+    "end_raw": "00:06:09.600",
+    "start_seconds": 365,
+    "timestamp": "06:05",
+    "text": "Now you can get started with Dink today for free by clicking the link in the description,"
+  },
+  {
+    "start_raw": "00:06:09.600",
+    "end_raw": "00:06:12.600",
+    "start_seconds": 369,
+    "timestamp": "06:09",
+    "text": "and a massive thanks to them for sponsoring today's video."
+  },
+  {
+    "start_raw": "00:06:12.650",
+    "end_raw": "00:06:13.883",
+    "start_seconds": 372,
+    "timestamp": "06:12",
+    "text": "Let's get back into it."
+  },
+  {
+    "start_raw": "00:06:13.883",
+    "end_raw": "00:06:16.800",
+    "start_seconds": 373,
+    "timestamp": "06:13",
+    "text": "Now, with that in mind, before you just go crazy here with Claude,"
+  },
+  {
+    "start_raw": "00:06:16.800",
+    "end_raw": "00:06:20.550",
+    "start_seconds": 376,
+    "timestamp": "06:16",
+    "text": "what I'm going to suggest that you do is installed git on your computer."
+  },
+  {
+    "start_raw": "00:06:20.883",
+    "end_raw": "00:06:24.850",
+    "start_seconds": 380,
+    "timestamp": "06:20",
+    "text": "Now, git is a tool that's going to allow you to essentially kind of checkpoint"
+  },
+  {
+    "start_raw": "00:06:24.850",
+    "end_raw": "00:06:28.866",
+    "start_seconds": 384,
+    "timestamp": "06:24",
+    "text": "what Claude is doing and revert back to a previous version of your code base"
+  },
+  {
+    "start_raw": "00:06:28.866",
+    "end_raw": "00:06:30.400",
+    "start_seconds": 388,
+    "timestamp": "06:28",
+    "text": "in case it makes any mistakes."
+  },
+  {
+    "start_raw": "00:06:30.400",
+    "end_raw": "00:06:32.350",
+    "start_seconds": 390,
+    "timestamp": "06:30",
+    "text": "You won't have it by default on your machines."
+  },
+  {
+    "start_raw": "00:06:32.350",
+    "end_raw": "00:06:33.866",
+    "start_seconds": 392,
+    "timestamp": "06:32",
+    "text": "You do need to install."
+  },
+  {
+    "start_raw": "00:06:33.866",
+    "end_raw": "00:06:36.700",
+    "start_seconds": 393,
+    "timestamp": "06:33",
+    "text": "Now. You can do that by going to the link that I'll put in the description"
+  },
+  {
+    "start_raw": "00:06:36.700",
+    "end_raw": "00:06:39.783",
+    "start_seconds": 396,
+    "timestamp": "06:36",
+    "text": "where you can download this for windows, Mac or Linux."
+  },
+  {
+    "start_raw": "00:06:40.016",
+    "end_raw": "00:06:43.916",
+    "start_seconds": 400,
+    "timestamp": "06:40",
+    "text": "However, because we have Claude code, we actually can just ask Claude code,"
+  },
+  {
+    "start_raw": "00:06:44.133",
+    "end_raw": "00:06:47.016",
+    "start_seconds": 404,
+    "timestamp": "06:44",
+    "text": "can you install git for me?"
+  },
+  {
+    "start_raw": "00:06:47.016",
+    "end_raw": "00:06:49.750",
+    "start_seconds": 407,
+    "timestamp": "06:47",
+    "text": "Now if you do that, it should actually think about the commands"
+  },
+  {
+    "start_raw": "00:06:49.750",
+    "end_raw": "00:06:52.200",
+    "start_seconds": 409,
+    "timestamp": "06:49",
+    "text": "that it's going to need to run to install this for you."
+  },
+  {
+    "start_raw": "00:06:52.200",
+    "end_raw": "00:06:54.116",
+    "start_seconds": 412,
+    "timestamp": "06:52",
+    "text": "It should likely ask you for permission."
+  },
+  {
+    "start_raw": "00:06:54.116",
+    "end_raw": "00:06:57.100",
+    "start_seconds": 414,
+    "timestamp": "06:54",
+    "text": "So you can see here it's asking for permission to run a command."
+  },
+  {
+    "start_raw": "00:06:57.100",
+    "end_raw": "00:06:57.866",
+    "start_seconds": 417,
+    "timestamp": "06:57",
+    "text": "I'm going to go. Yes."
+  },
+  {
+    "start_raw": "00:06:57.866",
+    "end_raw": "00:06:59.883",
+    "start_seconds": 417,
+    "timestamp": "06:57",
+    "text": "And don't ask for this command again."
+  },
+  {
+    "start_raw": "00:06:59.883",
+    "end_raw": "00:07:02.883",
+    "start_seconds": 419,
+    "timestamp": "06:59",
+    "text": "And then it's going to actually run the command to install that tool for you."
+  },
+  {
+    "start_raw": "00:07:03.116",
+    "end_raw": "00:07:04.950",
+    "start_seconds": 423,
+    "timestamp": "07:03",
+    "text": "Now for some reason that doesn't work."
+  },
+  {
+    "start_raw": "00:07:04.950",
+    "end_raw": "00:07:08.100",
+    "start_seconds": 424,
+    "timestamp": "07:04",
+    "text": "Then what you can do is just install it directly from the website right here."
+  },
+  {
+    "start_raw": "00:07:08.133",
+    "end_raw": "00:07:08.400",
+    "start_seconds": 428,
+    "timestamp": "07:08",
+    "text": "Okay."
+  },
+  {
+    "start_raw": "00:07:08.400",
+    "end_raw": "00:07:11.616",
+    "start_seconds": 428,
+    "timestamp": "07:08",
+    "text": "So in my case, it actually gave me an error that said that I need to be running"
+  },
+  {
+    "start_raw": "00:07:11.616",
+    "end_raw": "00:07:15.066",
+    "start_seconds": 431,
+    "timestamp": "07:11",
+    "text": "PowerShell as an administrator in order to actually run this command."
+  },
+  {
+    "start_raw": "00:07:15.150",
+    "end_raw": "00:07:16.900",
+    "start_seconds": 435,
+    "timestamp": "07:15",
+    "text": "So if you get an error like that, no worries."
+  },
+  {
+    "start_raw": "00:07:16.900",
+    "end_raw": "00:07:22.316",
+    "start_seconds": 436,
+    "timestamp": "07:16",
+    "text": "What you can do is you can just open PowerShell by pressing right click and then run as administrator."
+  },
+  {
+    "start_raw": "00:07:22.600",
+    "end_raw": "00:07:26.400",
+    "start_seconds": 442,
+    "timestamp": "07:22",
+    "text": "Now if you're running this in Mac, it should be good to go by default."
+  },
+  {
+    "start_raw": "00:07:26.466",
+    "end_raw": "00:07:28.900",
+    "start_seconds": 446,
+    "timestamp": "07:26",
+    "text": "But here what I'm going to do is just type Claude."
+  },
+  {
+    "start_raw": "00:07:28.900",
+    "end_raw": "00:07:31.166",
+    "start_seconds": 448,
+    "timestamp": "07:28",
+    "text": "Okay I'm going to go yes I trust this folder."
+  },
+  {
+    "start_raw": "00:07:31.166",
+    "end_raw": "00:07:35.366",
+    "start_seconds": 451,
+    "timestamp": "07:31",
+    "text": "And then same thing install git for me and let's see if it's able to do it."
+  },
+  {
+    "start_raw": "00:07:35.366",
+    "end_raw": "00:07:36.850",
+    "start_seconds": 455,
+    "timestamp": "07:35",
+    "text": "Now that I gave it the permissions."
+  },
+  {
+    "start_raw": "00:07:36.850",
+    "end_raw": "00:07:39.816",
+    "start_seconds": 456,
+    "timestamp": "07:36",
+    "text": "All right. So I just got installed. I'm not going to go through the whole process."
+  },
+  {
+    "start_raw": "00:07:39.816",
+    "end_raw": "00:07:43.616",
+    "start_seconds": 459,
+    "timestamp": "07:39",
+    "text": "And the next thing that I do recommend that you do is create a GitHub account."
+  },
+  {
+    "start_raw": "00:07:43.866",
+    "end_raw": "00:07:48.416",
+    "start_seconds": 463,
+    "timestamp": "07:43",
+    "text": "The reason why will want to make a GitHub account is we're going to connect Claude to GitHub,"
+  },
+  {
+    "start_raw": "00:07:48.516",
+    "end_raw": "00:07:53.100",
+    "start_seconds": 468,
+    "timestamp": "07:48",
+    "text": "so that it's able to actually create new repositories for us and save all of the code"
+  },
+  {
+    "start_raw": "00:07:53.100",
+    "end_raw": "00:07:56.100",
+    "start_seconds": 473,
+    "timestamp": "07:53",
+    "text": "that we're writing from the very beginning, so that we don't lose anything."
+  },
+  {
+    "start_raw": "00:07:56.400",
+    "end_raw": "00:08:02.416",
+    "start_seconds": 476,
+    "timestamp": "07:56",
+    "text": "Now, GitHub is essentially a website or kind of a remote location where we can store different code."
+  },
+  {
+    "start_raw": "00:08:02.433",
+    "end_raw": "00:08:06.266",
+    "start_seconds": 482,
+    "timestamp": "08:02",
+    "text": "So rather than just having it on our own computer, we can store it with GitHub"
+  },
+  {
+    "start_raw": "00:08:06.333",
+    "end_raw": "00:08:10.250",
+    "start_seconds": 486,
+    "timestamp": "08:06",
+    "text": "where we can access it from another machine, we can share it with another developer."
+  },
+  {
+    "start_raw": "00:08:10.266",
+    "end_raw": "00:08:13.566",
+    "start_seconds": 490,
+    "timestamp": "08:10",
+    "text": "And more importantly, if we lose access to maybe our own computer,"
+  },
+  {
+    "start_raw": "00:08:13.566",
+    "end_raw": "00:08:16.750",
+    "start_seconds": 493,
+    "timestamp": "08:13",
+    "text": "or maybe we delete the folder or Claude messes up or something,"
+  },
+  {
+    "start_raw": "00:08:16.750",
+    "end_raw": "00:08:20.850",
+    "start_seconds": 496,
+    "timestamp": "08:16",
+    "text": "we can always get the repository or the code again by going to this website."
+  },
+  {
+    "start_raw": "00:08:21.066",
+    "end_raw": "00:08:22.650",
+    "start_seconds": 501,
+    "timestamp": "08:21",
+    "text": "So go to GitHub, make an account."
+  },
+  {
+    "start_raw": "00:08:22.650",
+    "end_raw": "00:08:25.766",
+    "start_seconds": 502,
+    "timestamp": "08:22",
+    "text": "It is completely free and I'm going to just quickly show you how to connect"
+  },
+  {
+    "start_raw": "00:08:25.766",
+    "end_raw": "00:08:28.983",
+    "start_seconds": 505,
+    "timestamp": "08:25",
+    "text": "your GitHub account to your terminal here locally."
+  },
+  {
+    "start_raw": "00:08:29.016",
+    "end_raw": "00:08:31.533",
+    "start_seconds": 509,
+    "timestamp": "08:29",
+    "text": "So you're able to use it kind of with Claude."
+  },
+  {
+    "start_raw": "00:08:31.533",
+    "end_raw": "00:08:31.866",
+    "start_seconds": 511,
+    "timestamp": "08:31",
+    "text": "All right."
+  },
+  {
+    "start_raw": "00:08:31.866",
+    "end_raw": "00:08:35.166",
+    "start_seconds": 511,
+    "timestamp": "08:31",
+    "text": "So in order to connect git, which is running on our local computer to GitHub,"
+  },
+  {
+    "start_raw": "00:08:35.166",
+    "end_raw": "00:08:41.316",
+    "start_seconds": 515,
+    "timestamp": "08:35",
+    "text": "which is running in the web, what we need to do is run the following command which is g off log in."
+  },
+  {
+    "start_raw": "00:08:41.516",
+    "end_raw": "00:08:43.050",
+    "start_seconds": 521,
+    "timestamp": "08:41",
+    "text": "Now notice that I didn't know how to do this."
+  },
+  {
+    "start_raw": "00:08:43.050",
+    "end_raw": "00:08:46.200",
+    "start_seconds": 523,
+    "timestamp": "08:43",
+    "text": "So I just asked cloud code and it told me exactly what to run."
+  },
+  {
+    "start_raw": "00:08:46.450",
+    "end_raw": "00:08:50.283",
+    "start_seconds": 526,
+    "timestamp": "08:46",
+    "text": "So what I'm going to do is type g auth log in like so."
+  },
+  {
+    "start_raw": "00:08:50.500",
+    "end_raw": "00:08:52.533",
+    "start_seconds": 530,
+    "timestamp": "08:50",
+    "text": "And then it should run this command for me."
+  },
+  {
+    "start_raw": "00:08:52.533",
+    "end_raw": "00:08:54.900",
+    "start_seconds": 532,
+    "timestamp": "08:52",
+    "text": "And allow me to connect to GitHub. Okay."
+  },
+  {
+    "start_raw": "00:08:54.900",
+    "end_raw": "00:08:56.833",
+    "start_seconds": 534,
+    "timestamp": "08:54",
+    "text": "So you can see that it's going to ask to run the command."
+  },
+  {
+    "start_raw": "00:08:56.833",
+    "end_raw": "00:08:59.050",
+    "start_seconds": 536,
+    "timestamp": "08:56",
+    "text": "So let's go ahead and type on. Yes."
+  },
+  {
+    "start_raw": "00:08:59.050",
+    "end_raw": "00:09:00.966",
+    "start_seconds": 539,
+    "timestamp": "08:59",
+    "text": "And in this case G was not found."
+  },
+  {
+    "start_raw": "00:09:00.966",
+    "end_raw": "00:09:03.183",
+    "start_seconds": 540,
+    "timestamp": "09:00",
+    "text": "So it should go ahead and install that for me."
+  },
+  {
+    "start_raw": "00:09:03.183",
+    "end_raw": "00:09:06.033",
+    "start_seconds": 543,
+    "timestamp": "09:03",
+    "text": "So I'm just going to type option C so we can install that tool for me."
+  },
+  {
+    "start_raw": "00:09:06.033",
+    "end_raw": "00:09:08.066",
+    "start_seconds": 546,
+    "timestamp": "09:06",
+    "text": "Okay. So it looks like it was able to install that."
+  },
+  {
+    "start_raw": "00:09:08.066",
+    "end_raw": "00:09:10.583",
+    "start_seconds": 548,
+    "timestamp": "09:08",
+    "text": "And then I'm going to go yes so that it can run that command."
+  },
+  {
+    "start_raw": "00:09:10.583",
+    "end_raw": "00:09:10.866",
+    "start_seconds": 550,
+    "timestamp": "09:10",
+    "text": "All right."
+  },
+  {
+    "start_raw": "00:09:10.866",
+    "end_raw": "00:09:12.816",
+    "start_seconds": 550,
+    "timestamp": "09:10",
+    "text": "So notice it's giving me some output here where it says"
+  },
+  {
+    "start_raw": "00:09:12.816",
+    "end_raw": "00:09:16.650",
+    "start_seconds": 552,
+    "timestamp": "09:12",
+    "text": "it wants me to go to this URL and then type in our one time code."
+  },
+  {
+    "start_raw": "00:09:16.650",
+    "end_raw": "00:09:19.600",
+    "start_seconds": 556,
+    "timestamp": "09:16",
+    "text": "So what we're going to do here is go we're going to select the account."
+  },
+  {
+    "start_raw": "00:09:19.600",
+    "end_raw": "00:09:21.666",
+    "start_seconds": 559,
+    "timestamp": "09:19",
+    "text": "So I'm going to go with tech with Tim."
+  },
+  {
+    "start_raw": "00:09:21.666",
+    "end_raw": "00:09:24.183",
+    "start_seconds": 561,
+    "timestamp": "09:21",
+    "text": "And then I'm going to copy this code that it's giving me here."
+  },
+  {
+    "start_raw": "00:09:24.183",
+    "end_raw": "00:09:27.666",
+    "start_seconds": 564,
+    "timestamp": "09:24",
+    "text": "So just copy that and paste it and press continue."
+  },
+  {
+    "start_raw": "00:09:27.666",
+    "end_raw": "00:09:31.450",
+    "start_seconds": 567,
+    "timestamp": "09:27",
+    "text": "And that should then authorize GitHub here in our terminal."
+  },
+  {
+    "start_raw": "00:09:31.616",
+    "end_raw": "00:09:34.200",
+    "start_seconds": 571,
+    "timestamp": "09:31",
+    "text": "Now in order to do that I need just auth with mobile. So let me do that."
+  },
+  {
+    "start_raw": "00:09:34.200",
+    "end_raw": "00:09:36.150",
+    "start_seconds": 574,
+    "timestamp": "09:34",
+    "text": "All right. So it looks like we are all authenticated."
+  },
+  {
+    "start_raw": "00:09:36.150",
+    "end_raw": "00:09:38.466",
+    "start_seconds": 576,
+    "timestamp": "09:36",
+    "text": "Now you can see that I was logged in as tech with Tim."
+  },
+  {
+    "start_raw": "00:09:38.466",
+    "end_raw": "00:09:40.166",
+    "start_seconds": 578,
+    "timestamp": "09:38",
+    "text": "And now we have GitHub set up."
+  },
+  {
+    "start_raw": "00:09:40.166",
+    "end_raw": "00:09:43.233",
+    "start_seconds": 580,
+    "timestamp": "09:40",
+    "text": "I know it is a little bit of a pain to do this at the beginning, but trust me"
+  },
+  {
+    "start_raw": "00:09:43.233",
+    "end_raw": "00:09:48.666",
+    "start_seconds": 583,
+    "timestamp": "09:43",
+    "text": "it is absolutely worth it because now anytime we use cloud, it can automatically save the code for us."
+  },
+  {
+    "start_raw": "00:09:48.750",
+    "end_raw": "00:09:50.650",
+    "start_seconds": 588,
+    "timestamp": "09:48",
+    "text": "A lot of other tutorials don't cover this."
+  },
+  {
+    "start_raw": "00:09:50.650",
+    "end_raw": "00:09:51.633",
+    "start_seconds": 590,
+    "timestamp": "09:50",
+    "text": "That's why you're watching mine,"
+  },
+  {
+    "start_raw": "00:09:51.633",
+    "end_raw": "00:09:56.100",
+    "start_seconds": 591,
+    "timestamp": "09:51",
+    "text": "because I want to go through it step by step, and I want you to get set up in one single video."
+  },
+  {
+    "start_raw": "00:09:56.316",
+    "end_raw": "00:09:59.216",
+    "start_seconds": 596,
+    "timestamp": "09:56",
+    "text": "Now, I promise we can move on to some more features."
+  },
+  {
+    "start_raw": "00:09:59.216",
+    "end_raw": "00:10:01.166",
+    "start_seconds": 599,
+    "timestamp": "09:59",
+    "text": "Okay, so let me close my browser."
+  },
+  {
+    "start_raw": "00:10:01.166",
+    "end_raw": "00:10:03.566",
+    "start_seconds": 601,
+    "timestamp": "10:01",
+    "text": "Let's open up cloud code a little bit larger."
+  },
+  {
+    "start_raw": "00:10:03.566",
+    "end_raw": "00:10:07.000",
+    "start_seconds": 603,
+    "timestamp": "10:03",
+    "text": "And I want to show you how most developers actually work with cloud code"
+  },
+  {
+    "start_raw": "00:10:07.466",
+    "end_raw": "00:10:09.966",
+    "start_seconds": 607,
+    "timestamp": "10:07",
+    "text": "now, rather than just using the terminal here."
+  },
+  {
+    "start_raw": "00:10:09.966",
+    "end_raw": "00:10:12.633",
+    "start_seconds": 609,
+    "timestamp": "10:09",
+    "text": "A lot of times you're going to use this with a development environment."
+  },
+  {
+    "start_raw": "00:10:12.633",
+    "end_raw": "00:10:16.616",
+    "start_seconds": 612,
+    "timestamp": "10:12",
+    "text": "What I mean by that is you're likely going to use an editor like VSCode"
+  },
+  {
+    "start_raw": "00:10:16.616",
+    "end_raw": "00:10:20.550",
+    "start_seconds": 616,
+    "timestamp": "10:16",
+    "text": "or a cursor or JetBrains IDE, or something along those lines."
+  },
+  {
+    "start_raw": "00:10:20.616",
+    "end_raw": "00:10:25.083",
+    "start_seconds": 620,
+    "timestamp": "10:20",
+    "text": "So you can actually see what cloud code is doing and not just have this terminal view."
+  },
+  {
+    "start_raw": "00:10:25.350",
+    "end_raw": "00:10:28.833",
+    "start_seconds": 625,
+    "timestamp": "10:25",
+    "text": "So for example, a very popular editor is Visual Studio Code."
+  },
+  {
+    "start_raw": "00:10:29.166",
+    "end_raw": "00:10:32.700",
+    "start_seconds": 629,
+    "timestamp": "10:29",
+    "text": "A recent version of that which is kind of AI enabled is cursor."
+  },
+  {
+    "start_raw": "00:10:32.883",
+    "end_raw": "00:10:34.983",
+    "start_seconds": 632,
+    "timestamp": "10:32",
+    "text": "So for example, you could open up cursor."
+  },
+  {
+    "start_raw": "00:10:34.983",
+    "end_raw": "00:10:36.933",
+    "start_seconds": 634,
+    "timestamp": "10:34",
+    "text": "I'm just going to open up an editor right here."
+  },
+  {
+    "start_raw": "00:10:36.933",
+    "end_raw": "00:10:38.216",
+    "start_seconds": 636,
+    "timestamp": "10:36",
+    "text": "And if you want a recommendation"
+  },
+  {
+    "start_raw": "00:10:38.216",
+    "end_raw": "00:10:42.516",
+    "start_seconds": 638,
+    "timestamp": "10:38",
+    "text": "I would suggest just download cursor because this is the best one to use for right now."
+  },
+  {
+    "start_raw": "00:10:42.516",
+    "end_raw": "00:10:47.166",
+    "start_seconds": 642,
+    "timestamp": "10:42",
+    "text": "That also has its own AI features, but we can augment that by just using cloud code."
+  },
+  {
+    "start_raw": "00:10:47.583",
+    "end_raw": "00:10:49.833",
+    "start_seconds": 647,
+    "timestamp": "10:47",
+    "text": "So you can see that I have, what is it?"
+  },
+  {
+    "start_raw": "00:10:49.833",
+    "end_raw": "00:10:53.950",
+    "start_seconds": 649,
+    "timestamp": "10:49",
+    "text": "Kind of like a repository set up now when you open up one of these applications."
+  },
+  {
+    "start_raw": "00:10:53.950",
+    "end_raw": "00:10:58.533",
+    "start_seconds": 653,
+    "timestamp": "10:53",
+    "text": "So let's say you download Curser or you download VS code or you get any code editor"
+  },
+  {
+    "start_raw": "00:10:58.533",
+    "end_raw": "00:11:04.000",
+    "start_seconds": 658,
+    "timestamp": "10:58",
+    "text": "on your computer, what you can do is you can go to file, you can go to open folder,"
+  },
+  {
+    "start_raw": "00:11:04.600",
+    "end_raw": "00:11:08.666",
+    "start_seconds": 664,
+    "timestamp": "11:04",
+    "text": "you can go to your desktop or any location that you're going to be able to find in the future."
+  },
+  {
+    "start_raw": "00:11:08.850",
+    "end_raw": "00:11:11.500",
+    "start_seconds": 668,
+    "timestamp": "11:08",
+    "text": "And we could do something like clawed code test."
+  },
+  {
+    "start_raw": "00:11:11.500",
+    "end_raw": "00:11:13.266",
+    "start_seconds": 671,
+    "timestamp": "11:11",
+    "text": "And I'm just going to make a new folder."
+  },
+  {
+    "start_raw": "00:11:13.266",
+    "end_raw": "00:11:16.600",
+    "start_seconds": 673,
+    "timestamp": "11:13",
+    "text": "How do I already have a folder called Code test?"
+  },
+  {
+    "start_raw": "00:11:16.600",
+    "end_raw": "00:11:19.200",
+    "start_seconds": 676,
+    "timestamp": "11:16",
+    "text": "Okay. Well, that was not what I wanted."
+  },
+  {
+    "start_raw": "00:11:19.200",
+    "end_raw": "00:11:20.650",
+    "start_seconds": 679,
+    "timestamp": "11:19",
+    "text": "So let's go."
+  },
+  {
+    "start_raw": "00:11:20.650",
+    "end_raw": "00:11:22.916",
+    "start_seconds": 680,
+    "timestamp": "11:20",
+    "text": "Cloud code test two."
+  },
+  {
+    "start_raw": "00:11:22.916",
+    "end_raw": "00:11:24.666",
+    "start_seconds": 682,
+    "timestamp": "11:22",
+    "text": "All right. So I'm going to make a new folder."
+  },
+  {
+    "start_raw": "00:11:24.666",
+    "end_raw": "00:11:28.500",
+    "start_seconds": 684,
+    "timestamp": "11:24",
+    "text": "The reason I'm making a new folder is this is where I want my coding project to live."
+  },
+  {
+    "start_raw": "00:11:28.833",
+    "end_raw": "00:11:30.866",
+    "start_seconds": 688,
+    "timestamp": "11:28",
+    "text": "I'm going to select that and then I'm going to open it."
+  },
+  {
+    "start_raw": "00:11:30.866",
+    "end_raw": "00:11:32.566",
+    "start_seconds": 690,
+    "timestamp": "11:30",
+    "text": "So again I've just open my code editor."
+  },
+  {
+    "start_raw": "00:11:32.566",
+    "end_raw": "00:11:34.166",
+    "start_seconds": 692,
+    "timestamp": "11:32",
+    "text": "Doesn't matter which one you're using."
+  },
+  {
+    "start_raw": "00:11:34.166",
+    "end_raw": "00:11:37.166",
+    "start_seconds": 694,
+    "timestamp": "11:34",
+    "text": "You can ignore all of the crazy features from cursor here."
+  },
+  {
+    "start_raw": "00:11:37.166",
+    "end_raw": "00:11:39.300",
+    "start_seconds": 697,
+    "timestamp": "11:37",
+    "text": "And we can close some of these windows."
+  },
+  {
+    "start_raw": "00:11:39.300",
+    "end_raw": "00:11:40.800",
+    "start_seconds": 699,
+    "timestamp": "11:39",
+    "text": "And kind of just hide them."
+  },
+  {
+    "start_raw": "00:11:40.800",
+    "end_raw": "00:11:44.500",
+    "start_seconds": 700,
+    "timestamp": "11:40",
+    "text": "And what we can do is we can open up the terminal directly inside of here."
+  },
+  {
+    "start_raw": "00:11:44.766",
+    "end_raw": "00:11:50.016",
+    "start_seconds": 704,
+    "timestamp": "11:44",
+    "text": "So if you're working inside of cursor or VSCode or windsurf, so something that is like"
+  },
+  {
+    "start_raw": "00:11:50.016",
+    "end_raw": "00:11:54.783",
+    "start_seconds": 710,
+    "timestamp": "11:50",
+    "text": "a vs code fork, because a lot of these editors are based on Visual Studio Code."
+  },
+  {
+    "start_raw": "00:11:55.116",
+    "end_raw": "00:11:58.800",
+    "start_seconds": 715,
+    "timestamp": "11:55",
+    "text": "What you can do to open the terminal is you can try to find kind of like a drag bar"
+  },
+  {
+    "start_raw": "00:11:58.800",
+    "end_raw": "00:12:02.350",
+    "start_seconds": 718,
+    "timestamp": "11:58",
+    "text": "at the bottom of the screen, but you can see I'm having trouble finding it here."
+  },
+  {
+    "start_raw": "00:12:02.583",
+    "end_raw": "00:12:06.250",
+    "start_seconds": 722,
+    "timestamp": "12:02",
+    "text": "Instead, you can hit control and then backtick on your keyboard"
+  },
+  {
+    "start_raw": "00:12:06.400",
+    "end_raw": "00:12:09.600",
+    "start_seconds": 726,
+    "timestamp": "12:06",
+    "text": "or command, and then backtick on your keyboard, and it should open up"
+  },
+  {
+    "start_raw": "00:12:09.600",
+    "end_raw": "00:12:13.500",
+    "start_seconds": 729,
+    "timestamp": "12:09",
+    "text": "a terminal directly inside of this folder that you opened for you."
+  },
+  {
+    "start_raw": "00:12:13.916",
+    "end_raw": "00:12:17.666",
+    "start_seconds": 733,
+    "timestamp": "12:13",
+    "text": "Now, if that's difficult for you, you can hit Ctrl, shift P,"
+  },
+  {
+    "start_raw": "00:12:18.000",
+    "end_raw": "00:12:22.016",
+    "start_seconds": 738,
+    "timestamp": "12:18",
+    "text": "or Command Shift P if you're on Mac and you can type terminal"
+  },
+  {
+    "start_raw": "00:12:22.266",
+    "end_raw": "00:12:25.950",
+    "start_seconds": 742,
+    "timestamp": "12:22",
+    "text": "and then create new terminal, and then just choose one of the instances."
+  },
+  {
+    "start_raw": "00:12:25.950",
+    "end_raw": "00:12:27.816",
+    "start_seconds": 745,
+    "timestamp": "12:25",
+    "text": "So command prompt or PowerShell."
+  },
+  {
+    "start_raw": "00:12:27.816",
+    "end_raw": "00:12:31.383",
+    "start_seconds": 747,
+    "timestamp": "12:27",
+    "text": "If you're on Mac or Linux again you just choose probably the first one that pops up."
+  },
+  {
+    "start_raw": "00:12:32.050",
+    "end_raw": "00:12:34.916",
+    "start_seconds": 752,
+    "timestamp": "12:32",
+    "text": "So let's say I do that and you can see it makes a new terminal for me."
+  },
+  {
+    "start_raw": "00:12:34.916",
+    "end_raw": "00:12:37.150",
+    "start_seconds": 754,
+    "timestamp": "12:34",
+    "text": "And I'll be able to see it on my screen."
+  },
+  {
+    "start_raw": "00:12:37.150",
+    "end_raw": "00:12:40.600",
+    "start_seconds": 757,
+    "timestamp": "12:37",
+    "text": "Now if you want to see the left hand side bar, which is the file viewer,"
+  },
+  {
+    "start_raw": "00:12:40.716",
+    "end_raw": "00:12:42.300",
+    "start_seconds": 760,
+    "timestamp": "12:40",
+    "text": "you can press this button right here."
+  },
+  {
+    "start_raw": "00:12:42.300",
+    "end_raw": "00:12:45.700",
+    "start_seconds": 762,
+    "timestamp": "12:42",
+    "text": "Again this is in cursor, but you can do this in another editor as well."
+  },
+  {
+    "start_raw": "00:12:45.866",
+    "end_raw": "00:12:46.416",
+    "start_seconds": 765,
+    "timestamp": "12:45",
+    "text": "And you're building."
+  },
+  {
+    "start_raw": "00:12:46.416",
+    "end_raw": "00:12:50.550",
+    "start_seconds": 766,
+    "timestamp": "12:46",
+    "text": "Now see all the files that cloud code will generate for us in one minute."
+  },
+  {
+    "start_raw": "00:12:50.966",
+    "end_raw": "00:12:53.883",
+    "start_seconds": 770,
+    "timestamp": "12:50",
+    "text": "Now again if you can't find this button you can hit"
+  },
+  {
+    "start_raw": "00:12:53.883",
+    "end_raw": "00:12:56.883",
+    "start_seconds": 773,
+    "timestamp": "12:53",
+    "text": "Ctrl B or command B on your keyboard"
+  },
+  {
+    "start_raw": "00:12:56.883",
+    "end_raw": "00:12:59.883",
+    "start_seconds": 776,
+    "timestamp": "12:56",
+    "text": "and that will toggle the file view on the left hand side."
+  },
+  {
+    "start_raw": "00:12:59.883",
+    "end_raw": "00:13:03.816",
+    "start_seconds": 779,
+    "timestamp": "12:59",
+    "text": "Now I know it seems complicated, but most of the time you're going to want to work like this"
+  },
+  {
+    "start_raw": "00:13:03.816",
+    "end_raw": "00:13:05.516",
+    "start_seconds": 783,
+    "timestamp": "13:03",
+    "text": "because you want to see the files"
+  },
+  {
+    "start_raw": "00:13:05.516",
+    "end_raw": "00:13:09.483",
+    "start_seconds": 785,
+    "timestamp": "13:05",
+    "text": "and actually know what cloud code is doing, especially if you're unfamiliar with the terminal."
+  },
+  {
+    "start_raw": "00:13:09.566",
+    "end_raw": "00:13:12.966",
+    "start_seconds": 789,
+    "timestamp": "13:09",
+    "text": "I would highly suggest opening this in some kind of user interface"
+  },
+  {
+    "start_raw": "00:13:12.966",
+    "end_raw": "00:13:15.966",
+    "start_seconds": 792,
+    "timestamp": "13:12",
+    "text": "like we've done here, so you actually know what's going on."
+  },
+  {
+    "start_raw": "00:13:16.200",
+    "end_raw": "00:13:18.816",
+    "start_seconds": 796,
+    "timestamp": "13:16",
+    "text": "Okay, so now we're inside of a terminal."
+  },
+  {
+    "start_raw": "00:13:18.816",
+    "end_raw": "00:13:24.183",
+    "start_seconds": 798,
+    "timestamp": "13:18",
+    "text": "This is the exact same environment I was just showing you before, except it's now in this code editor."
+  },
+  {
+    "start_raw": "00:13:24.183",
+    "end_raw": "00:13:26.700",
+    "start_seconds": 804,
+    "timestamp": "13:24",
+    "text": "Right. And again, this code editor is called cursor."
+  },
+  {
+    "start_raw": "00:13:26.700",
+    "end_raw": "00:13:30.400",
+    "start_seconds": 806,
+    "timestamp": "13:26",
+    "text": "In case anyone is confused, if you just go you can type cursor"
+  },
+  {
+    "start_raw": "00:13:31.150",
+    "end_raw": "00:13:34.166",
+    "start_seconds": 811,
+    "timestamp": "13:31",
+    "text": "download on the internet and you can download it super easily."
+  },
+  {
+    "start_raw": "00:13:34.350",
+    "end_raw": "00:13:37.983",
+    "start_seconds": 814,
+    "timestamp": "13:34",
+    "text": "Just open it up and literally all you have to do is just go file, open"
+  },
+  {
+    "start_raw": "00:13:37.983",
+    "end_raw": "00:13:40.983",
+    "start_seconds": 817,
+    "timestamp": "13:37",
+    "text": "folder, open a new location and you can start writing code."
+  },
+  {
+    "start_raw": "00:13:41.283",
+    "end_raw": "00:13:43.600",
+    "start_seconds": 821,
+    "timestamp": "13:41",
+    "text": "So from this terminal we're going to type plot."
+  },
+  {
+    "start_raw": "00:13:43.600",
+    "end_raw": "00:13:47.133",
+    "start_seconds": 823,
+    "timestamp": "13:43",
+    "text": "And when we type clod it's going to open up cloud code just like it did before."
+  },
+  {
+    "start_raw": "00:13:47.133",
+    "end_raw": "00:13:48.700",
+    "start_seconds": 827,
+    "timestamp": "13:47",
+    "text": "But now in this location."
+  },
+  {
+    "start_raw": "00:13:48.700",
+    "end_raw": "00:13:50.400",
+    "start_seconds": 828,
+    "timestamp": "13:48",
+    "text": "So same thing I'm going to press the folder."
+  },
+  {
+    "start_raw": "00:13:50.400",
+    "end_raw": "00:13:53.733",
+    "start_seconds": 830,
+    "timestamp": "13:50",
+    "text": "And now I have cloud code in my terminal and I can start getting it"
+  },
+  {
+    "start_raw": "00:13:53.733",
+    "end_raw": "00:13:55.200",
+    "start_seconds": 833,
+    "timestamp": "13:53",
+    "text": "to actually generate some stuff."
+  },
+  {
+    "start_raw": "00:13:55.200",
+    "end_raw": "00:13:56.700",
+    "start_seconds": 835,
+    "timestamp": "13:55",
+    "text": "So now we're going to actually start using it."
+  },
+  {
+    "start_raw": "00:13:56.700",
+    "end_raw": "00:13:58.233",
+    "start_seconds": 836,
+    "timestamp": "13:56",
+    "text": "We're going to start building a project."
+  },
+  {
+    "start_raw": "00:13:58.233",
+    "end_raw": "00:14:00.716",
+    "start_seconds": 838,
+    "timestamp": "13:58",
+    "text": "And I'm going to start walking through a lot of the features that it has."
+  },
+  {
+    "start_raw": "00:14:00.716",
+    "end_raw": "00:14:05.100",
+    "start_seconds": 840,
+    "timestamp": "14:00",
+    "text": "Now you'll actually notice that because I'm using it in this editor now it's detecting that."
+  },
+  {
+    "start_raw": "00:14:05.283",
+    "end_raw": "00:14:08.500",
+    "start_seconds": 845,
+    "timestamp": "14:05",
+    "text": "And it's telling me that I can actually have some special features"
+  },
+  {
+    "start_raw": "00:14:08.500",
+    "end_raw": "00:14:11.500",
+    "start_seconds": 848,
+    "timestamp": "14:08",
+    "text": "here in Cloud code because I'm working in cursor."
+  },
+  {
+    "start_raw": "00:14:11.550",
+    "end_raw": "00:14:14.350",
+    "start_seconds": 851,
+    "timestamp": "14:11",
+    "text": "So what I'm going to do is just go ahead and press enter."
+  },
+  {
+    "start_raw": "00:14:14.350",
+    "end_raw": "00:14:15.866",
+    "start_seconds": 854,
+    "timestamp": "14:14",
+    "text": "And now we can just start working."
+  },
+  {
+    "start_raw": "00:14:15.866",
+    "end_raw": "00:14:20.133",
+    "start_seconds": 855,
+    "timestamp": "14:15",
+    "text": "But again it's going to be able to reference the files that we actually looking at in cursor."
+  },
+  {
+    "start_raw": "00:14:20.316",
+    "end_raw": "00:14:23.066",
+    "start_seconds": 860,
+    "timestamp": "14:20",
+    "text": "It's going to show us the changes that it's making."
+  },
+  {
+    "start_raw": "00:14:23.066",
+    "end_raw": "00:14:24.250",
+    "start_seconds": 863,
+    "timestamp": "14:23",
+    "text": "It's very powerful."
+  },
+  {
+    "start_raw": "00:14:24.250",
+    "end_raw": "00:14:24.566",
+    "start_seconds": 864,
+    "timestamp": "14:24",
+    "text": "All right."
+  },
+  {
+    "start_raw": "00:14:24.566",
+    "end_raw": "00:14:27.116",
+    "start_seconds": 864,
+    "timestamp": "14:24",
+    "text": "So without further ado, let's get this to do something."
+  },
+  {
+    "start_raw": "00:14:27.116",
+    "end_raw": "00:14:30.783",
+    "start_seconds": 867,
+    "timestamp": "14:27",
+    "text": "And let's say that we just want to create a simple web based game."
+  },
+  {
+    "start_raw": "00:14:31.050",
+    "end_raw": "00:14:33.633",
+    "start_seconds": 871,
+    "timestamp": "14:31",
+    "text": "Let's go with something really, really simple for right now."
+  },
+  {
+    "start_raw": "00:14:33.633",
+    "end_raw": "00:14:37.166",
+    "start_seconds": 873,
+    "timestamp": "14:33",
+    "text": "Like maybe tic tac toe and just ask it to make that game."
+  },
+  {
+    "start_raw": "00:14:37.166",
+    "end_raw": "00:14:40.166",
+    "start_seconds": 877,
+    "timestamp": "14:37",
+    "text": "So I'm going to say make tic tac toe"
+  },
+  {
+    "start_raw": "00:14:40.266",
+    "end_raw": "00:14:43.300",
+    "start_seconds": 880,
+    "timestamp": "14:40",
+    "text": "that I can play on the web."
+  },
+  {
+    "start_raw": "00:14:43.466",
+    "end_raw": "00:14:43.750",
+    "start_seconds": 883,
+    "timestamp": "14:43",
+    "text": "Okay."
+  },
+  {
+    "start_raw": "00:14:43.750",
+    "end_raw": "00:14:46.650",
+    "start_seconds": 883,
+    "timestamp": "14:43",
+    "text": "Now I'm going to start going through all of the other configurations and settings."
+  },
+  {
+    "start_raw": "00:14:46.650",
+    "end_raw": "00:14:47.850",
+    "start_seconds": 886,
+    "timestamp": "14:46",
+    "text": "But for now, let's just run this"
+  },
+  {
+    "start_raw": "00:14:47.850",
+    "end_raw": "00:14:51.416",
+    "start_seconds": 887,
+    "timestamp": "14:47",
+    "text": "so we can see some kind of output and know that we're actually getting some result."
+  },
+  {
+    "start_raw": "00:14:51.783",
+    "end_raw": "00:14:52.016",
+    "start_seconds": 891,
+    "timestamp": "14:51",
+    "text": "Okay."
+  },
+  {
+    "start_raw": "00:14:52.016",
+    "end_raw": "00:14:55.233",
+    "start_seconds": 892,
+    "timestamp": "14:52",
+    "text": "So you can see that it's going to start doing this and generating some output."
+  },
+  {
+    "start_raw": "00:14:55.600",
+    "end_raw": "00:14:58.650",
+    "start_seconds": 895,
+    "timestamp": "14:55",
+    "text": "Now, something worth noting here is that if you wanted to,"
+  },
+  {
+    "start_raw": "00:14:58.950",
+    "end_raw": "00:15:02.700",
+    "start_seconds": 898,
+    "timestamp": "14:58",
+    "text": "you actually could run cloud code multiple times in parallel."
+  },
+  {
+    "start_raw": "00:15:02.766",
+    "end_raw": "00:15:06.633",
+    "start_seconds": 902,
+    "timestamp": "15:02",
+    "text": "So while I was creating tic tac toe, for example, I could create another game."
+  },
+  {
+    "start_raw": "00:15:06.633",
+    "end_raw": "00:15:08.066",
+    "start_seconds": 906,
+    "timestamp": "15:06",
+    "text": "I could audit the code base."
+  },
+  {
+    "start_raw": "00:15:08.066",
+    "end_raw": "00:15:10.450",
+    "start_seconds": 908,
+    "timestamp": "15:08",
+    "text": "I could, you know, change something, whatever."
+  },
+  {
+    "start_raw": "00:15:10.450",
+    "end_raw": "00:15:13.000",
+    "start_seconds": 910,
+    "timestamp": "15:10",
+    "text": "And that's one of the things that makes this quite powerful."
+  },
+  {
+    "start_raw": "00:15:13.000",
+    "end_raw": "00:15:16.716",
+    "start_seconds": 913,
+    "timestamp": "15:13",
+    "text": "I'm not going to do that right now because again, we're still at Kenner level."
+  },
+  {
+    "start_raw": "00:15:16.883",
+    "end_raw": "00:15:18.933",
+    "start_seconds": 916,
+    "timestamp": "15:16",
+    "text": "But you get the idea."
+  },
+  {
+    "start_raw": "00:15:18.933",
+    "end_raw": "00:15:21.566",
+    "start_seconds": 918,
+    "timestamp": "15:18",
+    "text": "Okay. So you can see that it's generated some code for me here."
+  },
+  {
+    "start_raw": "00:15:21.566",
+    "end_raw": "00:15:26.966",
+    "start_seconds": 921,
+    "timestamp": "15:21",
+    "text": "It's kind of giving it right in the terminal, and it's asking me to allow it to create tic tac toe."
+  },
+  {
+    "start_raw": "00:15:27.216",
+    "end_raw": "00:15:32.016",
+    "start_seconds": 927,
+    "timestamp": "15:27",
+    "text": "Now, what I'm going to do is just go here and I'm going to go, yes, allow all edits during the session."
+  },
+  {
+    "start_raw": "00:15:32.016",
+    "end_raw": "00:15:34.650",
+    "start_seconds": 932,
+    "timestamp": "15:32",
+    "text": "And notice I'm using my arrow keys here to navigate."
+  },
+  {
+    "start_raw": "00:15:34.650",
+    "end_raw": "00:15:35.650",
+    "start_seconds": 934,
+    "timestamp": "15:34",
+    "text": "So I'm going to press enter."
+  },
+  {
+    "start_raw": "00:15:35.650",
+    "end_raw": "00:15:39.600",
+    "start_seconds": 935,
+    "timestamp": "15:35",
+    "text": "So I can just go ahead and start writing this without asking me for permission okay."
+  },
+  {
+    "start_raw": "00:15:39.600",
+    "end_raw": "00:15:42.216",
+    "start_seconds": 939,
+    "timestamp": "15:39",
+    "text": "So you can see that it says it has created this for me."
+  },
+  {
+    "start_raw": "00:15:42.216",
+    "end_raw": "00:15:45.216",
+    "start_seconds": 942,
+    "timestamp": "15:42",
+    "text": "And it's telling me that the way that I can run this is to start"
+  },
+  {
+    "start_raw": "00:15:45.266",
+    "end_raw": "00:15:49.750",
+    "start_seconds": 945,
+    "timestamp": "15:45",
+    "text": "the Tic TAC token, HTML or double click the file in the file Explorer."
+  },
+  {
+    "start_raw": "00:15:49.750",
+    "end_raw": "00:15:55.566",
+    "start_seconds": 949,
+    "timestamp": "15:49",
+    "text": "So I'm just going to say start tic tac toe dot HTML."
+  },
+  {
+    "start_raw": "00:15:55.900",
+    "end_raw": "00:15:57.700",
+    "start_seconds": 955,
+    "timestamp": "15:55",
+    "text": "I'm not sure if that's actually the correct command,"
+  },
+  {
+    "start_raw": "00:15:57.700",
+    "end_raw": "00:16:00.933",
+    "start_seconds": 957,
+    "timestamp": "15:57",
+    "text": "but let's just run that and see if that's going to do anything for me."
+  },
+  {
+    "start_raw": "00:16:01.166",
+    "end_raw": "00:16:03.450",
+    "start_seconds": 961,
+    "timestamp": "16:01",
+    "text": "It says open it in the default browser. Yes."
+  },
+  {
+    "start_raw": "00:16:03.450",
+    "end_raw": "00:16:05.466",
+    "start_seconds": 963,
+    "timestamp": "16:03",
+    "text": "And don't ask again for this."
+  },
+  {
+    "start_raw": "00:16:05.466",
+    "end_raw": "00:16:07.683",
+    "start_seconds": 965,
+    "timestamp": "16:05",
+    "text": "And let's see if it can open this up for me."
+  },
+  {
+    "start_raw": "00:16:07.683",
+    "end_raw": "00:16:09.150",
+    "start_seconds": 967,
+    "timestamp": "16:07",
+    "text": "And I can run it okay."
+  },
+  {
+    "start_raw": "00:16:09.150",
+    "end_raw": "00:16:10.866",
+    "start_seconds": 969,
+    "timestamp": "16:09",
+    "text": "And you can see this is my browser."
+  },
+  {
+    "start_raw": "00:16:10.866",
+    "end_raw": "00:16:14.616",
+    "start_seconds": 970,
+    "timestamp": "16:10",
+    "text": "And we have the tac toe which has now been created, which looks pretty good."
+  },
+  {
+    "start_raw": "00:16:14.816",
+    "end_raw": "00:16:17.433",
+    "start_seconds": 974,
+    "timestamp": "16:14",
+    "text": "We can generate a new game. You get the idea."
+  },
+  {
+    "start_raw": "00:16:17.433",
+    "end_raw": "00:16:20.916",
+    "start_seconds": 977,
+    "timestamp": "16:17",
+    "text": "Now, the one thing that I want to bring your attention to here is that as soon as we started"
+  },
+  {
+    "start_raw": "00:16:20.916",
+    "end_raw": "00:16:24.850",
+    "start_seconds": 980,
+    "timestamp": "16:20",
+    "text": "running this, a Doc Claude folder was automatically created for us"
+  },
+  {
+    "start_raw": "00:16:24.850",
+    "end_raw": "00:16:29.200",
+    "start_seconds": 984,
+    "timestamp": "16:24",
+    "text": "in the directory where we're working, as well as the code that was generated."
+  },
+  {
+    "start_raw": "00:16:29.200",
+    "end_raw": "00:16:32.200",
+    "start_seconds": 989,
+    "timestamp": "16:29",
+    "text": "Right. So you can see tic tac toe now has been written."
+  },
+  {
+    "start_raw": "00:16:32.366",
+    "end_raw": "00:16:33.366",
+    "start_seconds": 992,
+    "timestamp": "16:32",
+    "text": "So this is pretty cool."
+  },
+  {
+    "start_raw": "00:16:33.366",
+    "end_raw": "00:16:37.466",
+    "start_seconds": 993,
+    "timestamp": "16:33",
+    "text": "And this is the reason why you would do this inside of a code editor."
+  },
+  {
+    "start_raw": "00:16:37.466",
+    "end_raw": "00:16:41.950",
+    "start_seconds": 997,
+    "timestamp": "16:37",
+    "text": "So you're able to actually see the changes in the code that's being generated in real time."
+  },
+  {
+    "start_raw": "00:16:42.216",
+    "end_raw": "00:16:43.416",
+    "start_seconds": 1002,
+    "timestamp": "16:42",
+    "text": "Again, you don't need to do that."
+  },
+  {
+    "start_raw": "00:16:43.416",
+    "end_raw": "00:16:47.200",
+    "start_seconds": 1003,
+    "timestamp": "16:43",
+    "text": "But that's what many people like to do when they're using a tool like this."
+  },
+  {
+    "start_raw": "00:16:47.350",
+    "end_raw": "00:16:48.850",
+    "start_seconds": 1007,
+    "timestamp": "16:47",
+    "text": "Okay. So we've got something created"
+  },
+  {
+    "start_raw": "00:16:48.850",
+    "end_raw": "00:16:52.316",
+    "start_seconds": 1008,
+    "timestamp": "16:48",
+    "text": "now we need to start going through a lot of the different configuration and setups."
+  },
+  {
+    "start_raw": "00:16:52.533",
+    "end_raw": "00:16:56.366",
+    "start_seconds": 1012,
+    "timestamp": "16:52",
+    "text": "Now keep in mind if you don't know how to do something, just ask Claude to help you."
+  },
+  {
+    "start_raw": "00:16:56.700",
+    "end_raw": "00:16:57.483",
+    "start_seconds": 1016,
+    "timestamp": "16:56",
+    "text": "It can help you."
+  },
+  {
+    "start_raw": "00:16:57.483",
+    "end_raw": "00:17:00.100",
+    "start_seconds": 1017,
+    "timestamp": "16:57",
+    "text": "It can change configurations. It can set stuff up for you."
+  },
+  {
+    "start_raw": "00:17:00.100",
+    "end_raw": "00:17:02.166",
+    "start_seconds": 1020,
+    "timestamp": "17:00",
+    "text": "But of course it's useful to know the basics."
+  },
+  {
+    "start_raw": "00:17:02.166",
+    "end_raw": "00:17:07.316",
+    "start_seconds": 1022,
+    "timestamp": "17:02",
+    "text": "So inside of here, as you already saw, you can just type human language and you will get some output."
+  },
+  {
+    "start_raw": "00:17:07.500",
+    "end_raw": "00:17:10.116",
+    "start_seconds": 1027,
+    "timestamp": "17:07",
+    "text": "However you can also type slash help."
+  },
+  {
+    "start_raw": "00:17:10.116",
+    "end_raw": "00:17:11.316",
+    "start_seconds": 1030,
+    "timestamp": "17:10",
+    "text": "Let's start with that."
+  },
+  {
+    "start_raw": "00:17:11.316",
+    "end_raw": "00:17:14.950",
+    "start_seconds": 1031,
+    "timestamp": "17:11",
+    "text": "And this is going to give you a general kind of shortcut or list of commands."
+  },
+  {
+    "start_raw": "00:17:14.950",
+    "end_raw": "00:17:16.583",
+    "start_seconds": 1034,
+    "timestamp": "17:14",
+    "text": "And things you can do in Claude."
+  },
+  {
+    "start_raw": "00:17:16.583",
+    "end_raw": "00:17:19.350",
+    "start_seconds": 1036,
+    "timestamp": "17:16",
+    "text": "So you can see that I can toggle between a few different things here."
+  },
+  {
+    "start_raw": "00:17:19.350",
+    "end_raw": "00:17:23.216",
+    "start_seconds": 1039,
+    "timestamp": "17:19",
+    "text": "And you'll notice that if I put an exclamation point, this is going to put me in bash mode."
+  },
+  {
+    "start_raw": "00:17:23.550",
+    "end_raw": "00:17:26.550",
+    "start_seconds": 1043,
+    "timestamp": "17:23",
+    "text": "If I do a slash, this is going to allow me to type different commands."
+  },
+  {
+    "start_raw": "00:17:26.733",
+    "end_raw": "00:17:30.600",
+    "start_seconds": 1046,
+    "timestamp": "17:26",
+    "text": "If I do an ad, this is going to allow me to reference various files or paths."
+  },
+  {
+    "start_raw": "00:17:30.866",
+    "end_raw": "00:17:33.933",
+    "start_seconds": 1050,
+    "timestamp": "17:30",
+    "text": "If I do an ampersand, this is going to be for background"
+  },
+  {
+    "start_raw": "00:17:33.933",
+    "end_raw": "00:17:36.400",
+    "start_seconds": 1053,
+    "timestamp": "17:33",
+    "text": "tasks or keybinds or whatever that says I think."
+  },
+  {
+    "start_raw": "00:17:36.400",
+    "end_raw": "00:17:37.916",
+    "start_seconds": 1056,
+    "timestamp": "17:36",
+    "text": "So for background new line."
+  },
+  {
+    "start_raw": "00:17:37.916",
+    "end_raw": "00:17:38.966",
+    "start_seconds": 1057,
+    "timestamp": "17:37",
+    "text": "Not exactly sure what that means."
+  },
+  {
+    "start_raw": "00:17:38.966",
+    "end_raw": "00:17:40.750",
+    "start_seconds": 1058,
+    "timestamp": "17:38",
+    "text": "Actually, I've never used the ampersand."
+  },
+  {
+    "start_raw": "00:17:40.750",
+    "end_raw": "00:17:43.266",
+    "start_seconds": 1060,
+    "timestamp": "17:40",
+    "text": "Continuing we go to commands and if I scroll down"
+  },
+  {
+    "start_raw": "00:17:43.266",
+    "end_raw": "00:17:46.266",
+    "start_seconds": 1063,
+    "timestamp": "17:43",
+    "text": "here, you can see there is a ton of different commands that I can run."
+  },
+  {
+    "start_raw": "00:17:46.383",
+    "end_raw": "00:17:51.183",
+    "start_seconds": 1066,
+    "timestamp": "17:46",
+    "text": "We cannot possibly go over all of them in this video, but I will show you a bunch of them"
+  },
+  {
+    "start_raw": "00:17:51.183",
+    "end_raw": "00:17:53.516",
+    "start_seconds": 1071,
+    "timestamp": "17:51",
+    "text": "that are useful. So if you're ever like, how do I do something?"
+  },
+  {
+    "start_raw": "00:17:53.516",
+    "end_raw": "00:17:58.866",
+    "start_seconds": 1073,
+    "timestamp": "17:53",
+    "text": "Or I wonder what's possible type slash commands and you can see a bunch of stuff pops up"
+  },
+  {
+    "start_raw": "00:17:58.866",
+    "end_raw": "00:18:03.116",
+    "start_seconds": 1078,
+    "timestamp": "17:58",
+    "text": "and you're probably going to learn something just by looking through this menu and then custom commands."
+  },
+  {
+    "start_raw": "00:18:03.116",
+    "end_raw": "00:18:04.616",
+    "start_seconds": 1083,
+    "timestamp": "18:03",
+    "text": "Of course, you can make your own commands."
+  },
+  {
+    "start_raw": "00:18:04.616",
+    "end_raw": "00:18:06.633",
+    "start_seconds": 1084,
+    "timestamp": "18:04",
+    "text": "We're not going to go over that right now."
+  },
+  {
+    "start_raw": "00:18:06.633",
+    "end_raw": "00:18:08.666",
+    "start_seconds": 1086,
+    "timestamp": "18:06",
+    "text": "Okay. So first thing that you want to be aware of"
+  },
+  {
+    "start_raw": "00:18:08.666",
+    "end_raw": "00:18:12.000",
+    "start_seconds": 1088,
+    "timestamp": "18:08",
+    "text": "is the different modes that you can use inside of cloud code."
+  },
+  {
+    "start_raw": "00:18:12.400",
+    "end_raw": "00:18:16.350",
+    "start_seconds": 1092,
+    "timestamp": "18:12",
+    "text": "You can have a planning mode, you can have an asking mode and you can have a coding mode."
+  },
+  {
+    "start_raw": "00:18:16.650",
+    "end_raw": "00:18:19.983",
+    "start_seconds": 1096,
+    "timestamp": "18:16",
+    "text": "Now the ask mode is the default mode where it's going to ask you"
+  },
+  {
+    "start_raw": "00:18:19.983",
+    "end_raw": "00:18:23.066",
+    "start_seconds": 1099,
+    "timestamp": "18:19",
+    "text": "before it does something so you can see it asked before it generated a command."
+  },
+  {
+    "start_raw": "00:18:23.066",
+    "end_raw": "00:18:24.400",
+    "start_seconds": 1103,
+    "timestamp": "18:23",
+    "text": "It asked before it wrote code."
+  },
+  {
+    "start_raw": "00:18:24.400",
+    "end_raw": "00:18:27.000",
+    "start_seconds": 1104,
+    "timestamp": "18:24",
+    "text": "Write the code mode. It's just going to code by default."
+  },
+  {
+    "start_raw": "00:18:27.000",
+    "end_raw": "00:18:31.233",
+    "start_seconds": 1107,
+    "timestamp": "18:27",
+    "text": "It's not going to ask you for permission, and the planning mode is going to create a detailed plan"
+  },
+  {
+    "start_raw": "00:18:31.266",
+    "end_raw": "00:18:32.583",
+    "start_seconds": 1111,
+    "timestamp": "18:31",
+    "text": "that Claude will follow."
+  },
+  {
+    "start_raw": "00:18:32.583",
+    "end_raw": "00:18:34.300",
+    "start_seconds": 1112,
+    "timestamp": "18:32",
+    "text": "So that it has a little bit more structure."
+  },
+  {
+    "start_raw": "00:18:34.300",
+    "end_raw": "00:18:38.316",
+    "start_seconds": 1114,
+    "timestamp": "18:34",
+    "text": "In order to change the mode, you can hit shift and then tab on your keyboard."
+  },
+  {
+    "start_raw": "00:18:38.516",
+    "end_raw": "00:18:42.266",
+    "start_seconds": 1118,
+    "timestamp": "18:38",
+    "text": "So shift and Tab, you can see it showing shift tab to cycle we have plan mode."
+  },
+  {
+    "start_raw": "00:18:42.400",
+    "end_raw": "00:18:44.550",
+    "start_seconds": 1122,
+    "timestamp": "18:42",
+    "text": "We have the normal mode right which is this."
+  },
+  {
+    "start_raw": "00:18:44.550",
+    "end_raw": "00:18:47.816",
+    "start_seconds": 1124,
+    "timestamp": "18:44",
+    "text": "And then we have the coding mode which is kind of except at its on."
+  },
+  {
+    "start_raw": "00:18:48.066",
+    "end_raw": "00:18:49.600",
+    "start_seconds": 1128,
+    "timestamp": "18:48",
+    "text": "So here planning mode right."
+  },
+  {
+    "start_raw": "00:18:49.600",
+    "end_raw": "00:18:50.350",
+    "start_seconds": 1129,
+    "timestamp": "18:49",
+    "text": "Accept edits."
+  },
+  {
+    "start_raw": "00:18:50.350",
+    "end_raw": "00:18:51.483",
+    "start_seconds": 1130,
+    "timestamp": "18:50",
+    "text": "It's just going to do the thing"
+  },
+  {
+    "start_raw": "00:18:51.483",
+    "end_raw": "00:18:55.166",
+    "start_seconds": 1131,
+    "timestamp": "18:51",
+    "text": "and then the ask mode is the default mode where it's not showing you anything there."
+  },
+  {
+    "start_raw": "00:18:55.166",
+    "end_raw": "00:18:57.866",
+    "start_seconds": 1135,
+    "timestamp": "18:55",
+    "text": "Again to do that is shift and then tap."
+  },
+  {
+    "start_raw": "00:18:57.866",
+    "end_raw": "00:19:01.316",
+    "start_seconds": 1137,
+    "timestamp": "18:57",
+    "text": "Now if you want to see the shortcuts, you can type again the question mark"
+  },
+  {
+    "start_raw": "00:19:01.316",
+    "end_raw": "00:19:03.550",
+    "start_seconds": 1141,
+    "timestamp": "19:01",
+    "text": "and you can see the different shortcuts that you can use."
+  },
+  {
+    "start_raw": "00:19:03.550",
+    "end_raw": "00:19:07.316",
+    "start_seconds": 1143,
+    "timestamp": "19:03",
+    "text": "And it will start showing you all of the different ones that you can put directly inside of here."
+  },
+  {
+    "start_raw": "00:19:07.800",
+    "end_raw": "00:19:10.533",
+    "start_seconds": 1147,
+    "timestamp": "19:07",
+    "text": "Okay. So that is how you change the mode."
+  },
+  {
+    "start_raw": "00:19:10.533",
+    "end_raw": "00:19:13.683",
+    "start_seconds": 1150,
+    "timestamp": "19:10",
+    "text": "So the first mode that I want to change into is the planning mode."
+  },
+  {
+    "start_raw": "00:19:13.866",
+    "end_raw": "00:19:15.550",
+    "start_seconds": 1153,
+    "timestamp": "19:13",
+    "text": "And I want to show you a few other shortcuts."
+  },
+  {
+    "start_raw": "00:19:15.550",
+    "end_raw": "00:19:20.250",
+    "start_seconds": 1155,
+    "timestamp": "19:15",
+    "text": "Let's say you write something super long here and you don't want to have to just like erase all of it."
+  },
+  {
+    "start_raw": "00:19:20.400",
+    "end_raw": "00:19:23.250",
+    "start_seconds": 1160,
+    "timestamp": "19:20",
+    "text": "Well, what you can do is hit escape twice on your keyboard"
+  },
+  {
+    "start_raw": "00:19:23.250",
+    "end_raw": "00:19:27.100",
+    "start_seconds": 1163,
+    "timestamp": "19:23",
+    "text": "to escape escape, and that's going to clear whatever is currently inside of this window."
+  },
+  {
+    "start_raw": "00:19:27.100",
+    "end_raw": "00:19:28.116",
+    "start_seconds": 1167,
+    "timestamp": "19:27",
+    "text": "So escape. Escape."
+  },
+  {
+    "start_raw": "00:19:28.116",
+    "end_raw": "00:19:32.133",
+    "start_seconds": 1168,
+    "timestamp": "19:28",
+    "text": "Now, if you want to go back to the previous thing that you typed, you can use the up arrow key"
+  },
+  {
+    "start_raw": "00:19:32.166",
+    "end_raw": "00:19:34.383",
+    "start_seconds": 1172,
+    "timestamp": "19:32",
+    "text": "so you can actually toggle through the previous commands"
+  },
+  {
+    "start_raw": "00:19:34.383",
+    "end_raw": "00:19:37.766",
+    "start_seconds": 1174,
+    "timestamp": "19:34",
+    "text": "you ran by using the up and down arrow keys in your terminal."
+  },
+  {
+    "start_raw": "00:19:37.950",
+    "end_raw": "00:19:41.166",
+    "start_seconds": 1177,
+    "timestamp": "19:37",
+    "text": "There's actually more shortcuts that exists there, but if you just want to cycle"
+  },
+  {
+    "start_raw": "00:19:41.166",
+    "end_raw": "00:19:45.100",
+    "start_seconds": 1181,
+    "timestamp": "19:41",
+    "text": "through the previous commands in case you're repeating something, you don't need to type it again."
+  },
+  {
+    "start_raw": "00:19:45.100",
+    "end_raw": "00:19:48.116",
+    "start_seconds": 1185,
+    "timestamp": "19:45",
+    "text": "You can just cycle with the up and the down arrow key."
+  },
+  {
+    "start_raw": "00:19:48.216",
+    "end_raw": "00:19:53.500",
+    "start_seconds": 1188,
+    "timestamp": "19:48",
+    "text": "Now, another thing worth noting is that sometimes you want to actually create a line break in the prompt."
+  },
+  {
+    "start_raw": "00:19:53.733",
+    "end_raw": "00:19:55.416",
+    "start_seconds": 1193,
+    "timestamp": "19:53",
+    "text": "So for example I have like hello."
+  },
+  {
+    "start_raw": "00:19:55.416",
+    "end_raw": "00:19:58.000",
+    "start_seconds": 1195,
+    "timestamp": "19:55",
+    "text": "And then I want to go down to the next line. Right."
+  },
+  {
+    "start_raw": "00:19:58.000",
+    "end_raw": "00:20:01.166",
+    "start_seconds": 1198,
+    "timestamp": "19:58",
+    "text": "I don't want to press enter because if I press enter it's going to submit the command."
+  },
+  {
+    "start_raw": "00:20:01.166",
+    "end_raw": "00:20:05.016",
+    "start_seconds": 1201,
+    "timestamp": "20:01",
+    "text": "But I want to move actually down and have like kind of multiple lines."
+  },
+  {
+    "start_raw": "00:20:05.016",
+    "end_raw": "00:20:09.216",
+    "start_seconds": 1205,
+    "timestamp": "20:05",
+    "text": "So in order to do that you hit the alt or the option key and then you just press enter"
+  },
+  {
+    "start_raw": "00:20:09.416",
+    "end_raw": "00:20:12.416",
+    "start_seconds": 1209,
+    "timestamp": "20:09",
+    "text": "so you can see that what I did on my keyboard here is I just press alt."
+  },
+  {
+    "start_raw": "00:20:12.416",
+    "end_raw": "00:20:13.950",
+    "start_seconds": 1212,
+    "timestamp": "20:12",
+    "text": "So I'm holding Alt on Windows."
+  },
+  {
+    "start_raw": "00:20:13.950",
+    "end_raw": "00:20:15.633",
+    "start_seconds": 1213,
+    "timestamp": "20:13",
+    "text": "If you're on Mac it might be option."
+  },
+  {
+    "start_raw": "00:20:15.633",
+    "end_raw": "00:20:16.650",
+    "start_seconds": 1215,
+    "timestamp": "20:15",
+    "text": "And then I press enter"
+  },
+  {
+    "start_raw": "00:20:16.650",
+    "end_raw": "00:20:20.916",
+    "start_seconds": 1216,
+    "timestamp": "20:16",
+    "text": "and I can actually go down to the next line so that I can have things on multiple lines."
+  },
+  {
+    "start_raw": "00:20:20.916",
+    "end_raw": "00:20:23.200",
+    "start_seconds": 1220,
+    "timestamp": "20:20",
+    "text": "And then again I can clear that by hitting escape twice."
+  },
+  {
+    "start_raw": "00:20:23.200",
+    "end_raw": "00:20:24.900",
+    "start_seconds": 1223,
+    "timestamp": "20:23",
+    "text": "So again that's alt or option."
+  },
+  {
+    "start_raw": "00:20:24.900",
+    "end_raw": "00:20:27.183",
+    "start_seconds": 1224,
+    "timestamp": "20:24",
+    "text": "You hold that down and then press enter okay."
+  },
+  {
+    "start_raw": "00:20:27.183",
+    "end_raw": "00:20:29.366",
+    "start_seconds": 1227,
+    "timestamp": "20:27",
+    "text": "So we're in the planning mode. Now we've learned the commands."
+  },
+  {
+    "start_raw": "00:20:29.366",
+    "end_raw": "00:20:32.366",
+    "start_seconds": 1229,
+    "timestamp": "20:29",
+    "text": "We have a general kind of lay of the land when it comes to using this."
+  },
+  {
+    "start_raw": "00:20:32.500",
+    "end_raw": "00:20:35.700",
+    "start_seconds": 1232,
+    "timestamp": "20:32",
+    "text": "We have to first decide what it is that we actually want to create."
+  },
+  {
+    "start_raw": "00:20:35.916",
+    "end_raw": "00:20:39.750",
+    "start_seconds": 1235,
+    "timestamp": "20:35",
+    "text": "So the most important part of AI coding is actually knowing what you want."
+  },
+  {
+    "start_raw": "00:20:39.933",
+    "end_raw": "00:20:43.016",
+    "start_seconds": 1239,
+    "timestamp": "20:39",
+    "text": "If you don't know what you want and you look the agent steer you,"
+  },
+  {
+    "start_raw": "00:20:43.050",
+    "end_raw": "00:20:46.616",
+    "start_seconds": 1243,
+    "timestamp": "20:43",
+    "text": "you're going to get horrible, crazy results that take you forever to debug."
+  },
+  {
+    "start_raw": "00:20:46.616",
+    "end_raw": "00:20:47.466",
+    "start_seconds": 1246,
+    "timestamp": "20:46",
+    "text": "And change."
+  },
+  {
+    "start_raw": "00:20:47.466",
+    "end_raw": "00:20:51.100",
+    "start_seconds": 1247,
+    "timestamp": "20:47",
+    "text": "But if you're very clear and specific on what you want and you have it do one"
+  },
+  {
+    "start_raw": "00:20:51.100",
+    "end_raw": "00:20:55.533",
+    "start_seconds": 1251,
+    "timestamp": "20:51",
+    "text": "small task at a time, you can get fantastic results and create amazing stuff."
+  },
+  {
+    "start_raw": "00:20:55.766",
+    "end_raw": "00:20:56.800",
+    "start_seconds": 1255,
+    "timestamp": "20:55",
+    "text": "So this is just a tutorial."
+  },
+  {
+    "start_raw": "00:20:56.800",
+    "end_raw": "00:21:01.116",
+    "start_seconds": 1256,
+    "timestamp": "20:56",
+    "text": "I don't have anything crazy that I want to build, but I definitely still want to come up with a plan"
+  },
+  {
+    "start_raw": "00:21:01.116",
+    "end_raw": "00:21:02.583",
+    "start_seconds": 1261,
+    "timestamp": "21:01",
+    "text": "for what it is that I want to do."
+  },
+  {
+    "start_raw": "00:21:02.583",
+    "end_raw": "00:21:06.400",
+    "start_seconds": 1262,
+    "timestamp": "21:02",
+    "text": "So I always start in the plan mode, and what I'm going to do is actually stream"
+  },
+  {
+    "start_raw": "00:21:06.400",
+    "end_raw": "00:21:11.700",
+    "start_seconds": 1266,
+    "timestamp": "21:06",
+    "text": "my thoughts into Claude and ask it to come up with a plan to create this project."
+  },
+  {
+    "start_raw": "00:21:11.883",
+    "end_raw": "00:21:14.316",
+    "start_seconds": 1271,
+    "timestamp": "21:11",
+    "text": "I don't need to know the code base, I don't need to know the languages."
+  },
+  {
+    "start_raw": "00:21:14.316",
+    "end_raw": "00:21:15.700",
+    "start_seconds": 1274,
+    "timestamp": "21:14",
+    "text": "I don't need to have done research."
+  },
+  {
+    "start_raw": "00:21:15.700",
+    "end_raw": "00:21:20.066",
+    "start_seconds": 1275,
+    "timestamp": "21:15",
+    "text": "It's obviously helpful if you do those things, but if you just want to start completely from scratch,"
+  },
+  {
+    "start_raw": "00:21:20.316",
+    "end_raw": "00:21:21.183",
+    "start_seconds": 1280,
+    "timestamp": "21:20",
+    "text": "we can do that."
+  },
+  {
+    "start_raw": "00:21:21.183",
+    "end_raw": "00:21:23.466",
+    "start_seconds": 1281,
+    "timestamp": "21:21",
+    "text": "So let's just stream our thoughts."
+  },
+  {
+    "start_raw": "00:21:23.466",
+    "end_raw": "00:21:28.200",
+    "start_seconds": 1283,
+    "timestamp": "21:23",
+    "text": "In order to do that, I'm actually going to use a dictation tool on my computer called Whisper Flow."
+  },
+  {
+    "start_raw": "00:21:28.300",
+    "end_raw": "00:21:31.083",
+    "start_seconds": 1288,
+    "timestamp": "21:28",
+    "text": "So rather than typing, I'm going to speak into my mic."
+  },
+  {
+    "start_raw": "00:21:31.083",
+    "end_raw": "00:21:35.400",
+    "start_seconds": 1291,
+    "timestamp": "21:31",
+    "text": "I want to create a simple top down shooter game that is runnable in the browser."
+  },
+  {
+    "start_raw": "00:21:35.616",
+    "end_raw": "00:21:37.650",
+    "start_seconds": 1295,
+    "timestamp": "21:35",
+    "text": "I want to have some sprites, or at least cool."
+  },
+  {
+    "start_raw": "00:21:37.650",
+    "end_raw": "00:21:39.450",
+    "start_seconds": 1297,
+    "timestamp": "21:37",
+    "text": "Kind of like character animations."
+  },
+  {
+    "start_raw": "00:21:39.450",
+    "end_raw": "00:21:41.200",
+    "start_seconds": 1299,
+    "timestamp": "21:39",
+    "text": "I want my character to have a gun."
+  },
+  {
+    "start_raw": "00:21:41.200",
+    "end_raw": "00:21:44.200",
+    "start_seconds": 1301,
+    "timestamp": "21:41",
+    "text": "I want enemies to kind of be coming at him from different angles."
+  },
+  {
+    "start_raw": "00:21:44.200",
+    "end_raw": "00:21:45.783",
+    "start_seconds": 1304,
+    "timestamp": "21:44",
+    "text": "I want to be able to move the arrow keys"
+  },
+  {
+    "start_raw": "00:21:45.783",
+    "end_raw": "00:21:49.650",
+    "start_seconds": 1305,
+    "timestamp": "21:45",
+    "text": "and then use my mouse to kind of point and click at the different enemies and shoot them."
+  },
+  {
+    "start_raw": "00:21:49.950",
+    "end_raw": "00:21:51.600",
+    "start_seconds": 1309,
+    "timestamp": "21:49",
+    "text": "We should have levels, we should progress."
+  },
+  {
+    "start_raw": "00:21:51.600",
+    "end_raw": "00:21:53.433",
+    "start_seconds": 1311,
+    "timestamp": "21:51",
+    "text": "Clearly, we should have a menu screen."
+  },
+  {
+    "start_raw": "00:21:53.433",
+    "end_raw": "00:21:57.033",
+    "start_seconds": 1313,
+    "timestamp": "21:53",
+    "text": "We should keep it relatively simple and kind of like 2D retro style."
+  },
+  {
+    "start_raw": "00:21:57.933",
+    "end_raw": "00:22:00.566",
+    "start_seconds": 1317,
+    "timestamp": "21:57",
+    "text": "Okay, so that is my thought process."
+  },
+  {
+    "start_raw": "00:22:00.566",
+    "end_raw": "00:22:04.900",
+    "start_seconds": 1320,
+    "timestamp": "22:00",
+    "text": "So I've just streamed that into Claude and then same thing I'm going to hold alt and go down."
+  },
+  {
+    "start_raw": "00:22:04.900",
+    "end_raw": "00:22:07.900",
+    "start_seconds": 1324,
+    "timestamp": "22:04",
+    "text": "I'm just going to put kind of a little separator and I'm going to say"
+  },
+  {
+    "start_raw": "00:22:08.100",
+    "end_raw": "00:22:12.550",
+    "start_seconds": 1328,
+    "timestamp": "22:08",
+    "text": "create a plan for this game, and then we'll start executing and coding it."
+  },
+  {
+    "start_raw": "00:22:13.050",
+    "end_raw": "00:22:14.966",
+    "start_seconds": 1333,
+    "timestamp": "22:13",
+    "text": "So I'm just instructing it even though it's in the plan mode."
+  },
+  {
+    "start_raw": "00:22:14.966",
+    "end_raw": "00:22:17.433",
+    "start_seconds": 1334,
+    "timestamp": "22:14",
+    "text": "You know, I want to plan this out before I proceed."
+  },
+  {
+    "start_raw": "00:22:17.433",
+    "end_raw": "00:22:21.250",
+    "start_seconds": 1337,
+    "timestamp": "22:17",
+    "text": "And you can use this to plan features not just entire apps like I'm doing right here."
+  },
+  {
+    "start_raw": "00:22:21.783",
+    "end_raw": "00:22:24.566",
+    "start_seconds": 1341,
+    "timestamp": "22:21",
+    "text": "Okay. So I'm going to go ahead and press on enter here."
+  },
+  {
+    "start_raw": "00:22:24.566",
+    "end_raw": "00:22:26.800",
+    "start_seconds": 1344,
+    "timestamp": "22:24",
+    "text": "And it should start generating the plan for me."
+  },
+  {
+    "start_raw": "00:22:26.800",
+    "end_raw": "00:22:28.616",
+    "start_seconds": 1346,
+    "timestamp": "22:26",
+    "text": "Let's give that a second to make it okay."
+  },
+  {
+    "start_raw": "00:22:28.616",
+    "end_raw": "00:22:31.500",
+    "start_seconds": 1348,
+    "timestamp": "22:28",
+    "text": "Now just while this is running I want to point your attention to a few things here."
+  },
+  {
+    "start_raw": "00:22:31.500",
+    "end_raw": "00:22:34.600",
+    "start_seconds": 1351,
+    "timestamp": "22:31",
+    "text": "So first you can actually see how long it's taking to run, as well"
+  },
+  {
+    "start_raw": "00:22:34.600",
+    "end_raw": "00:22:38.283",
+    "start_seconds": 1354,
+    "timestamp": "22:34",
+    "text": "as the number of tokens that are being used when it's doing this generation."
+  },
+  {
+    "start_raw": "00:22:38.283",
+    "end_raw": "00:22:41.283",
+    "start_seconds": 1358,
+    "timestamp": "22:38",
+    "text": "So if you really care about the cost, obviously something to pay attention to."
+  },
+  {
+    "start_raw": "00:22:41.616",
+    "end_raw": "00:22:44.100",
+    "start_seconds": 1361,
+    "timestamp": "22:41",
+    "text": "Now you also notice that this is able to use tools."
+  },
+  {
+    "start_raw": "00:22:44.100",
+    "end_raw": "00:22:46.716",
+    "start_seconds": 1364,
+    "timestamp": "22:44",
+    "text": "There's some tools that are built into Claude. There's other tools"
+  },
+  {
+    "start_raw": "00:22:46.716",
+    "end_raw": "00:22:49.716",
+    "start_seconds": 1366,
+    "timestamp": "22:46",
+    "text": "that you can actually install yourself if you want to make this more capable."
+  },
+  {
+    "start_raw": "00:22:49.916",
+    "end_raw": "00:22:53.550",
+    "start_seconds": 1369,
+    "timestamp": "22:49",
+    "text": "So for example, if I hit control O, which it's showing me right here, it's"
+  },
+  {
+    "start_raw": "00:22:53.550",
+    "end_raw": "00:22:58.000",
+    "start_seconds": 1373,
+    "timestamp": "22:53",
+    "text": "going to expand this so that it's actually showing me, you know, exactly what's happening."
+  },
+  {
+    "start_raw": "00:22:58.166",
+    "end_raw": "00:23:01.000",
+    "start_seconds": 1378,
+    "timestamp": "22:58",
+    "text": "And I can see what it is that's kind of going on here."
+  },
+  {
+    "start_raw": "00:23:01.000",
+    "end_raw": "00:23:01.233",
+    "start_seconds": 1381,
+    "timestamp": "23:01",
+    "text": "Right."
+  },
+  {
+    "start_raw": "00:23:01.233",
+    "end_raw": "00:23:04.266",
+    "start_seconds": 1381,
+    "timestamp": "23:01",
+    "text": "So it says okay, I'm thinking the user wants to create a game."
+  },
+  {
+    "start_raw": "00:23:04.266",
+    "end_raw": "00:23:04.600",
+    "start_seconds": 1384,
+    "timestamp": "23:04",
+    "text": "All right."
+  },
+  {
+    "start_raw": "00:23:04.600",
+    "end_raw": "00:23:06.300",
+    "start_seconds": 1384,
+    "timestamp": "23:04",
+    "text": "This is a fun project okay."
+  },
+  {
+    "start_raw": "00:23:06.300",
+    "end_raw": "00:23:09.266",
+    "start_seconds": 1386,
+    "timestamp": "23:06",
+    "text": "Here's what I want to do. Blah blah blah blah blah whatever. Right."
+  },
+  {
+    "start_raw": "00:23:09.266",
+    "end_raw": "00:23:11.366",
+    "start_seconds": 1389,
+    "timestamp": "23:09",
+    "text": "And then if I want to go back, I can do control."
+  },
+  {
+    "start_raw": "00:23:11.366",
+    "end_raw": "00:23:14.200",
+    "start_seconds": 1391,
+    "timestamp": "23:11",
+    "text": "Oh, and it brings me back here to where I can kind of see,"
+  },
+  {
+    "start_raw": "00:23:14.200",
+    "end_raw": "00:23:16.466",
+    "start_seconds": 1394,
+    "timestamp": "23:14",
+    "text": "you know, what it's doing in the plan that it's generating."
+  },
+  {
+    "start_raw": "00:23:16.466",
+    "end_raw": "00:23:20.916",
+    "start_seconds": 1396,
+    "timestamp": "23:16",
+    "text": "So if you want to open it in like verbose mode where you see the logs, it's control up."
+  },
+  {
+    "start_raw": "00:23:21.366",
+    "end_raw": "00:23:24.366",
+    "start_seconds": 1401,
+    "timestamp": "23:21",
+    "text": "Now you also can have this trigger to run in the background."
+  },
+  {
+    "start_raw": "00:23:24.416",
+    "end_raw": "00:23:25.750",
+    "start_seconds": 1404,
+    "timestamp": "23:24",
+    "text": "I'm not going to do that right now."
+  },
+  {
+    "start_raw": "00:23:25.750",
+    "end_raw": "00:23:30.416",
+    "start_seconds": 1405,
+    "timestamp": "23:25",
+    "text": "But if you hit control B or command B, depending on your operating system, you can trigger this to run"
+  },
+  {
+    "start_raw": "00:23:30.416",
+    "end_raw": "00:23:34.300",
+    "start_seconds": 1410,
+    "timestamp": "23:30",
+    "text": "as a background session and then that way you can actually just use cloud code"
+  },
+  {
+    "start_raw": "00:23:34.300",
+    "end_raw": "00:23:38.100",
+    "start_seconds": 1414,
+    "timestamp": "23:34",
+    "text": "for something else in the same terminal view while this is going on in the background."
+  },
+  {
+    "start_raw": "00:23:38.166",
+    "end_raw": "00:23:41.883",
+    "start_seconds": 1418,
+    "timestamp": "23:38",
+    "text": "And again, you can have as many background tasks as you want running at the same time."
+  },
+  {
+    "start_raw": "00:23:41.883",
+    "end_raw": "00:23:43.116",
+    "start_seconds": 1421,
+    "timestamp": "23:41",
+    "text": "Okay, so the plan was created."
+  },
+  {
+    "start_raw": "00:23:43.116",
+    "end_raw": "00:23:46.116",
+    "start_seconds": 1423,
+    "timestamp": "23:43",
+    "text": "However, it's asking me a few questions here that I need to answer."
+  },
+  {
+    "start_raw": "00:23:46.266",
+    "end_raw": "00:23:48.600",
+    "start_seconds": 1426,
+    "timestamp": "23:46",
+    "text": "So I'm going to go with no sounds for now."
+  },
+  {
+    "start_raw": "00:23:48.600",
+    "end_raw": "00:23:49.916",
+    "start_seconds": 1428,
+    "timestamp": "23:48",
+    "text": "So let's answer that."
+  },
+  {
+    "start_raw": "00:23:49.916",
+    "end_raw": "00:23:53.616",
+    "start_seconds": 1429,
+    "timestamp": "23:49",
+    "text": "And then it's also asking me about the game size and I'm just going to go full screen actually"
+  },
+  {
+    "start_raw": "00:23:53.616",
+    "end_raw": "00:23:56.316",
+    "start_seconds": 1433,
+    "timestamp": "23:53",
+    "text": "you know what. Let's go 800 by 600 just to make it easier."
+  },
+  {
+    "start_raw": "00:23:56.316",
+    "end_raw": "00:23:58.000",
+    "start_seconds": 1436,
+    "timestamp": "23:56",
+    "text": "And I'm going to submit my answers to Claude."
+  },
+  {
+    "start_raw": "00:23:58.000",
+    "end_raw": "00:24:01.000",
+    "start_seconds": 1438,
+    "timestamp": "23:58",
+    "text": "So another cool thing that it does is it clarifies with you before"
+  },
+  {
+    "start_raw": "00:24:01.000",
+    "end_raw": "00:24:04.000",
+    "start_seconds": 1441,
+    "timestamp": "24:01",
+    "text": "it actually starts going and generating all of the tasks."
+  },
+  {
+    "start_raw": "00:24:04.083",
+    "end_raw": "00:24:09.450",
+    "start_seconds": 1444,
+    "timestamp": "24:04",
+    "text": "Now while this is running, I will show you that you can change the model that's being used here."
+  },
+  {
+    "start_raw": "00:24:09.633",
+    "end_raw": "00:24:12.900",
+    "start_seconds": 1449,
+    "timestamp": "24:09",
+    "text": "So by default, I believe this is going to use the most powerful model."
+  },
+  {
+    "start_raw": "00:24:12.900",
+    "end_raw": "00:24:15.783",
+    "start_seconds": 1452,
+    "timestamp": "24:12",
+    "text": "Or actually, let me just answer this first and then we'll go into the model."
+  },
+  {
+    "start_raw": "00:24:15.783",
+    "end_raw": "00:24:17.950",
+    "start_seconds": 1455,
+    "timestamp": "24:15",
+    "text": "So Claude has written a plan and it's ready to execute."
+  },
+  {
+    "start_raw": "00:24:17.950",
+    "end_raw": "00:24:19.116",
+    "start_seconds": 1457,
+    "timestamp": "24:17",
+    "text": "Would you like to proceed?"
+  },
+  {
+    "start_raw": "00:24:19.116",
+    "end_raw": "00:24:19.983",
+    "start_seconds": 1459,
+    "timestamp": "24:19",
+    "text": "Yes. Auto accept."
+  },
+  {
+    "start_raw": "00:24:19.983",
+    "end_raw": "00:24:21.116",
+    "start_seconds": 1459,
+    "timestamp": "24:19",
+    "text": "Yes. Manually approve edits."
+  },
+  {
+    "start_raw": "00:24:21.116",
+    "end_raw": "00:24:23.133",
+    "start_seconds": 1461,
+    "timestamp": "24:21",
+    "text": "Type here to tell Claude what to change."
+  },
+  {
+    "start_raw": "00:24:23.133",
+    "end_raw": "00:24:24.066",
+    "start_seconds": 1463,
+    "timestamp": "24:23",
+    "text": "Yes, I'm going to go. Yes."
+  },
+  {
+    "start_raw": "00:24:24.066",
+    "end_raw": "00:24:26.550",
+    "start_seconds": 1464,
+    "timestamp": "24:24",
+    "text": "Clear the context and auto accept edits."
+  },
+  {
+    "start_raw": "00:24:26.550",
+    "end_raw": "00:24:29.400",
+    "start_seconds": 1466,
+    "timestamp": "24:26",
+    "text": "Now, when you clear the context, what that's going to do"
+  },
+  {
+    "start_raw": "00:24:29.400",
+    "end_raw": "00:24:33.250",
+    "start_seconds": 1469,
+    "timestamp": "24:29",
+    "text": "is essentially remove all of the previous stuff that you've message Claude with."
+  },
+  {
+    "start_raw": "00:24:33.250",
+    "end_raw": "00:24:34.983",
+    "start_seconds": 1473,
+    "timestamp": "24:33",
+    "text": "So it's no longer being included"
+  },
+  {
+    "start_raw": "00:24:34.983",
+    "end_raw": "00:24:38.666",
+    "start_seconds": 1474,
+    "timestamp": "24:34",
+    "text": "in the API request to Claude, and it's just going to go based off the plan."
+  },
+  {
+    "start_raw": "00:24:39.033",
+    "end_raw": "00:24:42.933",
+    "start_seconds": 1479,
+    "timestamp": "24:39",
+    "text": "This is good to save tokens, but if you wanted to keep the context,"
+  },
+  {
+    "start_raw": "00:24:42.933",
+    "end_raw": "00:24:46.266",
+    "start_seconds": 1482,
+    "timestamp": "24:42",
+    "text": "then you could do that right by auto accepting the edits, etc.."
+  },
+  {
+    "start_raw": "00:24:46.266",
+    "end_raw": "00:24:50.666",
+    "start_seconds": 1486,
+    "timestamp": "24:46",
+    "text": "So I'm going to go yes, clear the context and auto accept this and you can see that"
+  },
+  {
+    "start_raw": "00:24:50.666",
+    "end_raw": "00:24:54.450",
+    "start_seconds": 1490,
+    "timestamp": "24:50",
+    "text": "it is going to start actually generating this and going through the plan."
+  },
+  {
+    "start_raw": "00:24:54.450",
+    "end_raw": "00:24:55.916",
+    "start_seconds": 1494,
+    "timestamp": "24:54",
+    "text": "So this is the plan to implement."
+  },
+  {
+    "start_raw": "00:24:55.916",
+    "end_raw": "00:24:57.483",
+    "start_seconds": 1495,
+    "timestamp": "24:55",
+    "text": "And there you go. It's going to start building."
+  },
+  {
+    "start_raw": "00:24:57.483",
+    "end_raw": "00:24:59.850",
+    "start_seconds": 1497,
+    "timestamp": "24:57",
+    "text": "Now while it does that I did want to talk about the models."
+  },
+  {
+    "start_raw": "00:24:59.850",
+    "end_raw": "00:25:02.250",
+    "start_seconds": 1499,
+    "timestamp": "24:59",
+    "text": "So it can be quite expensive to run this."
+  },
+  {
+    "start_raw": "00:25:02.250",
+    "end_raw": "00:25:04.750",
+    "start_seconds": 1502,
+    "timestamp": "25:02",
+    "text": "And you can very quickly run through your usage."
+  },
+  {
+    "start_raw": "00:25:04.750",
+    "end_raw": "00:25:08.700",
+    "start_seconds": 1504,
+    "timestamp": "25:04",
+    "text": "So if you want to make this more affordable for yourself, you can change the model"
+  },
+  {
+    "start_raw": "00:25:08.700",
+    "end_raw": "00:25:09.516",
+    "start_seconds": 1508,
+    "timestamp": "25:08",
+    "text": "that's being used here."
+  },
+  {
+    "start_raw": "00:25:09.516",
+    "end_raw": "00:25:13.116",
+    "start_seconds": 1509,
+    "timestamp": "25:09",
+    "text": "So if you type slash model here and Claude is not currently doing something,"
+  },
+  {
+    "start_raw": "00:25:13.116",
+    "end_raw": "00:25:16.600",
+    "start_seconds": 1513,
+    "timestamp": "25:13",
+    "text": "it will bring you into an interactive window that will allow you to change the model."
+  },
+  {
+    "start_raw": "00:25:16.766",
+    "end_raw": "00:25:19.950",
+    "start_seconds": 1516,
+    "timestamp": "25:16",
+    "text": "So let's actually just do this from another Claude code here."
+  },
+  {
+    "start_raw": "00:25:19.950",
+    "end_raw": "00:25:21.366",
+    "start_seconds": 1519,
+    "timestamp": "25:19",
+    "text": "So I'm going to go slash model."
+  },
+  {
+    "start_raw": "00:25:21.366",
+    "end_raw": "00:25:23.500",
+    "start_seconds": 1521,
+    "timestamp": "25:21",
+    "text": "And when I do that it's going to give us three options okay."
+  },
+  {
+    "start_raw": "00:25:23.500",
+    "end_raw": "00:25:29.350",
+    "start_seconds": 1523,
+    "timestamp": "25:23",
+    "text": "So opus sonnet and haiku or however you pronounce that now you can see the three different models here."
+  },
+  {
+    "start_raw": "00:25:29.500",
+    "end_raw": "00:25:32.100",
+    "start_seconds": 1529,
+    "timestamp": "25:29",
+    "text": "So opus is going to be your most powerful model."
+  },
+  {
+    "start_raw": "00:25:32.100",
+    "end_raw": "00:25:34.466",
+    "start_seconds": 1532,
+    "timestamp": "25:32",
+    "text": "And as it says it's for more complex work."
+  },
+  {
+    "start_raw": "00:25:34.466",
+    "end_raw": "00:25:36.900",
+    "start_seconds": 1534,
+    "timestamp": "25:34",
+    "text": "This will be the most expensive but also just the best."
+  },
+  {
+    "start_raw": "00:25:36.900",
+    "end_raw": "00:25:40.116",
+    "start_seconds": 1536,
+    "timestamp": "25:36",
+    "text": "Generally speaking, sonnet is kind of a middle ground model."
+  },
+  {
+    "start_raw": "00:25:40.116",
+    "end_raw": "00:25:43.150",
+    "start_seconds": 1540,
+    "timestamp": "25:40",
+    "text": "So if you're doing some tasks that don't have extreme complexity,"
+  },
+  {
+    "start_raw": "00:25:43.150",
+    "end_raw": "00:25:47.550",
+    "start_seconds": 1543,
+    "timestamp": "25:43",
+    "text": "don't require a bunch of tool calling, you can select this one by just pressing enter."
+  },
+  {
+    "start_raw": "00:25:47.766",
+    "end_raw": "00:25:50.666",
+    "start_seconds": 1547,
+    "timestamp": "25:47",
+    "text": "And if you want a faster model that's going to give you quick answers"
+  },
+  {
+    "start_raw": "00:25:50.666",
+    "end_raw": "00:25:54.183",
+    "start_seconds": 1550,
+    "timestamp": "25:50",
+    "text": "and be significantly less expensive, then you can switch over to haiku."
+  },
+  {
+    "start_raw": "00:25:54.366",
+    "end_raw": "00:25:54.700",
+    "start_seconds": 1554,
+    "timestamp": "25:54",
+    "text": "Cool."
+  },
+  {
+    "start_raw": "00:25:54.700",
+    "end_raw": "00:25:58.766",
+    "start_seconds": 1554,
+    "timestamp": "25:54",
+    "text": "So now we've gone back to our first kind of cloud code instance here, and you can see that"
+  },
+  {
+    "start_raw": "00:25:58.766",
+    "end_raw": "00:26:02.966",
+    "start_seconds": 1558,
+    "timestamp": "25:58",
+    "text": "it says it's implemented these features in the shooter's HTML file."
+  },
+  {
+    "start_raw": "00:26:03.216",
+    "end_raw": "00:26:08.016",
+    "start_seconds": 1563,
+    "timestamp": "26:03",
+    "text": "So what I'm going to do now is just say run the shooter file, okay."
+  },
+  {
+    "start_raw": "00:26:08.016",
+    "end_raw": "00:26:10.350",
+    "start_seconds": 1568,
+    "timestamp": "26:08",
+    "text": "And I'm just going to have it run this and open it in the browser for me"
+  },
+  {
+    "start_raw": "00:26:10.350",
+    "end_raw": "00:26:11.766",
+    "start_seconds": 1570,
+    "timestamp": "26:10",
+    "text": "so I can actually see what it looks like."
+  },
+  {
+    "start_raw": "00:26:11.766",
+    "end_raw": "00:26:13.450",
+    "start_seconds": 1571,
+    "timestamp": "26:11",
+    "text": "And then of course if we have revisions let's go."
+  },
+  {
+    "start_raw": "00:26:13.450",
+    "end_raw": "00:26:15.666",
+    "start_seconds": 1573,
+    "timestamp": "26:13",
+    "text": "Yes. And don't ask for star commands."
+  },
+  {
+    "start_raw": "00:26:15.666",
+    "end_raw": "00:26:18.450",
+    "start_seconds": 1575,
+    "timestamp": "26:15",
+    "text": "Oh. It says it cannot find that for some reason."
+  },
+  {
+    "start_raw": "00:26:18.450",
+    "end_raw": "00:26:21.183",
+    "start_seconds": 1578,
+    "timestamp": "26:18",
+    "text": "Okay. Let's see if we can run it again."
+  },
+  {
+    "start_raw": "00:26:21.183",
+    "end_raw": "00:26:22.650",
+    "start_seconds": 1581,
+    "timestamp": "26:21",
+    "text": "Okay. And sorry, I've got this running now."
+  },
+  {
+    "start_raw": "00:26:22.650",
+    "end_raw": "00:26:26.550",
+    "start_seconds": 1582,
+    "timestamp": "26:22",
+    "text": "For some reason, I made a mistake and you can see we have this kind of retro shooter,"
+  },
+  {
+    "start_raw": "00:26:26.550",
+    "end_raw": "00:26:28.950",
+    "start_seconds": 1586,
+    "timestamp": "26:26",
+    "text": "which I think looks pretty cool in my opinion."
+  },
+  {
+    "start_raw": "00:26:28.950",
+    "end_raw": "00:26:31.300",
+    "start_seconds": 1588,
+    "timestamp": "26:28",
+    "text": "And I can kind of move around, I can shoot."
+  },
+  {
+    "start_raw": "00:26:31.300",
+    "end_raw": "00:26:34.000",
+    "start_seconds": 1591,
+    "timestamp": "26:31",
+    "text": "We have, like, this wave of enemies that's coming."
+  },
+  {
+    "start_raw": "00:26:35.100",
+    "end_raw": "00:26:36.483",
+    "start_seconds": 1595,
+    "timestamp": "26:35",
+    "text": "Okay, cool."
+  },
+  {
+    "start_raw": "00:26:36.483",
+    "end_raw": "00:26:39.483",
+    "start_seconds": 1596,
+    "timestamp": "26:36",
+    "text": "And that's I mean, like literally exactly what I asked it"
+  },
+  {
+    "start_raw": "00:26:39.516",
+    "end_raw": "00:26:42.716",
+    "start_seconds": 1599,
+    "timestamp": "26:39",
+    "text": "to build, which is pretty good."
+  },
+  {
+    "start_raw": "00:26:42.716",
+    "end_raw": "00:26:45.216",
+    "start_seconds": 1602,
+    "timestamp": "26:42",
+    "text": "I would say for a first iteration."
+  },
+  {
+    "start_raw": "00:26:45.216",
+    "end_raw": "00:26:46.566",
+    "start_seconds": 1605,
+    "timestamp": "26:45",
+    "text": "So we also have health, right?"
+  },
+  {
+    "start_raw": "00:26:46.566",
+    "end_raw": "00:26:48.300",
+    "start_seconds": 1606,
+    "timestamp": "26:46",
+    "text": "We have like the menu bar, a bunch of that stuff."
+  },
+  {
+    "start_raw": "00:26:48.300",
+    "end_raw": "00:26:51.300",
+    "start_seconds": 1608,
+    "timestamp": "26:48",
+    "text": "We could obviously add add sound effects."
+  },
+  {
+    "start_raw": "00:26:52.083",
+    "end_raw": "00:26:53.216",
+    "start_seconds": 1612,
+    "timestamp": "26:52",
+    "text": "Cool. Okay."
+  },
+  {
+    "start_raw": "00:26:53.216",
+    "end_raw": "00:26:54.300",
+    "start_seconds": 1613,
+    "timestamp": "26:53",
+    "text": "So let's close that."
+  },
+  {
+    "start_raw": "00:26:54.300",
+    "end_raw": "00:26:58.150",
+    "start_seconds": 1614,
+    "timestamp": "26:54",
+    "text": "And if we wanted to make revisions and same thing, we could just do something like, you know,"
+  },
+  {
+    "start_raw": "00:26:59.466",
+    "end_raw": "00:27:01.866",
+    "start_seconds": 1619,
+    "timestamp": "26:59",
+    "text": "add power ups"
+  },
+  {
+    "start_raw": "00:27:01.866",
+    "end_raw": "00:27:05.200",
+    "start_seconds": 1621,
+    "timestamp": "27:01",
+    "text": "to this app and then it would go ahead and be able to do that."
+  },
+  {
+    "start_raw": "00:27:05.433",
+    "end_raw": "00:27:09.816",
+    "start_seconds": 1625,
+    "timestamp": "27:05",
+    "text": "Now before we do that though, I want to talk about git and GitHub."
+  },
+  {
+    "start_raw": "00:27:10.300",
+    "end_raw": "00:27:15.416",
+    "start_seconds": 1630,
+    "timestamp": "27:10",
+    "text": "So if you're going to be working on a large project, I highly recommend that you instruct cloud code"
+  },
+  {
+    "start_raw": "00:27:15.416",
+    "end_raw": "00:27:21.450",
+    "start_seconds": 1635,
+    "timestamp": "27:15",
+    "text": "to create a new GitHub repository and to make commits and save all of the changes that it's making."
+  },
+  {
+    "start_raw": "00:27:21.700",
+    "end_raw": "00:27:23.366",
+    "start_seconds": 1641,
+    "timestamp": "27:21",
+    "text": "So the way to do that would be something like this."
+  },
+  {
+    "start_raw": "00:27:24.450",
+    "end_raw": "00:27:24.966",
+    "start_seconds": 1644,
+    "timestamp": "27:24",
+    "text": "From now"
+  },
+  {
+    "start_raw": "00:27:24.966",
+    "end_raw": "00:27:28.916",
+    "start_seconds": 1644,
+    "timestamp": "27:24",
+    "text": "on, I would like you to make a new git repository for this project."
+  },
+  {
+    "start_raw": "00:27:28.916",
+    "end_raw": "00:27:32.550",
+    "start_seconds": 1648,
+    "timestamp": "27:28",
+    "text": "I would like you then to make clean commit messages, save them locally"
+  },
+  {
+    "start_raw": "00:27:32.550",
+    "end_raw": "00:27:37.083",
+    "start_seconds": 1652,
+    "timestamp": "27:32",
+    "text": "and then push them to GitHub so that we always have a saved version of the project."
+  },
+  {
+    "start_raw": "00:27:37.083",
+    "end_raw": "00:27:40.450",
+    "start_seconds": 1657,
+    "timestamp": "27:37",
+    "text": "And it's easy for us to revert back in case we make any changes."
+  },
+  {
+    "start_raw": "00:27:40.450",
+    "end_raw": "00:27:42.483",
+    "start_seconds": 1660,
+    "timestamp": "27:40",
+    "text": "So set up a GitHub repository,"
+  },
+  {
+    "start_raw": "00:27:42.483",
+    "end_raw": "00:27:45.850",
+    "start_seconds": 1662,
+    "timestamp": "27:42",
+    "text": "configure everything, and just use getting GitHub for the rest of the project."
+  },
+  {
+    "start_raw": "00:27:46.083",
+    "end_raw": "00:27:49.166",
+    "start_seconds": 1666,
+    "timestamp": "27:46",
+    "text": "So we're going to tell it that let's go ahead and press on enter."
+  },
+  {
+    "start_raw": "00:27:49.166",
+    "end_raw": "00:27:51.850",
+    "start_seconds": 1669,
+    "timestamp": "27:49",
+    "text": "And it will just start running all of the commands that's needed to set that up."
+  },
+  {
+    "start_raw": "00:27:51.850",
+    "end_raw": "00:27:53.550",
+    "start_seconds": 1671,
+    "timestamp": "27:51",
+    "text": "So you don't really need to do anything here."
+  },
+  {
+    "start_raw": "00:27:53.550",
+    "end_raw": "00:27:55.316",
+    "start_seconds": 1673,
+    "timestamp": "27:53",
+    "text": "It should just know what to do. So same thing."
+  },
+  {
+    "start_raw": "00:27:55.316",
+    "end_raw": "00:27:59.950",
+    "start_seconds": 1675,
+    "timestamp": "27:55",
+    "text": "We're just going to say yes and allow this to go and it will start setting it up okay."
+  },
+  {
+    "start_raw": "00:27:59.950",
+    "end_raw": "00:28:01.900",
+    "start_seconds": 1679,
+    "timestamp": "27:59",
+    "text": "So it took a second here but it did work."
+  },
+  {
+    "start_raw": "00:28:01.900",
+    "end_raw": "00:28:04.950",
+    "start_seconds": 1681,
+    "timestamp": "28:01",
+    "text": "And actually if I open up this URL now"
+  },
+  {
+    "start_raw": "00:28:04.950",
+    "end_raw": "00:28:08.816",
+    "start_seconds": 1684,
+    "timestamp": "28:04",
+    "text": "in my browser, we should be able to see the git repository that it created."
+  },
+  {
+    "start_raw": "00:28:08.816",
+    "end_raw": "00:28:11.250",
+    "start_seconds": 1688,
+    "timestamp": "28:08",
+    "text": "Again. Notice it automatically created it for us."
+  },
+  {
+    "start_raw": "00:28:11.250",
+    "end_raw": "00:28:13.466",
+    "start_seconds": 1691,
+    "timestamp": "28:11",
+    "text": "And you can see now we have us as well as Claude."
+  },
+  {
+    "start_raw": "00:28:13.466",
+    "end_raw": "00:28:15.750",
+    "start_seconds": 1693,
+    "timestamp": "28:13",
+    "text": "They're adding commits to this repository."
+  },
+  {
+    "start_raw": "00:28:15.750",
+    "end_raw": "00:28:18.400",
+    "start_seconds": 1695,
+    "timestamp": "28:15",
+    "text": "So now it is saved and all of the work is going to be done"
+  },
+  {
+    "start_raw": "00:28:18.400",
+    "end_raw": "00:28:21.600",
+    "start_seconds": 1698,
+    "timestamp": "28:18",
+    "text": "automatically with, what do you call it, git and GitHub."
+  },
+  {
+    "start_raw": "00:28:22.016",
+    "end_raw": "00:28:22.466",
+    "start_seconds": 1702,
+    "timestamp": "28:22",
+    "text": "Okay."
+  },
+  {
+    "start_raw": "00:28:22.466",
+    "end_raw": "00:28:25.166",
+    "start_seconds": 1702,
+    "timestamp": "28:22",
+    "text": "Now let's go through a few other things that are worth noting."
+  },
+  {
+    "start_raw": "00:28:25.166",
+    "end_raw": "00:28:26.666",
+    "start_seconds": 1705,
+    "timestamp": "28:25",
+    "text": "So I just told it right."
+  },
+  {
+    "start_raw": "00:28:26.666",
+    "end_raw": "00:28:30.483",
+    "start_seconds": 1706,
+    "timestamp": "28:26",
+    "text": "Like always use git and GitHub for this project and automatically make the commits."
+  },
+  {
+    "start_raw": "00:28:30.783",
+    "end_raw": "00:28:33.900",
+    "start_seconds": 1710,
+    "timestamp": "28:30",
+    "text": "Now sometimes it will do that just automatically."
+  },
+  {
+    "start_raw": "00:28:34.050",
+    "end_raw": "00:28:38.433",
+    "start_seconds": 1714,
+    "timestamp": "28:34",
+    "text": "But the thing with Claude is that as soon as I exit this so I go like slash exit, right?"
+  },
+  {
+    "start_raw": "00:28:38.583",
+    "end_raw": "00:28:41.766",
+    "start_seconds": 1718,
+    "timestamp": "28:38",
+    "text": "And if I just go Claude again and I start with a new session,"
+  },
+  {
+    "start_raw": "00:28:41.950",
+    "end_raw": "00:28:47.283",
+    "start_seconds": 1721,
+    "timestamp": "28:41",
+    "text": "I've just lost all of the context and the history of what was happening inside of here."
+  },
+  {
+    "start_raw": "00:28:47.366",
+    "end_raw": "00:28:52.616",
+    "start_seconds": 1727,
+    "timestamp": "28:47",
+    "text": "So if I ask it like, what did you do last or something like that,"
+  },
+  {
+    "start_raw": "00:28:52.766",
+    "end_raw": "00:28:56.466",
+    "start_seconds": 1732,
+    "timestamp": "28:52",
+    "text": "it can look at the git history, but it's not going to really know what happened."
+  },
+  {
+    "start_raw": "00:28:56.466",
+    "end_raw": "00:28:58.200",
+    "start_seconds": 1736,
+    "timestamp": "28:56",
+    "text": "You can see this is the start of our conversation."
+  },
+  {
+    "start_raw": "00:28:58.200",
+    "end_raw": "00:28:59.816",
+    "start_seconds": 1738,
+    "timestamp": "28:58",
+    "text": "So I haven't done anything yet. Right."
+  },
+  {
+    "start_raw": "00:28:59.816",
+    "end_raw": "00:29:01.716",
+    "start_seconds": 1739,
+    "timestamp": "28:59",
+    "text": "Because we started a new session."
+  },
+  {
+    "start_raw": "00:29:01.716",
+    "end_raw": "00:29:04.616",
+    "start_seconds": 1741,
+    "timestamp": "29:01",
+    "text": "So that's an important thing to understand about Claude Sessions is that you"
+  },
+  {
+    "start_raw": "00:29:04.616",
+    "end_raw": "00:29:08.700",
+    "start_seconds": 1744,
+    "timestamp": "29:04",
+    "text": "don't have this kind of like unlimited memory like you might have in some other tools."
+  },
+  {
+    "start_raw": "00:29:08.950",
+    "end_raw": "00:29:13.616",
+    "start_seconds": 1748,
+    "timestamp": "29:08",
+    "text": "And that's where we are going to get into talking about the Claude and D file."
+  },
+  {
+    "start_raw": "00:29:13.950",
+    "end_raw": "00:29:18.333",
+    "start_seconds": 1753,
+    "timestamp": "29:13",
+    "text": "Now, the Claude MDF file is something that will allow you to have persistent memory."
+  },
+  {
+    "start_raw": "00:29:18.366",
+    "end_raw": "00:29:21.116",
+    "start_seconds": 1758,
+    "timestamp": "29:18",
+    "text": "So Claude kind of knows the rules of your code base."
+  },
+  {
+    "start_raw": "00:29:21.116",
+    "end_raw": "00:29:24.116",
+    "start_seconds": 1761,
+    "timestamp": "29:21",
+    "text": "It knows what it's done before, what it should and what it shouldn't do."
+  },
+  {
+    "start_raw": "00:29:24.216",
+    "end_raw": "00:29:28.750",
+    "start_seconds": 1764,
+    "timestamp": "29:24",
+    "text": "And you can set it up to be really complex in advance so that you don't need to keep instructing it"
+  },
+  {
+    "start_raw": "00:29:28.750",
+    "end_raw": "00:29:29.883",
+    "start_seconds": 1768,
+    "timestamp": "29:28",
+    "text": "to do the same thing."
+  },
+  {
+    "start_raw": "00:29:29.883",
+    "end_raw": "00:29:33.250",
+    "start_seconds": 1769,
+    "timestamp": "29:29",
+    "text": "Because again, if I start working right now, it's not going to automatically"
+  },
+  {
+    "start_raw": "00:29:33.250",
+    "end_raw": "00:29:36.250",
+    "start_seconds": 1773,
+    "timestamp": "29:33",
+    "text": "commit this to get in GitHub like I want it to do."
+  },
+  {
+    "start_raw": "00:29:36.450",
+    "end_raw": "00:29:41.350",
+    "start_seconds": 1776,
+    "timestamp": "29:36",
+    "text": "So in order to create a Claude MD file, what you can do is type this slash init command."
+  },
+  {
+    "start_raw": "00:29:41.616",
+    "end_raw": "00:29:44.733",
+    "start_seconds": 1781,
+    "timestamp": "29:41",
+    "text": "When you type slash in it, what it's going to do is automatically create"
+  },
+  {
+    "start_raw": "00:29:44.733",
+    "end_raw": "00:29:47.800",
+    "start_seconds": 1784,
+    "timestamp": "29:44",
+    "text": "Claude Dot, MD for you and in the claw MD,"
+  },
+  {
+    "start_raw": "00:29:48.033",
+    "end_raw": "00:29:53.400",
+    "start_seconds": 1788,
+    "timestamp": "29:48",
+    "text": "it will actually put in different information based on the analysis that it has of your code base."
+  },
+  {
+    "start_raw": "00:29:53.650",
+    "end_raw": "00:29:58.050",
+    "start_seconds": 1793,
+    "timestamp": "29:53",
+    "text": "Then you of course can modify this Claude, the MD file, and I'll show you how to do that in one second."
+  },
+  {
+    "start_raw": "00:29:58.233",
+    "end_raw": "00:30:03.900",
+    "start_seconds": 1798,
+    "timestamp": "29:58",
+    "text": "But this is effectively, again, the persistent memory for Claude when it's working in your code base."
+  },
+  {
+    "start_raw": "00:30:04.083",
+    "end_raw": "00:30:06.666",
+    "start_seconds": 1804,
+    "timestamp": "30:04",
+    "text": "And we'll give it a second here to generate that MD file."
+  },
+  {
+    "start_raw": "00:30:06.666",
+    "end_raw": "00:30:07.083",
+    "start_seconds": 1806,
+    "timestamp": "30:06",
+    "text": "So let's go."
+  },
+  {
+    "start_raw": "00:30:07.083",
+    "end_raw": "00:30:10.833",
+    "start_seconds": 1807,
+    "timestamp": "30:07",
+    "text": "Yes. Go ahead and create that for us okay. Yes."
+  },
+  {
+    "start_raw": "00:30:10.833",
+    "end_raw": "00:30:12.116",
+    "start_seconds": 1810,
+    "timestamp": "30:10",
+    "text": "Go ahead and make that."
+  },
+  {
+    "start_raw": "00:30:12.116",
+    "end_raw": "00:30:13.750",
+    "start_seconds": 1812,
+    "timestamp": "30:12",
+    "text": "So that will have that file there."
+  },
+  {
+    "start_raw": "00:30:13.750",
+    "end_raw": "00:30:16.383",
+    "start_seconds": 1813,
+    "timestamp": "30:13",
+    "text": "And it will always reference it when we create a new session. Okay."
+  },
+  {
+    "start_raw": "00:30:16.383",
+    "end_raw": "00:30:20.583",
+    "start_seconds": 1816,
+    "timestamp": "30:16",
+    "text": "So you can see that it is showing me what the Claude MD file will look like that it's"
+  },
+  {
+    "start_raw": "00:30:20.583",
+    "end_raw": "00:30:23.666",
+    "start_seconds": 1820,
+    "timestamp": "30:20",
+    "text": "going to create here where it goes over like project overview running"
+  },
+  {
+    "start_raw": "00:30:23.666",
+    "end_raw": "00:30:26.666",
+    "start_seconds": 1823,
+    "timestamp": "30:23",
+    "text": "the game development set up, you know, whatever, all of this kind of stuff."
+  },
+  {
+    "start_raw": "00:30:26.766",
+    "end_raw": "00:30:27.633",
+    "start_seconds": 1826,
+    "timestamp": "30:26",
+    "text": "So I'm going to go yes."
+  },
+  {
+    "start_raw": "00:30:27.633",
+    "end_raw": "00:30:29.766",
+    "start_seconds": 1827,
+    "timestamp": "30:27",
+    "text": "And allow edits during this session."
+  },
+  {
+    "start_raw": "00:30:29.766",
+    "end_raw": "00:30:32.766",
+    "start_seconds": 1829,
+    "timestamp": "30:29",
+    "text": "And then it's going to create this Claude dot markdown file for me."
+  },
+  {
+    "start_raw": "00:30:32.966",
+    "end_raw": "00:30:36.266",
+    "start_seconds": 1832,
+    "timestamp": "30:32",
+    "text": "Now if we go through here okay let's see if it has anything else."
+  },
+  {
+    "start_raw": "00:30:36.266",
+    "end_raw": "00:30:39.000",
+    "start_seconds": 1836,
+    "timestamp": "30:36",
+    "text": "Design pattern color scheme get workflow okay."
+  },
+  {
+    "start_raw": "00:30:39.000",
+    "end_raw": "00:30:40.050",
+    "start_seconds": 1839,
+    "timestamp": "30:39",
+    "text": "Cool."
+  },
+  {
+    "start_raw": "00:30:40.050",
+    "end_raw": "00:30:40.500",
+    "start_seconds": 1840,
+    "timestamp": "30:40",
+    "text": "Awesome."
+  },
+  {
+    "start_raw": "00:30:40.500",
+    "end_raw": "00:30:42.550",
+    "start_seconds": 1840,
+    "timestamp": "30:40",
+    "text": "And then it explains kind of all of this stuff."
+  },
+  {
+    "start_raw": "00:30:42.550",
+    "end_raw": "00:30:46.500",
+    "start_seconds": 1842,
+    "timestamp": "30:42",
+    "text": "So now if there's some specific things that I always want Claude to do in the project,"
+  },
+  {
+    "start_raw": "00:30:46.500",
+    "end_raw": "00:30:47.350",
+    "start_seconds": 1846,
+    "timestamp": "30:46",
+    "text": "I can just tell it that."
+  },
+  {
+    "start_raw": "00:30:47.350",
+    "end_raw": "00:30:51.866",
+    "start_seconds": 1847,
+    "timestamp": "30:47",
+    "text": "So I'm going to say update the Claude MD file to indicate that as you do work,"
+  },
+  {
+    "start_raw": "00:30:51.866",
+    "end_raw": "00:30:56.200",
+    "start_seconds": 1851,
+    "timestamp": "30:51",
+    "text": "you need to commit things to git and push them to GitHub regularly with clean commit messages."
+  },
+  {
+    "start_raw": "00:30:56.200",
+    "end_raw": "00:30:59.200",
+    "start_seconds": 1856,
+    "timestamp": "30:56",
+    "text": "So we never lose the status or work that we've done."
+  },
+  {
+    "start_raw": "00:30:59.200",
+    "end_raw": "00:31:01.200",
+    "start_seconds": 1859,
+    "timestamp": "30:59",
+    "text": "Okay. So let's go ahead and press on."
+  },
+  {
+    "start_raw": "00:31:01.200",
+    "end_raw": "00:31:04.416",
+    "start_seconds": 1861,
+    "timestamp": "31:01",
+    "text": "Enter here and you can see I said, you know, Claude MD"
+  },
+  {
+    "start_raw": "00:31:04.750",
+    "end_raw": "00:31:08.250",
+    "start_seconds": 1864,
+    "timestamp": "31:04",
+    "text": "whisper actually picked up that this was a file and it automatically tagged it for me."
+  },
+  {
+    "start_raw": "00:31:08.400",
+    "end_raw": "00:31:10.766",
+    "start_seconds": 1868,
+    "timestamp": "31:08",
+    "text": "And now you can see it's making changes, right."
+  },
+  {
+    "start_raw": "00:31:10.766",
+    "end_raw": "00:31:13.450",
+    "start_seconds": 1870,
+    "timestamp": "31:10",
+    "text": "And then updating that in Claude DMD."
+  },
+  {
+    "start_raw": "00:31:13.450",
+    "end_raw": "00:31:16.350",
+    "start_seconds": 1873,
+    "timestamp": "31:13",
+    "text": "And if we scroll down here it explains what it needs to do."
+  },
+  {
+    "start_raw": "00:31:16.350",
+    "end_raw": "00:31:19.350",
+    "start_seconds": 1876,
+    "timestamp": "31:16",
+    "text": "So now if we were to restart this."
+  },
+  {
+    "start_raw": "00:31:19.600",
+    "end_raw": "00:31:23.166",
+    "start_seconds": 1879,
+    "timestamp": "31:19",
+    "text": "So let's go slash exit to get out of that okay."
+  },
+  {
+    "start_raw": "00:31:23.166",
+    "end_raw": "00:31:26.816",
+    "start_seconds": 1883,
+    "timestamp": "31:23",
+    "text": "And go Claude I'm just going to say what do you know"
+  },
+  {
+    "start_raw": "00:31:27.850",
+    "end_raw": "00:31:30.450",
+    "start_seconds": 1887,
+    "timestamp": "31:27",
+    "text": "about this project."
+  },
+  {
+    "start_raw": "00:31:30.450",
+    "end_raw": "00:31:31.116",
+    "start_seconds": 1890,
+    "timestamp": "31:30",
+    "text": "Okay."
+  },
+  {
+    "start_raw": "00:31:31.116",
+    "end_raw": "00:31:35.166",
+    "start_seconds": 1891,
+    "timestamp": "31:31",
+    "text": "And it should be able to look in this claude.md file and give me some information okay."
+  },
+  {
+    "start_raw": "00:31:35.166",
+    "end_raw": "00:31:38.216",
+    "start_seconds": 1895,
+    "timestamp": "31:35",
+    "text": "And you can see it reads the cloud.md file because it knows to go there."
+  },
+  {
+    "start_raw": "00:31:38.216",
+    "end_raw": "00:31:40.300",
+    "start_seconds": 1898,
+    "timestamp": "31:38",
+    "text": "And it gets us all of that persistent info."
+  },
+  {
+    "start_raw": "00:31:40.300",
+    "end_raw": "00:31:40.533",
+    "start_seconds": 1900,
+    "timestamp": "31:40",
+    "text": "All right."
+  },
+  {
+    "start_raw": "00:31:40.533",
+    "end_raw": "00:31:43.266",
+    "start_seconds": 1900,
+    "timestamp": "31:40",
+    "text": "So now that we've gone over that I want to talk about tasks."
+  },
+  {
+    "start_raw": "00:31:43.266",
+    "end_raw": "00:31:48.633",
+    "start_seconds": 1903,
+    "timestamp": "31:43",
+    "text": "Now if you run these tasks command, this will show you any background tasks that are running."
+  },
+  {
+    "start_raw": "00:31:48.933",
+    "end_raw": "00:31:53.200",
+    "start_seconds": 1908,
+    "timestamp": "31:48",
+    "text": "Now. Background tasks are typically going to be things like web servers that are running"
+  },
+  {
+    "start_raw": "00:31:53.200",
+    "end_raw": "00:31:58.083",
+    "start_seconds": 1913,
+    "timestamp": "31:53",
+    "text": "continuously, and that you don't want to block the execution of your cloud code instance."
+  },
+  {
+    "start_raw": "00:31:58.316",
+    "end_raw": "00:32:02.166",
+    "start_seconds": 1918,
+    "timestamp": "31:58",
+    "text": "So right now, if I want to get out of this, I'm just going to press, escape to get out of that there."
+  },
+  {
+    "start_raw": "00:32:02.166",
+    "end_raw": "00:32:04.416",
+    "start_seconds": 1922,
+    "timestamp": "32:02",
+    "text": "And you could see that I've kind of got out of the dialog."
+  },
+  {
+    "start_raw": "00:32:04.416",
+    "end_raw": "00:32:07.150",
+    "start_seconds": 1924,
+    "timestamp": "32:04",
+    "text": "Now, tasks might be something like a web server,"
+  },
+  {
+    "start_raw": "00:32:07.150",
+    "end_raw": "00:32:11.583",
+    "start_seconds": 1927,
+    "timestamp": "32:07",
+    "text": "a front end, I don't know, like react website that's running whatever."
+  },
+  {
+    "start_raw": "00:32:11.583",
+    "end_raw": "00:32:13.450",
+    "start_seconds": 1931,
+    "timestamp": "32:11",
+    "text": "There can be all kinds of background tasks."
+  },
+  {
+    "start_raw": "00:32:13.450",
+    "end_raw": "00:32:14.200",
+    "start_seconds": 1933,
+    "timestamp": "32:13",
+    "text": "And by default"
+  },
+  {
+    "start_raw": "00:32:14.200",
+    "end_raw": "00:32:18.566",
+    "start_seconds": 1934,
+    "timestamp": "32:14",
+    "text": "Claude will put some of them into the background, but you can also put them in the background yourself."
+  },
+  {
+    "start_raw": "00:32:18.850",
+    "end_raw": "00:32:23.583",
+    "start_seconds": 1938,
+    "timestamp": "32:18",
+    "text": "So what I want to show you is if I do something like, you know, run a web server"
+  },
+  {
+    "start_raw": "00:32:23.766",
+    "end_raw": "00:32:28.800",
+    "start_seconds": 1943,
+    "timestamp": "32:23",
+    "text": "to host my two sites or host my two games, what's going to happen"
+  },
+  {
+    "start_raw": "00:32:28.800",
+    "end_raw": "00:32:32.466",
+    "start_seconds": 1948,
+    "timestamp": "32:28",
+    "text": "here is Claude is going to detect that this is a task that would be blocking."
+  },
+  {
+    "start_raw": "00:32:32.650",
+    "end_raw": "00:32:34.300",
+    "start_seconds": 1952,
+    "timestamp": "32:32",
+    "text": "Blocking means that if we just ran it"
+  },
+  {
+    "start_raw": "00:32:34.300",
+    "end_raw": "00:32:38.550",
+    "start_seconds": 1954,
+    "timestamp": "32:34",
+    "text": "in this terminal, that it's going to block us being able to do anything else."
+  },
+  {
+    "start_raw": "00:32:38.700",
+    "end_raw": "00:32:42.400",
+    "start_seconds": 1958,
+    "timestamp": "32:38",
+    "text": "So you can see that we now see one bash, which means that there's a task"
+  },
+  {
+    "start_raw": "00:32:42.400",
+    "end_raw": "00:32:45.400",
+    "start_seconds": 1962,
+    "timestamp": "32:42",
+    "text": "that's happening and it says it's running this in the background."
+  },
+  {
+    "start_raw": "00:32:45.550",
+    "end_raw": "00:32:49.200",
+    "start_seconds": 1965,
+    "timestamp": "32:45",
+    "text": "So if we want to see that we can hit control T, which will show the different"
+  },
+  {
+    "start_raw": "00:32:49.200",
+    "end_raw": "00:32:52.200",
+    "start_seconds": 1969,
+    "timestamp": "32:49",
+    "text": "tasks, we can go to the bash and hit enter to view it."
+  },
+  {
+    "start_raw": "00:32:52.383",
+    "end_raw": "00:32:55.533",
+    "start_seconds": 1972,
+    "timestamp": "32:52",
+    "text": "If we go back, we also can type slash tasks."
+  },
+  {
+    "start_raw": "00:32:55.750",
+    "end_raw": "00:32:59.166",
+    "start_seconds": 1975,
+    "timestamp": "32:55",
+    "text": "And then it's going to show the task that's running and how long it's been running for."
+  },
+  {
+    "start_raw": "00:32:59.816",
+    "end_raw": "00:33:02.016",
+    "start_seconds": 1979,
+    "timestamp": "32:59",
+    "text": "Now, from here, if we want to kill this task."
+  },
+  {
+    "start_raw": "00:33:02.016",
+    "end_raw": "00:33:05.916",
+    "start_seconds": 1982,
+    "timestamp": "33:02",
+    "text": "So I no longer want the web browser to be running, for example, I can press okay"
+  },
+  {
+    "start_raw": "00:33:06.100",
+    "end_raw": "00:33:07.466",
+    "start_seconds": 1986,
+    "timestamp": "33:06",
+    "text": "and that's going to kill it for me."
+  },
+  {
+    "start_raw": "00:33:07.466",
+    "end_raw": "00:33:10.900",
+    "start_seconds": 1987,
+    "timestamp": "33:07",
+    "text": "And then I can go back just by hitting enter. Okay."
+  },
+  {
+    "start_raw": "00:33:11.133",
+    "end_raw": "00:33:14.800",
+    "start_seconds": 1991,
+    "timestamp": "33:11",
+    "text": "And you can see background command was killed right now for some reason"
+  },
+  {
+    "start_raw": "00:33:14.800",
+    "end_raw": "00:33:16.866",
+    "start_seconds": 1994,
+    "timestamp": "33:14",
+    "text": "it's going to go and generate this again I think."
+  },
+  {
+    "start_raw": "00:33:16.866",
+    "end_raw": "00:33:20.700",
+    "start_seconds": 1996,
+    "timestamp": "33:16",
+    "text": "But if I wanted to stop this then what I could do is press escape."
+  },
+  {
+    "start_raw": "00:33:20.700",
+    "end_raw": "00:33:21.550",
+    "start_seconds": 2000,
+    "timestamp": "33:20",
+    "text": "So for example,"
+  },
+  {
+    "start_raw": "00:33:21.550",
+    "end_raw": "00:33:25.800",
+    "start_seconds": 2001,
+    "timestamp": "33:21",
+    "text": "if I do something like hello and then I press escape super fast, you'll see it's interrupts that command."
+  },
+  {
+    "start_raw": "00:33:25.916",
+    "end_raw": "00:33:29.733",
+    "start_seconds": 2005,
+    "timestamp": "33:25",
+    "text": "So if you want to stop the execution of something in lifetime press escape."
+  },
+  {
+    "start_raw": "00:33:29.733",
+    "end_raw": "00:33:32.516",
+    "start_seconds": 2009,
+    "timestamp": "33:29",
+    "text": "I probably should have mentioned that earlier, but I honestly just forgot."
+  },
+  {
+    "start_raw": "00:33:32.516",
+    "end_raw": "00:33:34.416",
+    "start_seconds": 2012,
+    "timestamp": "33:32",
+    "text": "But that's something to know."
+  },
+  {
+    "start_raw": "00:33:34.416",
+    "end_raw": "00:33:35.733",
+    "start_seconds": 2014,
+    "timestamp": "33:34",
+    "text": "Okay, so those are tasks."
+  },
+  {
+    "start_raw": "00:33:35.733",
+    "end_raw": "00:33:37.200",
+    "start_seconds": 2015,
+    "timestamp": "33:35",
+    "text": "Again, these are things that are kind of like"
+  },
+  {
+    "start_raw": "00:33:37.200",
+    "end_raw": "00:33:40.916",
+    "start_seconds": 2017,
+    "timestamp": "33:37",
+    "text": "running in the background that are typically these long running operations."
+  },
+  {
+    "start_raw": "00:33:41.166",
+    "end_raw": "00:33:44.550",
+    "start_seconds": 2021,
+    "timestamp": "33:41",
+    "text": "Now however, if you do want to create kind of parallel"
+  },
+  {
+    "start_raw": "00:33:44.550",
+    "end_raw": "00:33:48.366",
+    "start_seconds": 2024,
+    "timestamp": "33:44",
+    "text": "clawed bots that are like writing code or doing different operations for you,"
+  },
+  {
+    "start_raw": "00:33:48.416",
+    "end_raw": "00:33:52.800",
+    "start_seconds": 2028,
+    "timestamp": "33:48",
+    "text": "whether they're touching files or modifying things and that's where we get into agents."
+  },
+  {
+    "start_raw": "00:33:53.016",
+    "end_raw": "00:33:56.350",
+    "start_seconds": 2033,
+    "timestamp": "33:53",
+    "text": "So if you go to slash agents, you can create agents,"
+  },
+  {
+    "start_raw": "00:33:56.433",
+    "end_raw": "00:34:00.816",
+    "start_seconds": 2036,
+    "timestamp": "33:56",
+    "text": "and these agents can perform special tasks and you can delegate tasks to them."
+  },
+  {
+    "start_raw": "00:34:01.016",
+    "end_raw": "00:34:05.433",
+    "start_seconds": 2041,
+    "timestamp": "34:01",
+    "text": "So for example, you could have an agent that is handling or doing a styling right."
+  },
+  {
+    "start_raw": "00:34:05.433",
+    "end_raw": "00:34:09.083",
+    "start_seconds": 2045,
+    "timestamp": "34:05",
+    "text": "Or like changing the user interface, an agent responsible for the back end."
+  },
+  {
+    "start_raw": "00:34:09.100",
+    "end_raw": "00:34:11.066",
+    "start_seconds": 2049,
+    "timestamp": "34:09",
+    "text": "Okay, I'm not going to get into all the details"
+  },
+  {
+    "start_raw": "00:34:11.066",
+    "end_raw": "00:34:14.400",
+    "start_seconds": 2051,
+    "timestamp": "34:11",
+    "text": "of how to set this up, because it does get a little bit complex and kind of beyond"
+  },
+  {
+    "start_raw": "00:34:14.400",
+    "end_raw": "00:34:18.333",
+    "start_seconds": 2054,
+    "timestamp": "34:14",
+    "text": "the scope of this tutorial, but I want to show you things like that do exist."
+  },
+  {
+    "start_raw": "00:34:18.600",
+    "end_raw": "00:34:23.166",
+    "start_seconds": 2058,
+    "timestamp": "34:18",
+    "text": "And we also have things like MCP if you want to connect to, for example, Notion"
+  },
+  {
+    "start_raw": "00:34:23.166",
+    "end_raw": "00:34:28.116",
+    "start_seconds": 2063,
+    "timestamp": "34:23",
+    "text": "or Gmail or Google Drive, or you want to connect to a bunch of other services, you can do that"
+  },
+  {
+    "start_raw": "00:34:28.116",
+    "end_raw": "00:34:33.333",
+    "start_seconds": 2068,
+    "timestamp": "34:28",
+    "text": "right from an MC server inside of Claude, which really expands its capabilities."
+  },
+  {
+    "start_raw": "00:34:33.516",
+    "end_raw": "00:34:36.000",
+    "start_seconds": 2073,
+    "timestamp": "34:33",
+    "text": "Again, let's get out of that. Let's go through slash."
+  },
+  {
+    "start_raw": "00:34:36.000",
+    "end_raw": "00:34:38.700",
+    "start_seconds": 2076,
+    "timestamp": "34:36",
+    "text": "You can see there's a bunch of other stuff that you can do here."
+  },
+  {
+    "start_raw": "00:34:38.700",
+    "end_raw": "00:34:43.166",
+    "start_seconds": 2078,
+    "timestamp": "34:38",
+    "text": "You can set up hooks, for example, that will automatically run code for you or different tasks."
+  },
+  {
+    "start_raw": "00:34:43.350",
+    "end_raw": "00:34:46.950",
+    "start_seconds": 2083,
+    "timestamp": "34:43",
+    "text": "You can set up Keybinds memory, you know, all of this kind of stuff."
+  },
+  {
+    "start_raw": "00:34:47.550",
+    "end_raw": "00:34:49.866",
+    "start_seconds": 2087,
+    "timestamp": "34:47",
+    "text": "So just go through it, have a look."
+  },
+  {
+    "start_raw": "00:34:49.866",
+    "end_raw": "00:34:52.266",
+    "start_seconds": 2089,
+    "timestamp": "34:49",
+    "text": "And another thing that's useful is skills."
+  },
+  {
+    "start_raw": "00:34:52.266",
+    "end_raw": "00:34:55.866",
+    "start_seconds": 2092,
+    "timestamp": "34:52",
+    "text": "So you can actually create skills that are essentially repeatable tasks"
+  },
+  {
+    "start_raw": "00:34:55.866",
+    "end_raw": "00:34:57.716",
+    "start_seconds": 2095,
+    "timestamp": "34:55",
+    "text": "that Claude does all of the time."
+  },
+  {
+    "start_raw": "00:34:57.716",
+    "end_raw": "00:35:01.616",
+    "start_seconds": 2097,
+    "timestamp": "34:57",
+    "text": "So rather than creating an agent, you can create a skill and then you can run"
+  },
+  {
+    "start_raw": "00:35:01.616",
+    "end_raw": "00:35:05.883",
+    "start_seconds": 2101,
+    "timestamp": "35:01",
+    "text": "a particular skill by just saying, hey, you know, run this skill that I've taught you how to do."
+  },
+  {
+    "start_raw": "00:35:06.000",
+    "end_raw": "00:35:08.916",
+    "start_seconds": 2106,
+    "timestamp": "35:06",
+    "text": "It will go look up the skill and then be able to run it continually."
+  },
+  {
+    "start_raw": "00:35:08.916",
+    "end_raw": "00:35:13.433",
+    "start_seconds": 2108,
+    "timestamp": "35:08",
+    "text": "So you can see how powerful this can get if you really go through the full configuration."
+  },
+  {
+    "start_raw": "00:35:13.650",
+    "end_raw": "00:35:19.150",
+    "start_seconds": 2113,
+    "timestamp": "35:13",
+    "text": "But at this point, if you follow along, you know how to use cloud code better than 99% of people."
+  },
+  {
+    "start_raw": "00:35:19.150",
+    "end_raw": "00:35:22.533",
+    "start_seconds": 2119,
+    "timestamp": "35:19",
+    "text": "I showed you all of the core functionality and features, and you can go out and start"
+  },
+  {
+    "start_raw": "00:35:22.533",
+    "end_raw": "00:35:26.816",
+    "start_seconds": 2122,
+    "timestamp": "35:22",
+    "text": "coding effectively whatever you want, because now you know how to navigate this tool."
+  },
+  {
+    "start_raw": "00:35:27.100",
+    "end_raw": "00:35:28.016",
+    "start_seconds": 2127,
+    "timestamp": "35:27",
+    "text": "I know this was long."
+  },
+  {
+    "start_raw": "00:35:28.016",
+    "end_raw": "00:35:31.050",
+    "start_seconds": 2128,
+    "timestamp": "35:28",
+    "text": "I know it's a bit complex, but I want you to get the proper setup."
+  },
+  {
+    "start_raw": "00:35:31.050",
+    "end_raw": "00:35:33.516",
+    "start_seconds": 2131,
+    "timestamp": "35:31",
+    "text": "So you didn't need to watch a bunch of other videos."
+  },
+  {
+    "start_raw": "00:35:33.516",
+    "end_raw": "00:35:36.633",
+    "start_seconds": 2133,
+    "timestamp": "35:33",
+    "text": "If you guys have other questions or you want more tutorials on cloud code,"
+  },
+  {
+    "start_raw": "00:35:36.750",
+    "end_raw": "00:35:40.300",
+    "start_seconds": 2136,
+    "timestamp": "35:36",
+    "text": "then definitely let me know and I will see you in another video."
+  }
+]
