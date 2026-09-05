@@ -1,12 +1,15 @@
 import json
 import os
 import sys
+
+# Adiciona o diretório raiz ao sys.path
+root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if root_dir not in sys.path:
+    sys.path.append(root_dir)
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-
-# Adiciona o diretório raiz ao path para importar generator
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from generator import extract_video_id, fetch_and_process_transcript
 
 app = FastAPI(title="VideoStudy AI Serverless API")
@@ -42,4 +45,4 @@ def default_video():
 
 @app.get("/api/health")
 def health():
-    return {"status": "ok", "platform": "Vercel / Local"}
+    return {"status": "ok", "platform": "Vercel"}
