@@ -43,6 +43,23 @@ def default_video():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/api/tts")
+async def tts_endpoint(text: str, voice: str = "pt-BR-FranciscaNeural"):
+    """Sintetiza áudio neural em tempo real com vozes do NotebookLM (Francisca e Antonio)."""
+    if not text or not text.strip():
+        raise HTTPException(status_code=400, detail="Texto não informado.")
+    try:
+        import edge_tts
+        from fastapi.responses import StreamingResponse
+        communicate = edge_tts.Communicate(text.strip(), voice)
+        async def audio_stream():
+            async for chunk in communicate.stream():
+                if chunk["type"] == "audio":
+                    yield chunk["data"]
+        return StreamingResponse(audio_stream(), media_type="audio/mpeg")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Erro ao sintetizar áudio: {str(e)}")
+
 @app.get("/api/health")
 def health():
     return {"status": "ok", "platform": "Vercel"}

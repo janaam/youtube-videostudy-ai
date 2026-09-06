@@ -178,11 +178,16 @@
                 <button id="activateDubbingBottomBtn" class="btn-voice-activate" title="Mutar vídeo do YouTube e falar em Português">
                   <span>🎙️</span> Ativar Dublagem (Muta Vídeo)
                 </button>
+                <label class="smart-sync-toggle" title="Se a fala em português for mais longa, aguarda a frase terminar perfeitamente sem cortar palavras">
+                  <input type="checkbox" id="smartSyncWait" checked>
+                  <span>✨ Não cortar frases</span>
+                </label>
               </div>
               <div class="voice-selector-wrapper">
-                <label for="voiceSelect">Voz PT:</label>
+                <label for="voiceSelect">Voz:</label>
                 <select id="voiceSelect" class="voice-select-input">
-                  <option value="">Carregando vozes...</option>
+                  <option value="neural_francisca" selected>🌟 Francisca (Moça NotebookLM)</option>
+                  <option value="neural_antonio">🌟 Antonio (Moço NotebookLM)</option>
                 </select>
               </div>
             </div>
@@ -197,6 +202,9 @@
                 Clique em "Tradução Simultânea" para mutar o vídeo e ouvir a voz em português sincronizada.
               </div>
             </div>
+
+            <!-- Player Invisível para Vozes Neurais de Estúdio (NotebookLM) -->
+            <audio id="neuralAudioPlayer" preload="auto" style="display:none;"></audio>
           </div>
 
           <!-- Capítulos Rápidos do Vídeo -->

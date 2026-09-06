@@ -40,6 +40,23 @@ def default_video_endpoint():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/api/tts")
+async def tts_endpoint(text: str, voice: str = "pt-BR-FranciscaNeural"):
+    """Gera áudio neural de altíssima qualidade (Moça Francisca e Moço Antonio do NotebookLM)."""
+    if not text or not text.strip():
+        raise HTTPException(status_code=400, detail="Texto não informado.")
+    try:
+        import edge_tts
+        from fastapi.responses import StreamingResponse
+        communicate = edge_tts.Communicate(text.strip(), voice)
+        async def audio_stream():
+            async for chunk in communicate.stream():
+                if chunk["type"] == "audio":
+                    yield chunk["data"]
+        return StreamingResponse(audio_stream(), media_type="audio/mpeg")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Erro ao sintetizar áudio: {str(e)}")
+
 # Servir arquivos estáticos do frontend
 app.mount("/", StaticFiles(directory=".", html=True), name="static")
 

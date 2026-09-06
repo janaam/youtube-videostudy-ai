@@ -924,6 +924,32 @@ body::before {
   box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
 }
 
+.smart-sync-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.74rem;
+  color: var(--accent-cyan);
+  cursor: pointer;
+  user-select: none;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 0.32rem 0.65rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.smart-sync-toggle:hover {
+  background: rgba(56, 189, 248, 0.16);
+  border-color: var(--accent-cyan);
+}
+
+.smart-sync-toggle input {
+  accent-color: var(--accent-cyan);
+  cursor: pointer;
+}
+
 .voice-selector-wrapper {
   display: flex;
   align-items: center;

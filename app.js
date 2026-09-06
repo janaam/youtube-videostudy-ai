@@ -12,74 +12,132 @@ let transcriptData = [];
 let currentStudyBook = null;
 let syncTimer = null;
 
-// Configurações de Tradução Simultânea de Áudio (SpeechSynthesis)
+// Configurações de Tradução Simultânea de Áudio & Vozes Neurais (NotebookLM)
 let audioDubActive = false;
 let isVideoMuted = false;
 let ptVoice = null;
 let availablePtVoices = [];
 let currentVoiceRate = 1.1; // 1.1x para acompanhar a fala natural
 let lastSpokenCueIndex = -1;
+let lastSpokenConsolidatedIdx = -1;
 let lastReportedTime = 0;
+let consolidatedCues = [];
+let isSpeakingAudio = false;
+let isWaitingForAudioToEnd = false;
+let selectedVoiceOption = "neural_francisca"; // Padrão: A Moça do NotebookLM
 
 // ==========================================================================
 // 1. INICIALIZAÇÃO DA APLICAÇÃO
 // ==========================================================================
 document.addEventListener("DOMContentLoaded", () => {
-  initSpeechSynthesis();
+  initVoiceSelector();
   setupEventListeners();
   loadInitialData();
   setupYouTubeIframe();
 });
 
-// Inicializar Sintetizador de Voz em Português e Preencher Seletor
-function initSpeechSynthesis() {
-  if (!('speechSynthesis' in window)) {
-    console.warn("Seu navegador não suporta a Web Speech API.");
-    return;
-  }
+// Agrupador Inteligente: Une micro-fragmentos de 1-2s em orações completas com sentido
+function consolidateCues(rawCues) {
+  if (!rawCues || rawCues.length === 0) return [];
 
-  function loadVoices() {
-    const allVoices = window.speechSynthesis.getVoices();
-    if (!allVoices || allVoices.length === 0) return;
+  const list = [];
+  let current = null;
 
-    // Filtra vozes em português (Brasil primeiro)
-    availablePtVoices = allVoices.filter(v => v.lang && (v.lang.startsWith('pt') || v.lang.includes('pt-BR') || v.lang.includes('pt_BR')));
-    const voicesForSelect = availablePtVoices.length > 0 ? availablePtVoices : allVoices;
+  for (let i = 0; i < rawCues.length; i++) {
+    const cue = rawCues[i];
+    const textPt = (cue.text_pt || "").trim();
+    const textEn = (cue.text_en || "").trim();
+    if (!textPt && !textEn) continue;
 
-    // Prioridade para as melhores vozes em pt-BR
-    ptVoice = allVoices.find(v => (v.lang === 'pt-BR' || v.lang === 'pt_BR') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Francisca') || v.name.includes('Maria') || v.name.includes('Daniel'))) ||
-              allVoices.find(v => v.lang === 'pt-BR' || v.lang === 'pt_BR') ||
-              allVoices.find(v => v.lang && v.lang.startsWith('pt')) ||
-              allVoices[0];
-
-    // Popula o select do player
-    const select = document.getElementById("voiceSelect");
-    if (select) {
-      select.innerHTML = "";
-      voicesForSelect.forEach((v) => {
-        const opt = document.createElement("option");
-        opt.value = v.name;
-        opt.textContent = `${v.name.replace(/Microsoft |Google /g, '')} (${v.lang})`;
-        if (ptVoice && v.name === ptVoice.name) {
-          opt.selected = true;
-        }
-        select.appendChild(opt);
-      });
-
-      select.onchange = (e) => {
-        const chosen = allVoices.find(v => v.name === e.target.value);
-        if (chosen) {
-          ptVoice = chosen;
-          speakText(`Voz ${chosen.name.split(' ')[0]} selecionada com sucesso.`);
-        }
+    if (!current) {
+      current = {
+        start_seconds: cue.start_seconds,
+        timestamp: cue.timestamp,
+        text_pt: textPt,
+        text_en: textEn,
+        originalIndices: [i]
       };
+      continue;
+    }
+
+    const lastCharPt = current.text_pt.slice(-1);
+    const lastCharEn = current.text_en.slice(-1);
+    const endsWithPunct = [".", "!", "?", ":"].includes(lastCharPt) || [".", "!", "?", ":"].includes(lastCharEn);
+    const durationSoFar = cue.start_seconds - current.start_seconds;
+    const gap = cue.start_seconds - (rawCues[i - 1] ? rawCues[i - 1].start_seconds : current.start_seconds);
+
+    // Fecha a frase se houver pontuação forte ou duração acumulada suficiente (>= 5s) ou pausa longa
+    if ((endsWithPunct || durationSoFar >= 7.0 || gap > 2.5) && durationSoFar >= 2.0) {
+      current.end_seconds = cue.start_seconds;
+      list.push(current);
+      current = {
+        start_seconds: cue.start_seconds,
+        timestamp: cue.timestamp,
+        text_pt: textPt,
+        text_en: textEn,
+        originalIndices: [i]
+      };
+    } else {
+      current.text_pt += " " + textPt;
+      current.text_en += " " + textEn;
+      current.originalIndices.push(i);
     }
   }
 
-  loadVoices();
-  if (window.speechSynthesis.onvoiceschanged !== undefined) {
-    window.speechSynthesis.onvoiceschanged = loadVoices;
+  if (current) {
+    current.end_seconds = current.start_seconds + 6;
+    list.push(current);
   }
+
+  return list;
+}
+
+// Inicializar Seletor de Vozes com Destaque para Moça e Moço do NotebookLM
+function initVoiceSelector() {
+  const select = document.getElementById("voiceSelect");
+  if (!select) return;
+
+  function renderVoiceOptions() {
+    select.innerHTML = `
+      <option value="neural_francisca">🌟 [Moça] Francisca Neural (NotebookLM)</option>
+      <option value="neural_antonio">🌟 [Moço] Antonio Neural (NotebookLM)</option>
+    `;
+
+    if ('speechSynthesis' in window) {
+      const allVoices = window.speechSynthesis.getVoices();
+      if (allVoices && allVoices.length > 0) {
+        availablePtVoices = allVoices.filter(v => v.lang && (v.lang.startsWith('pt') || v.lang.includes('pt-BR') || v.lang.includes('pt_BR')));
+        
+        ptVoice = availablePtVoices.find(v => (v.lang === 'pt-BR' || v.lang === 'pt_BR') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Francisca') || v.name.includes('Maria') || v.name.includes('Daniel'))) ||
+                  availablePtVoices[0] || allVoices[0];
+
+        if (availablePtVoices.length > 0) {
+          const group = document.createElement("optgroup");
+          group.label = "Vozes do Navegador / Windows";
+          availablePtVoices.forEach(v => {
+            const opt = document.createElement("option");
+            opt.value = `browser_${v.name}`;
+            opt.textContent = `🎙️ ${v.name.replace(/Microsoft |Google /g, '')} (${v.lang})`;
+            group.appendChild(opt);
+          });
+          select.appendChild(group);
+        }
+      }
+    }
+
+    select.value = selectedVoiceOption;
+  }
+
+  renderVoiceOptions();
+
+  if ('speechSynthesis' in window && window.speechSynthesis.onvoiceschanged !== undefined) {
+    window.speechSynthesis.onvoiceschanged = renderVoiceOptions;
+  }
+
+  select.onchange = (e) => {
+    selectedVoiceOption = e.target.value;
+    testVoice();
+  };
 }
 
 // Carregar Dados Iniciais (Vídeo Padrão Claude Code)
@@ -87,6 +145,7 @@ function loadInitialData() {
   // Se temos o data.js carregado localmente
   if (window.TRANSCRIPT_DATA && window.TRANSCRIPT_DATA.length > 0) {
     transcriptData = window.TRANSCRIPT_DATA;
+    consolidatedCues = consolidateCues(transcriptData);
     currentStudyBook = buildDefaultClaudeBook();
     renderAll();
   } else {
@@ -102,6 +161,7 @@ function loadInitialData() {
           .then(res => res.json())
           .then(cues => {
             transcriptData = cues;
+            consolidatedCues = consolidateCues(transcriptData);
             currentStudyBook = buildDefaultClaudeBook();
             renderAll();
           });
@@ -318,20 +378,43 @@ function toggleAudioDubbing() {
     // 3. Atualiza o banner visual
     updateLiveDubbingBanner("🎙️ Dublagem Ativa", "Vídeo em inglês mutado. Sincronizando fala em Português...", false);
 
-    // 4. Inicia loop de sincronização e dá play no vídeo se necessário
+    isWaitingForAudioToEnd = false;
+
+    if (!consolidatedCues || consolidatedCues.length === 0) {
+      consolidatedCues = consolidateCues(transcriptData);
+    }
+
+    const select = document.getElementById("voiceSelect");
+    const val = select ? select.value : selectedVoiceOption;
+    let greeting = "Dublagem ativada com voz em português. O vídeo original em inglês foi mutado.";
+    if (val === "neural_francisca") {
+      greeting = "Dublagem ativada com a voz da moça do NotebookLM. O vídeo em inglês foi mutado e você me ouvirá em português.";
+    } else if (val === "neural_antonio") {
+      greeting = "Dublagem ativada com a voz do moço do NotebookLM. O vídeo em inglês foi mutado e você me ouvirá em português.";
+    }
+
+    updateLiveDubbingBanner("🎙️ Dublagem Ativa", "Vídeo em inglês mutado. Sincronizando fala sem cortes em Português...", false);
+
     startPlaybackSync();
     sendYouTubeCommand('playVideo');
 
-    // Se já temos tempo do player, pronuncia o trecho imediatamente
-    if (player && typeof player.getCurrentTime === 'function') {
-      const t = player.getCurrentTime();
-      if (t > 0) syncPlaybackWithTime(t);
-    }
+    // Fala introdução e já sincroniza com o ponto atual do vídeo
+    speakUnified(greeting, -1, () => {
+      if (player && typeof player.getCurrentTime === 'function') {
+        syncPlaybackWithTime(player.getCurrentTime());
+      }
+    });
   } else {
     // Desmuta o vídeo do YouTube (restaura volume original)
     unmuteYouTubeVideo();
+    isSpeakingAudio = false;
+    isWaitingForAudioToEnd = false;
 
-    // Cancela qualquer fala pendente
+    const neuralAudio = document.getElementById("neuralAudioPlayer");
+    if (neuralAudio) {
+      neuralAudio.pause();
+      neuralAudio.currentTime = 0;
+    }
     if ('speechSynthesis' in window) {
       window.speechSynthesis.cancel();
     }
@@ -404,15 +487,22 @@ function unmuteYouTubeVideo() {
   }
 }
 
-// Testar a voz em português instantaneamente
+// Testar a voz em português instantaneamente (Moça ou Moço do NotebookLM ou local)
 function testVoice() {
-  if (!('speechSynthesis' in window)) {
-    alert("Seu navegador não possui suporte para síntese de voz.");
-    return;
+  const select = document.getElementById("voiceSelect");
+  const chosen = select ? select.value : selectedVoiceOption;
+
+  let sample = "";
+  if (chosen === "neural_francisca") {
+    sample = "Olá! Eu sou a Francisca, a voz da moça do NotebookLM. Traduzirei e falarei o vídeo em português com pronúncia de estúdio e sem cortar nenhuma frase!";
+  } else if (chosen === "neural_antonio") {
+    sample = "Olá! Eu sou o Antonio, a voz do moço do NotebookLM. Acompanharei o vídeo em português com total clareza e ritmo perfeito!";
+  } else {
+    sample = "Olá! Esta é a voz nativa do sistema em português brasileiro, sincronizada perfeitamente com o vídeo.";
   }
-  const samplePhrase = "Olá! O sintetizador de voz em Português do Brasil está funcionando perfeitamente. Ao ativar a dublagem, o vídeo original em inglês será mutado e você escutará apenas a voz em português!";
-  updateLiveDubbingBanner("🎙️ Testando Voz PT-BR", `"${samplePhrase}"`, true);
-  speakText(samplePhrase);
+
+  updateLiveDubbingBanner("🎙️ Testando Voz", `"${sample}"`, true);
+  speakUnified(sample, -1);
 }
 
 // Atualizar banner de texto falado ao vivo
@@ -432,32 +522,78 @@ function updateLiveDubbingBanner(status, text, isSpeaking = false) {
   if (content) content.textContent = text;
 }
 
-// Síntese de voz para frase genérica
-function speakText(text) {
-  if (!('speechSynthesis' in window) || !text) return;
+// Sistema Central de Síntese de Áudio: Suporta Vozes Neurais de Estúdio e Web Speech Fallback
+function speakUnified(text, cueIndex, onEndCallback) {
+  if (!text || !text.trim()) return;
 
-  window.speechSynthesis.cancel();
-  if (window.speechSynthesis.paused) {
-    window.speechSynthesis.resume();
+  const cleanText = text.trim();
+  const select = document.getElementById("voiceSelect");
+  const chosenVoice = select ? select.value : selectedVoiceOption;
+
+  // Cancela áudio neural anterior se estiver em execução
+  const neuralAudio = document.getElementById("neuralAudioPlayer");
+  if (neuralAudio) {
+    neuralAudio.pause();
+    neuralAudio.currentTime = 0;
   }
 
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = 'pt-BR';
-  if (ptVoice) utterance.voice = ptVoice;
-  utterance.rate = currentVoiceRate;
-  utterance.pitch = 1.0;
-  window.speechSynthesis.speak(utterance);
+  // Cancela síntese de voz nativa
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+  }
+
+  isSpeakingAudio = true;
+
+  // Se for uma das vozes neurais do NotebookLM (Francisca ou Antonio)
+  if (chosenVoice === "neural_francisca" || chosenVoice === "neural_antonio") {
+    const voiceParam = chosenVoice === "neural_francisca" ? "pt-BR-FranciscaNeural" : "pt-BR-AntonioNeural";
+    const voiceLabel = chosenVoice === "neural_francisca" ? "🌟 Moça (Francisca)" : "🌟 Moço (Antonio)";
+
+    const labelPrefix = cueIndex >= 0 ? `🎙️ ${voiceLabel} [Trecho #${cueIndex + 1}]:` : `🎙️ ${voiceLabel}:`;
+    updateLiveDubbingBanner(labelPrefix, `"${cleanText}"`, true);
+
+    if (neuralAudio) {
+      neuralAudio.src = `/api/tts?text=${encodeURIComponent(cleanText)}&voice=${voiceParam}`;
+      neuralAudio.playbackRate = currentVoiceRate;
+
+      neuralAudio.onended = () => {
+        isSpeakingAudio = false;
+        updateLiveDubbingBanner("🎙️ Dublagem Sincronizada", `Último trecho falado: "${cleanText}"`, false);
+        
+        // Se o YouTube estava pausado esperando o término da frase, despausa imediatamente!
+        if (isWaitingForAudioToEnd) {
+          isWaitingForAudioToEnd = false;
+          sendYouTubeCommand('playVideo');
+        }
+        if (onEndCallback) onEndCallback();
+      };
+
+      neuralAudio.onerror = (err) => {
+        console.warn("API de áudio neural indisponível, usando voz local do navegador:", err);
+        isSpeakingAudio = false;
+        speakWebSpeech(cleanText, cueIndex, onEndCallback);
+      };
+
+      neuralAudio.play().catch(e => {
+        console.warn("Autoplay bloqueado pelo navegador, alternando para síntese local:", e);
+        speakWebSpeech(cleanText, cueIndex, onEndCallback);
+      });
+    } else {
+      speakWebSpeech(cleanText, cueIndex, onEndCallback);
+    }
+  } else {
+    // Voz selecionada do navegador / Windows
+    speakWebSpeech(cleanText, cueIndex, onEndCallback);
+  }
 }
 
-// Síntese de voz sincronizada com trecho específico da transcrição
-function speakCue(text, index) {
+// Síntese de voz com a Web Speech API do navegador
+function speakWebSpeech(text, cueIndex, onEndCallback) {
   if (!('speechSynthesis' in window) || !text) return;
 
-  // Cancela qualquer fala anterior para acompanhar a evolução rápida do vídeo
   window.speechSynthesis.cancel();
-  if (window.speechSynthesis.paused) {
-    window.speechSynthesis.resume();
-  }
+  if (window.speechSynthesis.paused) window.speechSynthesis.resume();
 
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'pt-BR';
@@ -466,17 +602,30 @@ function speakCue(text, index) {
   utterance.pitch = 1.0;
 
   utterance.onstart = () => {
-    updateLiveDubbingBanner(`🎙️ Dublando trecho #${index + 1}:`, `"${text}"`, true);
+    isSpeakingAudio = true;
+    const labelPrefix = cueIndex >= 0 ? `🎙️ Voz Local [Trecho #${cueIndex + 1}]:` : `🎙️ Voz Local:`;
+    updateLiveDubbingBanner(labelPrefix, `"${text}"`, true);
   };
 
   utterance.onend = () => {
-    if (lastSpokenCueIndex === index) {
-      updateLiveDubbingBanner(`🎙️ Sincronizado`, `Último falado: "${text}"`, false);
+    isSpeakingAudio = false;
+    updateLiveDubbingBanner("🎙️ Dublagem Sincronizada", `Último trecho: "${text}"`, false);
+    
+    // Se o YouTube estava aguardando término da oração, despausa
+    if (isWaitingForAudioToEnd) {
+      isWaitingForAudioToEnd = false;
+      sendYouTubeCommand('playVideo');
     }
+    if (onEndCallback) onEndCallback();
   };
 
   utterance.onerror = (e) => {
-    console.warn("speechSynthesis aviso:", e);
+    console.warn("SpeechSynthesis erro:", e);
+    isSpeakingAudio = false;
+    if (isWaitingForAudioToEnd) {
+      isWaitingForAudioToEnd = false;
+      sendYouTubeCommand('playVideo');
+    }
   };
 
   window.speechSynthesis.speak(utterance);
@@ -820,7 +969,7 @@ function syncPlaybackLoop() {
   } catch (e) {}
 }
 
-// Sincronização centralizada do tempo de reprodução com a transcrição
+// Sincronização centralizada do tempo de reprodução com a transcrição (Orquestrador Sem Cortes)
 function syncPlaybackWithTime(currentSeconds) {
   lastReportedTime = currentSeconds;
   const timeDisplay = document.getElementById("playerCurrentTime");
@@ -828,31 +977,61 @@ function syncPlaybackWithTime(currentSeconds) {
 
   if (!transcriptData || transcriptData.length === 0) return;
 
-  // Localiza o cue correspondente ao segundo atual
-  let activeIdx = -1;
+  // 1. Destaque visual na lista lateral de falas individuais
+  let rawActiveIdx = -1;
   for (let i = 0; i < transcriptData.length; i++) {
     const start = transcriptData[i].start_seconds;
-    const nextStart = transcriptData[i + 1] ? transcriptData[i + 1].start_seconds : start + 8;
+    const nextStart = transcriptData[i + 1] ? transcriptData[i + 1].start_seconds : start + 6;
     if (currentSeconds >= start && currentSeconds < nextStart) {
-      activeIdx = i;
+      rawActiveIdx = i;
       break;
     }
   }
 
-  if (activeIdx !== -1 && activeIdx !== currentActiveCueIndex) {
-    setActiveCue(activeIdx);
+  if (rawActiveIdx !== -1 && rawActiveIdx !== currentActiveCueIndex) {
+    setActiveCue(rawActiveIdx);
+  }
 
-    // TRADUÇÃO SIMULTÂNEA DE ÁUDIO ATIVA!
-    if (audioDubActive) {
-      // Garante que o áudio original permaneça mutado
-      sendYouTubeCommand('mute');
-      sendYouTubeCommand('setVolume', [0]);
+  // 2. Localização da oração completa no bloco consolidado
+  if (!consolidatedCues || consolidatedCues.length === 0) {
+    consolidatedCues = consolidateCues(transcriptData);
+  }
 
-      if (activeIdx !== lastSpokenCueIndex) {
-        lastSpokenCueIndex = activeIdx;
-        const textToSpeak = transcriptData[activeIdx].text_pt || transcriptData[activeIdx].text_en;
-        speakCue(textToSpeak, activeIdx);
+  let activeConsolidatedIdx = -1;
+  for (let j = 0; j < consolidatedCues.length; j++) {
+    const start = consolidatedCues[j].start_seconds;
+    const nextStart = consolidatedCues[j + 1] ? consolidatedCues[j + 1].start_seconds : (consolidatedCues[j].end_seconds || start + 8);
+    if (currentSeconds >= start && currentSeconds < nextStart) {
+      activeConsolidatedIdx = j;
+      break;
+    }
+  }
+
+  // 3. Execução da Dublagem Sincronizada (Sem Cortar Frases)
+  if (audioDubActive) {
+    // Mantém YouTube sempre sem áudio em inglês
+    sendYouTubeCommand('mute');
+    sendYouTubeCommand('setVolume', [0]);
+
+    const smartSyncWait = document.getElementById("smartSyncWait")?.checked;
+
+    // Se o vídeo já chegou na próxima oração MAS a voz ainda está finalizando a frase anterior:
+    if (isSpeakingAudio && activeConsolidatedIdx > lastSpokenConsolidatedIdx && smartSyncWait) {
+      // O vídeo do YouTube está mais rápido que a voz! Pausa o vídeo suavemente até a voz terminar
+      if (!isWaitingForAudioToEnd) {
+        isWaitingForAudioToEnd = true;
+        sendYouTubeCommand('pauseVideo');
+        updateLiveDubbingBanner("⏳ Concluindo fala...", "Aguardando término da oração para não cortar nenhuma palavra!", true);
       }
+      return; // Aguarda o onended para avançar
+    }
+
+    // Se mudou de frase e não está pausado esperando
+    if (activeConsolidatedIdx !== -1 && activeConsolidatedIdx !== lastSpokenConsolidatedIdx && !isWaitingForAudioToEnd) {
+      lastSpokenConsolidatedIdx = activeConsolidatedIdx;
+      const c = consolidatedCues[activeConsolidatedIdx];
+      const textToSpeak = c.text_pt || c.text_en;
+      speakUnified(textToSpeak, activeConsolidatedIdx);
     }
   }
 }
@@ -884,8 +1063,13 @@ window.addEventListener("message", (event) => {
           if (audioDubActive) muteYouTubeVideo();
           startPlaybackSync();
         } else if (data.info.playerState === 2) { // PAUSED
-          if (audioDubActive && 'speechSynthesis' in window) {
-            window.speechSynthesis.pause();
+          // Se não estiver aguardando áudio terminar, pausa o áudio
+          if (!isWaitingForAudioToEnd) {
+            const neuralAudio = document.getElementById("neuralAudioPlayer");
+            if (neuralAudio && !neuralAudio.paused) neuralAudio.pause();
+            if (audioDubActive && 'speechSynthesis' in window) {
+              window.speechSynthesis.pause();
+            }
           }
         }
       }
@@ -911,9 +1095,22 @@ function setActiveCue(index) {
 }
 
 function seekToSeconds(seconds) {
+  isSpeakingAudio = false;
+  isWaitingForAudioToEnd = false;
+
+  const neuralAudio = document.getElementById("neuralAudioPlayer");
+  if (neuralAudio) {
+    neuralAudio.pause();
+    neuralAudio.currentTime = 0;
+  }
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+  }
+
   sendYouTubeCommand('seekTo', [seconds, true]);
   sendYouTubeCommand('playVideo');
-  lastSpokenCueIndex = -1; // Permite falar imediatamente o novo ponto
+  lastSpokenCueIndex = -1;
+  lastSpokenConsolidatedIdx = -1;
   syncPlaybackWithTime(seconds);
 }
 
