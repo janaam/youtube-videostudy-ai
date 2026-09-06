@@ -145,7 +145,7 @@
           <div class="video-card">
             <div class="video-embed-box">
               <iframe id="youtubeIframe" 
-                src="https://www.youtube-nocookie.com/embed/ntDIxaeo3Wg?enablejsapi=1&origin=https://www.youtube.com" 
+                src="https://www.youtube-nocookie.com/embed/ntDIxaeo3Wg?enablejsapi=1" 
                 title="YouTube Video Player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowfullscreen>
@@ -158,8 +158,43 @@
                 <span class="sep">/</span>
                 <span id="playerTotalTime">--:--</span>
               </div>
-              <div id="audioStatusBadge" class="audio-status-badge inactive">
-                🎙️ Áudio Original em Inglês
+              <div class="status-right-tools">
+                <button id="quickMuteToggleBtn" class="btn-tool-pill" title="Alternar som do vídeo do YouTube">
+                  <span id="quickMuteIcon">🔊</span>
+                  <span id="quickMuteLabel">Som Original</span>
+                </button>
+                <div id="audioStatusBadge" class="audio-status-badge inactive">
+                  🎙️ Áudio Original em Inglês
+                </div>
+              </div>
+            </div>
+
+            <!-- Controles de Áudio e Teste de Voz -->
+            <div class="player-voice-toolbar">
+              <div class="voice-tool-group">
+                <button id="testVoiceBtn" class="btn-voice-test" title="Testar sintetizador de voz em Português">
+                  <span>▶️</span> Testar Voz PT
+                </button>
+                <button id="activateDubbingBottomBtn" class="btn-voice-activate" title="Mutar vídeo do YouTube e falar em Português">
+                  <span>🎙️</span> Ativar Dublagem (Muta Vídeo)
+                </button>
+              </div>
+              <div class="voice-selector-wrapper">
+                <label for="voiceSelect">Voz PT:</label>
+                <select id="voiceSelect" class="voice-select-input">
+                  <option value="">Carregando vozes...</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Banner com a Frase Falada em Tempo Real -->
+            <div id="liveDubbingBanner" class="live-dubbing-banner">
+              <div id="liveDubbingBadge" class="banner-badge">
+                <span class="banner-pulse"></span>
+                <span id="liveDubbingBadgeText">Dublagem Pronta</span>
+              </div>
+              <div id="liveDubbingText" class="banner-text">
+                Clique em "Tradução Simultânea" para mutar o vídeo e ouvir a voz em português sincronizada.
               </div>
             </div>
           </div>

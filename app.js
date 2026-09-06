@@ -14,9 +14,12 @@ let syncTimer = null;
 
 // Configurações de Tradução Simultânea de Áudio (SpeechSynthesis)
 let audioDubActive = false;
+let isVideoMuted = false;
 let ptVoice = null;
+let availablePtVoices = [];
 let currentVoiceRate = 1.1; // 1.1x para acompanhar a fala natural
 let lastSpokenCueIndex = -1;
+let lastReportedTime = 0;
 
 // ==========================================================================
 // 1. INICIALIZAÇÃO DA APLICAÇÃO
@@ -28,24 +31,54 @@ document.addEventListener("DOMContentLoaded", () => {
   setupYouTubeIframe();
 });
 
-// Inicializar Sintetizador de Voz em Português
+// Inicializar Sintetizador de Voz em Português e Preencher Seletor
 function initSpeechSynthesis() {
   if (!('speechSynthesis' in window)) {
     console.warn("Seu navegador não suporta a Web Speech API.");
     return;
   }
 
-  function pickPtVoice() {
-    const voices = window.speechSynthesis.getVoices();
-    // Prioridade para vozes naturais em pt-BR
-    ptVoice = voices.find(v => v.lang === 'pt-BR' && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Francisca'))) ||
-              voices.find(v => v.lang === 'pt-BR' || v.lang === 'pt_BR') ||
-              voices.find(v => v.lang.startsWith('pt'));
+  function loadVoices() {
+    const allVoices = window.speechSynthesis.getVoices();
+    if (!allVoices || allVoices.length === 0) return;
+
+    // Filtra vozes em português (Brasil primeiro)
+    availablePtVoices = allVoices.filter(v => v.lang && (v.lang.startsWith('pt') || v.lang.includes('pt-BR') || v.lang.includes('pt_BR')));
+    const voicesForSelect = availablePtVoices.length > 0 ? availablePtVoices : allVoices;
+
+    // Prioridade para as melhores vozes em pt-BR
+    ptVoice = allVoices.find(v => (v.lang === 'pt-BR' || v.lang === 'pt_BR') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Francisca') || v.name.includes('Maria') || v.name.includes('Daniel'))) ||
+              allVoices.find(v => v.lang === 'pt-BR' || v.lang === 'pt_BR') ||
+              allVoices.find(v => v.lang && v.lang.startsWith('pt')) ||
+              allVoices[0];
+
+    // Popula o select do player
+    const select = document.getElementById("voiceSelect");
+    if (select) {
+      select.innerHTML = "";
+      voicesForSelect.forEach((v) => {
+        const opt = document.createElement("option");
+        opt.value = v.name;
+        opt.textContent = `${v.name.replace(/Microsoft |Google /g, '')} (${v.lang})`;
+        if (ptVoice && v.name === ptVoice.name) {
+          opt.selected = true;
+        }
+        select.appendChild(opt);
+      });
+
+      select.onchange = (e) => {
+        const chosen = allVoices.find(v => v.name === e.target.value);
+        if (chosen) {
+          ptVoice = chosen;
+          speakText(`Voz ${chosen.name.split(' ')[0]} selecionada com sucesso.`);
+        }
+      };
+    }
   }
 
-  pickPtVoice();
+  loadVoices();
   if (window.speechSynthesis.onvoiceschanged !== undefined) {
-    window.speechSynthesis.onvoiceschanged = pickPtVoice;
+    window.speechSynthesis.onvoiceschanged = loadVoices;
   }
 }
 
@@ -94,9 +127,29 @@ function setupEventListeners() {
     }
   });
 
-  // Botão de Tradução Simultânea de Áudio (Dublagem)
+  // Botão de Tradução Simultânea de Áudio (Dublagem no Topo)
   const audioToggleBtn = document.getElementById("audioTranslateToggleBtn");
-  audioToggleBtn.addEventListener("click", toggleAudioDubbing);
+  if (audioToggleBtn) audioToggleBtn.addEventListener("click", toggleAudioDubbing);
+
+  // Botão de Dublagem Abaixo do Player
+  const bottomDubBtn = document.getElementById("activateDubbingBottomBtn");
+  if (bottomDubBtn) bottomDubBtn.addEventListener("click", toggleAudioDubbing);
+
+  // Botão de Testar Voz PT
+  const testVoiceBtn = document.getElementById("testVoiceBtn");
+  if (testVoiceBtn) testVoiceBtn.addEventListener("click", testVoice);
+
+  // Botão de Alternar Mudo do YouTube
+  const quickMuteBtn = document.getElementById("quickMuteToggleBtn");
+  if (quickMuteBtn) {
+    quickMuteBtn.addEventListener("click", () => {
+      if (isVideoMuted) {
+        unmuteYouTubeVideo();
+      } else {
+        muteYouTubeVideo();
+      }
+    });
+  }
 
   // Seletor de Velocidade da Voz
   const speedBtn = document.querySelector(".voice-speed-pill");
@@ -221,63 +274,211 @@ function applyProcessedData(data) {
   currentVideoId = data.video_id;
   transcriptData = data.cues || [];
   currentStudyBook = data.study_book;
+  lastSpokenCueIndex = -1;
 
-  // Atualiza Iframe do YouTube
+  // Atualiza Iframe do YouTube com origin seguro e sem conflitos
   const iframe = document.getElementById("youtubeIframe");
   if (iframe) {
-    iframe.src = `https://www.youtube-nocookie.com/embed/${currentVideoId}?enablejsapi=1&origin=https://www.youtube.com`;
+    iframe.src = getYouTubeEmbedUrl(currentVideoId);
+  }
+
+  // Se a dublagem estiver ativa, garante que o novo vídeo comece mutado
+  if (audioDubActive) {
+    setTimeout(muteYouTubeVideo, 1000);
   }
 
   renderAll();
 }
 
+// Retorna URL de embed do YouTube com origin dinâmico
+function getYouTubeEmbedUrl(videoId) {
+  let origin = '';
+  try {
+    if (window.location && window.location.origin && window.location.origin.startsWith('http')) {
+      origin = `&origin=${encodeURIComponent(window.location.origin)}`;
+    }
+  } catch (e) {}
+  return `https://www.youtube-nocookie.com/embed/${videoId}?enablejsapi=1${origin}&rel=0&playsinline=1`;
+}
+
 // ==========================================================================
-// 3. TRADUÇÃO SIMULTÂNEA DE ÁUDIO (DUBLAGEM COM SPEECH SYNTHESIS)
+// 3. TRADUÇÃO SIMULTÂNEA DE ÁUDIO (DUBLAGEM COM SPEECH SYNTHESIS & VÍDEO MUTADO)
 // ==========================================================================
 function toggleAudioDubbing() {
   audioDubActive = !audioDubActive;
-  const btn = document.getElementById("audioTranslateToggleBtn");
-  const btnText = document.getElementById("audioTranslateBtnText");
-  const badge = document.getElementById("audioStatusBadge");
+  updateDubbingInterface();
 
   if (audioDubActive) {
-    btn.classList.add("active");
-    btnText.textContent = "Dublagem Ativa (PT-BR)";
-    badge.className = "audio-status-badge active";
-    badge.textContent = "🎙️ Dublagem em Português Ativa";
+    // 1. MUTA O VÍDEO DO YOUTUBE COMPLETAMENTE (0% VOLUME)
+    muteYouTubeVideo();
 
-    // Fala uma mensagem rápida de ativação
-    speakText("Tradução simultânea ativada.");
+    // 2. Feedback audível imediato (desbloqueia áudio no navegador com clique do usuário)
+    speakText("Dublagem ativada. O vídeo em inglês foi mutado e você ouvirá em português.");
 
-    // Se o player estiver tocando, ajusta o volume do original
-    if (player && typeof player.setVolume === 'function') {
-      player.setVolume(20); // Deixa o original baixinho em segundo plano
+    // 3. Atualiza o banner visual
+    updateLiveDubbingBanner("🎙️ Dublagem Ativa", "Vídeo em inglês mutado. Sincronizando fala em Português...", false);
+
+    // 4. Inicia loop de sincronização e dá play no vídeo se necessário
+    startPlaybackSync();
+    sendYouTubeCommand('playVideo');
+
+    // Se já temos tempo do player, pronuncia o trecho imediatamente
+    if (player && typeof player.getCurrentTime === 'function') {
+      const t = player.getCurrentTime();
+      if (t > 0) syncPlaybackWithTime(t);
     }
   } else {
-    btn.classList.remove("active");
-    btnText.textContent = "Tradução Simultânea em Áudio (PT-BR)";
-    badge.className = "audio-status-badge inactive";
-    badge.textContent = "🎙️ Áudio Original em Inglês";
+    // Desmuta o vídeo do YouTube (restaura volume original)
+    unmuteYouTubeVideo();
 
+    // Cancela qualquer fala pendente
     if ('speechSynthesis' in window) {
       window.speechSynthesis.cancel();
     }
 
-    if (player && typeof player.setVolume === 'function') {
-      player.setVolume(100);
+    updateLiveDubbingBanner("Dublagem Desativada", "Som original em inglês restaurado.", false);
+  }
+}
+
+// Atualiza o estado visual de todos os botões e badges de dublagem
+function updateDubbingInterface() {
+  const topBtn = document.getElementById("audioTranslateToggleBtn");
+  const topText = document.getElementById("audioTranslateBtnText");
+  const bottomBtn = document.getElementById("activateDubbingBottomBtn");
+  const badge = document.getElementById("audioStatusBadge");
+
+  if (audioDubActive) {
+    if (topBtn) topBtn.classList.add("active");
+    if (topText) topText.textContent = "Dublagem Ativa (Vídeo Mutado)";
+    if (bottomBtn) {
+      bottomBtn.classList.add("active");
+      bottomBtn.innerHTML = "<span>🎙️</span> Dublagem Ativa (Vídeo Mutado)";
+    }
+    if (badge) {
+      badge.className = "audio-status-badge active";
+      badge.textContent = "🎙️ Vídeo Mutado • Dublagem PT-BR Ativa";
+    }
+  } else {
+    if (topBtn) topBtn.classList.remove("active");
+    if (topText) topText.textContent = "Tradução Simultânea em Áudio (PT-BR)";
+    if (bottomBtn) {
+      bottomBtn.classList.remove("active");
+      bottomBtn.innerHTML = "<span>🎙️</span> Ativar Dublagem (Muta Vídeo)";
+    }
+    if (badge) {
+      badge.className = "audio-status-badge inactive";
+      badge.textContent = "🎙️ Áudio Original em Inglês";
     }
   }
 }
 
+// Mutar completamente o YouTube (volume 0 e comando mute)
+function muteYouTubeVideo() {
+  isVideoMuted = true;
+  sendYouTubeCommand('mute');
+  sendYouTubeCommand('setVolume', [0]);
+
+  const btn = document.getElementById("quickMuteToggleBtn");
+  const icon = document.getElementById("quickMuteIcon");
+  const label = document.getElementById("quickMuteLabel");
+  if (btn) {
+    btn.classList.add("muted");
+    if (icon) icon.textContent = "🔇";
+    if (label) label.textContent = "Vídeo Mutado";
+  }
+}
+
+// Desmutar o YouTube (volume 100 e unMute)
+function unmuteYouTubeVideo() {
+  isVideoMuted = false;
+  sendYouTubeCommand('unMute');
+  sendYouTubeCommand('setVolume', [100]);
+
+  const btn = document.getElementById("quickMuteToggleBtn");
+  const icon = document.getElementById("quickMuteIcon");
+  const label = document.getElementById("quickMuteLabel");
+  if (btn) {
+    btn.classList.remove("muted");
+    if (icon) icon.textContent = "🔊";
+    if (label) label.textContent = "Som Original";
+  }
+}
+
+// Testar a voz em português instantaneamente
+function testVoice() {
+  if (!('speechSynthesis' in window)) {
+    alert("Seu navegador não possui suporte para síntese de voz.");
+    return;
+  }
+  const samplePhrase = "Olá! O sintetizador de voz em Português do Brasil está funcionando perfeitamente. Ao ativar a dublagem, o vídeo original em inglês será mutado e você escutará apenas a voz em português!";
+  updateLiveDubbingBanner("🎙️ Testando Voz PT-BR", `"${samplePhrase}"`, true);
+  speakText(samplePhrase);
+}
+
+// Atualizar banner de texto falado ao vivo
+function updateLiveDubbingBanner(status, text, isSpeaking = false) {
+  const badge = document.getElementById("liveDubbingBadge");
+  const badgeText = document.getElementById("liveDubbingBadgeText");
+  const content = document.getElementById("liveDubbingText");
+
+  if (badge) {
+    if (isSpeaking) {
+      badge.classList.add("speaking");
+    } else {
+      badge.classList.remove("speaking");
+    }
+  }
+  if (badgeText) badgeText.textContent = status;
+  if (content) content.textContent = text;
+}
+
+// Síntese de voz para frase genérica
 function speakText(text) {
   if (!('speechSynthesis' in window) || !text) return;
 
-  window.speechSynthesis.cancel(); // Para falas anteriores
+  window.speechSynthesis.cancel();
+  if (window.speechSynthesis.paused) {
+    window.speechSynthesis.resume();
+  }
+
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'pt-BR';
   if (ptVoice) utterance.voice = ptVoice;
   utterance.rate = currentVoiceRate;
   utterance.pitch = 1.0;
+  window.speechSynthesis.speak(utterance);
+}
+
+// Síntese de voz sincronizada com trecho específico da transcrição
+function speakCue(text, index) {
+  if (!('speechSynthesis' in window) || !text) return;
+
+  // Cancela qualquer fala anterior para acompanhar a evolução rápida do vídeo
+  window.speechSynthesis.cancel();
+  if (window.speechSynthesis.paused) {
+    window.speechSynthesis.resume();
+  }
+
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'pt-BR';
+  if (ptVoice) utterance.voice = ptVoice;
+  utterance.rate = currentVoiceRate;
+  utterance.pitch = 1.0;
+
+  utterance.onstart = () => {
+    updateLiveDubbingBanner(`🎙️ Dublando trecho #${index + 1}:`, `"${text}"`, true);
+  };
+
+  utterance.onend = () => {
+    if (lastSpokenCueIndex === index) {
+      updateLiveDubbingBanner(`🎙️ Sincronizado`, `Último falado: "${text}"`, false);
+    }
+  };
+
+  utterance.onerror = (e) => {
+    console.warn("speechSynthesis aviso:", e);
+  };
+
   window.speechSynthesis.speak(utterance);
 }
 
@@ -512,45 +713,96 @@ function renderFlowchartsGallery() {
 }
 
 // ==========================================================================
-// 5. YOUTUBE IFRAME API & CONTROLE DE SINCRONIZAÇÃO
+// 5. YOUTUBE IFRAME API, POSTMESSAGE & CONTROLE DE SINCRONIZAÇÃO
 // ==========================================================================
 function setupYouTubeIframe() {
-  const tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  const firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  const iframe = document.getElementById("youtubeIframe");
+  if (iframe && (!iframe.src || iframe.src.includes("origin=https://www.youtube.com"))) {
+    iframe.src = getYouTubeEmbedUrl(currentVideoId);
+  }
+
+  if (window.YT && window.YT.Player) {
+    initYTPlayer();
+  } else {
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  }
 }
 
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player('youtubeIframe', {
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });
+  initYTPlayer();
+}
+
+function initYTPlayer() {
+  try {
+    player = new YT.Player('youtubeIframe', {
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  } catch (err) {
+    console.warn("Aviso ao conectar YT.Player:", err);
+  }
 }
 
 function onPlayerReady(event) {
   playerReady = true;
-  const duration = player.getDuration();
-  document.getElementById("playerTotalTime").textContent = formatSeconds(duration);
+  try {
+    const duration = player.getDuration();
+    if (duration > 0) {
+      document.getElementById("playerTotalTime").textContent = formatSeconds(duration);
+    }
+  } catch (e) {}
+
+  if (audioDubActive) {
+    muteYouTubeVideo();
+  }
   startPlaybackSync();
 }
 
 function onPlayerStateChange(event) {
   if (event.data === YT.PlayerState.PLAYING) {
+    if (audioDubActive) {
+      muteYouTubeVideo();
+    }
     startPlaybackSync();
-  } else {
-    stopPlaybackSync();
+  } else if (event.data === YT.PlayerState.PAUSED) {
     if (audioDubActive && 'speechSynthesis' in window) {
       window.speechSynthesis.pause();
     }
   }
 }
 
+// Enviar comandos tanto pelo objeto do player quanto via postMessage direto
+function sendYouTubeCommand(func, args = []) {
+  if (player && typeof player[func] === 'function') {
+    try {
+      player[func](...args);
+    } catch (e) {
+      console.warn("player[func] err:", e);
+    }
+  }
+
+  const iframe = document.getElementById("youtubeIframe");
+  if (iframe && iframe.contentWindow) {
+    try {
+      iframe.contentWindow.postMessage(JSON.stringify({
+        event: 'command',
+        func: func,
+        args: args
+      }), '*');
+    } catch (e) {
+      console.warn("postMessage err:", e);
+    }
+  }
+}
+
 function startPlaybackSync() {
   if (syncTimer) clearInterval(syncTimer);
-  syncTimer = setInterval(syncPlaybackLoop, 250);
+  syncTimer = setInterval(syncPlaybackLoop, 200);
 }
 
 function stopPlaybackSync() {
@@ -560,16 +812,27 @@ function stopPlaybackSync() {
 function syncPlaybackLoop() {
   if (!player || typeof player.getCurrentTime !== 'function') return;
 
-  const currentSeconds = player.getCurrentTime();
-  document.getElementById("playerCurrentTime").textContent = formatSeconds(currentSeconds);
+  try {
+    const currentSeconds = player.getCurrentTime();
+    if (typeof currentSeconds === 'number' && !isNaN(currentSeconds)) {
+      syncPlaybackWithTime(currentSeconds);
+    }
+  } catch (e) {}
+}
+
+// Sincronização centralizada do tempo de reprodução com a transcrição
+function syncPlaybackWithTime(currentSeconds) {
+  lastReportedTime = currentSeconds;
+  const timeDisplay = document.getElementById("playerCurrentTime");
+  if (timeDisplay) timeDisplay.textContent = formatSeconds(currentSeconds);
 
   if (!transcriptData || transcriptData.length === 0) return;
 
-  // Acha o cue atual
+  // Localiza o cue correspondente ao segundo atual
   let activeIdx = -1;
   for (let i = 0; i < transcriptData.length; i++) {
     const start = transcriptData[i].start_seconds;
-    const nextStart = transcriptData[i + 1] ? transcriptData[i + 1].start_seconds : start + 10;
+    const nextStart = transcriptData[i + 1] ? transcriptData[i + 1].start_seconds : start + 8;
     if (currentSeconds >= start && currentSeconds < nextStart) {
       activeIdx = i;
       break;
@@ -580,13 +843,55 @@ function syncPlaybackLoop() {
     setActiveCue(activeIdx);
 
     // TRADUÇÃO SIMULTÂNEA DE ÁUDIO ATIVA!
-    if (audioDubActive && activeIdx !== lastSpokenCueIndex) {
-      lastSpokenCueIndex = activeIdx;
-      const textToSpeak = transcriptData[activeIdx].text_pt || transcriptData[activeIdx].text_en;
-      speakText(textToSpeak);
+    if (audioDubActive) {
+      // Garante que o áudio original permaneça mutado
+      sendYouTubeCommand('mute');
+      sendYouTubeCommand('setVolume', [0]);
+
+      if (activeIdx !== lastSpokenCueIndex) {
+        lastSpokenCueIndex = activeIdx;
+        const textToSpeak = transcriptData[activeIdx].text_pt || transcriptData[activeIdx].text_en;
+        speakCue(textToSpeak, activeIdx);
+      }
     }
   }
 }
+
+// Ouvinte Universal para eventos nativos do YouTube Iframe (postMessage)
+window.addEventListener("message", (event) => {
+  try {
+    let data = event.data;
+    if (typeof data === "string") {
+      try { data = JSON.parse(data); } catch (e) { return; }
+    }
+    if (!data) return;
+
+    if (data.event === "onReady") {
+      playerReady = true;
+      if (audioDubActive) muteYouTubeVideo();
+    }
+
+    if (data.event === "infoDelivery" && data.info) {
+      if (typeof data.info.currentTime === "number") {
+        syncPlaybackWithTime(data.info.currentTime);
+      }
+      if (typeof data.info.duration === "number" && data.info.duration > 0) {
+        const total = document.getElementById("playerTotalTime");
+        if (total) total.textContent = formatSeconds(data.info.duration);
+      }
+      if (typeof data.info.playerState === "number") {
+        if (data.info.playerState === 1) { // PLAYING
+          if (audioDubActive) muteYouTubeVideo();
+          startPlaybackSync();
+        } else if (data.info.playerState === 2) { // PAUSED
+          if (audioDubActive && 'speechSynthesis' in window) {
+            window.speechSynthesis.pause();
+          }
+        }
+      }
+    }
+  } catch (e) {}
+});
 
 function setActiveCue(index) {
   currentActiveCueIndex = index;
@@ -595,19 +900,21 @@ function setActiveCue(index) {
   const el = document.getElementById(`cue-row-${index}`);
   if (el) {
     el.classList.add("active");
-    if (document.getElementById("syncAutoScroll").checked) {
+    if (document.getElementById("syncAutoScroll") && document.getElementById("syncAutoScroll").checked) {
       const container = document.getElementById("cuesScrollArea");
-      const offset = el.offsetTop - container.offsetTop - (container.clientHeight / 3);
-      container.scrollTo({ top: Math.max(0, offset), behavior: "smooth" });
+      if (container) {
+        const offset = el.offsetTop - container.offsetTop - (container.clientHeight / 3);
+        container.scrollTo({ top: Math.max(0, offset), behavior: "smooth" });
+      }
     }
   }
 }
 
 function seekToSeconds(seconds) {
-  if (player && typeof player.seekTo === 'function') {
-    player.seekTo(seconds, true);
-    player.playVideo();
-  }
+  sendYouTubeCommand('seekTo', [seconds, true]);
+  sendYouTubeCommand('playVideo');
+  lastSpokenCueIndex = -1; // Permite falar imediatamente o novo ponto
+  syncPlaybackWithTime(seconds);
 }
 
 function formatSeconds(s) {
